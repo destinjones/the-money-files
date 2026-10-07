@@ -115,7 +115,7 @@
       p.tag ? el('span', { class: 'n-tag' + (p.tagKind === 'money' ? ' money' : '') }, p.tag) : null);
     if (L.partner) {
       b.appendChild(el('span', { class: 'p-head' }, face(p), text));
-      var kids = el('span', { class: 'kids' }, el('span', { class: 'kids-label' }, 'Children with ' + CENTER.short));
+      var kids = el('span', { class: 'kids' }, el('span', { class: 'kids-label' }, p.kidsLabel || 'Children with ' + CENTER.short));
       if (p.kids && p.kids.length) p.kids.forEach(function (k) { kids.appendChild(el('span', { class: 'kid' + (k.note && /died/.test(k.note) ? ' gone' : ''), title: k.note || null }, k.name + (k.note && /died/.test(k.note) ? ' †' : ''))); });
       else kids.appendChild(el('span', { class: 'kids-none' }, p.kidsText || 'None together'));
       b.appendChild(kids);
@@ -245,7 +245,7 @@
       section('On the record', (p.record || []).map(function (r) { return item(r.h, r); })),
       section('Disputed', (p.disputed || []).map(function (r) { return el('div', { class: 'd-item' }, el('span', { class: 'stamp' }, 'Disputed'), el('p', { class: 'h' }, r.h), el('p', null, r.t, refs(r.src))); })),
       section('Wow facts', (p.facts || []).map(function (f) { return item(null, f); })),
-      section(p.id === CENTER.id ? 'Children' : 'Children with ' + CENTER.short, kidsBlock(p)),
+      section(p.id === CENTER.id ? 'Children' : (p.kidsLabel || 'Children with ' + CENTER.short), kidsBlock(p)),
       p.note ? el('p', { class: 'd-note' }, p.note) : null,
       section('Sources in this file', [el('div', { class: 'd-src' }, el('ol', null, collectSrc(p).map(function (id) {
         var s = SRC[id];
