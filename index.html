@@ -1,0 +1,1254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Musk Money File</title>
+<meta name="description" content="The first trillionaire has a family. An interactive, fully sourced map of the Musk family: who owns what, which stocks you can buy, the homes, and the money on the public record.">
+<meta name="theme-color" content="#0B0F17">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23FFB020'/%3E%3Ctext x='32' y='46' font-family='Impact,Anton,sans-serif' font-size='40' text-anchor='middle' fill='%231a1205'%3E$%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Musk Money File">
+<meta property="og:description" content="The first trillionaire has a family. An interactive, fully sourced map of the Musk family: who owns what, which stocks you can buy, the homes, and the money on the public record.">
+<meta property="og:url" content="https://destinjones.github.io/the-money-files/">
+<meta property="og:image" content="https://destinjones.github.io/the-money-files/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@500;600;700&family=Permanent+Marker&family=Public+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+<style>
+/* Layout: an evidence board. The family tree is the wall, every face opens a dossier drawer,
+   and the exhibits below read like ledgers. Same navy board as the Follow the Money videos. */
+:root {
+  color-scheme: dark;
+  --bg: #0B0F17;
+  --bg-2: #0F1420;
+  --card: #141B29;
+  --card-2: #1A2232;
+  --line: #27324B;
+  --line-2: #1C2538;
+  --ink: #EEF1F7;
+  --ink-2: #B7BFCE;
+  --ink-3: #828CA2;
+  --gold: #FFB020;
+  --gold-soft: rgba(255, 176, 32, .11);
+  --gold-line: rgba(255, 176, 32, .42);
+  --red: #FF4A3D;
+  --green: #3DDC97;
+  --green-soft: rgba(61, 220, 151, .1);
+  --violet: #B79CFF;
+  --violet-soft: rgba(183, 156, 255, .1);
+  --blue: #84B8FF;
+  --blue-soft: rgba(132, 184, 255, .12);
+  --f-display: "Anton", Impact, "Arial Narrow Bold", "Helvetica Neue", sans-serif;
+  --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --f-hand: "Permanent Marker", "Segoe Print", "Comic Sans MS", cursive;
+  --gutter: clamp(16px, 4vw, 40px);
+  --maxw: 1200px;
+  --r: 14px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(rgba(130, 145, 175, .05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(130, 145, 175, .05) 1px, transparent 1px);
+  background-size: 44px 44px;
+  color: var(--ink);
+  font: 400 1.0625rem/1.6 var(--f-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { color: var(--blue); }
+a:hover { color: var(--ink); }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: var(--maxw); margin: 0 auto; padding-inline: var(--gutter); }
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 12px; top: 12px; z-index: 99; background: var(--gold); color: #1a1205; padding: 8px 12px; border-radius: 8px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- top bar ---------- */
+.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30;
+  background: rgba(11, 15, 23, .88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line-2);
+}
+.top .wrap { display: flex; align-items: center; gap: 18px; padding-block: 10px; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; white-space: nowrap; font: 400 1.2rem/1 var(--f-display); text-transform: uppercase; letter-spacing: .03em; }
+.brand-mark { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--gold); color: #1a1205; font: 400 1.05rem/1 var(--f-display); }
+.nav { display: flex; gap: 2px; margin-left: auto; overflow-x: auto; scrollbar-width: none; min-width: 0; }
+.nav::-webkit-scrollbar { display: none; }
+.nav a { font: 500 .72rem/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); text-decoration: none; padding: 9px 10px; border-radius: 999px; white-space: nowrap; }
+.nav a:hover { color: var(--ink); background: var(--card); }
+
+/* ---------- type ---------- */
+.eyebrow, .exhibit, .label {
+  font: 600 .74rem/1.4 var(--f-mono); letter-spacing: .14em; text-transform: uppercase; margin: 0;
+}
+.eyebrow { color: var(--ink-3); }
+.exhibit { color: var(--red); margin-bottom: 10px; }
+.label { color: var(--ink-3); }
+h1, h2 { font-family: var(--f-display); font-weight: 400; text-transform: uppercase; margin: 0; text-wrap: balance; letter-spacing: .005em; }
+h1 { font-size: clamp(2.6rem, 7.2vw, 5.5rem); line-height: .97; }
+h2 { font-size: clamp(2.1rem, 5vw, 3.6rem); line-height: 1; }
+h3 { text-wrap: balance; }
+.gold { color: var(--gold); }
+.u-red { background: linear-gradient(var(--red), var(--red)) 0 96% / 100% .085em no-repeat; padding-bottom: .02em; }
+.lede { font-size: 1.15rem; color: var(--ink-2); max-width: 58ch; margin: 22px 0 0; }
+.sec-lede { color: var(--ink-2); max-width: 64ch; margin: 14px 0 0; }
+.fine { font-size: .82rem; color: var(--ink-3); margin: 0; }
+.num { font-variant-numeric: tabular-nums; }
+
+/* source pills */
+.refs { white-space: nowrap; margin-left: 3px; vertical-align: .32em; line-height: 0; }
+.refs a {
+  display: inline-block; font: 600 .6rem/1 var(--f-mono); color: var(--blue); text-decoration: none;
+  padding: 3px 4px 2px; margin-left: 2px; border-radius: 4px; background: var(--blue-soft);
+}
+.refs a:hover { background: var(--blue); color: var(--bg); }
+
+/* ---------- hero ---------- */
+.hero { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(24px, 4vw, 56px); align-items: end; padding-block: clamp(36px, 7vw, 84px) clamp(32px, 5vw, 60px); }
+.hero .eyebrow { margin-bottom: 18px; }
+.hero .eyebrow b { color: var(--red); font-weight: 700; }
+.ctas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; text-decoration: none; cursor: pointer;
+  font: 700 .8rem/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase;
+  padding: 14px 18px; border-radius: 10px; background: var(--gold); color: #1a1205; border: 1px solid var(--gold);
+}
+.btn:hover { background: #ffc24f; color: #1a1205; }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn.ghost:hover { border-color: var(--ink-3); color: var(--ink); }
+.worth-card { container-type: inline-size; border: 1px solid var(--line); border-radius: var(--r); background: linear-gradient(180deg, var(--card), var(--bg-2)); padding: clamp(18px, 3vw, 28px); min-width: 0; }
+.big-number { font: 400 clamp(1.9rem, 4.4vw, 3.4rem)/1 var(--f-display); color: var(--gold); margin: 10px 0 12px; letter-spacing: .01em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+@supports (font-size: 1cqi) { .big-number { font-size: min(10.2cqi, 4.4rem); } }
+.pace { margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--line); }
+.pace p { margin: 0; color: var(--ink-2); font-size: .95rem; }
+.ticker { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; margin-top: 12px !important; }
+.ticker .label { font-size: .66rem; }
+.ticker output { font: 700 1.35rem/1 var(--f-mono); color: var(--green); font-variant-numeric: tabular-nums; }
+.scribble { font: 400 1.05rem/1.2 var(--f-hand); color: var(--red); transform: rotate(-2deg); display: inline-block; }
+
+/* ---------- sections ---------- */
+.section { padding-block: clamp(52px, 8vw, 100px); border-top: 1px solid var(--line-2); }
+.sec-head { margin-bottom: clamp(22px, 3vw, 34px); }
+.sub-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 18px; margin: 46px 0 14px; }
+.sub-head h3 { font: 400 1.6rem/1.05 var(--f-display); text-transform: uppercase; margin: 0; }
+
+/* ---------- family board ---------- */
+.board-wrap { position: relative; }
+.board { position: relative; }
+.wires { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; display: none; }
+.wire { fill: none; stroke: #33405e; stroke-width: 1.6; transition: stroke .2s; }
+.wire.hot { stroke: var(--gold); stroke-width: 2.2; }
+.wire-label { font: 500 10.5px/1 var(--f-mono); fill: var(--ink-3); letter-spacing: .06em; text-transform: uppercase; }
+.group-title { font: 600 .72rem/1.3 var(--f-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 10px; }
+.group-title span { color: var(--ink-2); text-transform: none; letter-spacing: 0; font: 400 .85rem/1.4 var(--f-body); }
+
+.node {
+  appearance: none; -webkit-appearance: none; font: inherit; color: inherit; text-align: left;
+  border: 1px solid transparent; background: none; cursor: pointer; padding: 10px; border-radius: 16px;
+  display: flex; align-items: center; gap: 12px; min-width: 0; -webkit-tap-highlight-color: transparent;
+  transition: background .18s, border-color .18s, transform .18s;
+}
+.node:hover { background: rgba(26, 34, 50, .7); border-color: var(--line); }
+.n-text { display: flex; flex-direction: column; min-width: 0; gap: 2px; }
+.n-name { font: 700 1rem/1.2 var(--f-body); color: var(--ink); }
+.n-rel { font: 500 .64rem/1.35 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.n-tag { align-self: flex-start; margin-top: 6px; font: 600 .7rem/1 var(--f-mono); padding: 5px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink-2); background: var(--bg-2); white-space: nowrap; }
+.n-tag.money { color: var(--gold); border-color: var(--gold-line); background: var(--gold-soft); }
+.node.big .n-name { font: 400 1.9rem/1 var(--f-display); text-transform: uppercase; letter-spacing: .01em; }
+
+.face {
+  --fs: 64px; position: relative; display: block; flex: none; width: var(--fs); height: var(--fs); border-radius: 50%; overflow: hidden;
+  background: radial-gradient(circle at 50% 30%, #2a3754, #151c2b 70%);
+  box-shadow: 0 0 0 2px var(--line), 0 10px 24px rgba(0, 0, 0, .35); transition: box-shadow .18s;
+}
+.face::before {
+  content: attr(data-initials); position: absolute; inset: 0; display: grid; place-items: center;
+  font: 400 calc(var(--fs) * .36)/1 var(--f-display); letter-spacing: .04em; color: var(--ink-2);
+}
+.face img { position: absolute; display: block; max-width: none; height: auto; }
+.node:hover .face, .node:focus-visible .face, .node.on .face { box-shadow: 0 0 0 2px var(--gold), 0 10px 28px rgba(0, 0, 0, .45); }
+.node.big .face { --fs: 104px; box-shadow: 0 0 0 3px var(--gold), 0 0 0 9px rgba(255, 176, 32, .14), 0 14px 36px rgba(0, 0, 0, .5); }
+.node.small .face { --fs: 52px; }
+.node.connector { cursor: default; }
+.node.connector:hover { background: none; border-color: transparent; transform: translateX(-50%); }
+.node.connector .face { --fs: 30px !important; box-shadow: 0 0 0 2px var(--line); }
+.node.connector .face::before { font-size: 20px; color: var(--ink-3); }
+.node.connector .n-name { font: 600 .82rem/1.25 var(--f-body); color: var(--ink-2); }
+.node.connector .n-tag { border-style: dashed; color: var(--ink-3); }
+
+.node.partner { flex-direction: column; align-items: stretch; background: var(--card); border-color: var(--line); padding: 14px; }
+.node.partner:hover { border-color: var(--ink-3); background: var(--card-2); }
+.p-head { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.kids { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--line); }
+.kids-label { width: 100%; font: 600 .6rem/1 var(--f-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 2px; }
+.kid { font: 500 .78rem/1.15 var(--f-body); padding: 5px 7px; border-radius: 8px; background: var(--bg-2); border: 1px solid var(--line-2); color: var(--ink); }
+.kid.gone { color: var(--ink-3); }
+.kids-none { font-size: .82rem; color: var(--ink-3); }
+.board-note { margin: 18px 0 0; font-size: .9rem; color: var(--ink-3); max-width: 70ch; }
+
+/* phones + tablets: grouped cards */
+@media (max-width: 1039.98px) {
+  .group { margin-top: 26px; }
+  .group:first-child { margin-top: 0; }
+  .group-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .g-center .group-list, .g-grand .group-list { grid-template-columns: minmax(0, 1fr); }
+  .g-partners .group-list { grid-template-columns: minmax(0, 1fr); }
+  .node { background: rgba(20, 27, 41, .72); border-color: var(--line-2); }
+  .node.big { padding: 16px; border-color: var(--gold-line); background: linear-gradient(90deg, rgba(255, 176, 32, .08), rgba(20, 27, 41, .7)); }
+  .node.big .face { --fs: 84px; }
+  .node.small .face { --fs: 52px; }
+}
+@media (max-width: 1039.98px) { .node.connector { display: none; } }
+@media (min-width: 700px) and (max-width: 1039.98px) {
+  .g-partners .group-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .g-cousins .group-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 420px) {
+  .node { gap: 10px; padding: 9px; }
+  .face { --fs: 52px; }
+  .n-name { font-size: .93rem; }
+  .n-tag { white-space: normal; }
+}
+
+/* desktop: the actual tree */
+@media (min-width: 1040px) {
+  .board { height: 940px; }
+  .wires { display: block; }
+  .group, .group-list { display: contents; }
+  .group-title { display: none; }
+  .node { position: absolute; left: calc(var(--x) * 1%); top: var(--top); transform: translateX(-50%); width: 152px; flex-direction: column; text-align: center; gap: 8px; padding: 8px 6px; }
+  .node:hover { transform: translateX(-50%) translateY(-2px); }
+  .node .n-text { align-items: center; }
+  .node .n-tag { align-self: center; }
+  .face { --fs: 78px; }
+  .node.big { width: 200px; }
+  .node.big .face { --fs: 112px; }
+  .node.small { width: 170px; }
+  .node.small .face { --fs: 54px; }
+  .node.partner { width: 210px; padding: 14px 12px; }
+  .node.partner .p-head { flex-direction: column; text-align: center; gap: 8px; }
+  .node.partner .face { --fs: 62px; }
+  .node.partner .kids { justify-content: center; }
+  .node.partner:hover { transform: translateX(-50%) translateY(-2px); }
+}
+
+/* ---------- dossier drawer ---------- */
+.scrim { position: fixed; inset: 0; z-index: 40; background: rgba(3, 6, 12, .62); }
+.dossier {
+  position: fixed; z-index: 50; top: 0; right: 0; bottom: 0; width: min(540px, 100%);
+  background: var(--bg-2); border-left: 1px solid var(--line); overflow-y: auto; overscroll-behavior: contain;
+  padding: calc(env(safe-area-inset-top, 0px) + 14px) 24px calc(env(safe-area-inset-bottom, 0px) + 34px);
+  box-shadow: -30px 0 70px rgba(0, 0, 0, .5);
+  animation: d-in .26s ease-out;
+}
+@keyframes d-in { from { transform: translateX(28px); opacity: .4; } to { transform: none; opacity: 1; } }
+@media (max-width: 640px) {
+  .dossier { border-left: 0; padding-inline: 18px; animation-name: d-up; }
+  @keyframes d-up { from { transform: translateY(36px); opacity: .4; } to { transform: none; opacity: 1; } }
+}
+.d-bar { position: sticky; top: calc(-14px - env(safe-area-inset-top, 0px)); z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: -14px -24px 0; padding: 14px 24px 12px; background: var(--bg-2); border-bottom: 1px solid var(--line-2); }
+@media (max-width: 640px) { .d-bar { margin-inline: -18px; padding-inline: 18px; } }
+.d-file { font: 700 .7rem/1.3 var(--f-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin: 0; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.icon-btn { appearance: none; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 10px; padding: 9px 12px; font: 700 .72rem/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; cursor: pointer; flex: none; }
+.icon-btn:hover { border-color: var(--ink-3); }
+.d-top { display: flex; align-items: center; gap: 18px; margin-top: 22px; }
+.d-top .face { --fs: 112px; box-shadow: 0 0 0 3px var(--line), 0 14px 30px rgba(0, 0, 0, .45); }
+.d-top.elon .face { box-shadow: 0 0 0 3px var(--gold), 0 0 0 9px rgba(255, 176, 32, .14); }
+.d-name { font: 400 clamp(2rem, 7vw, 2.7rem)/1 var(--f-display); text-transform: uppercase; margin: 0; text-wrap: balance; }
+.d-rel { font: 600 .7rem/1.4 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin: 8px 0 0; }
+.d-born { font-size: .85rem; color: var(--ink-3); margin: 4px 0 0; }
+.d-summary { margin: 18px 0 0; color: var(--ink); }
+.d-worth { margin-top: 18px; padding: 16px 18px; border-radius: 12px; border: 1px solid var(--gold-line); background: var(--gold-soft); }
+.d-worth .v { font: 400 2.6rem/1 var(--f-display); color: var(--gold); margin: 6px 0 6px; }
+.d-worth .by { font-size: .85rem; color: var(--ink-2); margin: 0; }
+.d-worth.none { border-color: var(--line); background: var(--card); }
+.d-worth.none p { margin: 6px 0 0; color: var(--ink-2); font-size: .95rem; }
+.d-sec h3 { display: flex; align-items: center; gap: 10px; font: 700 .7rem/1 var(--f-mono); letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); margin: 30px 0 4px; }
+.d-sec h3::after { content: ""; flex: 1; height: 1px; background: var(--line-2); }
+.d-item { padding: 12px 0; border-bottom: 1px dashed var(--line-2); }
+.d-item:last-child { border-bottom: 0; }
+.d-item p { margin: 0; font-size: .97rem; color: var(--ink-2); }
+.d-item .h { font-weight: 700; color: var(--ink); margin-bottom: 3px; }
+.co-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 5px; }
+.co-name { font-weight: 700; color: var(--ink); }
+.chip { font: 700 .6rem/1 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; padding: 5px 7px; border-radius: 6px; border: 1px solid var(--line); color: var(--ink-3); white-space: nowrap; }
+.chip.public { color: var(--green); border-color: rgba(61, 220, 151, .5); background: var(--green-soft); }
+.chip.private { color: var(--violet); border-color: rgba(183, 156, 255, .45); background: var(--violet-soft); }
+.chip.absorbed { color: var(--gold); border-color: var(--gold-line); background: var(--gold-soft); }
+.stamp { display: inline-block; transform: rotate(-3deg); border: 2px solid var(--red); color: var(--red); font: 700 .66rem/1 var(--f-mono); letter-spacing: .16em; padding: 5px 8px 4px; border-radius: 4px; margin-bottom: 8px; }
+.d-kids-group { margin-top: 10px; }
+.d-kids-group .label { margin-bottom: 6px; display: block; }
+.d-kids-group .kids { border: 0; padding: 0; margin: 0; }
+.d-note { margin-top: 22px; padding: 12px 14px; border-radius: 10px; background: var(--card); color: var(--ink-3); font-size: .88rem; }
+.d-src ol { margin: 8px 0 0; padding-left: 1.4em; font-size: .85rem; color: var(--ink-3); }
+.d-src li { margin: 4px 0; }
+.d-src a { color: var(--ink-2); }
+.d-nav { display: flex; justify-content: space-between; gap: 10px; margin-top: 28px; }
+.d-nav .icon-btn { max-width: 48%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hold-mini { margin-top: 14px; }
+
+/* ---------- invest ---------- */
+.invest-big { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.inv { border: 1px solid var(--line); border-radius: var(--r); background: var(--card); padding: clamp(18px, 2.6vw, 26px); min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+.inv.big { background: linear-gradient(160deg, var(--card-2), var(--card)); }
+.inv .tick { font: 400 clamp(3rem, 8vw, 5.2rem)/.9 var(--f-display); letter-spacing: .02em; }
+.inv .nm { font: 700 1.05rem/1.2 var(--f-body); margin: 0; }
+.inv .who { font: 500 .78rem/1.5 var(--f-mono); color: var(--ink-3); margin: 0; }
+.inv .t { margin: 0; color: var(--ink-2); font-size: .95rem; }
+.inv .incl { margin: 0; font-size: .9rem; color: var(--ink); }
+.yes { align-self: flex-start; font: 700 .8rem/1 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--bg); background: var(--green); padding: 8px 10px; border-radius: 8px; }
+.inv a.quote { margin-top: auto; align-self: flex-start; font: 700 .74rem/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink); text-decoration: none; border: 1px solid var(--line); padding: 10px 12px; border-radius: 8px; }
+.inv a.quote:hover { border-color: var(--green); color: var(--green); }
+.invest-rest { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
+.inv.small { padding: 16px; gap: 8px; }
+.inv.small .nm { font: 400 1.35rem/1.05 var(--f-display); text-transform: uppercase; letter-spacing: .01em; }
+.inv.small .chip { align-self: flex-start; }
+.inv .bar { height: 4px; border-radius: 4px; background: var(--c, var(--line)); opacity: .9; }
+.disclaimer { margin: 18px 0 0; font-size: .85rem; color: var(--ink-3); }
+@media (max-width: 980px) { .invest-rest { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .invest-big { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 380px) { .invest-rest { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- money ---------- */
+.money-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
+.panel { border: 1px solid var(--line); border-radius: var(--r); background: var(--card); padding: clamp(16px, 2.6vw, 26px); min-width: 0; }
+.panel h3 { font: 400 1.5rem/1.05 var(--f-display); text-transform: uppercase; margin: 0; }
+.panel .fine { margin-top: 6px; }
+.stack { display: flex; height: 46px; border-radius: 10px; overflow: hidden; margin-top: 18px; background: var(--bg-2); }
+.stack span { display: block; height: 100%; min-width: 3px; background: var(--c); }
+.legend { list-style: none; margin: 14px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.legend li { display: flex; flex-direction: column; gap: 2px; padding-left: 12px; border-left: 3px solid var(--c); min-width: 0; }
+.legend .k { font-size: .85rem; color: var(--ink-2); }
+.legend .v { font: 400 1.5rem/1 var(--f-display); color: var(--ink); }
+.legend .p { font: 500 .7rem/1 var(--f-mono); color: var(--ink-3); }
+@media (max-width: 640px) { .legend { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.chart { margin-top: 16px; width: 100%; min-height: 280px; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart .grid line { stroke: var(--line-2); }
+.chart .axis text { font: 500 11px var(--f-mono); fill: var(--ink-3); }
+.chart .tline { stroke: var(--gold); stroke-dasharray: 5 5; stroke-width: 1.4; opacity: .8; }
+.chart .tlabel { font: 700 11px var(--f-mono); fill: var(--gold); letter-spacing: .08em; }
+.chart .line { fill: none; stroke: var(--gold); stroke-width: 2.6; stroke-linejoin: round; }
+.chart .area { fill: url(#gold-fade); }
+.chart .pt { fill: var(--bg); stroke: var(--gold); stroke-width: 2.4; }
+.chart .pt.last { fill: var(--gold); }
+.chart .plabel { font: 400 15px var(--f-display); fill: var(--ink); letter-spacing: .02em; }
+.chart .pnote { font: 500 10px var(--f-mono); fill: var(--ink-3); text-transform: uppercase; letter-spacing: .06em; }
+.points { list-style: none; margin: 16px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 22px; font-size: .88rem; color: var(--ink-2); }
+.points li { display: flex; gap: 10px; align-items: baseline; border-bottom: 1px dashed var(--line-2); padding: 6px 0; min-width: 0; }
+.points .d { font: 500 .74rem var(--f-mono); color: var(--ink-3); flex: none; width: 92px; }
+.points .v { font-weight: 700; color: var(--gold); flex: none; }
+@media (max-width: 640px) { .points { grid-template-columns: minmax(0, 1fr); } }
+.ladder { margin-top: 16px; display: grid; gap: 14px; }
+.rung .top-line { display: flex; justify-content: space-between; gap: 10px; font-size: .95rem; }
+.rung .top-line b { font: 400 1.3rem/1 var(--f-display); color: var(--gold); letter-spacing: .02em; }
+.rung .track { height: 14px; border-radius: 7px; background: var(--bg-2); margin-top: 8px; overflow: hidden; }
+.rung .fill { height: 100%; min-width: 3px; background: var(--gold); border-radius: 7px; }
+.rung.muted .top-line b { color: var(--ink-3); font: 500 .85rem var(--f-body); }
+.rung .scribble { font-size: .95rem; margin-top: 6px; }
+
+/* ---------- homes ---------- */
+.homes-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; align-items: stretch; }
+.flip { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.flip .v { font: 400 clamp(2.4rem, 7vw, 4.4rem)/1 var(--f-display); }
+.flip .arrow { font: 400 2rem/1 var(--f-display); color: var(--ink-3); }
+.quote { margin: 0; padding: 18px 20px; border-left: 3px solid var(--red); background: var(--card); border-radius: 0 var(--r) var(--r) 0; }
+.quote p { margin: 0; font: 400 1.35rem/1.25 var(--f-display); text-transform: uppercase; letter-spacing: .01em; color: var(--ink); }
+.quote footer { margin-top: 10px; font: 500 .74rem/1.4 var(--f-mono); color: var(--ink-3); letter-spacing: .06em; }
+.quotes { display: grid; gap: 14px; }
+.dumb { margin-top: 18px; }
+.drow { display: grid; grid-template-columns: minmax(0, 250px) minmax(0, 1fr) 176px; gap: 8px 18px; align-items: center; padding: 12px 0; border-bottom: 1px dashed var(--line-2); }
+.drow .nm { font-weight: 700; font-size: .95rem; }
+.drow .ar { font: 500 .72rem/1.4 var(--f-mono); color: var(--ink-3); }
+.redact { display: inline-block; vertical-align: middle; width: 74px; height: .8em; background: var(--ink-3); border-radius: 2px; opacity: .55; margin-left: 4px; }
+.dtrack { position: relative; height: 22px; }
+.dtrack::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: var(--line-2); }
+.dseg { position: absolute; top: calc(50% - 2px); height: 4px; background: var(--gold); opacity: .55; border-radius: 2px; }
+.ddot { position: absolute; top: 50%; width: 13px; height: 13px; margin: -6.5px 0 0 -6.5px; border-radius: 50%; }
+.ddot.b { border: 2px solid var(--ink-2); background: var(--bg); }
+.ddot.s { background: var(--gold); box-shadow: 0 0 0 3px rgba(255, 176, 32, .18); }
+.ddot.rent { background: var(--green); box-shadow: 0 0 0 3px rgba(61, 220, 151, .2); }
+.drow .vals { font: 500 .8rem/1.4 var(--f-mono); color: var(--ink-2); text-align: right; }
+.drow .vals b { color: var(--gold); font-weight: 700; }
+.drow.rent .nm { color: var(--green); }
+.dscale { display: grid; grid-template-columns: minmax(0, 250px) minmax(0, 1fr) 176px; gap: 18px; margin-top: 4px; }
+.dscale .ticks { position: relative; height: 16px; font: 500 .66rem var(--f-mono); color: var(--ink-3); }
+.dscale .ticks span { position: absolute; transform: translateX(-50%); }
+.dkey { display: flex; flex-wrap: wrap; gap: 14px; font: 500 .74rem var(--f-mono); color: var(--ink-3); margin-top: 10px; }
+.dkey i { display: inline-block; width: 11px; height: 11px; border-radius: 50%; vertical-align: -1px; margin-right: 6px; }
+@media (max-width: 760px) {
+  .homes-top { grid-template-columns: minmax(0, 1fr); }
+  .drow { grid-template-columns: minmax(0, 1fr) auto; }
+  .drow .lbl { grid-column: 1; }
+  .drow .vals { grid-column: 2; grid-row: 1; }
+  .drow .dtrack { grid-column: 1 / -1; }
+  .dscale { grid-template-columns: minmax(0, 1fr); }
+  .dscale > :first-child, .dscale > :last-child { display: none; }
+}
+.cards-3 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 16px; }
+.mini { border: 1px solid var(--line); border-radius: 12px; background: var(--card); padding: 16px 18px; min-width: 0; }
+.mini h4 { margin: 0 0 6px; font: 700 .76rem/1.3 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--gold); }
+.mini p { margin: 0; color: var(--ink-2); font-size: .95rem; }
+.wilder { margin-top: 18px; border: 1px solid var(--gold-line); background: var(--gold-soft); border-radius: var(--r); padding: 18px 20px; }
+.wilder p { margin: 0; color: var(--ink); }
+.facts { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 8px; }
+.facts li { padding: 10px 0 10px 22px; position: relative; border-bottom: 1px dashed var(--line-2); color: var(--ink-2); }
+.facts li::before { content: ""; position: absolute; left: 4px; top: 1.15em; width: 8px; height: 8px; border-radius: 2px; background: var(--red); transform: rotate(45deg); }
+@media (max-width: 640px) { .cards-3 { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- ledger ---------- */
+.ledger-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--r); background: var(--card); }
+table.ledger { width: 100%; border-collapse: collapse; font-size: .92rem; min-width: 720px; }
+.ledger th { text-align: left; font: 700 .64rem/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); padding: 14px 14px; border-bottom: 1px solid var(--line); background: var(--bg-2); position: sticky; top: 0; }
+.ledger td { padding: 12px 14px; border-bottom: 1px dashed var(--line-2); vertical-align: top; color: var(--ink-2); }
+.ledger tr:last-child td { border-bottom: 0; }
+.ledger td.who { font-weight: 700; color: var(--ink); white-space: nowrap; }
+.ledger td.amt { font: 600 .86rem/1.4 var(--f-mono); color: var(--gold); white-space: nowrap; }
+.ledger td.when { font: 500 .8rem/1.4 var(--f-mono); color: var(--ink-3); white-space: nowrap; }
+@media (max-width: 680px) {
+  .ledger-wrap { border: 0; background: none; overflow: visible; }
+  table.ledger { min-width: 0; }
+  .ledger thead { display: none; }
+  .ledger, .ledger tbody, .ledger tr, .ledger td { display: block; }
+  .ledger tr { border: 1px solid var(--line); border-radius: 12px; background: var(--card); padding: 12px 14px; margin-bottom: 10px; }
+  .ledger td { border: 0; padding: 2px 0; white-space: normal !important; }
+  .ledger td.amt { font-size: 1rem; margin-top: 4px; }
+}
+.foot { margin: 12px 0 0; font-size: .82rem; color: var(--ink-3); }
+
+/* ---------- trail ---------- */
+.trail { list-style: none; margin: 0; padding: 0; position: relative; max-width: 860px; }
+.trail::before { content: ""; position: absolute; left: 115px; top: 6px; bottom: 6px; width: 2px; background: linear-gradient(var(--line), var(--gold) 70%, var(--gold)); }
+.trail li { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 46px; padding: 0 0 22px; position: relative; }
+.trail li::before { content: ""; position: absolute; left: 110px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--gold); }
+.trail time { font: 700 .82rem/1.6 var(--f-mono); color: var(--ink-2); text-align: right; letter-spacing: .04em; }
+.trail h3 { margin: 0; font: 700 1.05rem/1.35 var(--f-body); }
+.trail .amt { display: inline-block; margin-top: 4px; font: 400 1.25rem/1.1 var(--f-display); color: var(--gold); letter-spacing: .02em; }
+.trail p { margin: 4px 0 0; color: var(--ink-2); font-size: .95rem; }
+@media (max-width: 560px) {
+  .trail::before { left: 7px; }
+  .trail li { grid-template-columns: minmax(0, 1fr); gap: 2px; padding-left: 30px; }
+  .trail li::before { left: 2px; }
+  .trail time { text-align: left; }
+}
+
+/* ---------- perspective ---------- */
+.calc { display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr); gap: 24px; align-items: start; }
+.calc label { font: 700 .74rem/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); display: block; margin-bottom: 10px; }
+.inc { display: flex; align-items: center; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-2); padding: 4px 6px 4px 16px; }
+.inc:focus-within { border-color: var(--gold); }
+.inc span { font: 400 2rem/1 var(--f-display); color: var(--ink-3); }
+.inc input { appearance: none; -moz-appearance: textfield; width: 100%; min-width: 0; border: 0; outline: 0; background: none; color: var(--ink); font: 400 2rem/1.4 var(--f-display); padding: 6px 8px; letter-spacing: .02em; }
+.inc input::-webkit-outer-spin-button, .inc input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.presets { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.presets button { appearance: none; border: 1px solid var(--line); background: var(--card); color: var(--ink-2); border-radius: 999px; padding: 7px 10px; font: 600 .72rem/1 var(--f-mono); cursor: pointer; }
+.presets button:hover { color: var(--ink); border-color: var(--ink-3); }
+.calc .hint { font-size: .82rem; color: var(--ink-3); margin: 10px 0 0; }
+.outs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.out { border: 1px solid var(--line); border-radius: 12px; background: var(--card); padding: 16px 18px; min-width: 0; }
+.out .k { margin: 0; font: 600 .7rem/1.4 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.out .v { margin: 8px 0 4px; font: 400 clamp(1.7rem, 4.4vw, 2.5rem)/1 var(--f-display); color: var(--gold); letter-spacing: .01em; overflow-wrap: anywhere; }
+.out .s { margin: 0; font-size: .85rem; color: var(--ink-2); }
+@media (max-width: 760px) { .calc { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 420px) { .outs { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- cases ---------- */
+.cases { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.case { display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 16px; border: 1px solid var(--line); border-radius: var(--r); background: var(--card); padding: 14px; min-width: 0; }
+.case img { width: 116px; height: auto; aspect-ratio: 9 / 16; border-radius: 10px; object-fit: cover; display: block; background: var(--bg-2); }
+.case .n { margin: 2px 0 0; font: 700 .7rem/1 var(--f-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--red); }
+.case h3 { margin: 6px 0 0; font: 400 1.6rem/1.02 var(--f-display); text-transform: uppercase; letter-spacing: .01em; }
+.case .hook { margin: 8px 0 0; color: var(--ink); font-size: .98rem; }
+.chain { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin: 10px 0 0; font: 500 .72rem/1.3 var(--f-mono); color: var(--ink-2); }
+.chain span.link { padding: 4px 6px; border-radius: 6px; background: var(--bg-2); border: 1px solid var(--line-2); }
+.chain i { color: var(--red); font-style: normal; }
+.case details { margin-top: 10px; }
+.case summary { cursor: pointer; font: 700 .7rem/1.6 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.case summary:hover { color: var(--ink); }
+.case ol { margin: 8px 0 0; padding-left: 1.3em; font-size: .82rem; }
+.case li { margin: 3px 0; overflow-wrap: anywhere; }
+.case li a { color: var(--ink-2); }
+@media (max-width: 860px) { .cases { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 420px) { .case { grid-template-columns: 88px minmax(0, 1fr); gap: 12px; } .case img { width: 88px; } .case h3 { font-size: 1.35rem; } }
+
+/* ---------- sources ---------- */
+.src-cols { columns: 2 380px; column-gap: 40px; }
+.src-group { break-inside: avoid-column; margin-bottom: 26px; }
+.src-group h3 { font: 700 .74rem/1 var(--f-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin: 0 0 10px; }
+.src-group ol { margin: 0; padding-left: 2.4em; font-size: .86rem; color: var(--ink-3); }
+.src-group li { margin: 5px 0; overflow-wrap: anywhere; }
+.src-group li a { color: var(--ink-2); text-decoration-color: var(--line); }
+.src-group li a:hover { color: var(--ink); }
+.src-group li:target { background: var(--gold-soft); border-radius: 4px; }
+.method { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 30px; }
+.mini p.fine { font-size: .82rem; color: var(--ink-3); }
+.method .mini p + p { margin-top: 8px; }
+@media (max-width: 1000px) { .method { grid-template-columns: minmax(0, 1fr); } }
+.credits { margin: 0; padding-left: 1.3em; font-size: .84rem; color: var(--ink-3); }
+.credits li { margin: 4px 0; }
+.credits a { color: var(--ink-2); }
+.site-foot { border-top: 1px solid var(--line-2); padding-block: 30px 46px; color: var(--ink-3); font-size: .85rem; }
+.site-foot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+.site-foot a { color: var(--ink-2); }
+
+@media (max-width: 900px) { .hero { grid-template-columns: minmax(0, 1fr); align-items: start; } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#family">Skip to the family map</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="The Money Files, back to top"><span class="brand-mark" aria-hidden="true">$</span><span>The Money Files</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#family">Family</a>
+      <a href="#invest">Can you buy it?</a>
+      <a href="#money">The trillion</a>
+      <a href="#homes">Homes</a>
+      <a href="#record">On the record</a>
+      <a href="#trail">Money trail</a>
+      <a href="#perspective">Perspective</a>
+      <a href="#cases">Case files</a>
+      <a href="#sources">Sources</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap hero" aria-labelledby="h-hero">
+    <div>
+      <p class="eyebrow"><b>File #006</b> · The Musk family · Data as of <span data-asof></span></p>
+      <h1 id="h-hero">The first <span class="gold">trillionaire</span> has a family. We followed the <span class="u-red">money</span>.</h1>
+      <p class="lede">Who&#8217;s who, what each of them owns, which of their companies you can actually buy stock in, the homes, and the money on the public record. Every number links to its source.</p>
+      <div class="ctas">
+        <a class="btn" href="#family">Open the family map</a>
+        <a class="btn ghost" href="#invest">Can I buy it?</a>
+      </div>
+    </div>
+    <div class="worth-card">
+      <p class="label">Elon Musk&#8217;s net worth</p>
+      <p class="big-number" id="hero-worth">$1,046,000,000,000</p>
+      <p class="fine" id="hero-worth-src"></p>
+      <div class="pace">
+        <p id="pace-line"></p>
+        <p class="ticker"><span class="label">Since you opened this page</span> <output id="since" aria-live="off">+$0</output></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="family" aria-labelledby="h-family">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="exhibit">Exhibit A</p>
+        <h2 id="h-family">The family</h2>
+        <p class="sec-lede">Tap anyone to open their file: what they own, what&#8217;s on the record, and where every fact comes from. Elon&#8217;s kids are listed by name only.</p>
+      </header>
+      <div class="board-wrap">
+        <div class="board" id="board">
+          <svg class="wires" id="wires" aria-hidden="true"></svg>
+        </div>
+      </div>
+      <p class="board-note" id="board-note"></p>
+    </div>
+  </section>
+
+  <section class="section" id="invest" aria-labelledby="h-invest">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="exhibit">Exhibit B</p>
+        <h2 id="h-invest">Can you buy it?</h2>
+        <p class="sec-lede">Two of the family&#8217;s companies trade on the stock market. The rest are private, sold off, or have no Musk money in them anymore.</p>
+      </header>
+      <div class="invest-big" id="invest-big"></div>
+      <div class="invest-rest" id="invest-rest"></div>
+      <p class="disclaimer">Not investment advice. Prices change every second the market is open, so check a live quote. Funds that hold private companies come with their own risks and fees.</p>
+    </div>
+  </section>
+
+  <section class="section" id="money" aria-labelledby="h-money">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="exhibit">Exhibit C</p>
+        <h2 id="h-money">Where the trillion lives</h2>
+        <p class="sec-lede">Most of Elon&#8217;s fortune is SpaceX stock, which became tradable in June 2026. Here&#8217;s how it breaks down, and how fast it got here.</p>
+      </header>
+      <div class="money-grid">
+        <div class="panel">
+          <h3>His four biggest holdings</h3>
+          <p class="fine" id="hold-src"></p>
+          <div class="stack" id="hold-stack" role="img"></div>
+          <ul class="legend" id="hold-legend"></ul>
+        </div>
+        <div class="panel">
+          <h3>The climb to a trillion</h3>
+          <p class="fine">Each dot is a Forbes estimate on that date. The line just connects them.</p>
+          <div class="chart" id="climb"></div>
+          <ul class="points" id="climb-points"></ul>
+        </div>
+        <div class="panel">
+          <h3>The family money ladder</h3>
+          <p class="fine">Only two family members have a published net worth estimate. Bars are drawn to scale.</p>
+          <div class="ladder" id="ladder"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="homes" aria-labelledby="h-homes">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="exhibit">Exhibit D</p>
+        <h2 id="h-homes">From seven mansions to a $50K rental</h2>
+        <p class="sec-lede">Elon bought seven California homes between 2012 and 2019, then sold every one after promising to &#8220;own no house.&#8221; Prices come from public records as reported by the press. No street addresses here.</p>
+      </header>
+      <div class="homes-top">
+        <div class="panel">
+          <p class="label">Bought for &#8594; sold for</p>
+          <div class="flip" id="homes-flip"></div>
+          <p class="fine" id="homes-flip-src"></p>
+        </div>
+        <div class="quotes" id="homes-quotes"></div>
+      </div>
+      <div class="panel dumb">
+        <h3>Each house: what he paid, what he sold it for</h3>
+        <div id="dumb"></div>
+        <div class="dkey"><span><i style="border:2px solid var(--ink-2)"></i>Bought</span><span><i style="background:var(--gold)"></i>Sold</span><span><i style="background:var(--green)"></i>His Starbase rental (2021)</span></div>
+      </div>
+      <div class="wilder" id="wilder"></div>
+      <ul class="facts" id="homes-facts"></ul>
+      <div class="sub-head"><h3>The companies moved to Texas too</h3></div>
+      <div class="cards-3" id="hq"></div>
+    </div>
+  </section>
+
+  <section class="section" id="record" aria-labelledby="h-record">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="exhibit">Exhibit E</p>
+        <h2 id="h-record">On the record</h2>
+        <p class="sec-lede">The money that shows up in SEC filings, tax returns, court records and FEC reports. These are filings, not estimates.</p>
+      </header>
+      <div class="ledger-wrap">
+        <table class="ledger" id="ledger">
+          <thead><tr><th scope="col">Who</th><th scope="col">What</th><th scope="col">Amount</th><th scope="col">When</th><th scope="col">Source</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="foot">* SEC rules count his super-voting Class B shares as if they were converted to Class A. &#8220;Our sum&#8221; means simple addition of the linked filings or reports.</p>
+    </div>
+  </section>
+
+  <section class="section" id="trail" aria-labelledby="h-trail">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="exhibit">Exhibit F</p>
+        <h2 id="h-trail">The money trail</h2>
+        <p class="sec-lede">From a city-guide startup in 1995 to the first trillion in 2026.</p>
+      </header>
+      <ol class="trail" id="trail-list"></ol>
+    </div>
+  </section>
+
+  <section class="section" id="perspective" aria-labelledby="h-persp">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="exhibit">Put it in perspective</p>
+        <h2 id="h-persp">How long would it take you?</h2>
+        <p class="sec-lede">Type a yearly income. The math runs on your screen; nothing is sent anywhere.</p>
+      </header>
+      <div class="calc">
+        <div>
+          <label for="income">Yearly income</label>
+          <div class="inc"><span aria-hidden="true">$</span><input id="income" type="number" inputmode="numeric" min="1" step="1000" value="60000" aria-describedby="income-hint"></div>
+          <div class="presets" id="presets"></div>
+          <p class="hint" id="income-hint">$60,000 is just an example to start with.</p>
+        </div>
+        <div class="outs">
+          <div class="out"><p class="k">Years to earn what Elon has</p><p class="v" id="o-years">&#8212;</p><p class="s">at that income, with no taxes or spending</p></div>
+          <div class="out"><p class="k">A whole year of your pay equals</p><p class="v" id="o-secs">&#8212;</p><p class="s">of his average growth over the past year</p></div>
+          <div class="out"><p class="k">Spending $1 million every day</p><p class="v" id="o-spend">&#8212;</p><p class="s">before his fortune runs out (ignoring growth)</p></div>
+          <div class="out"><p class="k">Kimbal is a billionaire too</p><p class="v" id="o-kimbal">&#8212;</p><p class="s">his $1.7B as a share of Elon&#8217;s fortune</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cases" aria-labelledby="h-cases">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="exhibit">The case files</p>
+        <h2 id="h-cases">More from Follow the Money</h2>
+        <p class="sec-lede">Short videos that trace everyday brands back to who actually owns them. Every case is sourced.</p>
+      </header>
+      <div class="cases" id="case-list"></div>
+    </div>
+  </section>
+
+  <section class="section" id="sources" aria-labelledby="h-sources">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="exhibit">Sources</p>
+        <h2 id="h-sources">Where every number comes from</h2>
+        <p class="sec-lede">The little blue numbers all over this page link straight to these.</p>
+      </header>
+      <div class="src-cols" id="src-list"></div>
+      <div class="method">
+        <div class="mini">
+          <h4>How this was made</h4>
+          <p>Public records and published reporting only: SEC filings, court records, tax returns, FEC reports, company releases and major news outlets. Where a news site was hard to reach we link a syndicated copy and name the original publisher.</p>
+          <p>Net worth figures are estimates by Forbes and Bloomberg as of <span data-asof></span>. They move with stock prices every trading day. &#8220;Our math&#8221; marks simple arithmetic on the sourced figures.</p>
+        </div>
+        <div class="mini">
+          <h4>Privacy rules</h4>
+          <p>No street addresses for anyone. Children appear by name only, with no photos. Private relatives, including Errol Musk&#8217;s younger children, are left out. Photos are of adults who are public figures, under the licenses below.</p>
+          <p>Not investment advice. Spotted an error? <a id="issues-link" href="#" target="_blank" rel="noopener">Open an issue on GitHub</a>.</p>
+        </div>
+        <div class="mini">
+          <h4>Photo credits</h4>
+          <ul class="credits" id="credits"></ul>
+          <p class="fine" style="margin-top:8px">Photos load from Wikimedia Commons. Where an image can&#8217;t load, you&#8217;ll see initials instead.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>The Money Files · File #006: the Musk family · Data as of <span data-asof></span></span>
+    <span><a id="repo-link" href="#" target="_blank" rel="noopener">Source code and data on GitHub</a></span>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="dossier" id="dossier" role="dialog" aria-modal="true" aria-labelledby="d-title" hidden></aside>
+<script id="mf-data" type="application/json">{"meta":{"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","file":"File #006","repo":"https://github.com/destinjones/the-money-files"},"sources":[{"id":"cbc_haldeman","group":"family","pub":"CBC News","title":"Feature on Joshua Haldeman, Elon Musk's grandfather","date":"Mar 20, 2025","url":"https://www.cbc.ca/newsinteractives/features/joshua-haldeman-elon-musk-saskatchewan-tech-utopian-conspiracist"},{"id":"bi_haldeman","group":"family","pub":"Business Insider (via Yahoo Finance)","title":"Elon Musk's grandparents were adventurers","date":"Aug 2, 2016","url":"https://finance.yahoo.com/news/elon-musks-grandparents-were-adventuring-233554280.html"},{"id":"people_maye","group":"family","pub":"People (via Yahoo)","title":"Maye Musk profile","date":"Aug 1, 2023","url":"https://ca.news.yahoo.com/elon-musks-mother-maye-musk-135641696.html"},{"id":"cnbc_family_2018","group":"family","pub":"CNBC","title":"Elon Musk's family tree: Tosca, Kimbal and Maye","date":"Aug 12, 2018","url":"https://www.cnbc.com/amp/2018/08/12/elon-musk-family-tree-tosca-kimbal-maye-entrepreneurs-spacex-tesla.html"},{"id":"britannica_elon","group":"family","pub":"Britannica","title":"Elon Musk","date":"accessed Oct 2026","url":"https://www.britannica.com/money/Elon-Musk"},{"id":"moscowtimes_errol","group":"family","pub":"The Moscow Times","title":"Errol Musk, 79, interview with RIA Novosti","date":"Apr 2, 2026","url":"https://www.themoscowtimes.com/2026/04/02/elon-musks-father-says-he-held-memorable-meeting-with-vladimir-putin-a92409"},{"id":"startribune_rive","group":"family","pub":"Star Tribune","title":"Q&A with SolarCity co-founder Lyndon Rive","date":"accessed Oct 2026","url":"https://m.startribune.com/tight-family-helps-fuel-success-for-solar-executive/363972291/"},{"id":"sec_s4a_solarcity","group":"family","pub":"SEC: Tesla Form S-4/A","title":"SolarCity merger: holdings of Lyndon and Peter Rive","date":"Oct 11, 2016","url":"https://www.sec.gov/Archives/edgar/data/1318605/000119312516735077/d241192ds4a.htm"},{"id":"ap_vivian","group":"family","pub":"AP (via Court TV)","title":"Musk's daughter granted legal name change","date":"Jun 23, 2022","url":"https://www.courttv.com/news/elon-musks-daughter-granted-legal-name-gender-change/"},{"id":"marieclaire_justine","group":"family","pub":"Marie Claire","title":"Justine Musk: \"I Was a Starter Wife\"","date":"Sep 10, 2010","url":"https://www.marieclaire.com/sex-love/a5380/millionaire-starter-wife/"},{"id":"today_kids","group":"family","pub":"TODAY","title":"Elon Musk's children","date":"updated Jan 16, 2026","url":"https://www.today.com/parents/parents/elon-musk-kids-rcna19692"},{"id":"today_seldon","group":"family","pub":"TODAY","title":"Shivon Zilis announces son Seldon Lycurgus","date":"Feb 28, 2025","url":"https://www.today.com/today/amp/rcna194326"},{"id":"forbes_kids_2025","group":"family","pub":"Forbes","title":"Musk's children and Ashley St. Clair's announcement","date":"Feb 15, 2025","url":"https://www.forbes.com/sites/conormurray/2025/02/15/elon-musk-still-hasnt-commented-as-right-wing-influencer-claims-she-had-his-13th-child/"},{"id":"forbesau_legion","group":"family","pub":"Forbes (via Forbes Australia)","title":"WSJ report on Musk's children","date":"Apr 17, 2025","url":"https://www.forbes.com.au/news/billionaires/musk-legion-report-details-richest-mans-multiple-children-and-harem-drama/"},{"id":"independent_ashley","group":"family","pub":"The Independent (via Yahoo)","title":"Ashley St. Clair and her son","date":"2025","url":"https://www.yahoo.com/news/ashley-st-clair-reveals-son-152638644.html"},{"id":"ap_ashley_jan2026","group":"family","pub":"AP (via WCAX)","title":"Ashley St. Clair lawsuit coverage","date":"Jan 17, 2026","url":"https://www.wcax.com/2026/01/17/mother-elon-musks-child-sues-his-ai-company-over-sexual-deepfake-images-created-by-grok/"},{"id":"cnn_tosca","group":"family","pub":"CNN (via ABC17)","title":"Tosca Musk, 48, and Passionflix","date":"Nov 20, 2022","url":"https://abc17news.com/?p=1037351"},{"id":"bi_talulah","group":"family","pub":"Business Insider (via Yahoo)","title":"Talulah Riley profile","date":"Jul 28, 2023","url":"https://uk.news.yahoo.com/elon-musks-ex-wife-talulah-180653157.html"},{"id":"ap_talulah","group":"family","pub":"AP (via ABC7)","title":"Talulah Riley and Elon Musk to divorce again","date":"Mar 22, 2016","url":"https://abc7chicago.com/post/talulah-riley-elon-musk-to-divorce---again-/1256530/"},{"id":"hachette_talulah","group":"family","pub":"Hachette","title":"Acts of Love by Talulah Riley","date":"2016","url":"https://www.hachetteindia.com/Home/bookdetails/Info/9781473637900/acts-of-love"},{"id":"digitalspy_talulah","group":"family","pub":"Digital Spy (via Yahoo)","title":"Thomas Brodie-Sangster marries Talulah Riley","date":"Jun 24, 2024","url":"https://uk.news.yahoo.com/game-thrones-star-thomas-brodie-232400949.html"},{"id":"bi_grimes","group":"family","pub":"Business Insider (via Yahoo)","title":"Timeline of Elon Musk and Grimes","date":"Sep 10, 2023","url":"https://autos.yahoo.com/timeline-elon-musks-grimes-relationship-155013310.html"},{"id":"mbw_elftech","group":"family","pub":"Music Business Worldwide","title":"Grimes launches AI voice project with CreateSafe","date":"May 2023","url":"https://www.musicbusinessworldwide.com/grimes-launches-ai-project-in-partnership-with-development-studio-createsafe-inviting-users-to-create-ai-songs-using-her-voice"},{"id":"fortune_grimes","group":"family","pub":"Fortune","title":"Grimes offers 50% royalties on AI songs using her voice","date":"Apr 24, 2023","url":"https://fortune.com/2023/04/24/grimes-ai-music-song-split-royalties"},{"id":"bi_shivon","group":"family","pub":"Business Insider (via Yahoo)","title":"Shivon Zilis, Neuralink executive","date":"Aug 21, 2024","url":"https://autos.yahoo.com/shivon-zilis-meet-neuralink-exec-195219749.html"},{"id":"bbg_shivon_openai","group":"family","pub":"Bloomberg","title":"OpenAI board departures","date":"Jul 13, 2023","url":"https://www.bloomberg.com/news/articles/2023-07-13/republican-presidential-hopeful-will-hurd-leaves-board-of-openai"},{"id":"cnn_shivon","group":"family","pub":"CNN (via KRDO)","title":"Shivon Zilis testimony in Musk v. OpenAI","date":"May 7, 2026","url":"https://krdo.com/?p=1723886"},{"id":"reuters_kimbal","group":"family","pub":"Reuters factbox (via Yahoo)","title":"Kimbal Musk, Tesla director","date":"Jun 13, 2024","url":"https://hk.finance.yahoo.com/news/factbox-kimbal-musk-tesla-director-173038709.html"},{"id":"forbes_kimbal","group":"family","pub":"Forbes","title":"Real-time profile: Kimbal Musk ($1.7B)","date":"Oct 6, 2026","url":"https://www.forbes.com/profile/kimbal-musk/"},{"id":"kitchen_site","group":"family","pub":"The Kitchen","title":"The Kitchen Restaurant Group","date":"accessed Oct 2026","url":"https://thekitchen.com/"},{"id":"bizwest_kitchen","group":"family","pub":"BizWest","title":"Next Door Kitchen & Bar closes on Pearl Street","date":"Jul 10, 2023","url":"https://bizwest.com/2023/07/10/next-door-kitchen-bar-closed-on-pearl-street"},{"id":"packer_squareroots","group":"family","pub":"The Packer","title":"Square Roots pauses commercial production, pivots to farming-as-a-service","date":"Aug 3, 2023","url":"https://www.thepacker.com/news/industry/square-roots-pauses-commercial-production-pivots-farming-service-model"},{"id":"fortune_novasky","group":"family","pub":"Fortune","title":"Katzenberg backs Kimbal Musk drone company Nova Sky","date":"Aug 22, 2025","url":"https://fortune.com/2025/08/22/jeffrey-katzenberg-kimbal-musk-drone-nova-sky"},{"id":"tc_passionflix","group":"family","pub":"TechCrunch","title":"Passionflix raises $4.75M seed","date":"Nov 2, 2017","url":"https://techcrunch.com/2017/11/02/passionflix-seed-funding/"},{"id":"thr_passionflix","group":"family","pub":"The Hollywood Reporter","title":"AMC Networks invests in Tosca Musk's Passionflix","date":"c. 2022","url":"https://www.hollywoodreporter.com/business/business-news/amc-networks-invests-tosca-musk-streaming-service-passionflix-1235208573/"},{"id":"variety_passionflix","group":"family","pub":"Variety (via IMDb News)","title":"Passionflix originals and reach","date":"Dec 21, 2024","url":"https://m.imdb.com/news/ni65026158"},{"id":"passionflix_site","group":"family","pub":"Passionflix","title":"Plans and pricing","date":"accessed Oct 2026","url":"https://www.passionflix.com/"},{"id":"prh_maye","group":"family","pub":"Penguin Random House","title":"A Woman Makes a Plan by Maye Musk","date":"accessed Oct 2026","url":"https://penguinrandomhouse.com/books/607734/a-woman-makes-a-plan-by-maye-musk"},{"id":"cnbc_covergirl","group":"family","pub":"CNBC","title":"Maye Musk becomes CoverGirl's oldest model","date":"Sep 28, 2017","url":"https://www.cnbc.com/2017/09/28/elon-musks-mom-maye-musk-just-became-covergirls-oldest-model.html"},{"id":"si_maye","group":"family","pub":"Sports Illustrated Swimsuit","title":"2022 cover models","date":"May 16, 2022","url":"https://swimsuit.si.com/swimnews/sports-illustrated-swimsuit-2022-cover-models-kim-kardashian-ciara-maye-musk-yumi-nu"},{"id":"maye_site","group":"family","pub":"mayemusk.com","title":"About Maye Musk","date":"accessed Oct 2026","url":"https://www.mayemusk.com/about"},{"id":"servotech_errol","group":"family","pub":"Servotech (press release)","title":"Errol Musk joins global advisory board","date":"May 5, 2025","url":"https://servotech.in/press-releases/servotech-renewable-appoints-errol-musk-to-global-advisory-board"},{"id":"snopes_emerald","group":"family","pub":"Snopes","title":"The Musk family emerald mine story","date":"Nov 17, 2022","url":"https://www.snopes.com/news/2022/11/17/elon-musk-emerald-mine/"},{"id":"bi_emerald","group":"family","pub":"Business Insider (via Yahoo)","title":"The emerald mine, per Isaacson and Musk","date":"Sep 12, 2023","url":"https://ca.news.yahoo.com/elon-musk-really-telling-truth-105244327.html"},{"id":"fortune_lyndon","group":"family","pub":"Fortune","title":"SolarCity co-founder Lyndon Rive leaving Tesla","date":"May 16, 2017","url":"https://fortune.com/2017/05/16/solarcity-founder-former-ceo-lyndon-rive-leaving-tesla"},{"id":"dell_everdream","group":"family","pub":"SEC: Dell 8-K exhibit","title":"Dell to acquire Everdream","date":"Nov 15, 2007","url":"https://www.sec.gov/Archives/edgar/data/0000826083/000115752307011438/a5548629ex99_2.txt"},{"id":"cleantechnica_zola","group":"family","pub":"CleanTechnica","title":"SolarCity founders join ZOLA Electric","date":"Mar 23, 2019","url":"https://cleantechnica.com/2019/03/23/solarcity-founders-peter-lyndon-rive-join-zola-electric-to-advance-solar-in-africa"},{"id":"btpm_peter","group":"family","pub":"btpm.org (public radio)","title":"SolarCity co-founder joins his brother in leaving company","date":"Jul 19, 2017","url":"https://www.btpm.org/business-economy/2017-07-19/solarcity-co-founder-joins-his-brother-in-leaving-company"},{"id":"forbes_elon","group":"money","pub":"Forbes","title":"Real-time profile: Elon Musk ($1.046T)","date":"Oct 6, 2026","url":"https://www.forbes.com/profile/elon-musk/"},{"id":"bbg_elon","group":"money","pub":"Bloomberg Billionaires Index","title":"Elon Musk profile ($1.05T, rank #1)","date":"Oct 6, 2026","url":"https://www.bloomberg.com/billionaires/profiles/elon-r-musk/"},{"id":"cnbc_spcx_oct5","group":"money","pub":"CNBC","title":"SpaceX stock climbs; Musk a trillionaire again","date":"Oct 5, 2026","url":"https://www.cnbc.com/2026/10/05/spacex-stock-climbs-highest-since-june-returning-musk-to-trillionaire.html"},{"id":"forbes_500b","group":"money","pub":"Forbes","title":"Musk briefly becomes the first person worth $500 billion","date":"Oct 2, 2025","url":"https://www.forbes.com/sites/daniellechemtob/2025/10/02/forbes-daily-elon-musk-briefly-hits-500-billion/"},{"id":"forbes_600b","group":"money","pub":"Forbes","title":"First person ever worth $600 billion","date":"Dec 15, 2025","url":"https://www.forbes.com/sites/mattdurot/2025/12/15/elon-musk-just-became-the-first-person-ever-worth-600-billion/"},{"id":"forbes_700b","group":"money","pub":"Forbes","title":"First person ever worth $700 billion","date":"Dec 19, 2025","url":"https://www.forbes.com/sites/mattdurot/2025/12/19/elon-musk-just-became-the-first-person-ever-worth-700-billion-after-delaware-supreme-court-restored-his-voided-tesla-stock-options/"},{"id":"forbes_800b","group":"money","pub":"Forbes","title":"First person ever worth $800 billion","date":"Feb 3, 2026","url":"https://www.forbes.com/sites/mattdurot/2026/02/03/elon-musk-just-became-the-first-person-ever-worth-800-billion-after-spacex-acquired-xai/"},{"id":"forbes_1t","group":"money","pub":"Forbes","title":"SpaceX's IPO makes Musk the world's first trillionaire","date":"Jun 12, 2026","url":"https://www.forbes.com/sites/mattdurot/2026/06/12/spacexs-ipo-just-made-elon-musk-the-worlds-first-trillionaire/"},{"id":"forbes_13t","group":"money","pub":"Forbes","title":"SpaceX soars, Musk's net worth hits $1.3 trillion","date":"Jun 15, 2026","url":"https://www.forbes.com/sites/tylerroush/2026/06/15/spacex-soars-another-20-rocketing-musks-net-worth-to-13-trillion/"},{"id":"forbes_below1t","group":"money","pub":"Forbes","title":"Musk is no longer a trillionaire","date":"Jun 24, 2026","url":"https://www.forbes.com/sites/mattdurot/2026/06/24/elon-musk-is-no-longer-a-trillionaire/"},{"id":"forbes_record_year","group":"money","pub":"Forbes","title":"The world's richest person: $497B gained in 2025","date":"Mar 11, 2026","url":"https://www.forbes.com/sites/mattdurot/2026/03/11/the-worlds-richest-person/"},{"id":"tsla_10ka_2026","group":"money","pub":"SEC: Tesla 10-K/A","title":"Directors, officers and stock ownership","date":"Apr 30, 2026","url":"https://www.sec.gov/Archives/edgar/data/1318605/000110465926053166/tm2611837d1_10ka.htm"},{"id":"tsla_form4_jun2026","group":"money","pub":"SEC: Form 4 (Elon Musk, Tesla)","title":"Exercise of 303,960,630 options at $23.34","date":"Jun 17, 2026","url":"https://www.sec.gov/Archives/edgar/data/1318605/000110465926075213/tm2618092-2_4seq1.xml"},{"id":"tsla_10q_q2_2026","group":"money","pub":"SEC: Tesla 10-Q","title":"Q2 2026 (3,949,547,394 shares outstanding)","date":"Jul 2026","url":"https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"},{"id":"tsla_impl_2026","group":"money","pub":"SEC: Tesla exhibit 10.1","title":"2026 implementation agreement for the 2018 award","date":"Apr 21, 2026","url":"https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-2026x03x31xex101.htm"},{"id":"de_supreme_2025","group":"money","pub":"Delaware Supreme Court","title":"In re Tesla, Inc. Derivative Litigation (opinion)","date":"Dec 19, 2025","url":"https://static.blbglaw.com/docs/2025-12-19%20TESLA%20%E2%80%93%20DE%20Supreme%20Court%20Decision.pdf"},{"id":"tsla_8k_nov2025","group":"money","pub":"SEC: Tesla 8-K","title":"2025 annual meeting vote results","date":"Nov 2025","url":"https://www.sec.gov/Archives/edgar/data/1318605/000110465925108507/tm2530590d1_8k.htm"},{"id":"tsla_award_2025","group":"money","pub":"SEC: Tesla exhibit 99.2","title":"2025 CEO Performance Award terms","date":"Nov 2025","url":"https://www.sec.gov/Archives/edgar/data/1318605/000110465925108507/tm2530590d1_ex99-2.htm"},{"id":"spcx_10q","group":"money","pub":"SEC: SpaceX 10-Q","title":"Q2 2026 (ticker SPCX, Nasdaq)","date":"Aug 2026","url":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm"},{"id":"reuters_ipo","group":"money","pub":"Reuters","title":"SpaceX prices record $75 billion IPO at $135 a share","date":"Jun 11, 2026","url":"https://www.reuters.com/world/musks-spacex-prices-record-75-billion-ipo-135-share-2026-06-11/"},{"id":"spcx_8k_ipo","group":"money","pub":"SEC: SpaceX 8-K","title":"IPO closing, incl. underwriters’ option (638,888,888 shares)","date":"Jun 2026","url":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026043288/spaceexplorationtechnologi.htm"},{"id":"spcx_13g","group":"money","pub":"SEC: Schedule 13G (Elon Musk, SpaceX)","title":"6,418,547,515 shares, 48.4% of Class A","date":"Aug 13, 2026","url":"https://www.sec.gov/Archives/edgar/data/1181412/000110465926095936/xslSCHEDULE_13G_X02/primary_doc.xml"},{"id":"spcx_424b4","group":"money","pub":"SEC: SpaceX prospectus (424B4)","title":"IPO prospectus: xAI and X acquisitions, voting power","date":"Jun 2026","url":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"},{"id":"forbes_spacex_award","group":"money","pub":"Forbes","title":"What SpaceX and Tesla say Musk must do for more billions","date":"May 22, 2026","url":"https://www.forbes.com/sites/tylerroush/2026/05/22/everything-spacex-and-tesla-say-elon-musk-must-do-mars-colony-robots-more-for-more-billions/"},{"id":"abc_xai_x","group":"money","pub":"AP (via ABC News)","title":"Musk sells X to xAI in $33 billion stock deal","date":"Mar 28, 2025","url":"https://abcnews.go.com/Technology/wireStory/elon-musk-sells-xai-33-billion-stock-deal-120279788"},{"id":"bbgtax_neuralink","group":"money","pub":"Bloomberg (via Bloomberg Tax)","title":"Neuralink raises $650 million","date":"Jun 2, 2025","url":"https://news.bloombergtax.com/private-equity/neuralink-raises-650-million-in-late-stage-funding-round"},{"id":"siliconangle_neuralink","group":"money","pub":"SiliconANGLE","title":"Neuralink raises $650M at a reported $9B pre-money valuation","date":"Jun 2, 2025","url":"https://siliconangle.com/2025/06/02/neuralink-raises-another-650m-reported-9b-pre-money-valuation/"},{"id":"reuters_boring","group":"money","pub":"Reuters (via Galveston County Daily News)","title":"The Boring Company raises $3 billion at a $23 billion valuation","date":"Sep 10, 2026","url":"https://www.galvnews.com/news_reuters/business/musks-tunnel-startup-the-boring-company-raises-3-billion-at-23-billion-valuation/article_82ae0fd9-70ca-576f-8d81-ec24d5da6b36.html"},{"id":"ark_venture","group":"money","pub":"ARK Invest","title":"ARK Venture Fund portfolio","date":"as of Sep 30, 2026","url":"https://www.ark-funds.com/portfolio"},{"id":"bi_zip2_paypal","group":"money","pub":"Business Insider","title":"How Elon Musk made his fortune (Zip2, PayPal)","date":"Oct 2017","url":"https://www.businessinsider.com/tesla-elon-musk-net-worth-2017-10"},{"id":"ebay_paypal_8k","group":"money","pub":"SEC: PayPal 8-K exhibit","title":"eBay to acquire PayPal, valued at $1.5 billion","date":"Jul 8, 2002","url":"https://www.sec.gov/Archives/edgar/data/0001103415/000091205702026650/a2084015zex-99_1.htm"},{"id":"tsla_solarcity_announce","group":"money","pub":"SEC: Tesla exhibit 99.2","title":"Tesla to acquire SolarCity ($2.6B equity value, all stock)","date":"Aug 1, 2016","url":"https://www.sec.gov/Archives/edgar/data/1318605/000119312516665620/d200129dex992.htm"},{"id":"tsla_solarcity_close","group":"money","pub":"SEC: Tesla 8-K","title":"SolarCity acquisition completed","date":"Nov 21, 2016","url":"https://www.sec.gov/Archives/edgar/data/1318605/000119312516773705/d292845d8k.htm"},{"id":"twitter_8k_close","group":"money","pub":"SEC: Twitter 8-K","title":"Merger completed at $54.20 per share","date":"Oct 27, 2022","url":"https://www.sec.gov/Archives/edgar/data/1418091/000119312522272772/d411753d8k.htm"},{"id":"fortune_tsla_aug2022","group":"money","pub":"Fortune","title":"Musk sells $6.9 billion of Tesla stock","date":"Aug 10, 2022","url":"https://fortune.com/2022/08/10/elon-musk-tesla-stock-6-9-billion-twitter-deal-cash-fund"},{"id":"forbes_tsla_sales_2022","group":"money","pub":"Forbes","title":"Musk has sold $3.9 billion of Tesla stock since Friday","date":"Nov 8, 2022","url":"https://www.forbes.com/sites/mattdurot/2022/11/08/elon-musk-has-sold-39-billion-of-tesla-stock-since-friday/"},{"id":"bbglaw_dec2022","group":"money","pub":"Bloomberg (via Bloomberg Law)","title":"Musk sells $3.6 billion of Tesla stock","date":"Dec 2022","url":"https://news.bloomberglaw.com/mergers-and-acquisitions/elon-musk-sells-3-6-billion-worth-of-his-stake-in-tesla-1"},{"id":"forbes_taxes_2021","group":"money","pub":"Forbes","title":"Musk says he will pay over $11 billion in taxes this year","date":"Dec 20, 2021","url":"https://www.forbes.com/sites/siladityaray/2021/12/20/elon-musk-claims-he-will-pay-more-than-11-billion-in-taxes-this-year/"},{"id":"mf_990pf_2024","group":"record","pub":"IRS Form 990-PF (via Candid/GuideStar)","title":"Musk Foundation, tax year 2024","date":"filed Nov 2025","url":"https://pdf.guidestar.org/PDF_Images/2024/852/133/2024-852133087-202543219349108074-F.pdf"},{"id":"propublica_mf","group":"record","pub":"ProPublica Nonprofit Explorer","title":"Musk Foundation filings","date":"accessed Oct 2026","url":"https://projects.propublica.org/nonprofits/organizations/852133087"},{"id":"nyt_mf","group":"record","pub":"New York Times (via Salt Lake Tribune)","title":"Musk Foundation didn't give away enough","date":"Dec 14, 2024","url":"https://sltrib.com/news/politics/2024/12/14/musk-foundation-didnt-give-away"},{"id":"cbs_277m","group":"record","pub":"CBS News","title":"Musk spent $277 million on the 2024 election (FEC filings)","date":"Dec 6, 2024","url":"https://www.cbsnews.com/news/elon-musk-277-million-trump-republican-candidates-donations/"},{"id":"ap_wisconsin","group":"record","pub":"AP (via WSLS)","title":"Wisconsin Supreme Court race spending passes $100M","date":"Apr 4, 2025","url":"https://www.wsls.com/news/politics/2025/04/04/billionaires-musk-and-soros-push-wisconsin-supreme-court-race-spending-over-100m/"},{"id":"reuters_americapac_2026","group":"record","pub":"Reuters (via The Star)","title":"Musk's super PAC wades into the midterms","date":"Sep 4, 2026","url":"https://www.thestar.com.my/news/world/2026/09/04/musk-super-pac-wades-into-us-midterms-with-800000-for-republicans-in-close-races"},{"id":"court_openai_jan2026","group":"record","pub":"U.S. District Court, N.D. Cal. (via CourtListener)","title":"Musk v. Altman: order (donations, board role)","date":"Jan 15, 2026","url":"https://storage.courtlistener.com/recap/gov.uscourts.cand.433688/gov.uscourts.cand.433688.390.0.pdf"},{"id":"ap_openai_bid","group":"record","pub":"AP (via ClickOnDetroit)","title":"OpenAI board rejects Musk group's $97.4 billion offer","date":"Feb 14, 2025","url":"https://www.clickondetroit.com/news/politics/2025/02/14/openai-board-unanimously-rejects-elon-musks-974-billion-proposal/"},{"id":"ap_openai_verdict","group":"record","pub":"AP (via 6abc)","title":"Jury sides with OpenAI; Musk filed too late","date":"May 18, 2026","url":"https://6abc.com/post/musk-altman-jury-sides-openai-landmark-trial-says-musks-lawsuit-was-not-filed-time/19125345/"},{"id":"kimbal_f4_2021feb","group":"record","pub":"SEC: Form 4 (Kimbal Musk)","title":"Sale of 30,000 TSLA shares","date":"Feb 2021","url":"https://www.sec.gov/Archives/edgar/data/1318605/000149473121000001/edgardoc.xml"},{"id":"kimbal_f4_2021nov","group":"record","pub":"SEC: Form 4 (Kimbal Musk)","title":"Sale of 88,500 TSLA shares; 25,000 gifted to charity","date":"Nov 2021","url":"https://www.sec.gov/Archives/edgar/data/1318605/000149473121000003/edgardoc.xml"},{"id":"kimbal_f4_2023apr","group":"record","pub":"SEC: Form 4 (Kimbal Musk)","title":"Sale of 100,000 TSLA shares","date":"Apr 2023","url":"https://www.sec.gov/Archives/edgar/data/1318605/000149473123000001/edgardoc.xml"},{"id":"kimbal_f4_2024nov","group":"record","pub":"SEC: Form 4 (Kimbal Musk)","title":"Sale of 60,500 TSLA shares","date":"Nov 2024","url":"https://www.sec.gov/Archives/edgar/data/1318605/000149473124000001/edgardoc.xml"},{"id":"kimbal_f4_2025feb","group":"record","pub":"SEC: Form 4 (Kimbal Musk)","title":"Sale of 75,000 TSLA shares","date":"Feb 2025","url":"https://www.sec.gov/Archives/edgar/data/1318605/000149473125000001/edgardoc.xml"},{"id":"kimbal_f4_2025may_set","group":"record","pub":"SEC: Form 4 (Kimbal Musk)","title":"235,162 options cancelled under the director-pay settlement","date":"May 1, 2025","url":"https://www.sec.gov/Archives/edgar/data/1318605/000110465925043637/tm2513581-4_4seq1.xml"},{"id":"kimbal_f4_2025may","group":"record","pub":"SEC: Form 4 (Kimbal Musk)","title":"Option exercise and sale of 91,588 TSLA shares","date":"May 2025","url":"https://www.sec.gov/Archives/edgar/data/1318605/000110465925054371/tm2516319-1_4seq1.xml"},{"id":"kimbal_f4_2025dec","group":"record","pub":"SEC: Form 4 (Kimbal Musk)","title":"Sale of 56,820 TSLA shares; 15,242 to a donor-advised fund","date":"Dec 2025","url":"https://www.sec.gov/Archives/edgar/data/1318605/000110465925120387/tm2533052-2_4seq1.xml"},{"id":"ft_kimbal_sec","group":"record","pub":"Financial Times (via Irish Times)","title":"SEC inquiry into the brothers' share sales","date":"Feb 25, 2022","url":"https://www.irishtimes.com/business/technology/elon-musk-and-his-brother-under-sec-investigation-over-share-sales-1.4812035"},{"id":"de_settlement_2026","group":"record","pub":"Delaware Supreme Court (via Justia)","title":"Tesla director-compensation settlement affirmed","date":"Jan 30, 2026","url":"https://law.justia.com/cases/delaware/supreme-court/2026/52-2025-53-2025.html"},{"id":"bfa_settlement","group":"record","pub":"Bleichmar Fonti & Auld (plaintiffs’ firm)","title":"Tesla board compensation settlement","date":"Jan 2025","url":"https://www.bfalaw.com/news/bfa-secures-the-largest-delaware-derivative-settlement-in-tesla-board-compensation-case"},{"id":"latimes_2012","group":"homes","pub":"Los Angeles Times","title":"Elon Musk pays $17 million for Bel-Air manse","date":"Dec 31, 2012","url":"https://www.latimes.com/business/realestate/la-fi-hotprop-elon-musk-20121231-story.html"},{"id":"latimes_wilder_2013","group":"homes","pub":"Los Angeles Times","title":"Elon Musk spends $6.75 million for former Gene Wilder home","date":"Nov 4, 2013","url":"https://www.latimes.com/business/realestate/hot-property/la-fi-hotprop-elon-musk-20131104-story.html"},{"id":"trd_2017","group":"homes","pub":"The Real Deal","title":"Elon Musk buys fifth Bel Air property for $24.25M","date":"Mar 22, 2017","url":"https://therealdeal.com/la/2017/03/22/elon-musk-buys-fifth-bel-air-property-for-24-25m"},{"id":"latimes_mortgages_2019","group":"homes","pub":"Los Angeles Times (Bloomberg)","title":"Elon Musk takes out five monster mortgages","date":"Feb 22, 2019","url":"https://www.latimes.com/business/la-fi-elon-musk-mortgages-morgan-stanley-20190222-story.html"},{"id":"latimes_may2020","group":"homes","pub":"Los Angeles Times","title":"Is Elon Musk really trying to sell his L.A. homes?","date":"May 4, 2020","url":"https://www.latimes.com/business/real-estate/story/2020-05-04/is-elon-musk-really-selling-his-la-homes"},{"id":"latimes_may14_2020","group":"homes","pub":"Los Angeles Times","title":"Musk doubles down on his promise to 'own no house'","date":"May 14, 2020","url":"https://www.latimes.com/business/real-estate/story/2020-05-14/the-elon-musk-housing-sell-off-ramps-up"},{"id":"wsj_jun2020","group":"homes","pub":"Wall Street Journal","title":"Musk sells Bel-Air mansion for $29 million","date":"Jun 19, 2020","url":"https://www.wsj.com/articles/elon-musk-sells-bel-air-mansion-to-tech-billionaire-for-29-million-11592597833"},{"id":"latimes_dec2020","group":"homes","pub":"Los Angeles Times","title":"Elon Musk sells four Bel-Air homes for a combined $62 million","date":"Dec 30, 2020","url":"https://www.latimes.com/business/real-estate/story/2020-12-30/elon-musk-sells-three-bel-air-homes-for-a-combined-40-9-million"},{"id":"mansionglobal_2021","group":"homes","pub":"Mansion Global","title":"Elon Musk officially 'owns no home'","date":"Dec 3, 2021","url":"https://www.mansionglobal.com/articles/elon-musk-officially-owns-no-home-01638546737"},{"id":"sfgate_2021","group":"homes","pub":"SFGATE","title":"Musk's historic Hillsborough mansion finally sells","date":"Nov 2021","url":"https://www.sfgate.com/local/article/Elon-Musk-historic-Hillsborough-mansion-16625789.php"},{"id":"wsj_mar2022","group":"homes","pub":"Wall Street Journal","title":"Musk has sold seven homes for nearly $130 million","date":"Mar 10, 2022","url":"https://www.wsj.com/real-estate/luxury-homes/elon-musk-has-sold-seven-homes-for-nearly-130-million-after-vowing-to-own-no-house-11646927878"},{"id":"bi_50k","group":"homes","pub":"Business Insider","title":"Musk says he lives in a rented $50,000 home","date":"Jul 2, 2021","url":"https://www.businessinsider.com/elon-musk-rents-home-twitter-real-estate-2021-7"},{"id":"realtor_50k","group":"homes","pub":"Realtor.com","title":"Inside Musk's $50,000 Texas home","date":"Nov 20, 2024","url":"https://www.realtor.com/news/celebrity-real-estate/elon-musk-humble-home-texas-compound/"},{"id":"cbs_friends","group":"homes","pub":"CBS News","title":"Musk says he doesn't own a house and stays with friends","date":"Apr 18, 2022","url":"https://www.cbsnews.com/news/elon-musk-house-stays-friends-net-worth/"},{"id":"realtor_wilder_2025","group":"homes","pub":"Realtor.com","title":"Musk reclaims ownership of the Gene Wilder home","date":"Jun 24, 2025","url":"https://www.realtor.com/news/celebrity-real-estate/elon-musk-home-gene-wilder-foreclosure-sale/"},{"id":"techcrunch_austin","group":"homes","pub":"TechCrunch","title":"Musk clashes with neighbors in an Austin suburb ($6M home bought in 2022)","date":"May 5, 2025","url":"https://techcrunch.com/?p=3003352"},{"id":"ap_starbase","group":"homes","pub":"AP","title":"SpaceX launch site approved as the new city of Starbase","date":"May 3, 2025","url":"https://apnews.com/article/elon-musk-starbase-texas-city-7863bf3bac65e9718eef19b27978933b"},{"id":"bbgtax_tesla_hq","group":"homes","pub":"Bloomberg Tax","title":"Tesla makes its headquarters move to Texas official","date":"Dec 1, 2021","url":"https://news.bloombergtax.com/daily-tax-report-state/tesla-makes-it-official-completing-headquarters-move-to-texas"},{"id":"cnbc_gigatexas_cost","group":"homes","pub":"CNBC","title":"Tesla Texas factory will cost at least $1.06 billion (filings)","date":"Nov 23, 2021","url":"https://www.cnbc.com/2021/11/23/tesla-texas-gigafactory-will-cost-at-least-1point06-billion-filings.html"},{"id":"tesla_gigatexas","group":"homes","pub":"Tesla","title":"Gigafactory Texas","date":"accessed Oct 2026","url":"https://tesla.com/giga-texas"},{"id":"ap_hq_move","group":"homes","pub":"AP","title":"Musk says he is moving SpaceX and X headquarters to Texas","date":"Jul 16, 2024","url":"https://apnews.com/article/musk-moving-headquarters-x-spacex-texas-california-e5300a4b6e1c4168061886eb492a5431"},{"id":"reuters_spacex_hq","group":"homes","pub":"Reuters","title":"SpaceX headquarters to be in Starbase, Texas","date":"Dec 12, 2024","url":"https://www.reuters.com/technology/space/musk-says-spacex-headquarters-be-starbase-texas-2024-12-13/"},{"id":"reuters_x_bastrop","group":"homes","pub":"Reuters","title":"X moved its headquarters to Bastrop, Texas (court ruling story)","date":"Sep 16, 2025","url":"https://www.reuters.com/legal/litigation/musks-x-can-sue-watchdog-media-matters-texas-us-judge-rules-2025-09-16/"}],"photos":{"elon":{"file":"Elon Musk - 54820081119 (cropped).jpg","author":"Gage Skidmore","license":"CC BY-SA 4.0","w":2924,"h":3843,"fx":0.5,"fy":0.38,"zoom":1.35,"year":"2025"},"kimbal":{"file":"KIMBAL MUSK OFFICIAL HEADSHOT (cropped).jpg","author":"1000x2020","license":"CC BY-SA 4.0","w":2390,"h":3184,"fx":0.58,"fy":0.47,"zoom":1.08,"year":"2013"},"tosca":{"file":"Tosca-Musk Founder-CEO Passionflix March 1 2019.jpg","author":"Spacexforanewlife","license":"CC BY-SA 4.0","w":1590,"h":1972,"fx":0.52,"fy":0.45,"zoom":1.25,"year":"2019"},"maye":{"file":"Maye-Musk (cropped).jpg","author":"Gilzetbase","license":"CC BY-SA 4.0","w":871,"h":1168,"fx":0.5,"fy":0.45,"zoom":1.18,"year":"2022"},"errol":{"file":"Эррол Маск посетил Эйдос - 01 (23-10-2025) (cropped).jpg","author":"ЭЙДОС (Eidos)","license":"CC BY 4.0","w":1720,"h":2393,"fx":0.5,"fy":0.4,"zoom":1.32,"year":"2025"},"talulah":{"file":"TalulahRileyAug09 (cropped).jpg","author":"rodwey2004","license":"CC BY-SA 2.0","w":1339,"h":1269,"fx":0.5,"fy":0.5,"zoom":1.22,"year":"2009"},"grimes":{"file":"Grimes Governors Ball 2014 03 (cropped).png","author":"Jordan Uhl","license":"CC BY 2.0","w":1461,"h":1928,"fx":0.6,"fy":0.2,"zoom":1.8,"year":"2014"},"shivon":{"file":"Shivon Zilis in 2017.jpg","author":"Steve Jurvetson","license":"CC BY 2.0","w":250,"h":331,"fx":0.6,"fy":0.37,"zoom":1.25,"year":"2017"},"ashley":{"file":"Ashley St. Clair at 2026 Venice Film Festival (Zoë Schiffler cropped out).jpg","author":"CaseyJNewell","license":"CC BY-SA 4.0","w":413,"h":520,"fx":0.5,"fy":0.55,"zoom":1.0,"year":"2026"},"lyndon":{"file":"Lyndon Rive 2015.jpg","author":"Steve Jurvetson","license":"CC BY 2.0","w":314,"h":475,"fx":0.5,"fy":0.47,"zoom":1.0,"year":"2015"}},"licenses":{"CC BY-SA 4.0":"https://creativecommons.org/licenses/by-sa/4.0/","CC BY 4.0":"https://creativecommons.org/licenses/by/4.0/","CC BY 2.0":"https://creativecommons.org/licenses/by/2.0/","CC BY-SA 2.0":"https://creativecommons.org/licenses/by-sa/2.0/"},"people":[{"id":"elon","name":"Elon Musk","short":"Elon","rel":"The center of the map","tag":"$1.046T","tagKind":"money","born":"Born 1971","bornSrc":["britannica_elon"],"group":"center","layout":{"x":55,"row":2,"big":true},"photo":"elon","summary":{"t":"Runs Tesla and SpaceX. SpaceX bought xAI (maker of the Grok chatbot) in February 2026, and xAI had already absorbed X, formerly Twitter. Since June 2026, anyone can buy SpaceX stock.","src":["tsla_10ka_2026","spcx_424b4","reuters_ipo"]},"worth":{"value":"$1.046 trillion","by":"Forbes real-time estimate","date":"Oct 6, 2026","src":["forbes_elon"],"also":{"value":"$1.05 trillion","by":"Bloomberg Billionaires Index, rank #1","src":["bbg_elon"]}},"owns":[{"co":"spacex","t":"Biggest shareholder. His SEC filing counts 6.42 billion shares, 48.4% of the Class A stock once his super-voting shares are counted as converted. Right after the IPO he held about 82% of the votes.","src":["spcx_13g","spcx_424b4"]},{"co":"tesla","t":"413 million unrestricted shares (about 10.5% of Tesla), plus 286 million restricted shares from his 2018 pay package and 424 million unvested shares from his 2025 award.","src":["tsla_form4_jun2026","tsla_10q_q2_2026","tsla_10ka_2026"]},{"co":"boring","t":"Private. Valued at $23 billion in a September 2026 funding round. Bloomberg values his stake at $13.1 billion.","src":["reuters_boring","bbg_elon"]},{"co":"neuralink","t":"Private. Raised $650 million in June 2025 at a reported $9 billion valuation before the new money. Bloomberg values his stake at $3.4 billion.","src":["bbgtax_neuralink","siliconangle_neuralink","bbg_elon"]}],"record":[{"h":"Tesla 2025 pay package","t":"Approved Nov 6, 2025 with 76.6% of all votes cast, counting abstentions (77% of for-and-against votes; our math from the filing). Up to 423.7 million shares in 12 tranches, unlocked by goals that end at an $8.5 trillion market value.","src":["tsla_8k_nov2025","tsla_award_2025"]},{"h":"His 2018 pay package came back","t":"Delaware's Supreme Court reinstated it on Dec 19, 2025. On June 16, 2026 he exercised all 303,960,630 options at $23.34 a share, handing back about 17.5 million shares to cover the cost. He forfeits the remaining ~286 million if he leaves Tesla before they vest on Jan 19, 2028, and after that he generally can't sell them for five more years, except to pay taxes.","src":["de_supreme_2025","tsla_form4_jun2026","tsla_impl_2026"]},{"h":"SpaceX's pay plan","t":"In January 2026 SpaceX granted him 1 billion restricted super-voting shares that vest only if SpaceX hits market-value targets and sets up a permanent Mars colony of at least 1 million people, plus 302 million more tied to space-based data centers. He can already vote them, and they are part of his 6.42 billion shares.","src":["spcx_424b4","forbes_spacex_award"]},{"h":"Political spending","t":"$277 million in the 2024 election cycle, $239 million of it to his America PAC, per FEC filings. In the 2025 Wisconsin Supreme Court race: at least $3 million himself plus nearly $19 million from groups he funds. In September 2026 Reuters reported America PAC was sitting on a $50 million war chest for the midterms.","src":["cbs_277m","ap_wisconsin","reuters_americapac_2026"]},{"h":"The Musk Foundation","t":"$14.7 billion in assets at market value and $474 million in grants paid in 2024, per its tax return. The New York Times reported it gave away $421 million less than required in 2023.","src":["mf_990pf_2024","propublica_mf","nyt_mf"]},{"h":"OpenAI","t":"Co-founded it and donated about $38 million, a federal court order says. A group he led offered $97.4 billion for control in February 2025; the board said no. In May 2026 a jury found he sued too late, and his case was dismissed.","src":["court_openai_jan2026","ap_openai_bid","ap_openai_verdict"]},{"h":"Twitter","t":"Bought it for $44 billion ($54.20 a share) in October 2022 and sold about $22.9 billion of Tesla stock that year (our sum of four reported sales). X is now part of SpaceX.","src":["twitter_8k_close","abc_xai_x","fortune_tsla_aug2022","forbes_tsla_sales_2022","bbglaw_dec2022","spcx_424b4"]},{"h":"Taxes","t":"Said he would pay \"over $11 billion in taxes\" for 2021.","src":["forbes_taxes_2021"]}],"facts":[{"t":"First person ever worth $500 billion (Oct 1, 2025), $600 billion (Dec 15, 2025), $700 billion (Dec 19, 2025), $800 billion (Feb 3, 2026) and $1 trillion (June 12, 2026).","src":["forbes_500b","forbes_600b","forbes_700b","forbes_800b","forbes_1t"]},{"t":"Gained $497 billion in 2025, the most wealth anyone has ever gained in a single year.","src":["forbes_record_year"]},{"t":"SpaceX's IPO raised $75 billion, about three times the old record (Saudi Aramco's $25.6 billion). Including 83.3 million extra shares the underwriters bought under their option, it raised $86.25 billion before fees.","src":["reuters_ipo","spcx_8k_ipo"]},{"t":"In 2021 he said his main home was a roughly $50,000 house he rents from SpaceX.","src":["realtor_50k","bi_50k"]}],"kidsNote":{"t":"At least 14 reported children with four women, including Nevada, who died in infancy in 2002. Names only; we don’t show photos of his kids.","src":["forbesau_legion","today_kids"]}},{"id":"kimbal","name":"Kimbal Musk","short":"Kimbal","rel":"Brother","tag":"$1.7B","tagKind":"money","born":"Born 1972","bornSrc":["reuters_kimbal"],"group":"siblings","layout":{"x":71,"row":2},"photo":"kimbal","summary":{"t":"Elon's younger brother and business partner since Zip2. On Tesla's board since 2004. Chairs The Kitchen restaurant group and leads the drone-show company Nova Sky Stories.","src":["tsla_10ka_2026","reuters_kimbal","fortune_novasky"]},"worth":{"value":"$1.7 billion","by":"Forbes real-time estimate (source of wealth: Tesla, SpaceX)","date":"Oct 6, 2026","src":["forbes_kimbal"]},"owns":[{"co":"tesla","t":"Director since April 2004. Owned 1,376,373 shares at the end of 2025, all pledged as collateral for personal loans.","src":["tsla_10ka_2026"]},{"co":"spacex","t":"An estimated 0.05% stake (Forbes). Sat on SpaceX’s board from 2002 to January 2022.","src":["forbes_kimbal","reuters_kimbal"]},{"co":"kitchen","t":"Co-founder and executive chairman. Bistros in Boulder, Denver and Austin; several of its casual Next Door restaurants closed in 2023.","src":["tsla_10ka_2026","kitchen_site","bizwest_kitchen"]},{"co":"novasky","t":"The drone light-show company he founded and leads. It bought Intel’s drone-show business and was raising a $50 million round in 2025.","src":["fortune_novasky"]},{"co":"squareroots","t":"Indoor-farming company he co-founded. Paused some of its own production in 2023 and moved to \"farming as a service.\"","src":["tsla_10ka_2026","packer_squareroots"]},{"co":"zip2","t":"Co-founded with Elon. Compaq bought it in 1999 for a reported $307 million.","src":["tsla_10ka_2026","reuters_kimbal"]}],"record":[{"h":"Tesla stock sales","t":"Sold about $255 million of Tesla stock in seven sales from 2021 to 2025 (our math from his SEC Form 4 filings).","src":["kimbal_f4_2021feb","kimbal_f4_2021nov","kimbal_f4_2023apr","kimbal_f4_2024nov","kimbal_f4_2025feb","kimbal_f4_2025may","kimbal_f4_2025dec"]},{"h":"The sale before the Twitter poll","t":"On Nov 5, 2021 he sold 88,500 shares (about $109 million), the day before Elon’s Twitter poll about selling stock. The SEC asked about it. Elon said Kimbal \"had no idea I was going to do a Twitter poll.\"","src":["kimbal_f4_2021nov","ft_kimbal_sec"]},{"h":"Board pay settlement","t":"Tesla’s directors, Kimbal included, gave back $735 million in options, cash and stock to settle a lawsuit over their pay. Delaware’s Supreme Court upheld the deal in January 2026.","src":["de_settlement_2026","kimbal_f4_2025may_set","bfa_settlement"]},{"h":"Gifts","t":"Gave 25,000 Tesla shares to charity in 2021 and 15,242 to a donor-advised fund in 2025.","src":["kimbal_f4_2021nov","kimbal_f4_2025dec"]}],"facts":[{"t":"Was a seed investor in his sister Tosca’s streaming service, Passionflix.","src":["tc_passionflix"]},{"t":"Nova Sky started with 9,000 light drones.","src":["reuters_kimbal"]},{"t":"Sat on Chipotle’s board from 2013 to 2019.","src":["reuters_kimbal"]}]},{"id":"tosca","name":"Tosca Musk","short":"Tosca","rel":"Sister","tag":"Passionflix","born":"Born c. 1974","bornSrc":["cnn_tosca"],"group":"siblings","layout":{"x":87,"row":2},"photo":"tosca","summary":{"t":"Director and producer. Co-founder and CEO of Passionflix, a streaming service that turns romance novels into movies and series.","src":["cnbc_family_2018"]},"worth":{"none":"No reliable public estimate. Forbes and Bloomberg don’t track her."},"owns":[{"co":"passionflix","t":"Founded 2017. Has raised more than $22 million, including a $9.4 million round led by AMC Networks. Plans start at $6.99 a month.","src":["thr_passionflix","passionflix_site"]}],"facts":[{"t":"Her brother Kimbal was one of the investors in its $4.75 million seed round (2017).","src":["tc_passionflix"]},{"t":"By December 2024 Passionflix had made 28 original movies, 4 series and 11 short films, streaming in 150+ countries.","src":["variety_passionflix"]}]},{"id":"maye","name":"Maye Musk","short":"Maye","rel":"Mother","tag":"Model · author","born":"Born 1948","group":"parents","layout":{"x":63,"row":1},"photo":"maye","summary":{"t":"Model, registered dietitian and author of A Woman Makes a Plan. Born in Canada.","src":["prh_maye","people_maye"]},"worth":{"none":"No reliable public estimate."},"facts":[{"t":"Became CoverGirl’s oldest model at 69 (2017).","src":["cnbc_covergirl"]},{"t":"Sports Illustrated Swimsuit cover star at 74 (2022).","src":["si_maye"]},{"t":"Her book has been translated into 36 languages.","src":["maye_site"]},{"t":"Her twin sister is the mother of Elon’s cousins Lyndon, Peter and Russ Rive.","src":["cbc_haldeman","startribune_rive"]},{"t":"Married Errol in 1970; they divorced nine years later.","src":["people_maye"]}]},{"id":"errol","name":"Errol Musk","short":"Errol","rel":"Father","tag":"Engineer","born":"Born c. 1946","bornSrc":["moscowtimes_errol"],"group":"parents","layout":{"x":79,"row":1},"photo":"errol","summary":{"t":"South African engineer and property developer. In May 2025 he joined the global advisory board of Servotech, an Indian EV-charging and renewable-energy company.","src":["servotech_errol"]},"worth":{"none":"No reliable public estimate."},"disputed":[{"h":"The emerald mine","t":"Errol has said he became \"a half owner\" of an emerald mine in Zambia. Elon said in a 2014 interview, later republished by AskMen, that his father \"had a share in an emerald mine in Zambia,\" but in 2019 posted \"He didn’t own an emerald mine.\" Walter Isaacson’s biography says Errol traded a plane for emeralds in 1986.","src":["snopes_emerald","bi_emerald"]}],"note":"Errol has children from later relationships. They are private people and aren’t shown here."},{"id":"kaye","name":"Maye’s twin sister","short":"Twin","rel":"Mother of the Rive cousins","tag":"Private person","born":"","connector":true,"initials":"•","group":"cousins","layout":{"x":20,"row":1,"small":true},"photo":null,"summary":{"t":"Maye’s twin sister, mother of Lyndon, Peter and Russ Rive. She is a private person, so she appears only as a connector in the tree.","src":["cbc_haldeman","startribune_rive"]},"worth":null},{"id":"haldemans","name":"Joshua & Winnifred Haldeman","short":"The Haldemans","rel":"Grandparents","tag":"“The Flying Haldemans”","born":"Joshua: 1902–1974","group":"grand","layout":{"x":41.5,"row":0,"small":true},"photo":null,"initials":"JH","summary":{"t":"Elon’s grandparents on his mother’s side. In 1942 Joshua, a pilot and adventurer, took up dancing; a few months later he married his instructor, Winnifred Fletcher. They had five children, including twin girls in 1948: Maye and her sister.","src":["cbc_haldeman"]},"worth":null,"facts":[{"t":"Newspapers called them “the Flying Haldemans.” Elon has said they flew “with literally no instruments — not even a radio.”","src":["cbc_haldeman"]},{"t":"In 1954 they flew 30,000 miles, up Africa and across Asia to Australia.","src":["bi_haldeman"]},{"t":"Joshua led expeditions hunting for the mythical “Lost City of the Kalahari.”","src":["cbc_haldeman"]},{"t":"Joshua died in a plane crash in 1974.","src":["cbc_haldeman"]},{"t":"A 2025 CBC investigation also documents his political activism and views it describes as conspiracist.","src":["cbc_haldeman"]}]},{"id":"lyndon","name":"Lyndon Rive","short":"Lyndon","rel":"Cousin","tag":"SolarCity","born":"","group":"cousins","layout":{"x":7,"row":2},"photo":"lyndon","summary":{"t":"Co-founded SolarCity with his brother Peter in 2006, with financial backing from Elon. It became Tesla’s solar business.","src":["fortune_lyndon"]},"worth":{"none":"No reliable public estimate."},"owns":[{"co":"solarcity","t":"Tesla bought SolarCity in an all-stock deal worth $2.6 billion, closed Nov 21, 2016. Just before, he owned 3.9% of SolarCity (4.03 million shares, counting options).","src":["tsla_solarcity_announce","tsla_solarcity_close","sec_s4a_solarcity"]},{"co":"everdream","t":"The brothers’ earlier company. Dell bought it in 2007; the price wasn’t disclosed.","src":["dell_everdream","startribune_rive"]}],"facts":[{"t":"Became board chairman of off-grid solar company ZOLA Electric in 2019.","src":["cleantechnica_zola"]},{"t":"SolarCity started on an RV trip to Burning Man, where Elon suggested they get into solar.","src":["startribune_rive"]},{"t":"Left Tesla in June 2017.","src":["fortune_lyndon"]}]},{"id":"peter","name":"Peter Rive","short":"Peter","rel":"Cousin","tag":"SolarCity","born":"","group":"cousins","layout":{"x":20,"row":2},"photo":null,"summary":{"t":"SolarCity co-founder and chief technology officer.","src":["sec_s4a_solarcity"]},"worth":{"none":"No reliable public estimate."},"owns":[{"co":"solarcity","t":"Owned 3.8% of SolarCity (3.93 million shares, counting options) just before Tesla bought it. Left Tesla in 2017.","src":["sec_s4a_solarcity","btpm_peter"]}],"facts":[{"t":"Joined ZOLA Electric as an operational and technical adviser in 2019.","src":["cleantechnica_zola"]}]},{"id":"russ","name":"Russ Rive","short":"Russ","rel":"Cousin","tag":"Everdream","born":"","group":"cousins","layout":{"x":33,"row":2},"photo":null,"summary":{"t":"Tech entrepreneur. Lyndon credits Russ with the idea for Everdream, a company that managed PCs remotely. The brothers ran it for eight years before Dell bought it in 2007.","src":["startribune_rive","dell_everdream"]},"worth":{"none":"No reliable public estimate."}},{"id":"justine","name":"Justine Wilson","short":"Justine","rel":"Ex-wife · 2000–2008","tag":"Author","born":"","group":"partners","layout":{"x":12,"row":3,"partner":true},"photo":null,"summary":{"t":"Canadian author who published as Justine Musk; she sold three novels to Penguin and Simon & Schuster.","src":["ap_vivian","marieclaire_justine"]},"worth":{"none":"No reliable public estimate."},"facts":[{"t":"Wrote about the divorce in a 2010 Marie Claire essay, “I Was a Starter Wife.”","src":["marieclaire_justine"]}],"kids":[{"name":"Nevada Alexander","note":"died in infancy, 2002"},{"name":"Griffin"},{"name":"Vivian Jenna Wilson"},{"name":"Kai"},{"name":"Saxon"},{"name":"Damian"}],"kidsSrc":["marieclaire_justine","forbes_kids_2025","ap_vivian","today_kids"]},{"id":"talulah","name":"Talulah Riley","short":"Talulah","rel":"Ex-wife (twice) · 2010–12, 2013–16","tag":"Actress","born":"","group":"partners","layout":{"x":31,"row":3,"partner":true},"photo":"talulah","summary":{"t":"English actress (Pride & Prejudice, Inception, Westworld), writer and director.","src":["ap_talulah","bi_talulah"]},"worth":{"none":"No reliable public estimate."},"facts":[{"t":"Married Elon twice. They have no children together.","src":["bi_talulah","ap_talulah"]},{"t":"Wrote the novel Acts of Love (2016).","src":["hachette_talulah"]},{"t":"Married actor Thomas Brodie-Sangster in 2024.","src":["digitalspy_talulah"]}],"kids":[],"kidsSrc":["ap_talulah"]},{"id":"grimes","name":"Grimes","short":"Grimes","rel":"Ex-partner · about 2018–22","tag":"Musician","born":"Claire Boucher","group":"partners","layout":{"x":50,"row":3,"partner":true},"photo":"grimes","summary":{"t":"Canadian singer and producer, born Claire Boucher.","src":["bi_grimes"]},"worth":{"none":"No reliable public estimate."},"facts":[{"t":"Launched the AI voice project Elf.Tech in 2023 with the studio CreateSafe.","src":["mbw_elftech"]},{"t":"Offered to split royalties 50/50 on any successful AI-generated song that uses her voice.","src":["fortune_grimes"]}],"kids":[{"name":"X Æ A-Xii"},{"name":"Exa Dark Sideræl"},{"name":"Techno Mechanicus"}],"kidsSrc":["forbes_kids_2025","today_kids"]},{"id":"shivon","name":"Shivon Zilis","short":"Shivon","rel":"Co-parent · since 2021","tag":"Neuralink","born":"","group":"partners","layout":{"x":69,"row":3,"partner":true},"photo":"shivon","summary":{"t":"Neuralink executive (director of operations and special projects). Project director at Tesla from 2017 to 2019.","src":["bi_shivon"]},"worth":{"none":"No reliable public estimate."},"facts":[{"t":"Was the youngest member of OpenAI’s board; she left in March 2023.","src":["bi_shivon","bbg_shivon_openai"]},{"t":"Was a key witness in Musk’s 2026 trial against OpenAI.","src":["cnn_shivon"]}],"kids":[{"name":"Strider"},{"name":"Azure"},{"name":"Arcadia"},{"name":"Seldon Lycurgus"}],"kidsSrc":["today_kids","today_seldon"]},{"id":"ashley","name":"Ashley St. Clair","short":"Ashley","rel":"Co-parent","tag":"Author","born":"","group":"partners","layout":{"x":88,"row":3,"partner":true},"photo":"ashley","summary":{"t":"Writer and conservative commentator; author of the children’s book Elephants Are Not Birds.","src":["forbes_kids_2025"]},"worth":{"none":"No reliable public estimate."},"kids":[{"name":"Romulus","note":"named in WSJ, Forbes and AP reporting; paternity has been part of a New York court case"}],"kidsSrc":["forbesau_legion","ap_ashley_jan2026","independent_ashley","today_kids"]}],"companies":[{"id":"tesla","name":"Tesla","status":"public","ticker":"TSLA","exchange":"Nasdaq","quote":"https://www.nasdaq.com/market-activity/stocks/tsla","color":"#E8473D","who":"Elon (CEO, biggest individual holder) · Kimbal (director since 2004)","t":"3.95 billion shares outstanding (July 2026). Elon holds 413 million unrestricted shares plus restricted and unvested award shares.","src":["tsla_10q_q2_2026","tsla_form4_jun2026"]},{"id":"spacex","name":"SpaceX","status":"public","ticker":"SPCX","exchange":"Nasdaq","quote":"https://www.nasdaq.com/market-activity/stocks/spcx","color":"#9FB4D3","since":"June 12, 2026","includes":"Starlink, xAI (Grok) and X","who":"Elon (CEO, ~82% of votes at IPO) · Kimbal (est. 0.05%)","t":"IPO at $135 a share on June 12, 2026. Closed at $171.09 on Oct 5, 2026, roughly $2.26 trillion in total market value (our math: price × 13.18 billion shares).","src":["reuters_ipo","cnbc_spcx_oct5","spcx_10q","spcx_424b4","forbes_kimbal"]},{"id":"neuralink","name":"Neuralink","status":"private","color":"#B79CFF","who":"Elon (shareholder) · Shivon Zilis (executive)","t":"No public shares. ARK Venture Fund lists it among its holdings.","src":["ark_venture","bi_shivon"]},{"id":"boring","name":"The Boring Company","status":"private","color":"#F5A524","who":"Elon (founder, shareholder)","t":"No public shares. Valued at $23 billion in September 2026. ARK Venture Fund lists it among its holdings.","src":["reuters_boring","ark_venture"]},{"id":"passionflix","name":"Passionflix","status":"private","color":"#F472B6","who":"Tosca (co-founder, CEO) · Kimbal (seed investor)","t":"Private streaming service. More than $22 million raised since 2017.","src":["thr_passionflix","tc_passionflix","cnbc_family_2018"]},{"id":"novasky","name":"Nova Sky Stories","status":"private","color":"#38BDF8","who":"Kimbal (founder, leads it)","t":"Private drone light-show company; raising money in 2025.","src":["fortune_novasky"]},{"id":"kitchen","name":"The Kitchen","status":"private","color":"#4ADE80","who":"Kimbal (co-founder, executive chairman)","t":"Private restaurant group.","src":["tsla_10ka_2026"]},{"id":"solarcity","name":"SolarCity","status":"absorbed","color":"#FACC15","who":"Lyndon & Peter Rive (co-founders) · Elon (backer)","t":"Bought by Tesla in 2016 for $2.6 billion in stock. Today it’s part of Tesla, so the only way in is TSLA.","src":["tsla_solarcity_announce","tsla_solarcity_close"]},{"id":"paypal","name":"PayPal","status":"nostake","ticker":"PYPL","color":"#60A5FA","who":"Elon (co-founder of X.com, which became PayPal)","t":"PYPL trades publicly, but Elon cashed out in 2002, when eBay bought PayPal for $1.5 billion. He walked away with about $180 million.","src":["ebay_paypal_8k","bi_zip2_paypal"]},{"id":"openai","name":"OpenAI","status":"nostake","color":"#2DD4BF","who":"Elon (co-founder, 2015; left the board in 2018)","t":"Elon has no stake. He donated about $38 million, and in May 2026 a jury found his lawsuit against OpenAI was filed too late.","src":["court_openai_jan2026","ap_openai_verdict"]}],"companiesExtra":[{"id":"zip2","name":"Zip2","status":"gone","who":"Elon & Kimbal"},{"id":"squareroots","name":"Square Roots","status":"private","who":"Kimbal"},{"id":"everdream","name":"Everdream","status":"gone","who":"Lyndon, Peter & Russ Rive"},{"id":"zola","name":"ZOLA Electric","status":"private","who":"Lyndon & Peter Rive"},{"id":"elftech","name":"Elf.Tech","status":"private","who":"Grimes"}],"holdings":{"src":["bbg_elon"],"date":"Oct 6, 2026","items":[{"name":"SpaceX","v":819.4,"color":"#9FB4D3"},{"name":"Tesla","v":157.4,"color":"#E8473D"},{"name":"The Boring Company","v":13.1,"color":"#F5A524"},{"name":"Neuralink","v":3.42,"color":"#B79CFF"}]},"climb":[{"d":"2025-10-01","v":500,"label":"$500B","note":"first person ever","src":["forbes_500b"]},{"d":"2025-12-15","v":677,"label":"$677B","note":"SpaceX tender at an $800B valuation","src":["forbes_600b"]},{"d":"2025-12-19","v":749,"label":"$749B","note":"2018 options restored","src":["forbes_700b"]},{"d":"2026-02-03","v":852,"label":"$852B","note":"SpaceX buys xAI","src":["forbes_800b"]},{"d":"2026-06-12","v":1100,"label":"$1.1T","note":"SpaceX IPO","src":["forbes_1t"]},{"d":"2026-06-15","v":1300,"label":"$1.3T","note":"record at the time; Forbes says he briefly hit $1.45T during trading on Jun 16","src":["forbes_13t","forbes_below1t"]},{"d":"2026-06-23","v":962,"label":"$962B","note":"below $1T; Forbes also stopped counting $116B of restricted Tesla stock","src":["forbes_below1t"]},{"d":"2026-10-06","v":1046,"label":"$1.046T","note":"today","src":["forbes_elon"]}],"pace":{"yoy":583000000000.0,"worth":1046000000000.0,"src":["bbg_elon","forbes_elon"]},"homes":{"props":[{"name":"Main mansion","area":"Bel Air, Los Angeles","by":"Dec 2012","b":17.0,"sy":"Jun 2020","s":29.0,"note":"Built 1990, with a tennis court, two-story library, theater and wine cellar.","src":["latimes_2012","wsj_jun2020"]},{"name":"Gene Wilder’s former house","area":"Bel Air, Los Angeles","by":"Nov 2013","b":6.75,"sy":"Oct 2020","s":7.0,"note":"Sold on the condition it couldn’t be torn down, to a company tied to Wilder’s nephew.","src":["latimes_wilder_2013","latimes_may2020","latimes_dec2020"]},{"name":"Contemporary house","area":"Bel Air, Los Angeles","by":"2015","b":20.0,"sy":"Dec 2020","s":21.0,"src":["trd_2017","latimes_dec2020"]},{"name":"1960s ranch house","area":"Bel Air, Los Angeles","by":"2015","b":4.3,"sy":"Dec 2020","s":4.43,"src":["trd_2017","latimes_dec2020"]},{"name":"Modern mansion","area":"Bel Air, Los Angeles","by":"2016","b":24.25,"sy":"Dec 2020","s":29.72,"note":"Bought while still under construction. The LA Times dates the purchase to 2016; it was first reported in March 2017.","src":["trd_2017","latimes_dec2020"]},{"name":"Colonial-style house","area":"Bel Air, Los Angeles","by":"Jan 2019","b":6.4,"bApprox":true,"sy":"Dec 2020","s":6.77,"note":"Purchase price implied by the LA Times (\"roughly $375,000 more than Musk paid\").","src":["latimes_dec2020","wsj_mar2022"]},{"name":"Historic estate","area":"Hillsborough, SF Peninsula","by":"2017","b":23.4,"sy":"Late 2021","s":30.0,"note":"About 47 acres. Listed at $35M in 2020 and $37.5M in 2021. Mansion Global, citing MLS records, puts the sale at $30M; SFGATE reported $32M.","src":["mansionglobal_2021","sfgate_2021","latimes_may14_2020"]}],"totals":{"b":102,"s":127.9,"profit":25,"src":["wsj_mar2022"]},"quotes":[{"q":"I am selling almost all physical possessions. Will own no house.","when":"May 1, 2020","src":["latimes_may2020","wsj_jun2020"]},{"q":"My primary home is literally a ~$50k house in Boca Chica/Starbase that I rent from SpaceX. It’s kinda awesome though.","when":"June 2021","src":["realtor_50k","bi_50k"]}],"extra":[{"t":"Four of the Bel Air houses sold in December 2020 for a combined $62 million, to a developer who planned to combine them into one project.","src":["latimes_dec2020"]},{"t":"In 2019 he had $61 million in mortgages on five of these homes. One loan’s payment was about $180,000 a month.","src":["latimes_mortgages_2019"]},{"t":"In April 2022 he said he didn’t own a home and was staying at friends’ places.","src":["cbs_friends"]},{"t":"Since then he has been reported to own a roughly $6 million house in the Austin area, bought in 2022.","src":["realtor_wilder_2025","techcrunch_austin"]}],"wilder":{"t":"The Gene Wilder twist: Musk lent the buyer $6.7 million of the price. The loan went into default in 2024, and in January 2025 the house went back to the same company Musk had used to buy it in 2013.","src":["realtor_wilder_2025"]},"hq":[{"h":"Tesla → Austin","t":"Moved its headquarters to Gigafactory Texas (official Dec 1, 2021). The site covers 2,500 acres with over 10 million square feet of factory floor; filings put the cost at $1.06 billion or more.","src":["bbgtax_tesla_hq","tesla_gigatexas","cnbc_gigatexas_cost"]},{"h":"SpaceX → Starbase","t":"Moved its headquarters from Hawthorne, California to Starbase, Texas (official December 2024) and reincorporated in Texas.","src":["ap_hq_move","reuters_spacex_hq"]},{"h":"X → Bastrop","t":"Moved from San Francisco to Bastrop, Texas in 2024.","src":["reuters_x_bastrop"]},{"h":"Starbase becomes a city","t":"Approved by voters on May 3, 2025, 212 to 6.","src":["ap_starbase"]}]},"ledger":[{"who":"Elon","what":"SpaceX stake (SEC Schedule 13G)","amt":"6.42B shares · 48.4% of Class A*","when":"Jun 30, 2026","src":["spcx_13g"]},{"who":"Elon","what":"Exercised his restored 2018 Tesla options","amt":"303,960,630 at $23.34","when":"Jun 16, 2026","src":["tsla_form4_jun2026"]},{"who":"Elon","what":"Tesla 2025 CEO award (approved, unvested)","amt":"up to 423.7M shares","when":"Nov 6, 2025","src":["tsla_8k_nov2025","tsla_award_2025"]},{"who":"Elon","what":"Political spending, 2024 cycle (FEC)","amt":"$277M · $239M to America PAC","when":"2024","src":["cbs_277m"]},{"who":"Elon","what":"Wisconsin Supreme Court race","amt":"$3M+ himself · ~$19M via groups","when":"Apr 2025","src":["ap_wisconsin"]},{"who":"America PAC","what":"War chest for the 2026 midterms (Reuters)","amt":"$50M","when":"Sep 2026","src":["reuters_americapac_2026"]},{"who":"Musk Foundation","what":"Assets at market value (Form 990-PF)","amt":"$14.73B","when":"end of 2024","src":["mf_990pf_2024"]},{"who":"Musk Foundation","what":"Grants paid (Form 990-PF)","amt":"$474.3M","when":"2024","src":["mf_990pf_2024","propublica_mf"]},{"who":"Elon","what":"Donations to OpenAI (court order)","amt":"~$38M","when":"from 2016","src":["court_openai_jan2026"]},{"who":"Elon","what":"Bought Twitter (8-K)","amt":"$44B · $54.20/share","when":"Oct 27, 2022","src":["twitter_8k_close","abc_xai_x"]},{"who":"Elon","what":"Tesla stock sold during the Twitter deal","amt":"~$22.9B (our sum)","when":"2022","src":["fortune_tsla_aug2022","forbes_tsla_sales_2022","bbglaw_dec2022"]},{"who":"Kimbal","what":"Tesla shares held, all pledged (10-K/A)","amt":"1,376,373","when":"Dec 31, 2025","src":["tsla_10ka_2026"]},{"who":"Kimbal","what":"Tesla stock sold, seven Form 4s","amt":"~$255M (our sum)","when":"2021–25","src":["kimbal_f4_2021feb","kimbal_f4_2021nov","kimbal_f4_2023apr","kimbal_f4_2024nov","kimbal_f4_2025feb","kimbal_f4_2025may","kimbal_f4_2025dec"]},{"who":"Tesla directors incl. Kimbal","what":"Returned in pay settlement","amt":"$735.3M","when":"2025–26","src":["de_settlement_2026"]},{"who":"Lyndon Rive","what":"SolarCity stake before the Tesla deal (S-4/A)","amt":"4.03M shares · 3.9%","when":"Sep 2016","src":["sec_s4a_solarcity"]},{"who":"Peter Rive","what":"SolarCity stake before the Tesla deal (S-4/A)","amt":"3.93M shares · 3.8%","when":"Sep 2016","src":["sec_s4a_solarcity"]}],"trail":[{"when":"1995","h":"Elon and Kimbal start Zip2","t":"An online city-guide software company.","src":["bi_zip2_paypal","tsla_10ka_2026"]},{"when":"1999","h":"Compaq buys Zip2 for $307M","amt":"Elon’s take: $22M","t":"","src":["bi_zip2_paypal"]},{"when":"2002","h":"eBay buys PayPal for $1.5B","amt":"Elon’s take: ~$180M","t":"PayPal grew out of X.com, the online bank Elon started in 1999.","src":["ebay_paypal_8k","bi_zip2_paypal"]},{"when":"2002","h":"SpaceX is founded","t":"","src":["spcx_424b4"]},{"when":"2004","h":"Kimbal joins Tesla’s board","t":"He has been a director ever since.","src":["tsla_10ka_2026"]},{"when":"2006","h":"The Rive cousins launch SolarCity","t":"Founded July 4, 2006, with Elon’s backing.","src":["startribune_rive","fortune_lyndon"]},{"when":"2016","h":"Tesla buys SolarCity","amt":"$2.6B in stock","t":"","src":["tsla_solarcity_announce","tsla_solarcity_close"]},{"when":"2020","h":"“Will own no house”","amt":"7 homes sold for ~$127.9M","t":"He sold the last of them in late 2021.","src":["latimes_may2020","wsj_mar2022"]},{"when":"2022","h":"Buys Twitter","amt":"$44B","t":"Sold about $22.9B of Tesla stock that year (our sum).","src":["twitter_8k_close","abc_xai_x","fortune_tsla_aug2022","forbes_tsla_sales_2022","bbglaw_dec2022"]},{"when":"2024","h":"The election cycle","amt":"$277M","t":"Per FEC filings, $239M of it to America PAC.","src":["cbs_277m"]},{"when":"Mar 2025","h":"xAI buys X","amt":"X at $33B · xAI at $80B","t":"","src":["abc_xai_x"]},{"when":"Oct 2025","h":"First person worth $500B","t":"","src":["forbes_500b"]},{"when":"Nov 2025","h":"Tesla’s new pay package passes","amt":"up to 423.7M shares","t":"","src":["tsla_8k_nov2025","tsla_award_2025"]},{"when":"Dec 2025","h":"Court restores his 2018 options","amt":"first to $700B","t":"","src":["de_supreme_2025","forbes_700b"]},{"when":"Feb 2026","h":"SpaceX buys xAI","amt":"$1.25T combined","t":"First person worth $800B.","src":["forbes_800b","spcx_424b4"]},{"when":"May 2026","h":"Loses his lawsuit against OpenAI","t":"A jury found he filed too late.","src":["ap_openai_verdict"]},{"when":"Jun 2026","h":"SpaceX goes public","amt":"record $75B IPO","t":"The first trillionaire, at $1.1T.","src":["reuters_ipo","forbes_1t"]},{"when":"Oct 2026","h":"Back above $1 trillion","amt":"$1.046T","t":"","src":["forbes_elon","cnbc_spcx_oct5"]}],"cases":[{"n":"#001","title":"The M&M’s File","img":"assets/cases/case-001-mms.jpg","hook":"The company that makes M&M’s might own your dog’s vet.","chain":["M&M’s","Mars","Banfield & VCA vets","Kellanova","Ferrero"],"links":["https://www.mars.com/about/history","https://www.mars.com/our-brands","https://www.mars.com/our-brands/petcare","https://marsveterinary.com/who-we-are/our-companies/","https://www.mars.com/news-and-stories/press-releases-statements/mars-completes-acquisition-of-kellanova","https://www.mars.com/news-and-stories/press-releases-statements/mars-acquisition-august-2024","https://newsroom.kellanova.com/2023-10-02-KELLANOVA,-FORMERLY-KELLOGG-COMPANY,-ANNOUNCES-COMPLETION-OF-THE-SEPARATION-OF-ITS-NORTH-AMERICAN-CEREAL-BUSINESS","https://www.ferrero.com/int/en/news-stories/news/ferrero-completes-acquisition-of-wk-kellogg-co"]},{"n":"#002","title":"The Simpsons File","img":"assets/cases/case-002-simpsons.jpg","hook":"The company behind Mickey Mouse owns The Simpsons.","chain":["Your TV remote","Disney","21st Century Fox","The Simpsons","Hulu"],"links":["https://thewaltdisneycompany.com/press-releases/the-walt-disney-company-signs-amended-acquisition-agreement-to-acquire-twenty-first-century-fox-inc-for-71-3-billion-in-cash-and-stock/","https://thewaltdisneycompany.com/press-releases/disney-21st-century-fox-acquisition-closing-date/","https://variety.com/2017/tv/news/the-simpsons-disney-fox-1202640989/","https://www.cnbc.com/2025/06/09/disney-comcast-hulu-valuation.html","https://www.espn.com/espn/story/_/id/47793895/regulators-ok-espn-purchase-nfl-network-redzone-rights-nfl-equity-stake","https://deadline.com/2025/04/the-simpsons-family-guy-bobs-burgers-american-dad-renewed-1236356360/","https://thewaltdisneycompany.com/news/fubo-hulu-live-tv/","https://www.britannica.com/money/Disney-Company/Continuing-expansion-ABC-Pixar-Marvel-Entertainment-and-Lucasfilm"]},{"n":"#003","title":"The Bond File","img":"assets/cases/case-003-bond.jpg","hook":"The company that delivers your packages controls James Bond.","chain":["A cardboard box","Amazon","MGM","James Bond"],"links":["https://www.aboutamazon.com/news/company-news/amazon-mgm-studios-james-bond","https://www.cnbc.com/2022/07/21/amazon-one-medical-joins-whole-foods-mgm-as-strategic-growth-buys.html","https://press.aboutamazon.com/2021/5/amazon-and-mgm-have-signed-an-agreement-for-amazon-to-acquire-mgm","https://press.aboutamazon.com/2014/8/amazon-com-to-acquire-twitch","https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm","https://www.aboutamazon.com/news/workplace/first-amazon-office-jeff-bezos-garage","https://help.imdb.com/article/imdb/general-information/imdb-history/G836CY29Z4SGNMK5"]},{"n":"#004","title":"The KitKat File","img":"assets/cases/case-004-kitkat.jpg","hook":"The company that makes your cat’s food owns a fifth of L’Oréal.","chain":["A coffee pod","Nestlé","Purina","L’Oréal","KitKat"],"links":["https://www.nestleusa.com/brands","https://investor.starbucks.com/news/financial-releases/news-details/2018/Starbucks-and-Nestl-Form-Global-Coffee-Alliance-to-Elevate-and-Expand-Consumer-Packaged-Goods-and-Foodservice-Categories-Around-the-World/default.aspx","https://www.swissinfo.ch/eng/agribusiness/nestl%C3%A9-chief-wants-to-reduce-debt-without-selling-lor%C3%A9al/91826264","https://us.fashionnetwork.com/news/Nestle-s-stake-in-l-oreal-is-a-financial-investment-nestle-ceo-says,1794120.html","https://www.cbsnews.com/news/ferrero-buys-nestles-u-s-candy-business-for-2-8-billion/","https://www.cnn.com/2023/09/02/business/kit-kat-international-flavors-curious-consumer","https://www.loreal-finance.com/eng/shareholders-guide-2025/en/article/12/"]},{"n":"#005","title":"The Ray-Ban File","img":"assets/cases/case-005-rayban.jpg","hook":"The company that makes Ray-Bans might own the store you bought them at.","chain":["Ray-Ban","EssilorLuxottica","Sunglass Hut & LensCrafters","EyeMed","Meta"],"links":["https://www.vfc.com/news/press-release/1841/essilorluxottica-completes-acquisition-of-supreme-from-vf","https://www.reuters.com/world/europe/meta-takes-around-3-stake-ray-ban-parent-essilorluxottica-source-says-2025-07-08/","https://www.reuters.com/business/finance/essilorluxottica-director-says-metas-stake-ray-ban-maker-at-least-3-2025-12-09/","https://fashionunited.uk/news/business/prada-and-essilorluxottica-renew-eyewear-licensing-agreement/2024121879263","https://finance.yahoo.com/news/essilorluxottica-michael-kors-announce-extended-060000710.html","https://www.essilorluxottica.com/en/cap/content/284350/","https://www.globenewswire.com/news-release/2024/09/17/2947143/0/en/EssilorLuxottica-and-Meta-Announce-Long-Term-Partnership-Shaping-the-Future-of-the-Smart-Eyewear-Category.html","https://www.eyemed.com/en-us/about-us/"]},{"n":"MASTER","title":"The Master File","img":"assets/cases/master-file.jpg","hook":"Your Dunkin’ and your Subway have the same owner.","chain":["7 AM to midnight","Roark Capital","Inspire Brands","PepsiCo","Vanguard"],"links":["https://www.sec.gov/Archives/edgar/data/21665/000002166526000003/a4q2025pressreleasetables.htm","https://www.colgatepalmolive.com/en-us/who-we-are/history","https://abcnews.com/Business/story?id=88989&page=1","https://inspirebrands.com/inspire-brands-completes-acquisition-of-dunkin-brands/","https://inspirebrands.com/about-us/","https://www.cnbc.com/2023/08/24/subway-sells-to-dunkin-owner-roark-capital.html","https://www.restaurantbusinessonline.com/financing/subway-completes-its-sale-roark-capital","https://www.roarkcapital.com/portfolio","https://blogs.microsoft.com/blog/2023/10/13/welcoming-the-legendary-teams-at-activision-blizzard-king-to-team-xbox/","https://somnigroup.com/newsroom/news-details/2025/Tempur-Sealy-Successfully-Completes-Acquisition-of-Mattress-Firm/default.aspx","https://www.sec.gov/Archives/edgar/data/2100119/000210011926001527/13F_0002100119_20260630.xml","https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/sets-us-apart/ownership.html"]}]}</script>
+<script>
+(function () {
+  'use strict';
+  var D = JSON.parse(document.getElementById('mf-data').textContent);
+
+  /* ---------------- helpers ---------------- */
+  function $(s, r) { return (r || document).querySelector(s); }
+  function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+  function el(tag, attrs) {
+    var n = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function (k) {
+      var v = attrs[k];
+      if (v == null || v === false) return;
+      if (k === 'class') n.className = v;
+      else if (k === 'text') n.textContent = v;
+      else if (k.indexOf('on') === 0) n.addEventListener(k.slice(2), v);
+      else n.setAttribute(k, v === true ? '' : v);
+    });
+    for (var i = 2; i < arguments.length; i++) add(n, arguments[i]);
+    return n;
+  }
+  function add(n, c) {
+    if (c == null || c === false) return;
+    if (Array.isArray(c)) { c.forEach(function (x) { add(n, x); }); return; }
+    n.appendChild(c instanceof Node ? c : document.createTextNode(String(c)));
+  }
+  var SVGNS = 'http://www.w3.org/2000/svg';
+  function sv(tag, attrs, text) {
+    var n = document.createElementNS(SVGNS, tag);
+    Object.keys(attrs || {}).forEach(function (k) { n.setAttribute(k, attrs[k]); });
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function fmtInt(n) { return Math.round(n).toLocaleString('en-US'); }
+  function money(n) {
+    if (n >= 1e12) return '$' + (n / 1e12).toFixed(n >= 1e13 ? 1 : 3).replace(/\.?0+$/, '') + 'T';
+    if (n >= 1e9) return '$' + (n / 1e9).toFixed(1).replace(/\.0$/, '') + 'B';
+    if (n >= 1e6) return '$' + (n / 1e6).toFixed(1).replace(/\.0$/, '') + 'M';
+    return '$' + fmtInt(n);
+  }
+
+  /* ---------------- sources ---------------- */
+  var SRC = {};
+  D.sources.forEach(function (s, i) { s.n = i + 1; SRC[s.id] = s; });
+  function refs(ids) {
+    if (!ids || !ids.length) return null;
+    var sup = el('span', { class: 'refs' });
+    ids.forEach(function (id) {
+      var s = SRC[id]; if (!s) return;
+      sup.appendChild(el('a', { href: s.url, target: '_blank', rel: 'noopener', title: s.pub + ': ' + s.title + ' (' + s.date + ')', 'aria-label': 'Source ' + s.n + ', ' + s.pub }, String(s.n)));
+    });
+    return sup;
+  }
+  function srcLine(ids) { return ids.map(function (id) { return SRC[id]; }).filter(Boolean); }
+
+  /* ---------------- people, companies, photos ---------------- */
+  var PEOPLE = {}, ORDER = [];
+  D.people.forEach(function (p) { PEOPLE[p.id] = p; });
+  ['elon', 'kimbal', 'tosca', 'maye', 'errol', 'justine', 'talulah', 'grimes', 'shivon', 'ashley', 'lyndon', 'peter', 'russ', 'haldemans']
+    .forEach(function (id) { if (PEOPLE[id]) ORDER.push(id); });
+  var CO = {};
+  D.companies.concat(D.companiesExtra).forEach(function (c) { CO[c.id] = c; });
+
+  function initials(p) {
+    if (p.initials) return p.initials;
+    var w = p.name.replace(/[^A-Za-z .'-]/g, '').split(/\s+/).filter(Boolean);
+    return (w[0] ? w[0][0] : '') + (w.length > 1 ? w[w.length - 1][0] : '');
+  }
+  function photoURL(ph) {
+    var name = encodeURIComponent(ph.file.replace(/ /g, '_'));
+    return 'https://commons.wikimedia.org/wiki/Special:FilePath/' + name + (ph.w > 400 ? '?width=400' : '');
+  }
+  function filePage(ph) { return 'https://commons.wikimedia.org/wiki/File:' + encodeURIComponent(ph.file.replace(/ /g, '_')); }
+  function photoStyle(ph) {
+    // place the face at (50%, 46%) of the circle, zoomed, without exposing edges
+    var r = ph.h / ph.w, w = Math.max(1, ph.w / ph.h) * ph.zoom, h = w * r;
+    var left = Math.min(0, Math.max(1 - w, 0.5 - ph.fx * w));
+    var top = Math.min(0, Math.max(1 - h, 0.46 - ph.fy * h));
+    return 'width:' + (w * 100).toFixed(2) + '%;left:' + (left * 100).toFixed(2) + '%;top:' + (top * 100).toFixed(2) + '%';
+  }
+  function face(p) {
+    var f = el('span', { class: 'face', 'data-initials': initials(p) });
+    var ph = p.photo ? D.photos[p.photo] : null;
+    if (ph) {
+      var img = el('img', { src: photoURL(ph), alt: '', loading: 'lazy', decoding: 'async', referrerpolicy: 'no-referrer', style: photoStyle(ph) });
+      img.addEventListener('error', function () { img.remove(); });
+      f.appendChild(img);
+    }
+    return f;
+  }
+
+  /* ---------------- hero ---------------- */
+  $$('[data-asof]').forEach(function (n) { n.textContent = D.meta.asOfLabel; });
+  var elon = PEOPLE.elon;
+  add($('#hero-worth-src'), ['Forbes real-time estimate, ' + elon.worth.date, refs(elon.worth.src), ' · Bloomberg: ' + elon.worth.also.value, refs(elon.worth.also.src)]);
+  var perSec = D.pace.yoy / (365.25 * 86400);
+  add($('#pace-line'), ['Over the past year his fortune grew ', el('b', null, money(D.pace.yoy).replace('B', ' billion')), refs(['bbg_elon']), '. That works out to about ', el('b', { class: 'gold' }, '$' + fmtInt(perSec) + ' every second'), ', on average.']);
+  var t0 = Date.now(), since = $('#since');
+  function tick() { since.value = since.textContent = '+$' + fmtInt(perSec * (Date.now() - t0) / 1000); }
+  tick(); setInterval(tick, 250);
+
+  /* ---------------- family board ---------------- */
+  var ROW_TOP = { 0: 0, 1: 178, 2: 354, 3: 600 };
+  var GROUPS = [
+    ['center', 'The center'], ['parents', 'Parents'], ['siblings', 'Siblings'],
+    ['partners', 'Partners & children', 'Elon’s kids by name only.'],
+    ['cousins', 'Cousins', 'Their mom is Maye’s twin sister, a private person.'], ['grand', 'Grandparents']
+  ];
+  var board = $('#board');
+  function nodeFor(p) {
+    var L = p.layout || {};
+    var cls = 'node' + (L.big ? ' big' : '') + (L.small ? ' small' : '') + (L.partner ? ' partner' : '') + (p.connector ? ' connector' : '');
+    var b = p.connector
+      ? el('div', { class: cls, 'data-id': p.id, style: '--x:' + L.x + ';--top:' + ROW_TOP[L.row] + 'px', title: p.summary ? p.summary.t : null })
+      : el('button', { class: cls, type: 'button', 'data-id': p.id, style: '--x:' + L.x + ';--top:' + ROW_TOP[L.row] + 'px', 'aria-label': 'Open the file on ' + p.name });
+    var text = el('span', { class: 'n-text' },
+      el('span', { class: 'n-name' }, p.name),
+      el('span', { class: 'n-rel' }, p.rel),
+      p.tag ? el('span', { class: 'n-tag' + (p.tagKind === 'money' ? ' money' : '') }, p.tag) : null);
+    if (L.partner) {
+      b.appendChild(el('span', { class: 'p-head' }, face(p), text));
+      var kids = el('span', { class: 'kids' }, el('span', { class: 'kids-label' }, 'Children with Elon'));
+      if (p.kids && p.kids.length) p.kids.forEach(function (k) { kids.appendChild(el('span', { class: 'kid' + (k.note && /died/.test(k.note) ? ' gone' : ''), title: k.note || null }, k.name + (k.note && /died/.test(k.note) ? ' †' : ''))); });
+      else kids.appendChild(el('span', { class: 'kids-none' }, 'None together'));
+      b.appendChild(kids);
+    } else {
+      b.appendChild(face(p)); b.appendChild(text);
+    }
+    if (p.connector) return b;
+    b.addEventListener('click', function () { openFile(p.id, true); });
+    b.addEventListener('mouseenter', function () { heat(p.id); });
+    b.addEventListener('mouseleave', function () { heat(null); });
+    b.addEventListener('focus', function () { heat(p.id); });
+    b.addEventListener('blur', function () { heat(null); });
+    return b;
+  }
+  GROUPS.forEach(function (g) {
+    var wrap = el('div', { class: 'group g-' + g[0] }, el('h3', { class: 'group-title' }, g[1], g[2] ? el('span', null, ' · ' + g[2]) : null));
+    var list = el('div', { class: 'group-list' });
+    D.people.filter(function (p) { return p.group === g[0]; }).forEach(function (p) { list.appendChild(nodeFor(p)); });
+    wrap.appendChild(list); board.appendChild(wrap);
+  });
+  add($('#board-note'), [elon.kidsNote.t, refs(elon.kidsNote.src)]);
+
+  var wires = $('#wires'), desk = window.matchMedia('(min-width: 1040px)');
+  function heat(id) {
+    $$('.wire', wires).forEach(function (w) { w.classList.toggle('hot', !!id && (' ' + w.getAttribute('data-rel') + ' ').indexOf(' ' + id + ' ') > -1); });
+  }
+  function drawWires() {
+    while (wires.firstChild) wires.removeChild(wires.firstChild);
+    if (!desk.matches) { board.style.height = ''; return; }
+    var low = 0;
+    $$('.node', board).forEach(function (n) { low = Math.max(low, n.offsetTop + n.offsetHeight); });
+    board.style.height = (low + 12) + 'px';
+    var B = board.getBoundingClientRect();
+    function R(id) {
+      var n = $('.node[data-id="' + id + '"]', board), f = $('.face', n), nr = n.getBoundingClientRect(), fr = f.getBoundingClientRect();
+      return { cx: fr.left + fr.width / 2 - B.left, top: fr.top - B.top, mid: fr.top + fr.height / 2 - B.top, l: fr.left - B.left, r: fr.right - B.left, bottom: nr.bottom - B.top, ntop: nr.top - B.top };
+    }
+    function path(d, rel) { wires.appendChild(sv('path', { d: d, class: 'wire', 'data-rel': rel })); }
+    function fork(x, y, kids, rel, toNodeTop, above) {
+      var tops = kids.map(function (k) { return toNodeTop ? k.ntop : k.top; });
+      var bus = ((above == null ? y : above) + Math.min.apply(null, tops)) / 2;
+      var xs = kids.map(function (k) { return k.cx; }).concat([x]);
+      var d = 'M' + x + ',' + y + ' V' + bus + ' M' + Math.min.apply(null, xs) + ',' + bus + ' H' + Math.max.apply(null, xs);
+      kids.forEach(function (k, i) { d += ' M' + k.cx + ',' + bus + ' V' + (tops[i] - 3); });
+      path(d, rel);
+      return bus;
+    }
+    var hal = R('haldemans'), kaye = R('kaye'), maye = R('maye'), errol = R('errol');
+    var bus0 = fork(hal.cx, hal.bottom + 2, [kaye, maye], 'haldemans kaye maye');
+    var lab = sv('text', { x: (kaye.cx + maye.cx) / 2, y: bus0 + 15, 'text-anchor': 'middle', class: 'wire-label' }, '5 kids, incl. twin girls (1948)');
+    wires.appendChild(lab);
+    // Maye + Errol, married 1970-79
+    var y = maye.mid, x1 = maye.r + 5, x2 = errol.l - 5, mx = (x1 + x2) / 2;
+    path('M' + x1 + ',' + (y - 2) + ' H' + x2 + ' M' + x1 + ',' + (y + 2) + ' H' + x2, 'maye errol');
+    wires.appendChild(sv('text', { x: mx, y: y - 9, 'text-anchor': 'middle', class: 'wire-label' }, 'm. 1970–79'));
+    fork(mx, y + 2, [R('elon'), R('kimbal'), R('tosca')], 'maye errol elon kimbal tosca', false, Math.max(maye.bottom, errol.bottom));
+    fork(kaye.cx, kaye.bottom + 2, [R('lyndon'), R('peter'), R('russ')], 'kaye lyndon peter russ');
+    var e = R('elon');
+    fork(e.cx, e.bottom + 2, ['justine', 'talulah', 'grimes', 'shivon', 'ashley'].map(R), 'elon justine talulah grimes shivon ashley', true);
+  }
+  var wireTimer;
+  function scheduleWires() { clearTimeout(wireTimer); wireTimer = setTimeout(drawWires, 60); }
+  if (window.ResizeObserver) new ResizeObserver(scheduleWires).observe(board);
+  window.addEventListener('resize', scheduleWires);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(scheduleWires);
+  drawWires();
+
+  /* ---------------- dossier ---------------- */
+  var dossier = $('#dossier'), scrim = $('#scrim'), lastFocus = null, current = null;
+  function chipFor(c) {
+    var s = c.status, label = { public: 'Public · ' + (c.ticker || ''), private: 'Private', absorbed: 'Part of Tesla', nostake: 'No Musk stake', gone: 'Acquired' }[s] || s;
+    return el('span', { class: 'chip ' + s }, label);
+  }
+  function section(title, kids) { return kids && kids.length ? el('div', { class: 'd-sec' }, el('h3', null, title), kids) : null; }
+  function item(h, obj) { return el('div', { class: 'd-item' }, h ? el('p', { class: 'h' }, h) : null, el('p', null, obj.t, refs(obj.src))); }
+  function kidsBlock(p) {
+    if (p.id === 'elon') {
+      return ['justine', 'grimes', 'shivon', 'ashley'].map(function (id) {
+        var m = PEOPLE[id];
+        return el('div', { class: 'd-kids-group' }, el('span', { class: 'label' }, 'With ' + m.name), el('span', { class: 'kids' }, m.kids.map(function (k) { return el('span', { class: 'kid' + (/died/.test(k.note || '') ? ' gone' : ''), title: k.note || null }, k.name + (/died/.test(k.note || '') ? ' †' : '')); })), refs(m.kidsSrc));
+      });
+    }
+    if (!p.kids) return null;
+    if (!p.kids.length) return [el('p', { class: 'kids-none' }, 'No children together.', refs(p.kidsSrc))];
+    return [el('span', { class: 'kids' }, p.kids.map(function (k) { return el('span', { class: 'kid' + (/died/.test(k.note || '') ? ' gone' : '') }, k.name + (/died/.test(k.note || '') ? ' †' : '')); })),
+      el('p', { class: 'fine', style: 'margin-top:8px' }, p.kids.filter(function (k) { return k.note; }).map(function (k) { return k.name + ': ' + k.note + '. '; }).join(''), refs(p.kidsSrc))];
+  }
+  function collectSrc(p) {
+    var seen = [], push = function (ids) { (ids || []).forEach(function (i) { if (seen.indexOf(i) < 0) seen.push(i); }); };
+    push(p.bornSrc); push(p.summary && p.summary.src);
+    if (p.worth) { push(p.worth.src); if (p.worth.also) push(p.worth.also.src); }
+    ['owns', 'record', 'facts', 'disputed'].forEach(function (k) { (p[k] || []).forEach(function (x) { push(x.src); }); });
+    if (p.id === 'elon') { push(D.holdings.src); push(p.kidsNote.src); ['justine', 'grimes', 'shivon', 'ashley'].forEach(function (id) { push(PEOPLE[id].kidsSrc); }); }
+    push(p.kidsSrc);
+    return seen.sort(function (a, b) { return SRC[a].n - SRC[b].n; });
+  }
+  function renderFile(p) {
+    while (dossier.firstChild) dossier.removeChild(dossier.firstChild);
+    var i = ORDER.indexOf(p.id), prev = PEOPLE[ORDER[(i - 1 + ORDER.length) % ORDER.length]], next = PEOPLE[ORDER[(i + 1) % ORDER.length]];
+    var close = el('button', { class: 'icon-btn', type: 'button', onclick: function () { closeFile(true); } }, 'Close ×');
+    add(dossier, [
+      el('div', { class: 'd-bar' }, el('p', { class: 'd-file' }, 'File · ' + p.name), close),
+      el('div', { class: 'd-top' + (p.id === 'elon' ? ' elon' : '') }, face(p), el('div', null,
+        el('h2', { class: 'd-name', id: 'd-title' }, p.name),
+        el('p', { class: 'd-rel' }, p.rel),
+        p.born ? el('p', { class: 'd-born' }, p.born, refs(p.bornSrc)) : null)),
+      p.summary ? el('p', { class: 'd-summary' }, p.summary.t, refs(p.summary.src)) : null
+    ]);
+    if (p.worth && p.worth.value) {
+      dossier.appendChild(el('div', { class: 'd-worth' }, el('span', { class: 'label' }, 'Net worth'), el('p', { class: 'v' }, p.worth.value),
+        el('p', { class: 'by' }, p.worth.by + ', ' + p.worth.date, refs(p.worth.src)),
+        p.worth.also ? el('p', { class: 'by' }, p.worth.also.by + ': ' + p.worth.also.value, refs(p.worth.also.src)) : null));
+    } else if (p.worth && p.worth.none) {
+      dossier.appendChild(el('div', { class: 'd-worth none' }, el('span', { class: 'label' }, 'Net worth'), el('p', null, p.worth.none)));
+    }
+    if (p.id === 'elon') dossier.appendChild(el('div', { class: 'hold-mini' }, holdingsBar(true)));
+    add(dossier, [
+      section('Owns & runs', (p.owns || []).map(function (o) {
+        var c = CO[o.co] || { name: o.co, status: '' };
+        return el('div', { class: 'd-item' }, el('div', { class: 'co-row' }, el('span', { class: 'co-name' }, c.name), c.status ? chipFor(c) : null), el('p', null, o.t, refs(o.src)));
+      })),
+      section('On the record', (p.record || []).map(function (r) { return item(r.h, r); })),
+      section('Disputed', (p.disputed || []).map(function (r) { return el('div', { class: 'd-item' }, el('span', { class: 'stamp' }, 'Disputed'), el('p', { class: 'h' }, r.h), el('p', null, r.t, refs(r.src))); })),
+      section('Wow facts', (p.facts || []).map(function (f) { return item(null, f); })),
+      section(p.id === 'elon' ? 'Children (names only)' : 'Children with Elon (names only)', kidsBlock(p)),
+      p.note ? el('p', { class: 'd-note' }, p.note) : null,
+      section('Sources in this file', [el('div', { class: 'd-src' }, el('ol', null, collectSrc(p).map(function (id) {
+        var s = SRC[id];
+        return el('li', { value: s.n }, el('a', { href: s.url, target: '_blank', rel: 'noopener' }, s.pub), ': ' + s.title + ' (' + s.date + ')');
+      })))]),
+      el('div', { class: 'd-nav' },
+        el('button', { class: 'icon-btn', type: 'button', onclick: function () { openFile(prev.id, false); } }, '← ' + prev.short),
+        el('button', { class: 'icon-btn', type: 'button', onclick: function () { openFile(next.id, false); } }, next.short + ' →'))
+    ]);
+  }
+  function openFile(id, push) {
+    var p = PEOPLE[id]; if (!p || p.connector) return;
+    if (dossier.hidden) lastFocus = document.activeElement;
+    current = id;
+    renderFile(p);
+    dossier.hidden = false; scrim.hidden = false;
+    document.documentElement.style.overflow = 'hidden';
+    dossier.scrollTop = 0;
+    $$('.node', board).forEach(function (n) { n.classList.toggle('on', n.getAttribute('data-id') === id); });
+    var btn = $('.d-bar .icon-btn', dossier); if (btn) btn.focus({ preventScroll: true });
+    try {
+      if (push) history.pushState({ file: id }, '', '#' + id);
+      else history.replaceState({ file: id }, '', '#' + id);
+    } catch (e) { /* sandboxed viewers may refuse history changes */ }
+  }
+  function closeFile(fromUser) {
+    if (dossier.hidden) return;
+    dossier.hidden = true; scrim.hidden = true; current = null;
+    document.documentElement.style.overflow = '';
+    $$('.node.on', board).forEach(function (n) { n.classList.remove('on'); });
+    if (fromUser) {
+      try {
+        if (history.state && history.state.file) history.back();
+        else history.replaceState(null, '', location.pathname + location.search);
+      } catch (e) { }
+    }
+    if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+  }
+  scrim.addEventListener('click', function () { closeFile(true); });
+  document.addEventListener('keydown', function (e) {
+    if (dossier.hidden) return;
+    if (e.key === 'Escape') { closeFile(true); return; }
+    if (e.key === 'Tab') {
+      var f = $$('a[href], button', dossier).filter(function (x) { return x.offsetParent !== null; });
+      if (!f.length) return;
+      if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+      else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+    }
+  });
+  function syncHash() {
+    var id = decodeURIComponent((location.hash || '').slice(1));
+    if (PEOPLE[id] && !PEOPLE[id].connector) { if (current !== id) openFile(id, false); }
+    else if (!dossier.hidden) closeFile(false);
+  }
+  window.addEventListener('popstate', syncHash);
+  window.addEventListener('hashchange', syncHash);
+
+  /* ---------------- invest ---------------- */
+  D.companies.forEach(function (c) {
+    if (c.status === 'public') {
+      $('#invest-big').appendChild(el('article', { class: 'inv big' },
+        el('div', { class: 'tick', style: 'color:' + c.color }, c.ticker),
+        el('p', { class: 'nm' }, c.name + ' · ' + c.exchange + (c.since ? ' since ' + c.since : '')),
+        el('span', { class: 'yes' }, 'Yes, you can buy it'),
+        c.includes ? el('p', { class: 'incl' }, 'Includes ' + c.includes + '.') : null,
+        el('p', { class: 't' }, c.t, refs(c.src)),
+        el('p', { class: 'who' }, 'Family: ' + c.who),
+        el('a', { class: 'quote', href: c.quote, target: '_blank', rel: 'noopener' }, 'Live ' + c.ticker + ' quote ↗')));
+    } else {
+      $('#invest-rest').appendChild(el('article', { class: 'inv small' },
+        el('div', { class: 'bar', style: '--c:' + c.color }),
+        el('p', { class: 'nm' }, c.name), chipFor(c),
+        el('p', { class: 't' }, c.t, refs(c.src)),
+        el('p', { class: 'who' }, c.who)));
+    }
+  });
+
+  /* ---------------- money ---------------- */
+  function holdingsBar(compact) {
+    var H = D.holdings, tot = H.items.reduce(function (a, b) { return a + b.v; }, 0);
+    var stack = el('div', { class: 'stack', role: 'img', 'aria-label': H.items.map(function (x) { return x.name + ' $' + x.v + ' billion'; }).join(', ') });
+    H.items.forEach(function (x) { stack.appendChild(el('span', { style: 'width:' + (x.v / tot * 100).toFixed(2) + '%;--c:' + x.color, title: x.name + ': $' + x.v + 'B' })); });
+    if (compact) {
+      return [el('span', { class: 'label' }, 'Biggest holdings (Bloomberg estimate)'), stack,
+        el('p', { class: 'fine', style: 'margin-top:8px' }, H.items.map(function (x) { return x.name + ' $' + x.v + 'B'; }).join(' · '), refs(H.src))];
+    }
+    return { stack: stack, tot: tot };
+  }
+  (function () {
+    var H = D.holdings, hb = holdingsBar(false), host = $('#hold-stack');
+    host.parentNode.replaceChild(hb.stack, host);
+    add($('#hold-src'), ['Bloomberg Billionaires Index estimate, ' + H.date + '. Shares of the four, not of his total net worth.', refs(H.src)]);
+    H.items.forEach(function (x) {
+      $('#hold-legend').appendChild(el('li', { style: '--c:' + x.color }, el('span', { class: 'k' }, x.name), el('span', { class: 'v' }, '$' + x.v + 'B'), el('span', { class: 'p' }, (x.v / hb.tot * 100).toFixed(1) + '% of the four')));
+    });
+  })();
+
+  var climbHost = $('#climb');
+  function drawClimb() {
+    while (climbHost.firstChild) climbHost.removeChild(climbHost.firstChild);
+    var W = Math.max(300, climbHost.clientWidth), narrow = W < 620, H = narrow ? 300 : 360;
+    var m = { l: narrow ? 46 : 58, r: narrow ? 14 : 24, t: 30, b: 36 };
+    var t0 = Date.parse('2025-09-10'), t1 = Date.parse('2026-10-25'), vmax = 1400;
+    function x(d) { return m.l + (Date.parse(d) - t0) / (t1 - t0) * (W - m.l - m.r); }
+    function y(v) { return H - m.b - v / vmax * (H - m.t - m.b); }
+    var s = sv('svg', { viewBox: '0 0 ' + W + ' ' + H, width: W, height: H, role: 'img', 'aria-label': 'Line chart of Elon Musk’s net worth at Forbes milestones, from $500 billion in October 2025 to $1.046 trillion in October 2026' });
+    var defs = sv('defs'), lg = sv('linearGradient', { id: 'gold-fade', x1: 0, y1: 0, x2: 0, y2: 1 });
+    lg.appendChild(sv('stop', { offset: '0%', 'stop-color': '#FFB020', 'stop-opacity': '.28' }));
+    lg.appendChild(sv('stop', { offset: '100%', 'stop-color': '#FFB020', 'stop-opacity': '0' }));
+    defs.appendChild(lg); s.appendChild(defs);
+    var g = sv('g', { class: 'grid' }), ax = sv('g', { class: 'axis' });
+    [0, 250, 500, 750, 1000, 1250].forEach(function (v) {
+      g.appendChild(sv('line', { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v) }));
+      ax.appendChild(sv('text', { x: m.l - 8, y: y(v) + 4, 'text-anchor': 'end' }, v === 0 ? '$0' : v >= 1000 ? '$' + (v / 1000) + 'T' : '$' + v + 'B'));
+    });
+    [['2025-10-01', 'Oct ’25'], ['2026-01-01', 'Jan ’26'], ['2026-04-01', 'Apr ’26'], ['2026-07-01', 'Jul ’26'], ['2026-10-01', 'Oct ’26']].forEach(function (t) {
+      ax.appendChild(sv('text', { x: x(t[0]), y: H - 10, 'text-anchor': 'middle' }, t[1]));
+    });
+    s.appendChild(g); s.appendChild(ax);
+    s.appendChild(sv('line', { class: 'tline', x1: m.l, x2: W - m.r, y1: y(1000), y2: y(1000) }));
+    s.appendChild(sv('text', { class: 'tlabel', x: m.l + 8, y: y(1000) - 8 }, '$1 TRILLION'));
+    var pts = D.climb, line = '', area = '';
+    pts.forEach(function (p, i) { line += (i ? 'L' : 'M') + x(p.d).toFixed(1) + ',' + y(p.v).toFixed(1); });
+    area = line + 'L' + x(pts[pts.length - 1].d).toFixed(1) + ',' + y(0) + 'L' + x(pts[0].d).toFixed(1) + ',' + y(0) + 'Z';
+    s.appendChild(sv('path', { class: 'area', d: area }));
+    s.appendChild(sv('path', { class: 'line', d: line }));
+    // label placement: [dx, dy, anchor], tuned so neighbours don't collide
+    var place = {
+      '2025-10-01': [0, -14, 'middle'], '2025-12-15': [8, 18, 'start'], '2025-12-19': [-6, -12, 'end'], '2026-02-03': [0, -14, 'middle'],
+      '2026-06-12': [-8, 4, 'end'], '2026-06-15': [0, -14, 'middle'], '2026-06-23': [8, 16, 'start'], '2026-10-06': [-2, -14, 'end']
+    };
+    var hideNarrow = { '2025-12-15': 1, '2025-12-19': 1, '2026-06-12': 1 };
+    if (narrow) place['2026-02-03'] = [0, 20, 'middle'];
+    pts.forEach(function (p, i) {
+      var cx = x(p.d), cy = y(p.v), last = i === pts.length - 1;
+      var c = sv('circle', { class: 'pt' + (last ? ' last' : ''), cx: cx, cy: cy, r: last ? 6 : 4.5 });
+      c.appendChild(sv('title', null, p.d + ': ' + p.label + (p.note ? ' (' + p.note + ')' : '')));
+      s.appendChild(c);
+      if (narrow && hideNarrow[p.d]) return;
+      var pl = place[p.d] || [0, -12, 'middle'];
+      s.appendChild(sv('text', { class: 'plabel', x: cx + pl[0], y: cy + pl[1], 'text-anchor': pl[2] }, p.label));
+    });
+    climbHost.appendChild(s);
+  }
+  drawClimb();
+  var climbTimer;
+  window.addEventListener('resize', function () { clearTimeout(climbTimer); climbTimer = setTimeout(drawClimb, 120); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawClimb);
+  D.climb.forEach(function (p) {
+    var d = new Date(p.d + 'T12:00:00Z');
+    $('#climb-points').appendChild(el('li', null, el('span', { class: 'd' }, d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })), el('span', { class: 'v' }, p.label), el('span', null, p.note || '', refs(p.src))));
+  });
+  (function () {
+    var lad = $('#ladder'), E = 1.046e12, K = 1.7e9;
+    lad.appendChild(el('div', { class: 'rung' }, el('div', { class: 'top-line' }, el('span', null, 'Elon Musk'), el('b', null, '$1.046T')), el('div', { class: 'track' }, el('div', { class: 'fill', style: 'width:100%' }))));
+    lad.appendChild(el('div', { class: 'rung' }, el('div', { class: 'top-line' }, el('span', null, 'Kimbal Musk'), el('b', null, '$1.7B')), el('div', { class: 'track' }, el('div', { class: 'fill', style: 'width:' + (K / E * 100).toFixed(3) + '%' })),
+      el('p', { class: 'scribble' }, '↑ that sliver is ' + (K / E * 100).toFixed(2) + '% of Elon’s fortune'), refs(['forbes_kimbal', 'forbes_elon'])));
+    lad.appendChild(el('div', { class: 'rung muted' }, el('div', { class: 'top-line' }, el('span', null, 'Everyone else on the map'), el('b', null, 'No reliable estimate'))));
+  })();
+
+  /* ---------------- homes ---------------- */
+  (function () {
+    var Hm = D.homes;
+    add($('#homes-flip'), [el('span', { class: 'v' }, '$' + Hm.totals.b + 'M'), el('span', { class: 'arrow' }, '→'), el('span', { class: 'v gold' }, '$' + Hm.totals.s + 'M')]);
+    add($('#homes-flip-src'), ['Seven homes bought from Dec 2012 to Jan 2019, all sold from June 2020 to November 2021. Roughly $' + Hm.totals.profit + 'M profit before mortgage costs, per the Wall Street Journal.', refs(Hm.totals.src)]);
+    Hm.quotes.forEach(function (q) {
+      $('#homes-quotes').appendChild(el('blockquote', { class: 'quote' }, el('p', null, '“' + q.q + '”'), el('footer', null, 'Elon Musk, ' + q.when, refs(q.src))));
+    });
+    var max = 35, dumb = $('#dumb');
+    function pct(v) { return (v / max * 100).toFixed(2) + '%'; }
+    Hm.props.forEach(function (h) {
+      var lo = Math.min(h.b, h.s), hi = Math.max(h.b, h.s);
+      dumb.appendChild(el('div', { class: 'drow' },
+        el('div', { class: 'lbl' }, el('div', { class: 'nm' }, h.name, refs(h.src)), el('div', { class: 'ar' }, h.area + ' · street ', el('span', { class: 'redact', title: 'We don’t publish street addresses', 'aria-label': 'street address withheld' }))),
+        el('div', { class: 'dtrack', 'aria-hidden': 'true' }, el('span', { class: 'dseg', style: 'left:' + pct(lo) + ';width:calc(' + pct(hi) + ' - ' + pct(lo) + ')' }), el('span', { class: 'ddot b', style: 'left:' + pct(h.b), title: 'Bought ' + h.by + ': $' + h.b + 'M' }), el('span', { class: 'ddot s', style: 'left:' + pct(h.s), title: 'Sold ' + h.sy + ': $' + h.s + 'M' })),
+        el('div', { class: 'vals' }, (h.bApprox ? '≈' : '') + '$' + h.b + 'M ', '→ ', el('b', null, '$' + h.s + 'M'), el('br'), h.by + ' → ' + h.sy)));
+    });
+    dumb.appendChild(el('div', { class: 'drow rent' },
+      el('div', { class: 'lbl' }, el('div', { class: 'nm' }, 'His Starbase rental', refs(['realtor_50k'])), el('div', { class: 'ar' }, 'Rented from SpaceX (2021)')),
+      el('div', { class: 'dtrack', 'aria-hidden': 'true' }, el('span', { class: 'ddot rent', style: 'left:' + pct(0.05) })),
+      el('div', { class: 'vals' }, el('b', { style: 'color:var(--green)' }, '~$50K'), el('br'), 'his words, 2021')));
+    var sc = el('div', { class: 'dscale', 'aria-hidden': 'true' }, el('div'), el('div', { class: 'ticks' }, [0, 10, 20, 30].map(function (v) { return el('span', { style: 'left:' + pct(v) }, '$' + v + 'M'); })), el('div'));
+    dumb.appendChild(sc);
+    add($('#wilder'), el('p', null, Hm.wilder.t, refs(Hm.wilder.src)));
+    Hm.extra.forEach(function (f) { $('#homes-facts').appendChild(el('li', null, f.t, refs(f.src))); });
+    Hm.hq.forEach(function (q) { $('#hq').appendChild(el('div', { class: 'mini' }, el('h4', null, q.h), el('p', null, q.t, refs(q.src)))); });
+  })();
+
+  /* ---------------- ledger ---------------- */
+  (function () {
+    var tb = $('#ledger tbody');
+    D.ledger.forEach(function (r) {
+      tb.appendChild(el('tr', null, el('td', { class: 'who' }, r.who), el('td', null, r.what), el('td', { class: 'amt' }, r.amt), el('td', { class: 'when' }, r.when), el('td', null, refs(r.src))));
+    });
+  })();
+
+  /* ---------------- trail ---------------- */
+  D.trail.forEach(function (t) {
+    $('#trail-list').appendChild(el('li', null, el('time', null, t.when), el('div', null,
+      el('h3', null, t.h, t.t ? null : refs(t.src)),
+      t.amt ? el('span', { class: 'amt' }, t.amt) : null,
+      t.t ? el('p', null, t.t, refs(t.src)) : null)));
+  });
+
+  /* ---------------- perspective ---------------- */
+  (function () {
+    var inp = $('#income'), worth = D.pace.worth;
+    [['$35K', 35000], ['$60K', 60000], ['$100K', 100000], ['$250K', 250000], ['$1M', 1000000]].forEach(function (p) {
+      $('#presets').appendChild(el('button', { type: 'button', onclick: function () { inp.value = p[1]; calc(); } }, p[0]));
+    });
+    function yearsText(y) {
+      if (y >= 1e9) return (y / 1e9).toFixed(1) + ' billion years';
+      if (y >= 1e6) return (y / 1e6).toFixed(1) + ' million years';
+      return fmtInt(y) + ' years';
+    }
+    function calc() {
+      var v = parseFloat(inp.value);
+      if (!(v > 0)) { $('#o-years').textContent = '—'; $('#o-secs').textContent = '—'; return; }
+      $('#o-years').textContent = yearsText(worth / v);
+      var secs = v / perSec;
+      $('#o-secs').textContent = secs < 60 ? secs.toFixed(1) + ' seconds' : secs < 3600 ? (secs / 60).toFixed(1) + ' minutes' : (secs / 3600).toFixed(1) + ' hours';
+    }
+    $('#o-spend').textContent = fmtInt(worth / 1e6 / 365.25) + ' years';
+    $('#o-kimbal').textContent = (1.7e9 / worth * 100).toFixed(2) + '%';
+    inp.addEventListener('input', calc);
+    calc();
+  })();
+
+  /* ---------------- cases ---------------- */
+  function prettyUrl(u) {
+    try { var x = new URL(u); var p = x.pathname.replace(/\/$/, ''); return x.hostname.replace(/^www\./, '') + (p.length > 38 ? p.slice(0, 36) + '…' : p); }
+    catch (e) { return u; }
+  }
+  D.cases.forEach(function (c) {
+    var chain = el('p', { class: 'chain' });
+    c.chain.forEach(function (s, i) { if (i) chain.appendChild(el('i', { 'aria-hidden': 'true' }, '→')); chain.appendChild(el('span', { class: 'link' }, s)); });
+    $('#case-list').appendChild(el('article', { class: 'case' },
+      el('img', { src: c.img, alt: 'Cover of ' + c.title, loading: 'lazy', width: 540, height: 960 }),
+      el('div', null,
+        el('p', { class: 'n' }, c.n === 'MASTER' ? 'The master file' : 'Case ' + c.n),
+        el('h3', null, c.title),
+        el('p', { class: 'hook' }, c.hook),
+        chain,
+        el('details', null, el('summary', null, 'Sources (' + c.links.length + ')'), el('ol', null, c.links.map(function (u) { return el('li', null, el('a', { href: u, target: '_blank', rel: 'noopener' }, prettyUrl(u))); }))))));
+  });
+
+  /* ---------------- sources + credits ---------------- */
+  var GROUP_NAMES = { family: 'The family', money: 'The money', record: 'On the record', homes: 'The homes' };
+  Object.keys(GROUP_NAMES).forEach(function (g) {
+    var list = D.sources.filter(function (s) { return s.group === g; });
+    if (!list.length) return;
+    var ol = el('ol', { start: list[0].n });
+    list.forEach(function (s) { ol.appendChild(el('li', { id: 's-' + s.n }, el('a', { href: s.url, target: '_blank', rel: 'noopener' }, s.pub), ': ' + s.title + ' (' + s.date + ')')); });
+    $('#src-list').appendChild(el('div', { class: 'src-group' }, el('h3', null, GROUP_NAMES[g]), ol));
+  });
+  Object.keys(D.photos).forEach(function (k) {
+    var ph = D.photos[k], who = PEOPLE[k] ? PEOPLE[k].name : k;
+    $('#credits').appendChild(el('li', null, who + ': ', el('a', { href: filePage(ph), target: '_blank', rel: 'noopener' }, 'photo'), ' by ' + ph.author + ' (' + ph.year + '), ',
+      el('a', { href: D.licenses[ph.license], target: '_blank', rel: 'noopener' }, ph.license), ', cropped'));
+  });
+  $('#repo-link').href = D.meta.repo;
+  $('#issues-link').href = D.meta.repo + '/issues';
+
+  /* deep link to a file, e.g. #kimbal */
+  syncHash();
+})();
+</script>
+</body>
+</html>
