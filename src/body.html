@@ -1,17 +1,17 @@
 <a class="skip" href="#family">Skip to the family map</a>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="The Money Files, back to top"><span class="brand-mark" aria-hidden="true">$</span><span>The Money Files</span></a>
+    <a class="brand" href="../" aria-label="The Money Files, all files"><span class="brand-mark" aria-hidden="true">$</span><span>The Money Files</span></a>
     <nav class="nav" aria-label="Sections">
       <a href="#family">Family</a>
       <a href="#invest">Can you buy it?</a>
-      <a href="#money">The trillion</a>
+      <a href="#money">The money</a>
       <a href="#homes">Homes</a>
       <a href="#record">On the record</a>
       <a href="#trail">Money trail</a>
       <a href="#perspective">Perspective</a>
-      <a href="#cases">Case files</a>
       <a href="#sources">Sources</a>
+      <a href="../">All files</a>
     </nav>
   </div>
 </header>
@@ -19,17 +19,17 @@
 <main id="top">
   <section class="wrap hero" aria-labelledby="h-hero">
     <div>
-      <p class="eyebrow"><b>File #006</b> · The Musk family · Data as of <span data-asof></span></p>
-      <h1 id="h-hero">The first <span class="gold">trillionaire</span> has a family. We followed the <span class="u-red">money</span>.</h1>
-      <p class="lede">Who&#8217;s who, what each of them owns, which of their companies you can actually buy stock in, the homes, and the money on the public record. Every number links to its source.</p>
+      <p class="eyebrow">{{eyebrow}}</p>
+      <h1 id="h-hero">{{h1}}</h1>
+      <p class="lede">{{lede}}</p>
       <div class="ctas">
         <a class="btn" href="#family">Open the family map</a>
         <a class="btn ghost" href="#invest">Can I buy it?</a>
       </div>
     </div>
     <div class="worth-card">
-      <p class="label">Elon Musk&#8217;s net worth</p>
-      <p class="big-number" id="hero-worth">$1,046,000,000,000</p>
+      <p class="label">{{worthLabel}}</p>
+      <p class="big-number" id="hero-worth">{{worthBig}}</p>
       <p class="fine" id="hero-worth-src"></p>
       <div class="pace">
         <p id="pace-line"></p>
@@ -43,7 +43,7 @@
       <header class="sec-head">
         <p class="exhibit">Exhibit A</p>
         <h2 id="h-family">The family</h2>
-        <p class="sec-lede">Tap anyone to open their file: what they own, what&#8217;s on the record, and where every fact comes from. Elon&#8217;s kids are listed by name only.</p>
+        <p class="sec-lede">{{familyLede}}</p>
       </header>
       <div class="board-wrap">
         <div class="board" id="board">
@@ -59,7 +59,7 @@
       <header class="sec-head">
         <p class="exhibit">Exhibit B</p>
         <h2 id="h-invest">Can you buy it?</h2>
-        <p class="sec-lede">Two of the family&#8217;s companies trade on the stock market. The rest are private, sold off, or have no Musk money in them anymore.</p>
+        <p class="sec-lede">{{investLede}}</p>
       </header>
       <div class="invest-big" id="invest-big"></div>
       <div class="invest-rest" id="invest-rest"></div>
@@ -71,8 +71,8 @@
     <div class="wrap">
       <header class="sec-head">
         <p class="exhibit">Exhibit C</p>
-        <h2 id="h-money">Where the trillion lives</h2>
-        <p class="sec-lede">Most of Elon&#8217;s fortune is SpaceX stock, which became tradable in June 2026. Here&#8217;s how it breaks down, and how fast it got here.</p>
+        <h2 id="h-money">{{moneyTitle}}</h2>
+        <p class="sec-lede">{{moneyLede}}</p>
       </header>
       <div class="money-grid">
         <div class="panel">
@@ -100,25 +100,25 @@
     <div class="wrap">
       <header class="sec-head">
         <p class="exhibit">Exhibit D</p>
-        <h2 id="h-homes">From seven mansions to a $50K rental</h2>
-        <p class="sec-lede">Elon bought seven California homes between 2012 and 2019, then sold every one after promising to &#8220;own no house.&#8221; Prices come from public records as reported by the press. No street addresses here.</p>
+        <h2 id="h-homes">{{homesTitle}}</h2>
+        <p class="sec-lede">{{homesLede}}</p>
       </header>
       <div class="homes-top">
         <div class="panel">
-          <p class="label">Bought for &#8594; sold for</p>
+          <p class="label">{{homesFlipLabel}}</p>
           <div class="flip" id="homes-flip"></div>
           <p class="fine" id="homes-flip-src"></p>
         </div>
         <div class="quotes" id="homes-quotes"></div>
       </div>
       <div class="panel dumb">
-        <h3>Each house: what he paid, what he sold it for</h3>
+        <h3>{{homesChart}}</h3>
         <div id="dumb"></div>
-        <div class="dkey"><span><i style="border:2px solid var(--ink-2)"></i>Bought</span><span><i style="background:var(--gold)"></i>Sold</span><span><i style="background:var(--green)"></i>His Starbase rental (2021)</span></div>
+        <div class="dkey" id="dkey"></div>
       </div>
       <div class="wilder" id="wilder"></div>
       <ul class="facts" id="homes-facts"></ul>
-      <div class="sub-head"><h3>The companies moved to Texas too</h3></div>
+      <div class="sub-head" id="hq-head"><h3>The companies moved to Texas too</h3></div>
       <div class="cards-3" id="hq"></div>
     </div>
   </section>
@@ -128,7 +128,7 @@
       <header class="sec-head">
         <p class="exhibit">Exhibit E</p>
         <h2 id="h-record">On the record</h2>
-        <p class="sec-lede">The money that shows up in SEC filings, tax returns, court records and FEC reports. These are filings, not estimates.</p>
+        <p class="sec-lede">{{recordLede}}</p>
       </header>
       <div class="ledger-wrap">
         <table class="ledger" id="ledger">
@@ -145,7 +145,7 @@
       <header class="sec-head">
         <p class="exhibit">Exhibit F</p>
         <h2 id="h-trail">The money trail</h2>
-        <p class="sec-lede">From a city-guide startup in 1995 to the first trillion in 2026.</p>
+        <p class="sec-lede">{{trailLede}}</p>
       </header>
       <ol class="trail" id="trail-list"></ol>
     </div>
@@ -166,23 +166,12 @@
           <p class="hint" id="income-hint">$60,000 is just an example to start with.</p>
         </div>
         <div class="outs">
-          <div class="out"><p class="k">Years to earn what Elon has</p><p class="v" id="o-years">&#8212;</p><p class="s">at that income, with no taxes or spending</p></div>
+          <div class="out"><p class="k">{{calcYearsK}}</p><p class="v" id="o-years">&#8212;</p><p class="s">at that income, with no taxes or spending</p></div>
           <div class="out"><p class="k">A whole year of your pay equals</p><p class="v" id="o-secs">&#8212;</p><p class="s">of his average growth over the past year</p></div>
           <div class="out"><p class="k">Spending $1 million every day</p><p class="v" id="o-spend">&#8212;</p><p class="s">before his fortune runs out (ignoring growth)</p></div>
-          <div class="out"><p class="k">Kimbal is a billionaire too</p><p class="v" id="o-kimbal">&#8212;</p><p class="s">his $1.7B as a share of Elon&#8217;s fortune</p></div>
+          <div class="out"><p class="k" id="o-kimbal-k"></p><p class="v" id="o-kimbal">&#8212;</p><p class="s" id="o-kimbal-s"></p></div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section" id="cases" aria-labelledby="h-cases">
-    <div class="wrap">
-      <header class="sec-head">
-        <p class="exhibit">The case files</p>
-        <h2 id="h-cases">More from Follow the Money</h2>
-        <p class="sec-lede">Short videos that trace everyday brands back to who actually owns them. Every case is sourced.</p>
-      </header>
-      <div class="cases" id="case-list"></div>
     </div>
   </section>
 
@@ -202,7 +191,7 @@
         </div>
         <div class="mini">
           <h4>Privacy rules</h4>
-          <p>No street addresses for anyone. Children appear by name only, with no photos. Private relatives, including Errol Musk&#8217;s younger children, are left out. Photos are of adults who are public figures, under the licenses below.</p>
+          <p>No street addresses for anyone. Children appear by name only, with no photos. Private relatives are left out. Photos are of adults who are public figures, under the licenses below.</p>
           <p>Not investment advice. Spotted an error? <a id="issues-link" href="#" target="_blank" rel="noopener">Open an issue on GitHub</a>.</p>
         </div>
         <div class="mini">
@@ -217,8 +206,8 @@
 
 <footer class="site-foot">
   <div class="wrap">
-    <span>The Money Files · File #006: the Musk family · Data as of <span data-asof></span></span>
-    <span><a id="repo-link" href="#" target="_blank" rel="noopener">Source code and data on GitHub</a></span>
+    <span>The Money Files · {{footLabel}} · Data as of <span data-asof></span></span>
+    <span><a href="../">All files</a> · <a id="repo-link" href="#" target="_blank" rel="noopener">Source code and data on GitHub</a></span>
   </div>
 </footer>
 

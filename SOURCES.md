@@ -1,8 +1,10 @@
 # Sources
 
-Every numbered source on the site, as of Oct 6, 2026. The numbers match the little blue source links on the page.
+Every numbered source on the site. Each family page numbers its own sources; the numbers below match the little blue links on that page.
 
-## The family
+## The Musk family (File #006, data as of Oct 6, 2026)
+
+### The family
 
 1. [CBC News](https://www.cbc.ca/newsinteractives/features/joshua-haldeman-elon-musk-saskatchewan-tech-utopian-conspiracist): Feature on Joshua Haldeman, Elon Musk's grandfather (Mar 20, 2025)
 2. [Business Insider (via Yahoo Finance)](https://finance.yahoo.com/news/elon-musks-grandparents-were-adventuring-233554280.html): Elon Musk's grandparents were adventurers (Aug 2, 2016)
@@ -53,7 +55,7 @@ Every numbered source on the site, as of Oct 6, 2026. The numbers match the litt
 47. [CleanTechnica](https://cleantechnica.com/2019/03/23/solarcity-founders-peter-lyndon-rive-join-zola-electric-to-advance-solar-in-africa): SolarCity founders join ZOLA Electric (Mar 23, 2019)
 48. [btpm.org (public radio)](https://www.btpm.org/business-economy/2017-07-19/solarcity-co-founder-joins-his-brother-in-leaving-company): SolarCity co-founder joins his brother in leaving company (Jul 19, 2017)
 
-## The money
+### The money
 
 49. [Forbes](https://www.forbes.com/profile/elon-musk/): Real-time profile: Elon Musk ($1.046T) (Oct 6, 2026)
 50. [Bloomberg Billionaires Index](https://www.bloomberg.com/billionaires/profiles/elon-r-musk/): Elon Musk profile ($1.05T, rank #1) (Oct 6, 2026)
@@ -94,7 +96,7 @@ Every numbered source on the site, as of Oct 6, 2026. The numbers match the litt
 85. [Bloomberg (via Bloomberg Law)](https://news.bloomberglaw.com/mergers-and-acquisitions/elon-musk-sells-3-6-billion-worth-of-his-stake-in-tesla-1): Musk sells $3.6 billion of Tesla stock (Dec 2022)
 86. [Forbes](https://www.forbes.com/sites/siladityaray/2021/12/20/elon-musk-claims-he-will-pay-more-than-11-billion-in-taxes-this-year/): Musk says he will pay over $11 billion in taxes this year (Dec 20, 2021)
 
-## On the record
+### On the record
 
 87. [IRS Form 990-PF (via Candid/GuideStar)](https://pdf.guidestar.org/PDF_Images/2024/852/133/2024-852133087-202543219349108074-F.pdf): Musk Foundation, tax year 2024 (filed Nov 2025)
 88. [ProPublica Nonprofit Explorer](https://projects.propublica.org/nonprofits/organizations/852133087): Musk Foundation filings (accessed Oct 2026)
@@ -117,7 +119,7 @@ Every numbered source on the site, as of Oct 6, 2026. The numbers match the litt
 105. [Delaware Supreme Court (via Justia)](https://law.justia.com/cases/delaware/supreme-court/2026/52-2025-53-2025.html): Tesla director-compensation settlement affirmed (Jan 30, 2026)
 106. [Bleichmar Fonti & Auld (plaintiffs’ firm)](https://www.bfalaw.com/news/bfa-secures-the-largest-delaware-derivative-settlement-in-tesla-board-compensation-case): Tesla board compensation settlement (Jan 2025)
 
-## The homes
+### The homes
 
 107. [Los Angeles Times](https://www.latimes.com/business/realestate/la-fi-hotprop-elon-musk-20121231-story.html): Elon Musk pays $17 million for Bel-Air manse (Dec 31, 2012)
 108. [Los Angeles Times](https://www.latimes.com/business/realestate/hot-property/la-fi-hotprop-elon-musk-20131104-story.html): Elon Musk spends $6.75 million for former Gene Wilder home (Nov 4, 2013)
@@ -143,9 +145,7 @@ Every numbered source on the site, as of Oct 6, 2026. The numbers match the litt
 128. [Reuters](https://www.reuters.com/technology/space/musk-says-spacex-headquarters-be-starbase-texas-2024-12-13/): SpaceX headquarters to be in Starbase, Texas (Dec 12, 2024)
 129. [Reuters](https://www.reuters.com/legal/litigation/musks-x-can-sue-watchdog-media-matters-texas-us-judge-rules-2025-09-16/): X moved its headquarters to Bastrop, Texas (court ruling story) (Sep 16, 2025)
 
-## Photo credits
-
-All photos are from Wikimedia Commons and cropped for display. Children are never shown.
+### Photo credits
 
 - Elon Musk: [Elon Musk - 54820081119 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Elon_Musk_-_54820081119_(cropped).jpg) by Gage Skidmore (2025), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Kimbal Musk: [KIMBAL MUSK OFFICIAL HEADSHOT (cropped).jpg](https://commons.wikimedia.org/wiki/File:KIMBAL_MUSK_OFFICIAL_HEADSHOT_(cropped).jpg) by 1000x2020 (2013), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
@@ -157,3 +157,43 @@ All photos are from Wikimedia Commons and cropped for display. Children are neve
 - Shivon Zilis: [Shivon Zilis in 2017.jpg](https://commons.wikimedia.org/wiki/File:Shivon_Zilis_in_2017.jpg) by Steve Jurvetson (2017), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
 - Ashley St. Clair: [Ashley St. Clair at 2026 Venice Film Festival (Zoë Schiffler cropped out).jpg](https://commons.wikimedia.org/wiki/File:Ashley_St._Clair_at_2026_Venice_Film_Festival_(Zoë_Schiffler_cropped_out).jpg) by CaseyJNewell (2026), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Lyndon Rive: [Lyndon Rive 2015.jpg](https://commons.wikimedia.org/wiki/File:Lyndon_Rive_2015.jpg) by Steve Jurvetson (2015), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+
+## The Bezos family (File #007, data as of Oct 6, 2026)
+
+### The family
+
+1. [Britannica](https://www.britannica.com/money/Jeff-Bezos): Jeff Bezos (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Jeff_Bezos): Jeff Bezos (accessed Oct 2026)
+3. [Wikipedia](https://en.wikipedia.org/wiki/Jackie_Bezos): Jackie Bezos (accessed Oct 2026)
+4. [Early Childhood Funders Collaborative](https://ecfunders.org/remembering-jackie-bezos-a-visionary-leader-in-early-childhood-philanthropy/): Remembering Jackie Bezos (Aug 28, 2025)
+5. [Wikipedia](https://en.wikipedia.org/wiki/Miguel_Bezos): Miguel “Mike” Bezos (accessed Oct 2026)
+6. [Wikipedia](https://en.wikipedia.org/wiki/Ted_Jorgensen): Ted Jorgensen (accessed Oct 2026)
+7. [Wikipedia](https://en.wikipedia.org/wiki/Mark_Bezos): Mark Bezos (accessed Oct 2026)
+8. [Wikipedia](https://en.wikipedia.org/wiki/Lauren_S%C3%A1nchez_Bezos): Lauren Sánchez Bezos (accessed Oct 2026)
+9. [TODAY](https://www.today.com/today/amp/rcna180594): Who is Lauren Sánchez? (2024)
+
+### The money
+
+10. [Forbes](https://www.forbes.com/profile/jeff-bezos/): Real-time profile: Jeff Bezos ($374.5B, #2) (Oct 6, 2026)
+11. [Forbes](https://www.forbes.com/profile/mackenzie-scott/): Real-time profile: MacKenzie Scott ($27.5B) (Oct 5, 2026)
+12. [TheWrap](https://www.thewrap.com/jeff-bezos-amazon-ownership-falls-below-10): Bezos’s Amazon stake falls to 9% (SEC filing) (Oct 14, 2025)
+13. [Fortune](https://www.fortune.com/2018/07/31/jeff-bezos-family-investment-amazon): The Bezos family’s early Amazon investment (Jul 31, 2018)
+14. [Amazon](https://www.aboutamazon.com/news/workplace/first-amazon-office-jeff-bezos-garage): The garage where Jeff Bezos started Amazon (Oct 2023)
+15. [Wikipedia](https://en.wikipedia.org/wiki/Blue_Origin): Blue Origin (accessed Oct 2026)
+
+### On the record
+
+16. [CNN Money](https://money.cnn.com/2013/08/05/news/companies/washington-post-bezos): Amazon’s Bezos buys Washington Post for $250 million (Aug 5, 2013)
+17. [Fortune](https://fortune.com/2026/02/26/mackenzie-scott-more-generous-philanthropist-than-ex-husband-jeff-bezos-amazon-founder-billionaire): MacKenzie Scott has given more than her ex-husband (Feb 26, 2026)
+
+### The homes
+
+18. [Robb Report](https://robbreport.com.my/travel/hotels/jeff-bezos-property-portfolio/): Inside Jeff Bezos’s $700 million property portfolio (May 22, 2025)
+19. [Bloomberg Línea](https://www.bloomberglinea.com/2023/10/15/jeff-bezos-compra-la-mansion-de-su-vecino-en-florida-por-us79-millones/): Bezos buys his Florida neighbor’s house for $79M (Oct 15, 2023)
+20. [Quartz](https://qz.com/jeff-bezos-neighbor-billionaire-bunker-listing-brady-1851729348): Bezos’s neighbors on “Billionaire Bunker” island (2024)
+
+### Photo credits
+
+- Jeff Bezos: [260202-D-PM193-2205 SECWAR Arsenal of Freedom Tour - Florida (3x4 cropped on Bezos and rotated).jpg](https://commons.wikimedia.org/wiki/File:260202-D-PM193-2205_SECWAR_Arsenal_of_Freedom_Tour_-_Florida_(3x4_cropped_on_Bezos_and_rotated).jpg) by U.S. Navy PO1 Alexander Kubitza, U.S. Dept. of War (2026), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- MacKenzie Scott: [MacKenzie Scott.jpg](https://commons.wikimedia.org/wiki/File:MacKenzie_Scott.jpg) by Barry Bahler, U.S. DHS (2016), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Lauren Sánchez Bezos: [Lauren Sanchez Headshot.jpg](https://commons.wikimedia.org/wiki/File:Lauren_Sanchez_Headshot.jpg) by Angela Kohler (2022), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)

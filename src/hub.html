@@ -1,0 +1,124 @@
+<a class="skip" href="#files">Skip to the files</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="The Money Files, home"><span class="brand-mark" aria-hidden="true">$</span><span>The Money Files</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#files">The files</a>
+      <a href="#how">How it works</a>
+      <a href="#cases">Case files</a>
+      <a id="repo-link" href="#" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap hero" aria-labelledby="h-hero">
+    <div>
+      <p class="eyebrow"><b>Follow the money</b> · Data as of <span data-asof></span></p>
+      <h1 id="h-hero">Every fortune leaves a <span class="gold">paper trail</span>. We <span class="u-red">follow</span> it.</h1>
+      <p class="lede">The Money Files maps the richest families on Earth using public records only: SEC filings, court cases, tax returns and news reporting. Pick a family, tap a face, and see who owns what, which of their companies you can buy stock in, the homes, and the receipts. Every number links to its source.</p>
+      <div class="ctas">
+        <a class="btn" href="#files">Pick a file</a>
+        <a class="btn ghost" href="#how">How it works</a>
+      </div>
+    </div>
+    <div class="worth-card" id="hub-stat"></div>
+  </section>
+
+  <section class="section" id="files" aria-labelledby="h-files">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="exhibit">The files</p>
+        <h2 id="h-files">Pick a family</h2>
+        <p class="sec-lede">Each file is an interactive family map. More files are on the way.</p>
+      </header>
+      <div class="files" id="files-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="how" aria-labelledby="h-how">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="exhibit">How it works</p>
+        <h2 id="h-how">How we follow the money</h2>
+        <p class="sec-lede">Money is hard to hide when it&#8217;s on the public record. Here&#8217;s the method behind every file.</p>
+      </header>
+      <ol class="steps">
+        <li><h3>Start with a name or a brand</h3><p>A billionaire, a candy bar, a streaming app. Somebody owns it, and that owner usually has to say so somewhere public.</p></li>
+        <li><h3>Pull the public records</h3><p>SEC filings show who owns shares. Court records and tax returns show settlements and foundations. Property records and reporting show the homes.</p></li>
+        <li><h3>Connect the dots and cite them</h3><p>Every number gets a link to where it came from, so you can check it yourself. Estimates are labeled as estimates.</p></li>
+      </ol>
+      <p class="rules">The rules: no street addresses, kids by name only (and not at all when their names are private), private relatives left out, and nothing here is investment advice.</p>
+    </div>
+  </section>
+
+  <section class="section" id="cases" aria-labelledby="h-cases">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="exhibit">The case files</p>
+        <h2 id="h-cases">The video series</h2>
+        <p class="sec-lede">Short videos that trace everyday brands back to who actually owns them. Every case is sourced.</p>
+      </header>
+      <div class="cases" id="case-list"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>The Money Files · Data as of <span data-asof></span> · Not investment advice</span>
+    <span><a id="repo-link-2" href="#" target="_blank" rel="noopener">Source code and data on GitHub</a></span>
+  </div>
+</footer>
+<script id="hub-data" type="application/json">{{HUBDATA}}</script>
+<script>
+(function () {
+  'use strict';
+  var D = JSON.parse(document.getElementById('hub-data').textContent);
+  var h = decodeURIComponent((location.hash || '').slice(1));
+  if (D.redirects[h]) { location.replace(D.redirects[h] + '#' + h); return; }
+  function $(s) { return document.querySelector(s); }
+  function el(tag, attrs) {
+    var n = document.createElement(tag);
+    Object.keys(attrs || {}).forEach(function (k) { if (attrs[k] != null) { if (k === 'class') n.className = attrs[k]; else n.setAttribute(k, attrs[k]); } });
+    for (var i = 2; i < arguments.length; i++) { var c = arguments[i]; if (c == null) continue; (Array.isArray(c) ? c : [c]).forEach(function (x) { n.appendChild(x instanceof Node ? x : document.createTextNode(String(x))); }); }
+    return n;
+  }
+  function face(f) {
+    var span = el('span', { class: 'face', 'data-initials': f.initials }), ph = f.photo;
+    if (ph) {
+      var r = ph.h / ph.w, w = Math.max(1, ph.w / ph.h) * ph.zoom, hh = w * r;
+      var left = Math.min(0, Math.max(1 - w, 0.5 - ph.fx * w)), top = Math.min(0, Math.max(1 - hh, 0.46 - ph.fy * hh));
+      var img = el('img', { src: 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(ph.file.replace(/ /g, '_')) + (ph.w > 400 ? '?width=400' : ''), alt: '', loading: 'lazy', referrerpolicy: 'no-referrer',
+        style: 'width:' + (w * 100).toFixed(2) + '%;left:' + (left * 100).toFixed(2) + '%;top:' + (top * 100).toFixed(2) + '%' });
+      img.addEventListener('error', function () { img.remove(); });
+      span.appendChild(img);
+    }
+    return span;
+  }
+  [].forEach.call(document.querySelectorAll('[data-asof]'), function (n) { n.textContent = D.asOfLabel; });
+  $('#repo-link').href = $('#repo-link-2').href = D.repo;
+  var total = D.families.reduce(function (a, f) { return a + f.worthV; }, 0);
+  var stat = $('#hub-stat');
+  stat.appendChild(el('p', { class: 'label' }, D.families.length + ' families on file'));
+  stat.appendChild(el('p', { class: 'big-number' }, '$' + (total / 1e12).toFixed(2) + ' trillion'));
+  stat.appendChild(el('p', { class: 'fine' }, D.families.map(function (f) { return f.name + ' ' + f.worthShort; }).join(' · ') + ' · Forbes estimates, ' + D.asOfLabel));
+  D.families.forEach(function (f) {
+    $('#files-grid').appendChild(el('a', { class: 'file-card', href: f.slug + '/' },
+      face(f), el('p', { class: 'fn' }, f.file), el('h3', null, f.title), el('p', { class: 'w' }, f.worthShort),
+      el('p', { class: 'tz' }, f.teaser), el('p', { class: 'meta' }, f.people + ' people · ' + f.sources + ' sources'), el('span', { class: 'go' }, 'Open the file →')));
+  });
+  $('#files-grid').appendChild(el('div', { class: 'file-card soon' }, el('p', { class: 'fn' }, 'Next file'), el('h3', null, 'More families soon'), el('p', { class: 'tz' }, 'Got a name we should trace? Open an issue on GitHub.')));
+  D.cases.forEach(function (c) {
+    var chain = el('p', { class: 'chain' });
+    c.chain.forEach(function (s, i) { if (i) chain.appendChild(el('i', { 'aria-hidden': 'true' }, '→')); chain.appendChild(el('span', { class: 'link' }, s)); });
+    $('#case-list').appendChild(el('article', { class: 'case' },
+      el('img', { src: c.img, alt: 'Cover of ' + c.title, loading: 'lazy', width: 540, height: 960 }),
+      el('div', null, el('p', { class: 'n' }, c.n === 'MASTER' ? 'The master file' : 'Case ' + c.n), el('h3', null, c.title), el('p', { class: 'hook' }, c.hook), chain,
+        el('details', null, el('summary', null, 'Sources (' + c.links.length + ')'), el('ol', null, c.links.map(function (u) {
+          var t = u; try { var x = new URL(u), p = x.pathname.replace(/\/$/, ''); t = x.hostname.replace(/^www\./, '') + (p.length > 38 ? p.slice(0, 36) + '…' : p); } catch (e) { }
+          return el('li', null, el('a', { href: u, target: '_blank', rel: 'noopener' }, t));
+        }))))));
+  });
+})();
+</script>

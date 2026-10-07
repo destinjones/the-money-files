@@ -3,7 +3,10 @@
   "asOf": "2026-10-06",
   "asOfLabel": "Oct 6, 2026",
   "file": "File #006",
-  "repo": "https://github.com/destinjones/the-money-files"
+  "repo": "https://github.com/destinjones/the-money-files",
+  "center": "elon",
+  "slug": "musk",
+  "og": "assets/og.jpg"
  },
  "sources": [
   {
@@ -1155,7 +1158,8 @@
   "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
   "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
   "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
-  "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/"
+  "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
  },
  "people": [
   {
@@ -1196,7 +1200,8 @@
      "by": "Bloomberg Billionaires Index, rank #1",
      "src": [
       "bbg_elon"
-     ]
+     ],
+     "short": "Bloomberg"
     }
    },
    "owns": [
@@ -2561,7 +2566,18 @@
      "ap_starbase"
     ]
    }
-  ]
+  ],
+  "rent": {
+   "name": "His Starbase rental",
+   "area": "Rented from SpaceX (2021)",
+   "v": 0.05,
+   "label": "~$50K",
+   "sub": "his words, 2021",
+   "src": [
+    "realtor_50k"
+   ]
+  },
+  "flip": true
  },
  "ledger": [
   {
@@ -3032,5 +3048,159 @@
     "https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/sets-us-apart/ownership.html"
    ]
   }
- ]
+ ],
+ "copy": {
+  "title": "The Musk Money File",
+  "desc": "The first trillionaire has a family. An interactive, fully sourced map of the Musk family: who owns what, which stocks you can buy, the homes, and the money on the public record.",
+  "eyebrow": "<b>File #006</b> · The Musk family · Data as of <span data-asof></span>",
+  "h1": "The first <span class=\"gold\">trillionaire</span> has a family. We followed the <span class=\"u-red\">money</span>.",
+  "lede": "Who’s who, what each of them owns, which of their companies you can actually buy stock in, the homes, and the money on the public record. Every number links to its source.",
+  "worthLabel": "Elon Musk’s net worth",
+  "worthBig": "$1,046,000,000,000",
+  "familyLede": "Tap anyone to open their file: what they own, what’s on the record, and where every fact comes from. Elon’s kids are listed by name only.",
+  "investLede": "Two of the family’s companies trade on the stock market. The rest are private, sold off, or have no Musk money in them anymore.",
+  "moneyTitle": "Where the trillion lives",
+  "moneyLede": "Most of Elon’s fortune is SpaceX stock, which became tradable in June 2026. Here’s how it breaks down, and how fast it got here.",
+  "homesTitle": "From seven mansions to a $50K rental",
+  "homesLede": "Elon bought seven California homes between 2012 and 2019, then sold every one after promising to “own no house.” Prices come from public records as reported by the press. No street addresses here.",
+  "homesFlipLabel": "Bought for → sold for",
+  "homesChart": "Each house: what he paid, what he sold it for",
+  "recordLede": "The money that shows up in SEC filings, tax returns, court records and FEC reports. These are filings, not estimates.",
+  "trailLede": "From a city-guide startup in 1995 to the first trillion in 2026.",
+  "calcYearsK": "Years to earn what Elon has",
+  "footLabel": "File #006: the Musk family"
+ },
+ "tree": {
+  "rowTop": {
+   "0": 0,
+   "1": 178,
+   "2": 354,
+   "3": 600
+  },
+  "groups": [
+   [
+    "center",
+    "The center"
+   ],
+   [
+    "parents",
+    "Parents"
+   ],
+   [
+    "siblings",
+    "Siblings"
+   ],
+   [
+    "partners",
+    "Partners & children",
+    "Elon’s kids by name only."
+   ],
+   [
+    "cousins",
+    "Cousins",
+    "Their mom is Maye’s twin sister, a private person."
+   ],
+   [
+    "grand",
+    "Grandparents"
+   ]
+  ],
+  "order": [
+   "elon",
+   "kimbal",
+   "tosca",
+   "maye",
+   "errol",
+   "justine",
+   "talulah",
+   "grimes",
+   "shivon",
+   "ashley",
+   "lyndon",
+   "peter",
+   "russ",
+   "haldemans"
+  ],
+  "coParents": [
+   "justine",
+   "grimes",
+   "shivon",
+   "ashley"
+  ],
+  "couples": [
+   [
+    "maye",
+    "errol",
+    "m. 1970–79"
+   ]
+  ],
+  "forks": [
+   {
+    "frm": "haldemans",
+    "kids": [
+     "kaye",
+     "maye"
+    ],
+    "label": "5 kids, incl. twin girls (1948)"
+   },
+   {
+    "frm": [
+     "maye",
+     "errol"
+    ],
+    "kids": [
+     "elon",
+     "kimbal",
+     "tosca"
+    ]
+   },
+   {
+    "frm": "kaye",
+    "kids": [
+     "lyndon",
+     "peter",
+     "russ"
+    ]
+   },
+   {
+    "frm": "elon",
+    "kids": [
+     "justine",
+     "talulah",
+     "grimes",
+     "shivon",
+     "ashley"
+    ],
+    "toNodeTop": true
+   }
+  ]
+ },
+ "ladder": {
+  "items": [
+   {
+    "name": "Elon Musk",
+    "short": "Elon",
+    "v": 1046000000000.0,
+    "label": "$1.046T",
+    "src": [
+     "forbes_elon"
+    ]
+   },
+   {
+    "name": "Kimbal Musk",
+    "v": 1700000000.0,
+    "label": "$1.7B",
+    "src": [
+     "forbes_kimbal"
+    ]
+   }
+  ],
+  "rest": "Everyone else on the map"
+ },
+ "calc": {
+  "worth": 1046000000000.0,
+  "compareK": "Kimbal is a billionaire too",
+  "compareS": "his $1.7B as a share of Elon’s fortune",
+  "compareV": 1700000000.0
+ }
 }

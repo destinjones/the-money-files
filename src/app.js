@@ -55,8 +55,8 @@
   /* ---------------- people, companies, photos ---------------- */
   var PEOPLE = {}, ORDER = [];
   D.people.forEach(function (p) { PEOPLE[p.id] = p; });
-  ['elon', 'kimbal', 'tosca', 'maye', 'errol', 'justine', 'talulah', 'grimes', 'shivon', 'ashley', 'lyndon', 'peter', 'russ', 'haldemans']
-    .forEach(function (id) { if (PEOPLE[id]) ORDER.push(id); });
+  D.tree.order.forEach(function (id) { if (PEOPLE[id]) ORDER.push(id); });
+  var CENTER = PEOPLE[D.meta.center];
   var CO = {};
   D.companies.concat(D.companiesExtra).forEach(function (c) { CO[c.id] = c; });
 
@@ -90,21 +90,18 @@
 
   /* ---------------- hero ---------------- */
   $$('[data-asof]').forEach(function (n) { n.textContent = D.meta.asOfLabel; });
-  var elon = PEOPLE.elon;
-  add($('#hero-worth-src'), ['Forbes real-time estimate, ' + elon.worth.date, refs(elon.worth.src), ' · Bloomberg: ' + elon.worth.also.value, refs(elon.worth.also.src)]);
-  var perSec = D.pace.yoy / (365.25 * 86400);
-  add($('#pace-line'), ['Over the past year his fortune grew ', el('b', null, money(D.pace.yoy).replace('B', ' billion')), refs(['bbg_elon']), '. That works out to about ', el('b', { class: 'gold' }, '$' + fmtInt(perSec) + ' every second'), ', on average.']);
-  var t0 = Date.now(), since = $('#since');
-  function tick() { since.value = since.textContent = '+$' + fmtInt(perSec * (Date.now() - t0) / 1000); }
-  tick(); setInterval(tick, 250);
+  var elon = CENTER, W = elon.worth;
+  add($('#hero-worth-src'), [W.by + ', ' + W.date, refs(W.src), W.also ? ' · ' + (W.also.short || W.also.by) + ': ' + W.also.value : null, W.also ? refs(W.also.src) : null]);
+  var perSec = D.pace ? D.pace.yoy / (365.25 * 86400) : 0;
+  if (D.pace) {
+    add($('#pace-line'), ['Over the past year his fortune grew ', el('b', null, money(D.pace.yoy).replace('B', ' billion')), refs(D.pace.src.slice(0, 1)), '. That works out to about ', el('b', { class: 'gold' }, '$' + fmtInt(perSec) + ' every second'), ', on average.']);
+    var t0 = Date.now(), since = $('#since');
+    var tick = function () { since.value = since.textContent = '+$' + fmtInt(perSec * (Date.now() - t0) / 1000); };
+    tick(); setInterval(tick, 250);
+  } else { $('.pace').hidden = true; }
 
   /* ---------------- family board ---------------- */
-  var ROW_TOP = { 0: 0, 1: 178, 2: 354, 3: 600 };
-  var GROUPS = [
-    ['center', 'The center'], ['parents', 'Parents'], ['siblings', 'Siblings'],
-    ['partners', 'Partners & children', 'Elon’s kids by name only.'],
-    ['cousins', 'Cousins', 'Their mom is Maye’s twin sister, a private person.'], ['grand', 'Grandparents']
-  ];
+  var ROW_TOP = D.tree.rowTop, GROUPS = D.tree.groups;
   var board = $('#board');
   function nodeFor(p) {
     var L = p.layout || {};
@@ -118,9 +115,9 @@
       p.tag ? el('span', { class: 'n-tag' + (p.tagKind === 'money' ? ' money' : '') }, p.tag) : null);
     if (L.partner) {
       b.appendChild(el('span', { class: 'p-head' }, face(p), text));
-      var kids = el('span', { class: 'kids' }, el('span', { class: 'kids-label' }, 'Children with Elon'));
+      var kids = el('span', { class: 'kids' }, el('span', { class: 'kids-label' }, 'Children with ' + CENTER.short));
       if (p.kids && p.kids.length) p.kids.forEach(function (k) { kids.appendChild(el('span', { class: 'kid' + (k.note && /died/.test(k.note) ? ' gone' : ''), title: k.note || null }, k.name + (k.note && /died/.test(k.note) ? ' †' : ''))); });
-      else kids.appendChild(el('span', { class: 'kids-none' }, 'None together'));
+      else kids.appendChild(el('span', { class: 'kids-none' }, p.kidsText || 'None together'));
       b.appendChild(kids);
     } else {
       b.appendChild(face(p)); b.appendChild(text);
@@ -139,7 +136,7 @@
     D.people.filter(function (p) { return p.group === g[0]; }).forEach(function (p) { list.appendChild(nodeFor(p)); });
     wrap.appendChild(list); board.appendChild(wrap);
   });
-  add($('#board-note'), [elon.kidsNote.t, refs(elon.kidsNote.src)]);
+  if (CENTER.kidsNote) add($('#board-note'), [CENTER.kidsNote.t, refs(CENTER.kidsNote.src)]);
 
   var wires = $('#wires'), desk = window.matchMedia('(min-width: 1040px)');
   function heat(id) {
@@ -166,18 +163,22 @@
       path(d, rel);
       return bus;
     }
-    var hal = R('haldemans'), kaye = R('kaye'), maye = R('maye'), errol = R('errol');
-    var bus0 = fork(hal.cx, hal.bottom + 2, [kaye, maye], 'haldemans kaye maye');
-    var lab = sv('text', { x: (kaye.cx + maye.cx) / 2, y: bus0 + 15, 'text-anchor': 'middle', class: 'wire-label' }, '5 kids, incl. twin girls (1948)');
-    wires.appendChild(lab);
-    // Maye + Errol, married 1970-79
-    var y = maye.mid, x1 = maye.r + 5, x2 = errol.l - 5, mx = (x1 + x2) / 2;
-    path('M' + x1 + ',' + (y - 2) + ' H' + x2 + ' M' + x1 + ',' + (y + 2) + ' H' + x2, 'maye errol');
-    wires.appendChild(sv('text', { x: mx, y: y - 9, 'text-anchor': 'middle', class: 'wire-label' }, 'm. 1970–79'));
-    fork(mx, y + 2, [R('elon'), R('kimbal'), R('tosca')], 'maye errol elon kimbal tosca', false, Math.max(maye.bottom, errol.bottom));
-    fork(kaye.cx, kaye.bottom + 2, [R('lyndon'), R('peter'), R('russ')], 'kaye lyndon peter russ');
-    var e = R('elon');
-    fork(e.cx, e.bottom + 2, ['justine', 'talulah', 'grimes', 'shivon', 'ashley'].map(R), 'elon justine talulah grimes shivon ashley', true);
+    var T = D.tree, CM = {};
+    (T.couples || []).forEach(function (c) {
+      var a = R(c[0]), b = R(c[1]), y = a.mid, x1 = a.r + 5, x2 = b.l - 5, mx = (x1 + x2) / 2;
+      path('M' + x1 + ',' + (y - 2) + ' H' + x2 + ' M' + x1 + ',' + (y + 2) + ' H' + x2, c[0] + ' ' + c[1]);
+      if (c[2]) wires.appendChild(sv('text', { x: mx, y: y - 9, 'text-anchor': 'middle', class: 'wire-label' }, c[2]));
+      CM[c[0] + '+' + c[1]] = { x: mx, y: y + 2, above: Math.max(a.bottom, b.bottom) };
+    });
+    (T.forks || []).forEach(function (f) {
+      var kids = f.kids.map(R), rel = [].concat(f.frm, f.kids).join(' '), bus;
+      if (Array.isArray(f.frm)) { var c = CM[f.frm.join('+')]; bus = fork(c.x, c.y, kids, rel, f.toNodeTop, c.above); }
+      else { var q = R(f.frm); bus = fork(q.cx, q.bottom + 2, kids, rel, f.toNodeTop); }
+      if (f.label) {
+        var xs = kids.map(function (k) { return k.cx; });
+        wires.appendChild(sv('text', { x: (Math.min.apply(null, xs) + Math.max.apply(null, xs)) / 2, y: bus + 15, 'text-anchor': 'middle', class: 'wire-label' }, f.label));
+      }
+    });
   }
   var wireTimer;
   function scheduleWires() { clearTimeout(wireTimer); wireTimer = setTimeout(drawWires, 60); }
@@ -195,13 +196,14 @@
   function section(title, kids) { return kids && kids.length ? el('div', { class: 'd-sec' }, el('h3', null, title), kids) : null; }
   function item(h, obj) { return el('div', { class: 'd-item' }, h ? el('p', { class: 'h' }, h) : null, el('p', null, obj.t, refs(obj.src))); }
   function kidsBlock(p) {
-    if (p.id === 'elon') {
-      return ['justine', 'grimes', 'shivon', 'ashley'].map(function (id) {
+    if (p.id === CENTER.id) {
+      if (!p.kidsNote && !(D.tree.coParents || []).length) return null;
+      return (D.tree.coParents || []).map(function (id) {
         var m = PEOPLE[id];
-        return el('div', { class: 'd-kids-group' }, el('span', { class: 'label' }, 'With ' + m.name), el('span', { class: 'kids' }, m.kids.map(function (k) { return el('span', { class: 'kid' + (/died/.test(k.note || '') ? ' gone' : ''), title: k.note || null }, k.name + (/died/.test(k.note || '') ? ' †' : '')); })), refs(m.kidsSrc));
+        return el('div', { class: 'd-kids-group' }, el('span', { class: 'label' }, 'With ' + m.name), (m.kids ? el('span', { class: 'kids' }, m.kids.map(function (k) { return el('span', { class: 'kid' + (/died/.test(k.note || '') ? ' gone' : ''), title: k.note || null }, k.name + (/died/.test(k.note || '') ? ' †' : '')); })) : el('p', { class: 'kids-none' }, m.kidsText)), refs(m.kidsSrc));
       });
     }
-    if (!p.kids) return null;
+    if (!p.kids) return p.kidsText ? [el('p', { class: 'kids-none' }, p.kidsText, refs(p.kidsSrc))] : null;
     if (!p.kids.length) return [el('p', { class: 'kids-none' }, 'No children together.', refs(p.kidsSrc))];
     return [el('span', { class: 'kids' }, p.kids.map(function (k) { return el('span', { class: 'kid' + (/died/.test(k.note || '') ? ' gone' : '') }, k.name + (/died/.test(k.note || '') ? ' †' : '')); })),
       el('p', { class: 'fine', style: 'margin-top:8px' }, p.kids.filter(function (k) { return k.note; }).map(function (k) { return k.name + ': ' + k.note + '. '; }).join(''), refs(p.kidsSrc))];
@@ -211,7 +213,7 @@
     push(p.bornSrc); push(p.summary && p.summary.src);
     if (p.worth) { push(p.worth.src); if (p.worth.also) push(p.worth.also.src); }
     ['owns', 'record', 'facts', 'disputed'].forEach(function (k) { (p[k] || []).forEach(function (x) { push(x.src); }); });
-    if (p.id === 'elon') { push(D.holdings.src); push(p.kidsNote.src); ['justine', 'grimes', 'shivon', 'ashley'].forEach(function (id) { push(PEOPLE[id].kidsSrc); }); }
+    if (p.id === CENTER.id) { if (D.holdings) push(D.holdings.src); if (p.kidsNote) push(p.kidsNote.src); (D.tree.coParents || []).forEach(function (id) { push(PEOPLE[id].kidsSrc); }); }
     push(p.kidsSrc);
     return seen.sort(function (a, b) { return SRC[a].n - SRC[b].n; });
   }
@@ -221,7 +223,7 @@
     var close = el('button', { class: 'icon-btn', type: 'button', onclick: function () { closeFile(true); } }, 'Close ×');
     add(dossier, [
       el('div', { class: 'd-bar' }, el('p', { class: 'd-file' }, 'File · ' + p.name), close),
-      el('div', { class: 'd-top' + (p.id === 'elon' ? ' elon' : '') }, face(p), el('div', null,
+      el('div', { class: 'd-top' + (p.id === CENTER.id ? ' elon' : '') }, face(p), el('div', null,
         el('h2', { class: 'd-name', id: 'd-title' }, p.name),
         el('p', { class: 'd-rel' }, p.rel),
         p.born ? el('p', { class: 'd-born' }, p.born, refs(p.bornSrc)) : null)),
@@ -234,7 +236,7 @@
     } else if (p.worth && p.worth.none) {
       dossier.appendChild(el('div', { class: 'd-worth none' }, el('span', { class: 'label' }, 'Net worth'), el('p', null, p.worth.none)));
     }
-    if (p.id === 'elon') dossier.appendChild(el('div', { class: 'hold-mini' }, holdingsBar(true)));
+    if (p.id === CENTER.id && D.holdings) dossier.appendChild(el('div', { class: 'hold-mini' }, holdingsBar(true)));
     add(dossier, [
       section('Owns & runs', (p.owns || []).map(function (o) {
         var c = CO[o.co] || { name: o.co, status: '' };
@@ -243,7 +245,7 @@
       section('On the record', (p.record || []).map(function (r) { return item(r.h, r); })),
       section('Disputed', (p.disputed || []).map(function (r) { return el('div', { class: 'd-item' }, el('span', { class: 'stamp' }, 'Disputed'), el('p', { class: 'h' }, r.h), el('p', null, r.t, refs(r.src))); })),
       section('Wow facts', (p.facts || []).map(function (f) { return item(null, f); })),
-      section(p.id === 'elon' ? 'Children (names only)' : 'Children with Elon (names only)', kidsBlock(p)),
+      section(p.id === CENTER.id ? 'Children' : 'Children with ' + CENTER.short, kidsBlock(p)),
       p.note ? el('p', { class: 'd-note' }, p.note) : null,
       section('Sources in this file', [el('div', { class: 'd-src' }, el('ol', null, collectSrc(p).map(function (id) {
         var s = SRC[id];
@@ -332,7 +334,8 @@
     }
     return { stack: stack, tot: tot };
   }
-  (function () {
+  if (!D.holdings) $('#hold-legend').closest('.panel').hidden = true;
+  else (function () {
     var H = D.holdings, hb = holdingsBar(false), host = $('#hold-stack');
     host.parentNode.replaceChild(hb.stack, host);
     add($('#hold-src'), ['Bloomberg Billionaires Index estimate, ' + H.date + '. Shares of the four, not of his total net worth.', refs(H.src)]);
@@ -388,6 +391,7 @@
     });
     climbHost.appendChild(s);
   }
+  if (D.climb) {
   drawClimb();
   var climbTimer;
   window.addEventListener('resize', function () { clearTimeout(climbTimer); climbTimer = setTimeout(drawClimb, 120); });
@@ -396,40 +400,61 @@
     var d = new Date(p.d + 'T12:00:00Z');
     $('#climb-points').appendChild(el('li', null, el('span', { class: 'd' }, d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })), el('span', { class: 'v' }, p.label), el('span', null, p.note || '', refs(p.src))));
   });
+  } else $('#climb').closest('.panel').hidden = true;
   (function () {
-    var lad = $('#ladder'), E = 1.046e12, K = 1.7e9;
-    lad.appendChild(el('div', { class: 'rung' }, el('div', { class: 'top-line' }, el('span', null, 'Elon Musk'), el('b', null, '$1.046T')), el('div', { class: 'track' }, el('div', { class: 'fill', style: 'width:100%' }))));
-    lad.appendChild(el('div', { class: 'rung' }, el('div', { class: 'top-line' }, el('span', null, 'Kimbal Musk'), el('b', null, '$1.7B')), el('div', { class: 'track' }, el('div', { class: 'fill', style: 'width:' + (K / E * 100).toFixed(3) + '%' })),
-      el('p', { class: 'scribble' }, '↑ that sliver is ' + (K / E * 100).toFixed(2) + '% of Elon’s fortune'), refs(['forbes_kimbal', 'forbes_elon'])));
-    lad.appendChild(el('div', { class: 'rung muted' }, el('div', { class: 'top-line' }, el('span', null, 'Everyone else on the map'), el('b', null, 'No reliable estimate'))));
+    var L = D.ladder, lad = $('#ladder');
+    if (!L) { lad.closest('.panel').hidden = true; return; }
+    var top = L.items[0];
+    L.items.forEach(function (r, i) {
+      var pc = r.v / top.v * 100;
+      lad.appendChild(el('div', { class: 'rung' }, el('div', { class: 'top-line' }, el('span', null, r.name), el('b', null, r.label)), el('div', { class: 'track' }, el('div', { class: 'fill', style: 'width:' + pc.toFixed(3) + '%' })),
+        i ? el('p', { class: 'scribble' }, (pc < 1 ? '↑ that sliver is ' : '↑ that’s ') + pc.toFixed(2) + '% of ' + top.short + '’s fortune') : null, i ? refs(r.src.concat(top.src)) : null));
+    });
+    if (L.rest) lad.appendChild(el('div', { class: 'rung muted' }, el('div', { class: 'top-line' }, el('span', null, L.rest), el('b', null, 'No reliable estimate'))));
   })();
 
   /* ---------------- homes ---------------- */
   (function () {
     var Hm = D.homes;
-    add($('#homes-flip'), [el('span', { class: 'v' }, '$' + Hm.totals.b + 'M'), el('span', { class: 'arrow' }, '→'), el('span', { class: 'v gold' }, '$' + Hm.totals.s + 'M')]);
-    add($('#homes-flip-src'), ['Seven homes bought from Dec 2012 to Jan 2019, all sold from June 2020 to November 2021. Roughly $' + Hm.totals.profit + 'M profit before mortgage costs, per the Wall Street Journal.', refs(Hm.totals.src)]);
-    Hm.quotes.forEach(function (q) {
-      $('#homes-quotes').appendChild(el('blockquote', { class: 'quote' }, el('p', null, '“' + q.q + '”'), el('footer', null, 'Elon Musk, ' + q.when, refs(q.src))));
-    });
-    var max = 35, dumb = $('#dumb');
+    if (!Hm) { $('#homes').hidden = true; return; }
+    if (Hm.totals) {
+      add($('#homes-flip'), [el('span', { class: 'v' }, '$' + Hm.totals.b + 'M'), el('span', { class: 'arrow' }, '→'), el('span', { class: 'v gold' }, '$' + Hm.totals.s + 'M')]);
+      add($('#homes-flip-src'), ['Seven homes bought from Dec 2012 to Jan 2019, all sold from June 2020 to November 2021. Roughly $' + Hm.totals.profit + 'M profit before mortgage costs, per the Wall Street Journal.', refs(Hm.totals.src)]);
+    } else if (Hm.summary) {
+      add($('#homes-flip'), el('span', { class: 'v gold' }, Hm.summary.value));
+      add($('#homes-flip-src'), [Hm.summary.note, refs(Hm.summary.src)]);
+    }
+    if (Hm.quotes && Hm.quotes.length) Hm.quotes.forEach(function (q) {
+      $('#homes-quotes').appendChild(el('blockquote', { class: 'quote' }, el('p', null, '“' + q.q + '”'), el('footer', null, CENTER.name + ', ' + q.when, refs(q.src))));
+    }); else $('#homes-quotes').hidden = true;
+    var vals = [], anySold = false;
+    Hm.props.forEach(function (h) { vals.push(h.b); if (h.s != null) { vals.push(h.s); anySold = true; } });
+    var hi0 = Math.max.apply(null, vals), step = hi0 > 100 ? 50 : 10, max = Math.ceil(hi0 * 1.08 / step) * step, dumb = $('#dumb');
     function pct(v) { return (v / max * 100).toFixed(2) + '%'; }
     Hm.props.forEach(function (h) {
-      var lo = Math.min(h.b, h.s), hi = Math.max(h.b, h.s);
+      var sold = h.s != null, lo = sold ? Math.min(h.b, h.s) : h.b, hi = sold ? Math.max(h.b, h.s) : h.b;
       dumb.appendChild(el('div', { class: 'drow' },
-        el('div', { class: 'lbl' }, el('div', { class: 'nm' }, h.name, refs(h.src)), el('div', { class: 'ar' }, h.area + ' · street ', el('span', { class: 'redact', title: 'We don’t publish street addresses', 'aria-label': 'street address withheld' }))),
-        el('div', { class: 'dtrack', 'aria-hidden': 'true' }, el('span', { class: 'dseg', style: 'left:' + pct(lo) + ';width:calc(' + pct(hi) + ' - ' + pct(lo) + ')' }), el('span', { class: 'ddot b', style: 'left:' + pct(h.b), title: 'Bought ' + h.by + ': $' + h.b + 'M' }), el('span', { class: 'ddot s', style: 'left:' + pct(h.s), title: 'Sold ' + h.sy + ': $' + h.s + 'M' })),
-        el('div', { class: 'vals' }, (h.bApprox ? '≈' : '') + '$' + h.b + 'M ', '→ ', el('b', null, '$' + h.s + 'M'), el('br'), h.by + ' → ' + h.sy)));
+        el('div', { class: 'lbl' }, el('div', { class: 'nm', title: h.note || null }, h.name, refs(h.src)), el('div', { class: 'ar' }, h.area + ' · street ', el('span', { class: 'redact', title: 'We don’t publish street addresses', 'aria-label': 'street address withheld' }))),
+        el('div', { class: 'dtrack', 'aria-hidden': 'true' },
+          sold ? el('span', { class: 'dseg', style: 'left:' + pct(lo) + ';width:calc(' + pct(hi) + ' - ' + pct(lo) + ')' }) : null,
+          el('span', { class: 'ddot ' + (sold ? 'b' : 's'), style: 'left:' + pct(h.b), title: 'Bought ' + h.by + ': $' + h.b + 'M' }),
+          sold ? el('span', { class: 'ddot s', style: 'left:' + pct(h.s), title: 'Sold ' + h.sy + ': $' + h.s + 'M' }) : null),
+        el('div', { class: 'vals' }, sold ? [(h.bApprox ? '≈' : '') + '$' + h.b + 'M ', '→ ', el('b', null, '$' + h.s + 'M'), el('br'), h.by + ' → ' + h.sy]
+          : [el('b', null, '$' + h.b + 'M'), el('br'), h.by === 'reported' ? 'price as reported' : 'bought ' + h.by])));
     });
-    dumb.appendChild(el('div', { class: 'drow rent' },
-      el('div', { class: 'lbl' }, el('div', { class: 'nm' }, 'His Starbase rental', refs(['realtor_50k'])), el('div', { class: 'ar' }, 'Rented from SpaceX (2021)')),
-      el('div', { class: 'dtrack', 'aria-hidden': 'true' }, el('span', { class: 'ddot rent', style: 'left:' + pct(0.05) })),
-      el('div', { class: 'vals' }, el('b', { style: 'color:var(--green)' }, '~$50K'), el('br'), 'his words, 2021')));
-    var sc = el('div', { class: 'dscale', 'aria-hidden': 'true' }, el('div'), el('div', { class: 'ticks' }, [0, 10, 20, 30].map(function (v) { return el('span', { style: 'left:' + pct(v) }, '$' + v + 'M'); })), el('div'));
-    dumb.appendChild(sc);
-    add($('#wilder'), el('p', null, Hm.wilder.t, refs(Hm.wilder.src)));
-    Hm.extra.forEach(function (f) { $('#homes-facts').appendChild(el('li', null, f.t, refs(f.src))); });
-    Hm.hq.forEach(function (q) { $('#hq').appendChild(el('div', { class: 'mini' }, el('h4', null, q.h), el('p', null, q.t, refs(q.src)))); });
+    if (Hm.rent) dumb.appendChild(el('div', { class: 'drow rent' },
+      el('div', { class: 'lbl' }, el('div', { class: 'nm' }, Hm.rent.name, refs(Hm.rent.src)), el('div', { class: 'ar' }, Hm.rent.area)),
+      el('div', { class: 'dtrack', 'aria-hidden': 'true' }, el('span', { class: 'ddot rent', style: 'left:' + pct(Hm.rent.v) })),
+      el('div', { class: 'vals' }, el('b', { style: 'color:var(--green)' }, Hm.rent.label), el('br'), Hm.rent.sub)));
+    var tk = [];
+    for (var v = 0; v < max; v += step * (max / step > 6 ? 2 : 1)) tk.push(v);
+    dumb.appendChild(el('div', { class: 'dscale', 'aria-hidden': 'true' }, el('div'), el('div', { class: 'ticks' }, tk.map(function (v) { return el('span', { style: 'left:' + pct(v) }, '$' + v + 'M'); })), el('div')));
+    add($('#dkey'), [anySold ? el('span', null, el('i', { style: 'border:2px solid var(--ink-2)' }), 'Bought') : null, el('span', null, el('i', { style: 'background:var(--gold)' }), anySold ? 'Sold' : 'Price paid'),
+      Hm.rent ? el('span', null, el('i', { style: 'background:var(--green)' }), Hm.rent.name) : null]);
+    if (Hm.wilder) add($('#wilder'), el('p', null, Hm.wilder.t, refs(Hm.wilder.src))); else $('#wilder').hidden = true;
+    (Hm.extra || []).forEach(function (f) { $('#homes-facts').appendChild(el('li', null, f.t, refs(f.src))); });
+    if (Hm.hq) Hm.hq.forEach(function (q) { $('#hq').appendChild(el('div', { class: 'mini' }, el('h4', null, q.h), el('p', null, q.t, refs(q.src)))); });
+    else { $('#hq-head').hidden = true; $('#hq').hidden = true; }
   })();
 
   /* ---------------- ledger ---------------- */
@@ -450,7 +475,7 @@
 
   /* ---------------- perspective ---------------- */
   (function () {
-    var inp = $('#income'), worth = D.pace.worth;
+    var inp = $('#income'), C = D.calc, worth = C.worth;
     [['$35K', 35000], ['$60K', 60000], ['$100K', 100000], ['$250K', 250000], ['$1M', 1000000]].forEach(function (p) {
       $('#presets').appendChild(el('button', { type: 'button', onclick: function () { inp.value = p[1]; calc(); } }, p[0]));
     });
@@ -463,11 +488,14 @@
       var v = parseFloat(inp.value);
       if (!(v > 0)) { $('#o-years').textContent = '—'; $('#o-secs').textContent = '—'; return; }
       $('#o-years').textContent = yearsText(worth / v);
+      if (!perSec) return;
       var secs = v / perSec;
       $('#o-secs').textContent = secs < 60 ? secs.toFixed(1) + ' seconds' : secs < 3600 ? (secs / 60).toFixed(1) + ' minutes' : (secs / 3600).toFixed(1) + ' hours';
     }
+    if (!perSec) $('#o-secs').closest('.out').hidden = true;
     $('#o-spend').textContent = fmtInt(worth / 1e6 / 365.25) + ' years';
-    $('#o-kimbal').textContent = (1.7e9 / worth * 100).toFixed(2) + '%';
+    $('#o-kimbal').textContent = (C.compareV / worth * 100).toFixed(2) + '%';
+    $('#o-kimbal-k').textContent = C.compareK; $('#o-kimbal-s').textContent = C.compareS;
     inp.addEventListener('input', calc);
     calc();
   })();
@@ -477,7 +505,7 @@
     try { var x = new URL(u); var p = x.pathname.replace(/\/$/, ''); return x.hostname.replace(/^www\./, '') + (p.length > 38 ? p.slice(0, 36) + '…' : p); }
     catch (e) { return u; }
   }
-  D.cases.forEach(function (c) {
+  if (D.cases && $('#case-list')) D.cases.forEach(function (c) {
     var chain = el('p', { class: 'chain' });
     c.chain.forEach(function (s, i) { if (i) chain.appendChild(el('i', { 'aria-hidden': 'true' }, '→')); chain.appendChild(el('span', { class: 'link' }, s)); });
     $('#case-list').appendChild(el('article', { class: 'case' },
