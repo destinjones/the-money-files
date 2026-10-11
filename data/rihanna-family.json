@@ -1,0 +1,799 @@
+{
+ "meta": {
+  "asOf": "2026-10-06",
+  "asOfLabel": "Oct 6, 2026",
+  "file": "File #019",
+  "repo": "https://github.com/destinjones/the-money-files",
+  "center": "rihanna",
+  "slug": "rihanna",
+  "og": "assets/og-hub.jpg",
+  "pronoun": "her"
+ },
+ "copy": {
+  "title": "The Rihanna Money File",
+  "desc": "An interactive, fully sourced map of Rihanna’s family: Fenty Beauty, Savage X Fenty, the homes, the talks over LVMH’s half, and the money on the public record.",
+  "eyebrow": "<b>File #019</b> · The Fenty family · Data as of <span data-asof></span>",
+  "h1": "She became a <span class=\"gold\">billionaire</span> selling makeup. We followed the <span class=\"u-red\">money</span>.",
+  "lede": "Who’s who, what she owns, which companies you can buy stock in, the homes, and the money on the public record. Every number links to its source.",
+  "worthLabel": "Rihanna’s net worth",
+  "worthBig": "$1,000,000,000",
+  "familyLede": "Tap anyone to open their file: what they own, what’s on the record, and where every fact comes from. Rihanna and A$AP Rocky’s three children appear by first name only.",
+  "investLede": "Her companies are private. The public company on this map is LVMH, which owns the other half of Fenty Beauty; the family has no stake in it.",
+  "moneyTitle": "Where the money is",
+  "moneyLede": "Most of it is her half of Fenty Beauty, plus about 28% of Savage X Fenty, Forbes says. She’s the only one here with a published net worth.",
+  "homesTitle": "The homes",
+  "homesLede": "Seven homes she bought from 2009 to 2023, with what she paid and, for four of them, what she sold them for. Neighborhood level only.",
+  "homesFlipLabel": "Paid for seven homes",
+  "homesChart": "Bought → sold, in $ millions",
+  "recordLede": "What funding rounds, reporting on the Fenty Beauty sale talks, and court filings show. Filings and reporting, not guesses.",
+  "trailLede": "From Barbados to a billion-dollar beauty fortune.",
+  "calcYearsK": "Years to earn what Rihanna has",
+  "footLabel": "File #019: the Fenty family"
+ },
+ "tree": {
+  "groups": [
+   [
+    "center",
+    "The center"
+   ],
+   [
+    "partners",
+    "Partner & children",
+    "Kids by first name only."
+   ],
+   [
+    "parents",
+    "Parents"
+   ],
+   [
+    "grandparents",
+    "Grandparents",
+    "Her foundation is named for them."
+   ]
+  ],
+  "order": [
+   "rihanna",
+   "rocky",
+   "ronald",
+   "monica",
+   "braithwaites"
+  ],
+  "coParents": [
+   "rocky"
+  ],
+  "couples": [
+   [
+    "ronald",
+    "monica",
+    ""
+   ]
+  ],
+  "forks": [
+   {
+    "frm": "braithwaites",
+    "kids": [
+     "monica"
+    ]
+   },
+   {
+    "frm": [
+     "ronald",
+     "monica"
+    ],
+    "kids": [
+     "rihanna"
+    ]
+   },
+   {
+    "frm": "rihanna",
+    "kids": [
+     "rocky"
+    ],
+    "toNodeTop": true
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "wiki_rihanna",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Rihanna",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Rihanna"
+  },
+  {
+   "id": "wiki_rocky",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "ASAP Rocky",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/ASAP_Rocky"
+  },
+  {
+   "id": "fox_rocki",
+   "group": "family",
+   "pub": "FOX 5 New York",
+   "title": "Rihanna and A$AP Rocky welcome third child, a baby girl named Rocki",
+   "date": "Sep 24, 2025",
+   "url": "https://www.fox5ny.com/news/rihanna-asap-rocky-third-child-birth"
+  },
+  {
+   "id": "forbes_rihanna",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Real-time profile: Rihanna ($1B)",
+   "date": "Sep 26, 2026",
+   "url": "https://www.forbes.com/profile/rihanna/"
+  },
+  {
+   "id": "forbes_2021",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Fenty’s Fortune: Rihanna Is Now Officially A Billionaire",
+   "date": "Aug 4, 2021",
+   "url": "https://www.forbes.com/sites/maddieberg/2021/08/04/fentys-fortune-rihanna-is-now-officially-a-billionaire/"
+  },
+  {
+   "id": "forbes_sxf_val",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Rihanna’s Savage X Fenty Reaches $1 Billion Valuation In Lingerie Equity",
+   "date": "Feb 16, 2021",
+   "url": "https://www.forbes.com/sites/korihale/2021/02/16/rihannas-savage-x-fenty-reaches-1-billion-valuation-in-lingerie-equity/"
+  },
+  {
+   "id": "fortune_ipo",
+   "group": "money",
+   "pub": "Fortune (Bloomberg)",
+   "title": "Rihanna thinks her Savage X Fenty lingerie is worth $3 billion",
+   "date": "Mar 11, 2022",
+   "url": "https://fortune.com/2022/03/11/rihanna-savage-x-fenty-lingerie-3-billion-ipo-valuation"
+  },
+  {
+   "id": "wiki_clf",
+   "group": "money",
+   "pub": "Wikipedia",
+   "title": "Clara Lionel Foundation",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Clara_Lionel_Foundation"
+  },
+  {
+   "id": "retaildive",
+   "group": "record",
+   "pub": "Retail Dive",
+   "title": "Savage x Fenty appoints new CEO",
+   "date": "Jun 23, 2023",
+   "url": "https://www.retaildive.com/news/savage-x-fenty-new-ceo/653799"
+  },
+  {
+   "id": "reuters_lvmh",
+   "group": "record",
+   "pub": "Reuters (via The Standard)",
+   "title": "LVMH explores sale of its 50 percent stake in Rihanna-backed Fenty Beauty, sources say",
+   "date": "Oct 22, 2025",
+   "url": "https://www.thestandard.com.hk/market/article/314785/LVMH-explores-sale-of-its-50-percent-stake-in-Rihanna-backed-Fenty-Beauty-sources-say"
+  },
+  {
+   "id": "cosmetics_marcypen",
+   "group": "record",
+   "pub": "Cosmetics Business",
+   "title": "MarcyPen Capital Partners reportedly in talks to buy LVMH’s stake in Fenty Beauty",
+   "date": "Jun 16, 2026",
+   "url": "https://cosmeticsbusiness.com/marcypen-capital-partners-in-talks-to-buy-fenty-beauty"
+  },
+  {
+   "id": "bbc_lawsuit",
+   "group": "record",
+   "pub": "BBC (via Barbados Today)",
+   "title": "Rihanna drops legal case against her father",
+   "date": "Sep 8, 2021",
+   "url": "https://barbadostoday.bb/2021/09/08/rihanna-drops-legal-case-against-her-father/"
+  },
+  {
+   "id": "ad_homes",
+   "group": "homes",
+   "pub": "Architectural Digest (via Yahoo)",
+   "title": "Where Does Rihanna Live? Examining the Star’s Homes, From Luxe LA Rentals to Her Barbados Getaway",
+   "date": "accessed Oct 2026",
+   "url": "https://www.yahoo.com/lifestyle/articles/properties-rihanna-called-home-200754885.html"
+  }
+ ],
+ "people": [
+  {
+   "id": "braithwaites",
+   "name": "Clara & Lionel Braithwaite",
+   "short": "Clara & Lionel",
+   "rel": "Grandparents (mother’s side)",
+   "tag": "Foundation namesakes",
+   "group": "grandparents",
+   "layout": {
+    "row": 0
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Rihanna named her charity, the Clara Lionel Foundation, for them when she started it in 2012.",
+    "src": [
+     "wiki_clf"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "ronald",
+   "name": "Ronald Fenty",
+   "short": "Ronald",
+   "rel": "Father",
+   "tag": "Warehouse supervisor",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "A Barbadian warehouse supervisor. He and Monica divorced when Rihanna was 14.",
+    "src": [
+     "wiki_rihanna"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "monica",
+   "name": "Monica Braithwaite",
+   "short": "Monica",
+   "rel": "Mother",
+   "tag": "Accountant",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "An Afro-Guyanese accountant.",
+    "src": [
+     "wiki_rihanna"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "rihanna",
+   "name": "Rihanna",
+   "short": "Rihanna",
+   "rel": "The center of the map",
+   "tag": "$1B",
+   "tagKind": "money",
+   "born": "Born 1988 in Saint Michael, Barbados",
+   "bornSrc": [
+    "wiki_rihanna"
+   ],
+   "group": "center",
+   "layout": {
+    "row": 2,
+    "big": true
+   },
+   "photo": "rihanna",
+   "wiki": "Rihanna",
+   "summary": {
+    "t": "Singer born Robyn Rihanna Fenty. Forbes says she’s a billionaire thanks to Fenty Beauty, the makeup line she launched with LVMH in 2017. She also founded the lingerie brand Savage X Fenty.",
+    "src": [
+     "wiki_rihanna",
+     "forbes_rihanna",
+     "reuters_lvmh"
+    ]
+   },
+   "worth": {
+    "value": "$1 billion",
+    "by": "Forbes real-time estimate",
+    "date": "Sep 26, 2026",
+    "src": [
+     "forbes_rihanna"
+    ]
+   },
+   "owns": [
+    {
+     "co": "fentybeauty",
+     "t": "Owns half; LVMH owns the other half.",
+     "src": [
+      "reuters_lvmh"
+     ]
+    },
+    {
+     "co": "savage",
+     "t": "Founder and executive chair. Forbes estimates her stake at about 28%.",
+     "src": [
+      "forbes_rihanna",
+      "retaildive"
+     ]
+    }
+   ],
+   "record": [
+    {
+     "h": "The sale talks over Fenty Beauty",
+     "t": "In October 2025 Reuters reported that LVMH was exploring a sale of its 50% stake, and that the company could be valued at $1 billion to $2 billion. In June 2026, MarcyPen Capital Partners, co-founded by Jay-Z, was reported to be in talks to buy it.",
+     "src": [
+      "reuters_lvmh",
+      "cosmetics_marcypen"
+     ]
+    },
+    {
+     "h": "Savage X Fenty",
+     "t": "The lingerie brand raised $115 million at a $1 billion valuation in February 2021 and $125 million more in January 2022, and later weighed an IPO at $3 billion or more. She stepped down as CEO in June 2023 and became executive chair.",
+     "src": [
+      "forbes_sxf_val",
+      "retaildive",
+      "fortune_ipo"
+     ]
+    },
+    {
+     "h": "The case against her father’s company",
+     "t": "In 2019 she sued her father and his business partner over their company’s use of her name. She dropped the case in September 2021, before it went to trial.",
+     "src": [
+      "bbc_lawsuit"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "Forbes first counted her as a billionaire in August 2021, worth $1.7 billion, the richest female musician in the world at the time.",
+     "src": [
+      "forbes_2021"
+     ]
+    },
+    {
+     "t": "She signed a $25 million deal with Samsung in late 2015 to promote its Galaxy phones.",
+     "src": [
+      "wiki_rihanna"
+     ]
+    },
+    {
+     "t": "Her 2023 Super Bowl halftime show drew about 121 million viewers.",
+     "src": [
+      "wiki_rihanna"
+     ]
+    },
+    {
+     "t": "Barbados named her a National Hero in November 2021.",
+     "src": [
+      "wiki_rihanna"
+     ]
+    }
+   ],
+   "kidsNote": {
+    "t": "Rihanna and A$AP Rocky have three children: RZA, Riot and Rocki. We list first names only.",
+    "src": [
+     "fox_rocki"
+    ]
+   }
+  },
+  {
+   "id": "rocky",
+   "name": "A$AP Rocky",
+   "short": "Rocky",
+   "rel": "Partner · since 2021",
+   "tag": "Rapper",
+   "group": "partners",
+   "layout": {
+    "row": 3,
+    "partner": true
+   },
+   "photo": "rocky",
+   "wiki": "ASAP Rocky",
+   "summary": {
+    "t": "Rapper born Rakim Mayers in Harlem. He founded the creative agency AWGE in 2014 and launched a whisky brand, Mercer + Prince, in 2022.",
+    "src": [
+     "wiki_rocky"
+    ]
+   },
+   "worth": {
+    "none": "No Forbes or Bloomberg estimate."
+   },
+   "facts": [
+    {
+     "t": "He confirmed his relationship with Rihanna in a GQ interview in May 2021.",
+     "src": [
+      "wiki_rocky"
+     ]
+    },
+    {
+     "t": "As of 2025 he was creative director for Puma F1 and Ray-Ban.",
+     "src": [
+      "wiki_rocky"
+     ]
+    }
+   ],
+   "kids": [
+    {
+     "name": "RZA"
+    },
+    {
+     "name": "Riot"
+    },
+    {
+     "name": "Rocki"
+    }
+   ],
+   "kidsSrc": [
+    "fox_rocki"
+   ]
+  }
+ ],
+ "photos": {
+  "rihanna": {
+   "file": "Rihanna Fenty 2018.png",
+   "author": "SIGMA",
+   "license": "CC BY 3.0",
+   "w": 651,
+   "h": 867,
+   "fx": 0.49,
+   "fy": 0.32,
+   "zoom": 2.0,
+   "year": "2018"
+  },
+  "rocky": {
+   "file": "A$AP Rocky at the 2025 Cannes Film Festival (cropped 3x4).jpg",
+   "author": "Gabriel Hutchinson",
+   "license": "CC BY-SA 4.0",
+   "w": 5013,
+   "h": 6678,
+   "fx": 0.49,
+   "fy": 0.17,
+   "zoom": 3.0,
+   "year": "2025"
+  }
+ },
+ "licenses": {
+  "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+  "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+  "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/"
+ },
+ "companies": [
+  {
+   "id": "fentybeauty",
+   "name": "Fenty Beauty",
+   "status": "private",
+   "color": "#E8A0B4",
+   "who": "Rihanna (50%) · LVMH (50%)",
+   "t": "Launched in 2017 with LVMH’s Kendo beauty incubator. Net sales were about $450 million in 2024. LVMH has been exploring a sale of its half.",
+   "src": [
+    "reuters_lvmh"
+   ]
+  },
+  {
+   "id": "savage",
+   "name": "Savage X Fenty",
+   "status": "private",
+   "color": "#B79CFF",
+   "who": "Rihanna (founder, executive chair, about 28%)",
+   "t": "Lingerie brand. Valued at $1 billion in a 2021 funding round; it weighed an IPO at $3 billion or more in 2022.",
+   "src": [
+    "forbes_rihanna",
+    "forbes_sxf_val",
+    "fortune_ipo"
+   ]
+  },
+  {
+   "id": "lvmh",
+   "name": "LVMH",
+   "status": "nostake",
+   "ticker": "MC",
+   "exchange": "Euronext Paris",
+   "quote": "https://live.euronext.com/en/product/equities/FR0000121014-XPAR",
+   "color": "#D9C08A",
+   "who": "Owns the other half of Fenty Beauty. The family has no stake in LVMH.",
+   "t": "The French luxury group launched Fenty Beauty with Rihanna in 2017 and owns 50% of it.",
+   "src": [
+    "reuters_lvmh"
+   ]
+  }
+ ],
+ "companiesExtra": [],
+ "ladder": {
+  "items": [
+   {
+    "name": "Rihanna",
+    "short": "Rihanna",
+    "v": 1000000000,
+    "label": "$1B",
+    "src": [
+     "forbes_rihanna"
+    ]
+   }
+  ],
+  "rest": "Everyone else on the map"
+ },
+ "calc": {
+  "worth": 1000000000
+ },
+ "homes": {
+  "props": [
+   {
+    "name": "House",
+    "area": "Beverly Hills Post Office area, Los Angeles",
+    "by": "2009",
+    "b": 6.9,
+    "s": 5.03,
+    "sy": "2011",
+    "src": [
+     "ad_homes"
+    ]
+   },
+   {
+    "name": "Beachside villa",
+    "area": "Barbados",
+    "by": "2013",
+    "b": 22,
+    "src": [
+     "ad_homes"
+    ]
+   },
+   {
+    "name": "Condo",
+    "area": "Century City, Los Angeles",
+    "by": "2014",
+    "b": 5.5,
+    "src": [
+     "ad_homes"
+    ]
+   },
+   {
+    "name": "House",
+    "area": "Hollywood Hills, Los Angeles",
+    "by": "2017",
+    "b": 6.8,
+    "s": 6.6,
+    "sy": "2022",
+    "src": [
+     "ad_homes"
+    ]
+   },
+   {
+    "name": "Canyonside house",
+    "area": "Beverly Hills",
+    "by": "2021",
+    "b": 13.8,
+    "src": [
+     "ad_homes"
+    ]
+   },
+   {
+    "name": "Tudor-style house",
+    "area": "Beverly Hills",
+    "by": "2021",
+    "b": 10,
+    "s": 10.3,
+    "sy": "2023",
+    "src": [
+     "ad_homes"
+    ]
+   },
+   {
+    "name": "Penthouse",
+    "area": "Century City, Los Angeles",
+    "by": "2023",
+    "b": 21,
+    "s": 20.8,
+    "sy": "2024",
+    "note": "She reportedly never moved in.",
+    "src": [
+     "ad_homes"
+    ]
+   }
+  ],
+  "summary": {
+   "value": "≈$86M",
+   "note": "Paid for the seven homes below, bought from 2009 to 2023 (our sum of Architectural Digest’s figures).",
+   "src": [
+    "ad_homes"
+   ]
+  },
+  "extra": [
+   {
+    "t": "She has also rented: a Pacific Palisades house for $65,000 a month in 2012, and a Hamptons house for $415,000 a month in the summer of 2020.",
+    "src": [
+     "ad_homes"
+    ]
+   }
+  ]
+ },
+ "ledger": [
+  {
+   "who": "Rihanna",
+   "what": "Stake in Fenty Beauty",
+   "amt": "50%",
+   "when": "2025",
+   "src": [
+    "reuters_lvmh"
+   ]
+  },
+  {
+   "who": "Fenty Beauty",
+   "what": "Net sales",
+   "amt": "≈$450M",
+   "when": "2024",
+   "src": [
+    "reuters_lvmh"
+   ]
+  },
+  {
+   "who": "Fenty Beauty",
+   "what": "Possible valuation, per Reuters’ sources",
+   "amt": "$1B–$2B",
+   "when": "Oct 2025",
+   "src": [
+    "reuters_lvmh"
+   ]
+  },
+  {
+   "who": "Savage X Fenty",
+   "what": "Series B round at a $1 billion valuation",
+   "amt": "$115M",
+   "when": "Feb 2021",
+   "src": [
+    "forbes_sxf_val"
+   ]
+  },
+  {
+   "who": "Savage X Fenty",
+   "what": "Series C round",
+   "amt": "$125M",
+   "when": "Jan 2022",
+   "src": [
+    "retaildive"
+   ]
+  },
+  {
+   "who": "Rihanna",
+   "what": "Samsung deal to promote Galaxy phones",
+   "amt": "$25M",
+   "when": "2015",
+   "src": [
+    "wiki_rihanna"
+   ]
+  },
+  {
+   "who": "Clara Lionel Foundation",
+   "what": "COVID-19 relief grant",
+   "amt": "$5M",
+   "when": "Mar 2020",
+   "src": [
+    "wiki_clf"
+   ]
+  },
+  {
+   "who": "Clara Lionel Foundation",
+   "what": "Given for COVID relief and racial justice",
+   "amt": "$47M",
+   "when": "By Dec 2021",
+   "src": [
+    "wiki_clf"
+   ]
+  },
+  {
+   "who": "Rihanna",
+   "what": "Century City penthouse, bought / sold",
+   "amt": "$21M / $20.8M",
+   "when": "2023 / 2024",
+   "src": [
+    "ad_homes"
+   ]
+  }
+ ],
+ "trail": [
+  {
+   "when": "1988",
+   "h": "Born in Saint Michael, Barbados",
+   "t": "",
+   "src": [
+    "wiki_rihanna"
+   ]
+  },
+  {
+   "when": "2012",
+   "h": "Starts the Clara Lionel Foundation",
+   "t": "",
+   "src": [
+    "wiki_clf"
+   ]
+  },
+  {
+   "when": "2014",
+   "h": "Becomes creative director of Puma’s women’s line",
+   "t": "",
+   "src": [
+    "wiki_rihanna"
+   ]
+  },
+  {
+   "when": "2015",
+   "h": "Signs a $25 million deal with Samsung",
+   "amt": "$25M",
+   "t": "",
+   "src": [
+    "wiki_rihanna"
+   ]
+  },
+  {
+   "when": "2017",
+   "h": "Launches Fenty Beauty with LVMH",
+   "t": "",
+   "src": [
+    "reuters_lvmh"
+   ]
+  },
+  {
+   "when": "Feb 2021",
+   "h": "Savage X Fenty is valued at $1 billion",
+   "amt": "$1B",
+   "t": "",
+   "src": [
+    "forbes_sxf_val"
+   ]
+  },
+  {
+   "when": "Aug 2021",
+   "h": "Forbes counts her as a billionaire",
+   "amt": "$1.7B",
+   "t": "",
+   "src": [
+    "forbes_2021"
+   ]
+  },
+  {
+   "when": "2022",
+   "h": "Savage X Fenty weighs an IPO",
+   "amt": "$3B+",
+   "t": "",
+   "src": [
+    "fortune_ipo"
+   ]
+  },
+  {
+   "when": "2023",
+   "h": "Headlines the Super Bowl; hands Savage X Fenty’s CEO job to Hillary Super",
+   "t": "",
+   "src": [
+    "wiki_rihanna",
+    "retaildive"
+   ]
+  },
+  {
+   "when": "Oct 2025",
+   "h": "LVMH explores selling its half of Fenty Beauty",
+   "t": "",
+   "src": [
+    "reuters_lvmh"
+   ]
+  },
+  {
+   "when": "Jun 2026",
+   "h": "Jay-Z’s MarcyPen is reported in talks to buy LVMH’s half",
+   "t": "",
+   "src": [
+    "cosmetics_marcypen"
+   ]
+  },
+  {
+   "when": "Sep 2026",
+   "h": "Forbes puts her fortune at $1 billion",
+   "amt": "$1B",
+   "t": "",
+   "src": [
+    "forbes_rihanna"
+   ]
+  }
+ ]
+}

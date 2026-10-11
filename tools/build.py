@@ -26,13 +26,13 @@ FAMILIES = [
     ('murdoch', 'The Murdoch family', 'business', 'Fox, News Corp and the trust fight that left Lachlan in control.'),
     ('kardashian', 'The Kardashian-Jenner family', 'entertainment', 'SKIMS, Kylie Cosmetics, Good American: the TV family’s businesses, mapped.'),
     ('swift', 'The Swift family', 'entertainment', 'The masters she bought back, the first $2 billion tour, and a new family.'),
-    ('rihanna', 'The Fenty family', 'entertainment', 'Fenty Beauty, Savage X Fenty and the deal for LVMH’s half.'),
+    ('rihanna', 'The Fenty family', 'entertainment', 'Fenty Beauty, Savage X Fenty and the talks over LVMH’s half.'),
     ('carter', 'The Carter family', 'entertainment', 'Jay-Z and Beyoncé: Roc Nation, champagne, cognac, Tidal and two billionaires.'),
     ('winfrey', 'The Winfrey family', 'entertainment', 'Harpo, OWN, WeightWatchers and land in Montecito and Maui.'),
     ('mrbeast', 'The Donaldson family', 'entertainment', 'MrBeast’s Beast Industries, Feastables, Beast Games and a $5 billion valuation.'),
     ('james', 'The James family', 'sports', 'The first active NBA billionaire: Nike for life, Fenway Sports Group and Beats.'),
     ('jordan', 'The Jordan family', 'sports', 'The Nike deal, the Hornets sale, a NASCAR team and a tequila brand.'),
-    ('ronaldo', 'The Ronaldo family', 'sports', 'Al Nassr, Nike, CR7 hotels and football’s first billionaire.'),
+    ('ronaldo', 'The Ronaldo family', 'sports', 'Al-Nassr, Nike, CR7 hotels and football’s first billionaire.'),
     ('trump', 'The Trump family', 'politics', 'Trump Media, World Liberty, the $TRUMP coin, Mar-a-Lago and who runs what.'),
     ('pelosi', 'The Pelosi family', 'politics', 'Her House disclosures, Paul Pelosi’s reported trades, and two Baltimore mayors.'),
 ]
@@ -105,7 +105,8 @@ def doc(title, desc, og, body, preview):
 
 
 def initials(name):
-    words = [w for w in re.split(r'[^\w]+', name) if w and w[0].isalpha()]
+    words = [w for w in re.split(r'[^\w]+', name) if w and w[0].isalpha() and not re.fullmatch(r'Jr|Sr|II|III|IV', w)]
+    words = [w for w in words if w[0].isupper()] or words
     return (words[0][0] + words[-1][0]) if len(words) > 1 else words[0][0]
 
 

@@ -69,6 +69,7 @@ a:hover { color: var(--ink); }
 .skip { position: absolute; left: -9999px; }
 .skip:focus { left: 12px; top: 12px; z-index: 99; background: var(--gold); color: #1a1205; padding: 8px 12px; border-radius: 8px; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+[hidden] { display: none !important; }
 
 /* ---------- top bar ---------- */
 .top {
@@ -801,7 +802,7 @@ p.kids-none { margin: 6px 0 0; }
 <a class="more-card" href="../bezos/"><span class="face" data-initials="JB"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/260202-D-PM193-2205_SECWAR_Arsenal_of_Freedom_Tour_-_Florida_%283x4_cropped_on_Bezos_and_rotated%29.jpg?width=400" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="width:130.00%;left:-15.00%;top:-16.41%" onerror="this.remove()"></span><span class="mc-text"><span class="mc-file">File #007</span><span class="mc-name">The Bezos family</span><span class="mc-worth">$374.5B</span></span></a>
 <a class="more-card" href="../musk/"><span class="face" data-initials="EM"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Elon_Musk_-_54820081119_%28cropped%29.jpg?width=400" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="width:135.00%;left:-17.50%;top:-21.42%" onerror="this.remove()"></span><span class="mc-text"><span class="mc-file">File #006</span><span class="mc-name">The Musk family</span><span class="mc-worth">$1.046T</span></span></a>
 <a class="more-card" href="../gates/"><span class="face" data-initials="BG"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bill_Gates_at_the_European_Commission_-_P067383-987995_%28cropped%29_5.jpg?width=400" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="width:115.00%;left:-7.50%;top:0.00%" onerror="this.remove()"></span><span class="mc-text"><span class="mc-file">File #010</span><span class="mc-name">The Gates family</span><span class="mc-worth">$114.2B</span></span></a></div>
-    <p class="more-all"><a class="btn ghost" href="../#files">See all 16 files</a></p>
+    <p class="more-all"><a class="btn ghost" href="../#files">See all 22 files</a></p>
   </div>
 </section>
 
@@ -880,7 +881,9 @@ p.kids-none { margin: 6px 0 0; }
 
   function initials(p) {
     if (p.initials) return p.initials;
-    var w = p.name.replace(/[^A-Za-z .'-]/g, '').split(/[\s-]+/).filter(Boolean);
+    var w = p.name.replace(/[^A-Za-z .'-]/g, '').split(/[\s-]+/).filter(function (x) { return x && !/^(Jr|Sr|II|III|IV)\.?$/.test(x); });
+    var caps = w.filter(function (x) { return /^[A-Z]/.test(x); });
+    if (caps.length) w = caps;
     return (w[0] ? w[0][0] : '') + (w.length > 1 ? w[w.length - 1][0] : '');
   }
   function photoURL(ph) {

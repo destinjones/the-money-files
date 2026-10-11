@@ -1,0 +1,740 @@
+{
+ "meta": {
+  "asOf": "2026-10-06",
+  "asOfLabel": "Oct 6, 2026",
+  "file": "File #012",
+  "repo": "https://github.com/destinjones/the-money-files",
+  "center": "sergey",
+  "slug": "brin",
+  "og": "assets/og-hub.jpg",
+  "pronoun": "his"
+ },
+ "copy": {
+  "title": "The Brin Money File",
+  "desc": "An interactive, fully sourced map of Sergey Brin’s family: Alphabet, 23andMe, the airship company, which stocks you can buy, and the money on the public record.",
+  "eyebrow": "<b>File #012</b> · The Brin family · Data as of <span data-asof></span>",
+  "h1": "Google’s cofounder <span class=\"gold\">holds a quarter</span> of the votes. We followed the <span class=\"u-red\">money</span>.",
+  "lede": "Who’s who, what each of them built, which companies you can buy stock in, and the money on the public record. Every number links to its source.",
+  "worthLabel": "Sergey Brin’s net worth",
+  "worthBig": "$262,600,000,000",
+  "familyLede": "Tap anyone to open their file. Sergey has three children with two ex-wives. Their names aren’t public, so we only count them.",
+  "investLede": "Alphabet trades on the Nasdaq as GOOGL and GOOG. 23andMe, which Anne cofounded, is now owned by her nonprofit, and the airship maker LTA is private.",
+  "moneyTitle": "Where the money is",
+  "moneyLede": "Nearly all of it is Alphabet stock. Sergey owns about 6% of the company but a quarter of its votes, through Class B shares. Only he has a published net worth on this map.",
+  "recordLede": "What Alphabet’s proxy statement, SEC filings on his gifts and a bankruptcy court show. Filings and reporting, not guesses.",
+  "trailLede": "From Moscow in 1979 to the fifth-largest fortune on Earth.",
+  "calcYearsK": "Years to earn what Sergey has",
+  "footLabel": "File #012: the Brin family",
+  "ledgerFoot": "Alphabet’s Class B shares carry extra votes, which is how 42.9% of that class adds up to 25.3% of the total vote. “Our sum” means simple addition of the linked filings or reports."
+ },
+ "tree": {
+  "groups": [
+   [
+    "center",
+    "The center"
+   ],
+   [
+    "parents",
+    "Parents"
+   ],
+   [
+    "partners",
+    "Ex-wives & children",
+    "Three children; names private."
+   ],
+   [
+    "wojcicki",
+    "The Wojcickis",
+    "Anne’s sister Susan."
+   ]
+  ],
+  "order": [
+   "sergey",
+   "anne",
+   "nicole",
+   "susan",
+   "michael",
+   "eugenia"
+  ],
+  "coParents": [
+   "anne",
+   "nicole"
+  ],
+  "couples": [
+   [
+    "michael",
+    "eugenia",
+    ""
+   ]
+  ],
+  "forks": [
+   {
+    "frm": [
+     "michael",
+     "eugenia"
+    ],
+    "kids": [
+     "sergey"
+    ]
+   },
+   {
+    "frm": "sergey",
+    "kids": [
+     "anne",
+     "nicole"
+    ],
+    "toNodeTop": true
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "wiki_sergey",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Sergey Brin",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Sergey_Brin"
+  },
+  {
+   "id": "wiki_anne",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Anne Wojcicki",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Anne_Wojcicki"
+  },
+  {
+   "id": "wiki_nicole",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Nicole Shanahan",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Nicole_Shanahan"
+  },
+  {
+   "id": "wiki_susan",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Susan Wojcicki",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Susan_Wojcicki"
+  },
+  {
+   "id": "forbes_sergey",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Real-time profile: Sergey Brin ($262.6B, #5 in the world)",
+   "date": "Oct 6, 2026",
+   "url": "https://www.forbes.com/profile/sergey-brin/"
+  },
+  {
+   "id": "fortune_gift",
+   "group": "money",
+   "pub": "Fortune (Bloomberg)",
+   "title": "Sergey Brin gifts $1.1 billion in Alphabet stock to charities after AI rally",
+   "date": "Nov 30, 2025",
+   "url": "https://fortune.com/2025/11/30/sergey-brin-gift-1-billion-alphabet-stock-ai-rally-michael-j-fox"
+  },
+  {
+   "id": "sec_proxy2026",
+   "group": "record",
+   "pub": "SEC (Alphabet Inc.)",
+   "title": "2026 proxy statement (DEF 14A): security ownership of beneficial owners",
+   "date": "Apr 24, 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm"
+  },
+  {
+   "id": "ap_23andme",
+   "group": "record",
+   "pub": "AP (via WBTV)",
+   "title": "Anne Wojcicki’s nonprofit gets court approval to buy 23andMe for $305 million",
+   "date": "Jul 2, 2025",
+   "url": "https://www.wbtv.com/2025/07/02/anne-wojcickis-nonprofit-gets-court-approval-buy-23andme-305-million/"
+  }
+ ],
+ "people": [
+  {
+   "id": "sergey",
+   "name": "Sergey Brin",
+   "short": "Sergey",
+   "rel": "The center of the map",
+   "tag": "$262.6B",
+   "tagKind": "money",
+   "born": "Born 1973 in Moscow",
+   "bornSrc": [
+    "wiki_sergey"
+   ],
+   "group": "center",
+   "layout": {
+    "row": 2,
+    "big": true
+   },
+   "photo": "sergey",
+   "wiki": "Sergey Brin",
+   "summary": {
+    "t": "Cofounded Google with Larry Page in 1998 while both were Stanford graduate students. He stepped down as president of Alphabet, Google’s parent, in 2019 but stayed on the board as a controlling shareholder, and went back to working on AI in 2023.",
+    "src": [
+     "forbes_sergey",
+     "wiki_sergey"
+    ]
+   },
+   "worth": {
+    "value": "$262.6 billion",
+    "by": "Forbes real-time estimate",
+    "date": "Oct 6, 2026",
+    "src": [
+     "forbes_sergey"
+    ],
+    "also": {
+     "short": "Rank",
+     "value": "#5 in the world",
+     "by": "Forbes rank",
+     "src": [
+      "forbes_sergey"
+     ]
+    }
+   },
+   "owns": [
+    {
+     "co": "alphabet",
+     "t": "Cofounder and board member. About 6% of the company and 25.3% of the voting power.",
+     "src": [
+      "fortune_gift",
+      "sec_proxy2026"
+     ]
+    },
+    {
+     "co": "lta",
+     "t": "Backs the airship maker.",
+     "src": [
+      "wiki_sergey"
+     ]
+    }
+   ],
+   "record": [
+    {
+     "h": "His Alphabet shares",
+     "t": "As of April 6, 2026, he owned 358.9 million Class B shares, 42.9% of that class, giving him 25.3% of Alphabet’s total vote, the 2026 proxy statement shows. Larry Page held 27.4%.",
+     "src": [
+      "sec_proxy2026"
+     ]
+    },
+    {
+     "h": "Gifts of stock in 2025",
+     "t": "He gave Alphabet shares worth $700 million in May 2025 and more than $1.1 billion in November 2025. Most went to Catalyst4, the nonprofit he started in 2021; the rest to his family foundation and the Michael J. Fox Foundation.",
+     "src": [
+      "fortune_gift"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "His family left the Soviet Union for the U.S. in 1979, when he was 6.",
+     "src": [
+      "wiki_sergey",
+      "forbes_sergey"
+     ]
+    },
+    {
+     "t": "Google’s first office was a Menlo Park garage rented from Susan Wojcicki, his future sister-in-law, for $1,700 a month.",
+     "src": [
+      "wiki_susan"
+     ]
+    },
+    {
+     "t": "Forbes says he has given more than $2 billion to Parkinson’s research.",
+     "src": [
+      "forbes_sergey"
+     ]
+    },
+    {
+     "t": "He graduated from the University of Maryland at 19.",
+     "src": [
+      "wiki_sergey"
+     ]
+    }
+   ],
+   "kidsNote": {
+    "t": "Sergey has three children: two with Anne Wojcicki and one with Nicole Shanahan. Their names aren’t public, so we don’t list them.",
+    "src": [
+     "wiki_sergey",
+     "forbes_sergey"
+    ]
+   }
+  },
+  {
+   "id": "anne",
+   "name": "Anne Wojcicki",
+   "short": "Anne",
+   "rel": "Ex-wife · 2007–2015",
+   "tag": "23andMe cofounder",
+   "group": "partners",
+   "layout": {
+    "row": 3,
+    "partner": true
+   },
+   "photo": "anne",
+   "wiki": "Anne Wojcicki",
+   "summary": {
+    "t": "Cofounded the genetic-testing company 23andMe in 2006 and ran it as CEO until it filed for bankruptcy in 2025. Her nonprofit then bought it back.",
+    "src": [
+     "wiki_anne",
+     "ap_23andme"
+    ]
+   },
+   "worth": {
+    "none": "No current Forbes or Bloomberg estimate."
+   },
+   "owns": [
+    {
+     "co": "23andme",
+     "t": "Cofounder. Her nonprofit, TTAM Research Institute, bought nearly all of its assets in 2025.",
+     "src": [
+      "ap_23andme"
+     ]
+    }
+   ],
+   "record": [
+    {
+     "h": "Buying back 23andMe",
+     "t": "23andMe filed for Chapter 11 in March 2025 and she resigned as CEO. In July a court approved the sale of nearly all its assets to her nonprofit for $305 million, after it outbid Regeneron’s $256 million offer.",
+     "src": [
+      "ap_23andme"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "Her sister Susan ran YouTube from 2014 to 2023.",
+     "src": [
+      "wiki_anne",
+      "wiki_susan"
+     ]
+    }
+   ],
+   "kidsText": "2 children · names private",
+   "kidsSrc": [
+    "wiki_sergey"
+   ]
+  },
+  {
+   "id": "nicole",
+   "name": "Nicole Shanahan",
+   "short": "Nicole",
+   "rel": "Ex-wife · 2018–2023",
+   "tag": "Lawyer, entrepreneur",
+   "group": "partners",
+   "layout": {
+    "row": 3,
+    "partner": true
+   },
+   "photo": "nicole",
+   "wiki": "Nicole Shanahan",
+   "summary": {
+    "t": "Lawyer and entrepreneur who founded the legal-tech company ClearAccessIP and the Bia-Echo Foundation. She was Robert F. Kennedy Jr.’s running mate in his 2024 independent presidential campaign.",
+    "src": [
+     "wiki_nicole"
+    ]
+   },
+   "worth": {
+    "none": "No Forbes or Bloomberg estimate."
+   },
+   "facts": [
+    {
+     "t": "She sold ClearAccessIP to IPwe in 2020 for about $20 million in stock.",
+     "src": [
+      "wiki_nicole"
+     ]
+    },
+    {
+     "t": "She and Sergey married in 2018 and separated in December 2021; the divorce was final in 2023.",
+     "src": [
+      "wiki_sergey",
+      "wiki_nicole"
+     ]
+    }
+   ],
+   "kidsText": "1 daughter · name private",
+   "kidsSrc": [
+    "wiki_sergey"
+   ]
+  },
+  {
+   "id": "susan",
+   "name": "Susan Wojcicki",
+   "short": "Susan",
+   "rel": "Anne’s sister · 1968–2024",
+   "tag": "YouTube CEO",
+   "group": "wojcicki",
+   "layout": {
+    "row": 2
+   },
+   "photo": "susan",
+   "wiki": "Susan Wojcicki",
+   "summary": {
+    "t": "Google’s first landlord and its 16th employee. She pushed Google to buy YouTube in 2006 and ran it as CEO from 2014 to 2023. She died in August 2024.",
+    "src": [
+     "wiki_susan"
+    ]
+   },
+   "worth": {
+    "none": "No current estimate."
+   },
+   "facts": [
+    {
+     "t": "She rented her Menlo Park garage to Page and Brin for $1,700 a month in 1998.",
+     "src": [
+      "wiki_susan"
+     ]
+    },
+    {
+     "t": "Google paid $1.65 billion for YouTube in 2006, a deal she recommended and managed.",
+     "src": [
+      "wiki_susan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "michael",
+   "name": "Michael Brin",
+   "short": "Michael",
+   "rel": "Father",
+   "tag": "Mathematician",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": "Michael Brin",
+   "summary": {
+    "t": "A retired mathematics professor at the University of Maryland. He moved the family from Moscow to the U.S. in 1979 because of antisemitism in the Soviet Union.",
+    "src": [
+     "wiki_sergey"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "eugenia",
+   "name": "Eugenia Brin",
+   "short": "Eugenia",
+   "rel": "Mother · 1948–2024",
+   "tag": "NASA researcher",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "A researcher at NASA’s Goddard Space Flight Center. She died in 2024.",
+    "src": [
+     "wiki_sergey"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  }
+ ],
+ "photos": {
+  "sergey": {
+   "file": "Sergey Brin Ted 2010 (cropped).jpg",
+   "author": "Steve Jurvetson",
+   "license": "CC BY 2.0",
+   "w": 1423,
+   "h": 2070,
+   "fx": 0.45,
+   "fy": 0.38,
+   "zoom": 1.0,
+   "year": "2010"
+  },
+  "anne": {
+   "file": "Anne Wojcicki (36938473750) (cropped).jpg",
+   "author": "TechCrunch",
+   "license": "CC BY 2.0",
+   "w": 1548,
+   "h": 2012,
+   "fx": 0.51,
+   "fy": 0.44,
+   "zoom": 1.2,
+   "year": "2017"
+  },
+  "nicole": {
+   "file": "Nicole Shanahan 2024 (3x4 cropped).jpg",
+   "author": "Gage Skidmore",
+   "license": "CC BY-SA 2.0",
+   "w": 3287,
+   "h": 4378,
+   "fx": 0.51,
+   "fy": 0.31,
+   "zoom": 1.35,
+   "year": "2024"
+  },
+  "susan": {
+   "file": "Susan Wojcicki (29393944130).jpg",
+   "author": "TechCrunch",
+   "license": "CC BY 2.0",
+   "w": 2577,
+   "h": 3000,
+   "fx": 0.57,
+   "fy": 0.21,
+   "zoom": 2.3,
+   "year": "2016"
+  }
+ },
+ "licenses": {
+  "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+  "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+  "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+ },
+ "companies": [
+  {
+   "id": "alphabet",
+   "name": "Alphabet (Google)",
+   "status": "public",
+   "ticker": "GOOGL",
+   "exchange": "Nasdaq",
+   "quote": "https://www.nasdaq.com/market-activity/stocks/googl",
+   "color": "#4285F4",
+   "who": "Sergey (cofounder, board member, about 6%, 25.3% of the vote)",
+   "t": "Google’s parent company. Sergey and Larry Page together hold more than half of the voting power through Class B shares.",
+   "src": [
+    "sec_proxy2026",
+    "fortune_gift"
+   ]
+  },
+  {
+   "id": "23andme",
+   "name": "23andMe",
+   "status": "private",
+   "color": "#D50F67",
+   "who": "Anne (cofounder; her nonprofit owns it)",
+   "t": "Genetic-testing company founded in 2006. It went bankrupt in 2025, and Anne’s nonprofit, TTAM Research Institute, bought nearly all its assets for $305 million.",
+   "src": [
+    "wiki_anne",
+    "ap_23andme"
+   ]
+  },
+  {
+   "id": "lta",
+   "name": "LTA Research",
+   "status": "private",
+   "color": "#84B8FF",
+   "who": "Sergey (backer)",
+   "t": "Airship maker. Its 124-meter Pathfinder 1 was cleared by the FAA for flight tests in October 2023.",
+   "src": [
+    "wiki_sergey"
+   ]
+  }
+ ],
+ "companiesExtra": [],
+ "ladder": {
+  "items": [
+   {
+    "name": "Sergey Brin",
+    "short": "Sergey",
+    "v": 262600000000,
+    "label": "$262.6B",
+    "src": [
+     "forbes_sergey"
+    ]
+   }
+  ],
+  "rest": "Everyone else on the map"
+ },
+ "calc": {
+  "worth": 262600000000
+ },
+ "ledger": [
+  {
+   "who": "Sergey",
+   "what": "Alphabet Class B shares (42.9% of the class)*",
+   "amt": "358.9M",
+   "when": "Apr 2026",
+   "src": [
+    "sec_proxy2026"
+   ]
+  },
+  {
+   "who": "Sergey",
+   "what": "Share of Alphabet’s total voting power*",
+   "amt": "25.3%",
+   "when": "Apr 2026",
+   "src": [
+    "sec_proxy2026"
+   ]
+  },
+  {
+   "who": "Sergey",
+   "what": "Alphabet stock given to charities",
+   "amt": "$700M",
+   "when": "May 2025",
+   "src": [
+    "fortune_gift"
+   ]
+  },
+  {
+   "who": "Sergey",
+   "what": "Alphabet stock given to charities, about $1 billion of it to Catalyst4",
+   "amt": "$1.1B+",
+   "when": "Nov 2025",
+   "src": [
+    "fortune_gift"
+   ]
+  },
+  {
+   "who": "Sergey",
+   "what": "Giving to Parkinson’s research (Forbes)",
+   "amt": "$2B+",
+   "when": "To date",
+   "src": [
+    "forbes_sergey"
+   ]
+  },
+  {
+   "who": "Anne’s nonprofit",
+   "what": "Bought 23andMe’s assets out of bankruptcy",
+   "amt": "$305M",
+   "when": "Jul 2025",
+   "src": [
+    "ap_23andme"
+   ]
+  },
+  {
+   "who": "Google",
+   "what": "Rent for Susan Wojcicki’s garage, its first office",
+   "amt": "$1,700/mo",
+   "when": "1998",
+   "src": [
+    "wiki_susan"
+   ]
+  },
+  {
+   "who": "Google",
+   "what": "Bought YouTube, a deal Susan managed",
+   "amt": "$1.65B",
+   "when": "2006",
+   "src": [
+    "wiki_susan"
+   ]
+  }
+ ],
+ "trail": [
+  {
+   "when": "1973",
+   "h": "Born in Moscow",
+   "t": "",
+   "src": [
+    "wiki_sergey"
+   ]
+  },
+  {
+   "when": "1979",
+   "h": "The family emigrates to the U.S.",
+   "t": "",
+   "src": [
+    "wiki_sergey"
+   ]
+  },
+  {
+   "when": "1993",
+   "h": "Graduates from the University of Maryland at 19",
+   "t": "",
+   "src": [
+    "wiki_sergey"
+   ]
+  },
+  {
+   "when": "1998",
+   "h": "Google starts in Susan Wojcicki’s garage",
+   "amt": "$1,700/mo",
+   "t": "",
+   "src": [
+    "wiki_susan"
+   ]
+  },
+  {
+   "when": "2004",
+   "h": "Google goes public",
+   "t": "",
+   "src": [
+    "forbes_sergey"
+   ]
+  },
+  {
+   "when": "2006",
+   "h": "Google buys YouTube",
+   "amt": "$1.65B",
+   "t": "Susan Wojcicki recommended the deal and managed it.",
+   "src": [
+    "wiki_susan"
+   ]
+  },
+  {
+   "when": "2007",
+   "h": "Marries Anne Wojcicki",
+   "t": "They divorce in 2015.",
+   "src": [
+    "wiki_sergey"
+   ]
+  },
+  {
+   "when": "2015",
+   "h": "Google reorganizes as Alphabet",
+   "t": "",
+   "src": [
+    "forbes_sergey"
+   ]
+  },
+  {
+   "when": "2018",
+   "h": "Marries Nicole Shanahan",
+   "t": "The divorce is final in 2023.",
+   "src": [
+    "wiki_sergey"
+   ]
+  },
+  {
+   "when": "2019",
+   "h": "Steps down as Alphabet president",
+   "t": "He stays on the board.",
+   "src": [
+    "forbes_sergey"
+   ]
+  },
+  {
+   "when": "Jul 2025",
+   "h": "Anne’s nonprofit buys 23andMe out of bankruptcy",
+   "amt": "$305M",
+   "t": "",
+   "src": [
+    "ap_23andme"
+   ]
+  },
+  {
+   "when": "2025",
+   "h": "Gives away $1.8 billion of Alphabet stock",
+   "amt": "$1.8B+",
+   "t": "$700 million in May and more than $1.1 billion in November (our sum).",
+   "src": [
+    "fortune_gift"
+   ]
+  },
+  {
+   "when": "Oct 2026",
+   "h": "Fifth-richest person on Earth",
+   "amt": "$262.6B",
+   "t": "",
+   "src": [
+    "forbes_sergey"
+   ]
+  }
+ ]
+}

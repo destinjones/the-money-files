@@ -69,6 +69,7 @@ a:hover { color: var(--ink); }
 .skip { position: absolute; left: -9999px; }
 .skip:focus { left: 12px; top: 12px; z-index: 99; background: var(--gold); color: #1a1205; padding: 8px 12px; border-radius: 8px; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+[hidden] { display: none !important; }
 
 /* ---------- top bar ---------- */
 .top {
@@ -798,10 +799,10 @@ p.kids-none { margin: 6px 0 0; }
       <h2 id="h-more">More files</h2>
     </header>
     <div class="more-grid"><a class="more-card" href="../arnault/"><span class="face" data-initials="BA"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bernard_Arnault_%283%29_-_2017_%28cropped%29.jpg?width=400" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="width:130.00%;left:-2.00%;top:-11.73%" onerror="this.remove()"></span><span class="mc-text"><span class="mc-file">File #015</span><span class="mc-name">The Arnault family</span><span class="mc-worth">$117.5B</span></span></a>
-<a class="more-card" href="../gates/"><span class="face" data-initials="BG"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bill_Gates_at_the_European_Commission_-_P067383-987995_%28cropped%29_5.jpg?width=400" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="width:115.00%;left:-7.50%;top:0.00%" onerror="this.remove()"></span><span class="mc-text"><span class="mc-file">File #010</span><span class="mc-name">The Gates family</span><span class="mc-worth">$114.2B</span></span></a>
+<a class="more-card" href="../buffett/"><span class="face" data-initials="WB"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg?width=400" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="width:100.00%;left:0.00%;top:-7.30%" onerror="this.remove()"></span><span class="mc-text"><span class="mc-file">File #013</span><span class="mc-name">The Buffett family</span><span class="mc-worth">$144.5B</span></span></a>
 <a class="more-card" href="../murdoch/"><span class="face" data-initials="RM"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rupert_Murdoch_-_Flickr_-_Eva_Rinaldi_Celebrity_and_Live_Music_Photographer.jpg?width=400" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="width:100.00%;left:0.00%;top:-0.68%" onerror="this.remove()"></span><span class="mc-text"><span class="mc-file">File #016</span><span class="mc-name">The Murdoch family</span><span class="mc-worth">$24.5B</span></span></a>
 <a class="more-card" href="../musk/"><span class="face" data-initials="EM"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Elon_Musk_-_54820081119_%28cropped%29.jpg?width=400" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="width:135.00%;left:-17.50%;top:-21.42%" onerror="this.remove()"></span><span class="mc-text"><span class="mc-file">File #006</span><span class="mc-name">The Musk family</span><span class="mc-worth">$1.046T</span></span></a></div>
-    <p class="more-all"><a class="btn ghost" href="../#files">See all 16 files</a></p>
+    <p class="more-all"><a class="btn ghost" href="../#files">See all 22 files</a></p>
   </div>
 </section>
 
@@ -880,7 +881,9 @@ p.kids-none { margin: 6px 0 0; }
 
   function initials(p) {
     if (p.initials) return p.initials;
-    var w = p.name.replace(/[^A-Za-z .'-]/g, '').split(/[\s-]+/).filter(Boolean);
+    var w = p.name.replace(/[^A-Za-z .'-]/g, '').split(/[\s-]+/).filter(function (x) { return x && !/^(Jr|Sr|II|III|IV)\.?$/.test(x); });
+    var caps = w.filter(function (x) { return /^[A-Z]/.test(x); });
+    if (caps.length) w = caps;
     return (w[0] ? w[0][0] : '') + (w.length > 1 ? w[w.length - 1][0] : '');
   }
   function photoURL(ph) {

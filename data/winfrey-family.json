@@ -1,0 +1,769 @@
+{
+ "meta": {
+  "asOf": "2026-10-06",
+  "asOfLabel": "Oct 6, 2026",
+  "file": "File #021",
+  "repo": "https://github.com/destinjones/the-money-files",
+  "center": "oprah",
+  "slug": "winfrey",
+  "og": "assets/og-hub.jpg",
+  "pronoun": "her"
+ },
+ "copy": {
+  "title": "The Winfrey Money File",
+  "desc": "An interactive, fully sourced map of Oprah Winfrey’s family: Harpo, OWN, WeightWatchers, the homes and land, her biggest gifts, and the money on the public record.",
+  "eyebrow": "<b>File #021</b> · The Winfrey family · Data as of <span data-asof></span>",
+  "h1": "A talk show built a <span class=\"gold\">$3.4 billion</span> fortune. We followed the <span class=\"u-red\">money</span>.",
+  "lede": "Who’s who, what she owns and sold, the homes and land, her biggest gifts, and the money on the public record. Every number links to its source.",
+  "worthLabel": "Oprah Winfrey’s net worth",
+  "worthBig": "$3,400,000,000",
+  "familyLede": "Tap anyone to open their file: what they own, what’s on the record, and where every fact comes from.",
+  "investLede": "Her company, Harpo, is private. WeightWatchers trades on the Nasdaq again after its 2025 bankruptcy, but she gave all her shares away in 2024.",
+  "moneyTitle": "Where the money is",
+  "moneyLede": "Most of it came from her talk show and Harpo’s films, reinvested, Forbes says, plus selling OWN and buying land in California and Hawaii. She’s the only one here with a published net worth.",
+  "homesTitle": "The homes and the land",
+  "homesLede": "Montecito is home; Maui is the land. Reported prices for her biggest purchases, area level only.",
+  "homesFlipLabel": "Paid for six purchases",
+  "homesChart": "Bought → sold, in $ millions",
+  "recordLede": "What company releases, SEC filings and news reports show about her deals and gifts. Filings and reporting, not guesses.",
+  "trailLede": "From Kosciusko, Mississippi, to a $3.4 billion media fortune.",
+  "calcYearsK": "Years to earn what Oprah has",
+  "footLabel": "File #021: the Winfrey family"
+ },
+ "tree": {
+  "groups": [
+   [
+    "center",
+    "The center"
+   ],
+   [
+    "partner",
+    "Partner"
+   ],
+   [
+    "parents",
+    "Parents"
+   ]
+  ],
+  "order": [
+   "oprah",
+   "stedman",
+   "vernita",
+   "vernon"
+  ],
+  "coParents": [],
+  "couples": [
+   [
+    "vernita",
+    "vernon",
+    ""
+   ],
+   [
+    "oprah",
+    "stedman",
+    "since 1986"
+   ]
+  ],
+  "forks": [
+   {
+    "frm": [
+     "vernita",
+     "vernon"
+    ],
+    "kids": [
+     "oprah"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "wiki_oprah",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Oprah Winfrey",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Oprah_Winfrey"
+  },
+  {
+   "id": "wiki_stedman",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Stedman Graham",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Stedman_Graham"
+  },
+  {
+   "id": "wsmv_vernon",
+   "group": "family",
+   "pub": "WSMV",
+   "title": "Vernon Winfrey, father of Oprah Winfrey and former councilman, dies at 88",
+   "date": "Jul 9, 2022",
+   "url": "https://www.wsmv.com/2022/07/09/vernon-winfrey-father-oprah-winfrey-former-councilman-dies-88"
+  },
+  {
+   "id": "forbes_oprah",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Real-time profile: Oprah Winfrey ($3.4B)",
+   "date": "Oct 6, 2026",
+   "url": "https://www.forbes.com/profile/oprah-winfrey/"
+  },
+  {
+   "id": "npr_academy",
+   "group": "money",
+   "pub": "NPR",
+   "title": "Oprah Opens Leadership Academy in South Africa",
+   "date": "Jan 3, 2007",
+   "url": "https://www.npr.org/2007/01/03/6716116/oprah-opens-leadership-academy-in-south-africa"
+  },
+  {
+   "id": "ap_academy",
+   "group": "money",
+   "pub": "AP (via ABC10)",
+   "title": "Oprah Winfrey to close South African girls’ academy after nearly 20 years",
+   "date": "Jul 2026",
+   "url": "https://www.abc10.com/article/news/nation-world/oprah-winfrey-to-close-south-african-girls-school-after-nearly-20-years/507-159b7d04-8f3c-41ee-9ad8-0bfd55e292d3"
+  },
+  {
+   "id": "morehouse",
+   "group": "money",
+   "pub": "Morehouse College",
+   "title": "Oprah Winfrey announces $13 million gift to Morehouse College for scholars fund",
+   "date": "Oct 7, 2019",
+   "url": "https://news.morehouse.edu/inside-morehouse/oprah-winfrey-announces-13-million-gift-to-morehouse-college-for-scholars-fund"
+  },
+  {
+   "id": "discovery_2017",
+   "group": "record",
+   "pub": "Discovery, Inc.",
+   "title": "Discovery Increases Ownership Interest in OWN: Oprah Winfrey Network",
+   "date": "Dec 4, 2017",
+   "url": "https://ir.corporate.discovery.com/news-and-events/financial-news/financial-news-details/2017/Discovery-Increases-Ownership-Interest-in-OWN-Oprah-Winfrey-Network/default.aspx"
+  },
+  {
+   "id": "bloomberg_2020",
+   "group": "record",
+   "pub": "Bloomberg (via BNN Bloomberg)",
+   "title": "Oprah Winfrey sells most of OWN stake to Discovery for US$36 million",
+   "date": "Dec 22, 2020",
+   "url": "https://www.bnnbloomberg.ca/oprah-winfrey-sells-most-of-own-stake-to-discovery-for-36-million-1.1540303"
+  },
+  {
+   "id": "ap_ww2015",
+   "group": "record",
+   "pub": "AP (via CBS News)",
+   "title": "Oprah Winfrey goes on diet, gains Weight Watchers deal",
+   "date": "Oct 19, 2015",
+   "url": "https://www.cbsnews.com/texas/news/oprah-winfrey-goes-on-diet-gains-weight-watchers-deal/"
+  },
+  {
+   "id": "ap_ww2024",
+   "group": "record",
+   "pub": "AP (via KSAT)",
+   "title": "Winfrey leaving WeightWatchers board, donating all of her interest in the company to a museum",
+   "date": "Feb 29, 2024",
+   "url": "https://www.ksat.com/business/2024/02/29/winfrey-leaving-weightwatchers-board-donating-all-of-her-interest-in-the-company-to-a-museum/"
+  },
+  {
+   "id": "axios_ww",
+   "group": "record",
+   "pub": "Axios",
+   "title": "WeightWatchers files bankruptcy amid weight-loss drugs disruption",
+   "date": "May 6, 2025",
+   "url": "https://www.axios.com/2025/05/06/weight-watchers-bankruptcy-filing-chapter-11-ozempic"
+  },
+  {
+   "id": "ww_8k",
+   "group": "record",
+   "pub": "SEC (WW International)",
+   "title": "Q2 2025 shareholder letter (exhibit to Form 8-K)",
+   "date": "Aug 11, 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/105319/000119312525177438/d71795dex992.htm"
+  },
+  {
+   "id": "hb_homes",
+   "group": "homes",
+   "pub": "House Beautiful (via AOL)",
+   "title": "Inside Oprah Winfrey’s Massive Real Estate Portfolio",
+   "date": "Dec 26, 2023",
+   "url": "https://www.aol.com/inside-oprah-winfreys-massive-real-120000789.html"
+  },
+  {
+   "id": "mauinow",
+   "group": "homes",
+   "pub": "Maui Now",
+   "title": "Oprah buys 870 acres of land in Kula for nearly $6.6 million over recent months",
+   "date": "Mar 2, 2023",
+   "url": "https://mauinow.com/2023/03/02/oprah-buys-870-acres-of-land-in-kula-for-nearly-6-6-million-over-recent-months/"
+  }
+ ],
+ "people": [
+  {
+   "id": "vernita",
+   "name": "Vernita Lee",
+   "short": "Vernita",
+   "rel": "Mother · 1935–2018",
+   "tag": "Housemaid",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "A housemaid. She was a teenager when Oprah was born, and she and Vernon never married. She died in 2018.",
+    "src": [
+     "wiki_oprah"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "vernon",
+   "name": "Vernon Winfrey",
+   "short": "Vernon",
+   "rel": "Father · 1933–2022",
+   "tag": "Barber, councilman",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "A coal miner turned barber turned city councilman. He ran his own barbershop in Nashville for 60 years and served on the Metro Council. He died in 2022 at 88.",
+    "src": [
+     "wiki_oprah",
+     "wsmv_vernon"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "oprah",
+   "name": "Oprah Winfrey",
+   "short": "Oprah",
+   "rel": "The center of the map",
+   "tag": "$3.4B",
+   "tagKind": "money",
+   "born": "Born 1954 in Kosciusko, Mississippi",
+   "bornSrc": [
+    "wiki_oprah"
+   ],
+   "group": "center",
+   "layout": {
+    "row": 2,
+    "big": true
+   },
+   "photo": "oprah",
+   "wiki": "Oprah Winfrey",
+   "summary": {
+    "t": "Her talk show ran for 25 years, until 2011, and she turned it into a media business: Harpo Productions, the OWN cable channel and film and TV production. Forbes says the reinvested profits add up to more than $2.8 billion.",
+    "src": [
+     "forbes_oprah",
+     "wiki_oprah"
+    ]
+   },
+   "worth": {
+    "value": "$3.4 billion",
+    "by": "Forbes real-time estimate",
+    "date": "Oct 6, 2026",
+    "src": [
+     "forbes_oprah"
+    ],
+    "also": {
+     "short": "Rank",
+     "value": "#1,239 in the world",
+     "by": "Forbes rank",
+     "src": [
+      "forbes_oprah"
+     ]
+    }
+   },
+   "owns": [
+    {
+     "co": "harpo",
+     "t": "Chairwoman and CEO since 1986.",
+     "src": [
+      "wiki_oprah"
+     ]
+    },
+    {
+     "co": "own",
+     "t": "Launched it in 2011 and stayed CEO. Sold most of her stake to Discovery in 2017 and 2020.",
+     "src": [
+      "discovery_2017",
+      "bloomberg_2020"
+     ]
+    }
+   ],
+   "record": [
+    {
+     "h": "Selling OWN",
+     "t": "Discovery paid $70 million in December 2017 for another 24.5% of OWN, taking its stake past 70%. In December 2020 she sold most of what was left for more than $36 million in Discovery stock, taking Discovery to 95%.",
+     "src": [
+      "discovery_2017",
+      "bloomberg_2020"
+     ]
+    },
+    {
+     "h": "WeightWatchers",
+     "t": "She bought 10% of Weight Watchers in October 2015 for $43.2 million and joined its board; the stock more than doubled that day. In February 2024 she said she would leave the board and give all of her roughly 1.1 million shares to the Smithsonian’s National Museum of African American History and Culture.",
+     "src": [
+      "ap_ww2015",
+      "ap_ww2024"
+     ]
+    },
+    {
+     "h": "Her school in South Africa",
+     "t": "She opened the Oprah Winfrey Leadership Academy for Girls in 2007 after a reported $40 million investment. In July 2026 she said the campus will close in its current form after the 2027 school year and pass to the Gauteng Department of Education, replaced by a scholarship program.",
+     "src": [
+      "npr_academy",
+      "ap_academy"
+     ]
+    },
+    {
+     "h": "Morehouse College",
+     "t": "She started a scholarship fund at Morehouse in 1989. A $13 million gift in 2019 brought her total to $25 million, supporting nearly 600 students.",
+     "src": [
+      "morehouse"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "Forbes says she owns more than a dozen properties, including 2,100 acres of land in Hawaii.",
+     "src": [
+      "forbes_oprah"
+     ]
+    },
+    {
+     "t": "Forbes counted her as the world’s only Black billionaire from 2004 to 2006.",
+     "src": [
+      "wiki_oprah"
+     ]
+    },
+    {
+     "t": "Apple signed a multi-year content partnership with her in June 2018.",
+     "src": [
+      "wiki_oprah"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stedman",
+   "name": "Stedman Graham",
+   "short": "Stedman",
+   "rel": "Partner · since 1986",
+   "tag": "Author",
+   "group": "partner",
+   "layout": {
+    "row": 2
+   },
+   "photo": "stedman",
+   "wiki": "Stedman Graham",
+   "summary": {
+    "t": "Businessman and author who founded S. Graham & Associates, a Chicago marketing and consulting firm, in 1988. He and Oprah have been together since 1986; they got engaged in 1992 but never married.",
+    "src": [
+     "wiki_stedman",
+     "wiki_oprah"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   },
+   "facts": [
+    {
+     "t": "His nonprofit, AAD (formerly Athletes Against Drugs), has given more than $1.5 million in scholarships since 1985.",
+     "src": [
+      "wiki_stedman"
+     ]
+    }
+   ]
+  }
+ ],
+ "photos": {
+  "oprah": {
+   "file": "Oprah Winfrey 2016.jpg",
+   "author": "U.S. Embassy South Africa",
+   "license": "Public domain",
+   "w": 1108,
+   "h": 1604,
+   "fx": 0.51,
+   "fy": 0.48,
+   "zoom": 1.0,
+   "year": "2016"
+  },
+  "stedman": {
+   "file": "Stedman Graham and Grant Schreiber during an interview in Cape Town, 2014 (cropped).jpg",
+   "author": "George Caulfield",
+   "license": "CC BY-SA 4.0",
+   "w": 259,
+   "h": 375,
+   "fx": 0.48,
+   "fy": 0.4,
+   "zoom": 1.05,
+   "year": "2014"
+  }
+ },
+ "licenses": {
+  "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+  "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+  "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+ },
+ "companies": [
+  {
+   "id": "harpo",
+   "name": "Harpo Productions",
+   "status": "private",
+   "color": "#B79CFF",
+   "who": "Oprah (chairwoman and CEO)",
+   "t": "Her production company, founded in 1986. It coproduced films including The Color Purple, Beloved and Selma.",
+   "src": [
+    "wiki_oprah",
+    "forbes_oprah"
+   ]
+  },
+  {
+   "id": "own",
+   "name": "OWN: Oprah Winfrey Network",
+   "status": "private",
+   "color": "#F59E0B",
+   "who": "Warner Bros. Discovery (95%) · Harpo (the rest)",
+   "t": "Cable channel launched in 2011 with Discovery, which bought most of Harpo’s stake in 2017 and 2020.",
+   "src": [
+    "discovery_2017",
+    "bloomberg_2020"
+   ]
+  },
+  {
+   "id": "ww",
+   "name": "WeightWatchers",
+   "status": "nostake",
+   "ticker": "WW",
+   "exchange": "Nasdaq",
+   "quote": "https://www.nasdaq.com/market-activity/stocks/ww",
+   "color": "#5B6CFF",
+   "who": "Oprah owned 10% from 2015 and gave her shares away in 2024.",
+   "t": "Filed for Chapter 11 in May 2025, cut about $1.15 billion of debt, and came out of bankruptcy on June 24, 2025, relisted on the Nasdaq as WW.",
+   "src": [
+    "axios_ww",
+    "ww_8k",
+    "ap_ww2024"
+   ]
+  }
+ ],
+ "companiesExtra": [],
+ "ladder": {
+  "items": [
+   {
+    "name": "Oprah Winfrey",
+    "short": "Oprah",
+    "v": 3400000000,
+    "label": "$3.4B",
+    "src": [
+     "forbes_oprah"
+    ]
+   }
+  ],
+  "rest": "Everyone else on the map"
+ },
+ "calc": {
+  "worth": 3400000000
+ },
+ "homes": {
+  "props": [
+   {
+    "name": "The estate she calls the Promised Land",
+    "area": "Montecito, California",
+    "by": "2001",
+    "b": 50,
+    "note": "Bought for around $50 million.",
+    "src": [
+     "hb_homes"
+    ]
+   },
+   {
+    "name": "Spanish Revival compound",
+    "area": "Montecito, California",
+    "by": "2019",
+    "b": 6.85,
+    "src": [
+     "hb_homes"
+    ]
+   },
+   {
+    "name": "Tuscan-style farmhouse",
+    "area": "Montecito, California",
+    "by": "2021",
+    "b": 10.5,
+    "s": 14.8,
+    "sy": "2022",
+    "src": [
+     "hb_homes"
+    ]
+   },
+   {
+    "name": "Three properties, 117+ acres",
+    "area": "Maui, Hawaii",
+    "by": "2002",
+    "b": 17,
+    "src": [
+     "hb_homes"
+    ]
+   },
+   {
+    "name": "Three properties, about 49 acres",
+    "area": "Maui, Hawaii",
+    "by": "2003",
+    "b": 8,
+    "note": "More than $8 million combined.",
+    "src": [
+     "hb_homes"
+    ]
+   },
+   {
+    "name": "About 870 acres of land",
+    "area": "Kula, Maui, Hawaii",
+    "by": "2023",
+    "b": 6.6,
+    "note": "Four parcels bought in December 2022 and February 2023.",
+    "src": [
+     "mauinow"
+    ]
+   }
+  ],
+  "summary": {
+   "value": "≈$99M",
+   "note": "Paid for the six purchases below (our sum of reported prices). Forbes says she owns more than a dozen properties, including 2,100 acres in Hawaii.",
+   "src": [
+    "hb_homes",
+    "mauinow",
+    "forbes_oprah"
+   ]
+  },
+  "extra": [
+   {
+    "t": "Her company Harpo bought the 870 acres in Kula. Before that she already owned about 1,000 acres of ranch land and more than 200 acres of coastal land on Maui.",
+    "src": [
+     "mauinow"
+    ]
+   }
+  ]
+ },
+ "ledger": [
+  {
+   "who": "Oprah",
+   "what": "10% of Weight Watchers (6.4 million shares at $6.79)",
+   "amt": "$43.2M",
+   "when": "Oct 2015",
+   "src": [
+    "ap_ww2015"
+   ]
+  },
+  {
+   "who": "Oprah",
+   "what": "WeightWatchers shares given to the Smithsonian’s NMAAHC (about 1.43%)",
+   "amt": "1.1M shares",
+   "when": "Feb 2024",
+   "src": [
+    "ap_ww2024"
+   ]
+  },
+  {
+   "who": "Discovery",
+   "what": "Paid for another 24.5% of OWN",
+   "amt": "$70M",
+   "when": "Dec 2017",
+   "src": [
+    "discovery_2017"
+   ]
+  },
+  {
+   "who": "Oprah’s Harpo",
+   "what": "Sold most of the rest of OWN, paid in Discovery stock",
+   "amt": "$36M+",
+   "when": "Dec 2020",
+   "src": [
+    "bloomberg_2020"
+   ]
+  },
+  {
+   "who": "Oprah",
+   "what": "Leadership Academy for Girls in South Africa (reported cost)",
+   "amt": "$40M",
+   "when": "2007",
+   "src": [
+    "npr_academy",
+    "ap_academy"
+   ]
+  },
+  {
+   "who": "Oprah",
+   "what": "Morehouse College scholarship fund, total since 1989",
+   "amt": "$25M",
+   "when": "2019",
+   "src": [
+    "morehouse"
+   ]
+  },
+  {
+   "who": "Oprah",
+   "what": "Montecito estate",
+   "amt": "≈$50M",
+   "when": "2001",
+   "src": [
+    "hb_homes"
+   ]
+  },
+  {
+   "who": "Harpo",
+   "what": "About 870 acres in Kula, Maui",
+   "amt": "≈$6.6M",
+   "when": "2022–23",
+   "src": [
+    "mauinow"
+   ]
+  },
+  {
+   "who": "WeightWatchers",
+   "what": "Debt cut in Chapter 11",
+   "amt": "$1.15B",
+   "when": "2025",
+   "src": [
+    "axios_ww",
+    "ww_8k"
+   ]
+  }
+ ],
+ "trail": [
+  {
+   "when": "1954",
+   "h": "Born in Kosciusko, Mississippi",
+   "t": "",
+   "src": [
+    "wiki_oprah"
+   ]
+  },
+  {
+   "when": "1986",
+   "h": "Starts Harpo Productions",
+   "t": "",
+   "src": [
+    "wiki_oprah"
+   ]
+  },
+  {
+   "when": "1989",
+   "h": "Starts her Morehouse scholarship fund",
+   "t": "",
+   "src": [
+    "morehouse"
+   ]
+  },
+  {
+   "when": "2001",
+   "h": "Buys her Montecito estate",
+   "amt": "≈$50M",
+   "t": "",
+   "src": [
+    "hb_homes"
+   ]
+  },
+  {
+   "when": "2002",
+   "h": "Starts buying land on Maui",
+   "amt": "$17M",
+   "t": "",
+   "src": [
+    "hb_homes"
+   ]
+  },
+  {
+   "when": "2007",
+   "h": "Opens a girls’ school in South Africa",
+   "amt": "$40M",
+   "t": "",
+   "src": [
+    "npr_academy"
+   ]
+  },
+  {
+   "when": "2011",
+   "h": "Her talk show ends after 25 years; OWN launches",
+   "t": "",
+   "src": [
+    "forbes_oprah"
+   ]
+  },
+  {
+   "when": "2015",
+   "h": "Buys 10% of Weight Watchers",
+   "amt": "$43.2M",
+   "t": "",
+   "src": [
+    "ap_ww2015"
+   ]
+  },
+  {
+   "when": "2017",
+   "h": "Discovery buys more of OWN",
+   "amt": "$70M",
+   "t": "",
+   "src": [
+    "discovery_2017"
+   ]
+  },
+  {
+   "when": "2020",
+   "h": "Sells most of the rest of OWN for Discovery stock",
+   "amt": "$36M+",
+   "t": "",
+   "src": [
+    "bloomberg_2020"
+   ]
+  },
+  {
+   "when": "2024",
+   "h": "Leaves WeightWatchers’ board and gives away her shares",
+   "t": "",
+   "src": [
+    "ap_ww2024"
+   ]
+  },
+  {
+   "when": "2025",
+   "h": "WeightWatchers goes through Chapter 11",
+   "t": "",
+   "src": [
+    "axios_ww",
+    "ww_8k"
+   ]
+  },
+  {
+   "when": "Jul 2026",
+   "h": "Says her South African school will change to scholarships after 2027",
+   "t": "",
+   "src": [
+    "ap_academy"
+   ]
+  },
+  {
+   "when": "Oct 2026",
+   "h": "Forbes puts her fortune at $3.4 billion",
+   "amt": "$3.4B",
+   "t": "",
+   "src": [
+    "forbes_oprah"
+   ]
+  }
+ ]
+}

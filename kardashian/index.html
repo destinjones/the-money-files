@@ -69,6 +69,7 @@ a:hover { color: var(--ink); }
 .skip { position: absolute; left: -9999px; }
 .skip:focus { left: 12px; top: 12px; z-index: 99; background: var(--gold); color: #1a1205; padding: 8px 12px; border-radius: 8px; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+[hidden] { display: none !important; }
 
 /* ---------- top bar ---------- */
 .top {
@@ -799,9 +800,9 @@ p.kids-none { margin: 6px 0 0; }
     </header>
     <div class="more-grid"><a class="more-card" href="../swift/"><span class="face" data-initials="TS"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_%283%29.png?width=400" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="width:130.00%;left:-17.60%;top:-11.28%" onerror="this.remove()"></span><span class="mc-text"><span class="mc-file">File #018</span><span class="mc-name">The Swift family</span><span class="mc-worth">$2B</span></span></a>
 <a class="more-card" href="../murdoch/"><span class="face" data-initials="RM"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rupert_Murdoch_-_Flickr_-_Eva_Rinaldi_Celebrity_and_Live_Music_Photographer.jpg?width=400" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="width:100.00%;left:0.00%;top:-0.68%" onerror="this.remove()"></span><span class="mc-text"><span class="mc-file">File #016</span><span class="mc-name">The Murdoch family</span><span class="mc-worth">$24.5B</span></span></a>
-<a class="more-card" href="../carter/"><span class="face" data-initials="JZ"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jay-Z_meets_with_New_York_Senate_Majority_Leader_in_Albany_%28cropped%29.webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="width:105.00%;left:-1.45%;top:-1.36%" onerror="this.remove()"></span><span class="mc-text"><span class="mc-file">File #020</span><span class="mc-name">The Carter family</span><span class="mc-worth">$2.8B</span></span></a>
-<a class="more-card" href="../mrbeast/"><span class="face" data-initials="JD"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/MrBeast_in_2026_%28cropped_4%29.png?width=400" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="width:100.00%;left:0.00%;top:-3.36%" onerror="this.remove()"></span><span class="mc-text"><span class="mc-file">File #022</span><span class="mc-name">The Donaldson family</span><span class="mc-worth">Beast Industries</span></span></a></div>
-    <p class="more-all"><a class="btn ghost" href="../#files">See all 16 files</a></p>
+<a class="more-card" href="../rihanna/"><span class="face" data-initials="R"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rihanna_Fenty_2018.png?width=400" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="width:200.00%;left:-48.00%;top:-39.24%" onerror="this.remove()"></span><span class="mc-text"><span class="mc-file">File #019</span><span class="mc-name">The Fenty family</span><span class="mc-worth">$1B</span></span></a>
+<a class="more-card" href="../carter/"><span class="face" data-initials="JZ"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jay-Z_meets_with_New_York_Senate_Majority_Leader_in_Albany_%28cropped%29.webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="width:105.00%;left:-1.45%;top:-1.36%" onerror="this.remove()"></span><span class="mc-text"><span class="mc-file">File #020</span><span class="mc-name">The Carter family</span><span class="mc-worth">$2.8B</span></span></a></div>
+    <p class="more-all"><a class="btn ghost" href="../#files">See all 22 files</a></p>
   </div>
 </section>
 
@@ -880,7 +881,9 @@ p.kids-none { margin: 6px 0 0; }
 
   function initials(p) {
     if (p.initials) return p.initials;
-    var w = p.name.replace(/[^A-Za-z .'-]/g, '').split(/[\s-]+/).filter(Boolean);
+    var w = p.name.replace(/[^A-Za-z .'-]/g, '').split(/[\s-]+/).filter(function (x) { return x && !/^(Jr|Sr|II|III|IV)\.?$/.test(x); });
+    var caps = w.filter(function (x) { return /^[A-Z]/.test(x); });
+    if (caps.length) w = caps;
     return (w[0] ? w[0][0] : '') + (w.length > 1 ? w[w.length - 1][0] : '');
   }
   function photoURL(ph) {

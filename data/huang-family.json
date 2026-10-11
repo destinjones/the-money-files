@@ -1,0 +1,729 @@
+{
+ "meta": {
+  "asOf": "2026-10-06",
+  "asOfLabel": "Oct 6, 2026",
+  "file": "File #011",
+  "repo": "https://github.com/destinjones/the-money-files",
+  "center": "jensen",
+  "slug": "huang",
+  "og": "assets/og-hub.jpg",
+  "pronoun": "his"
+ },
+ "copy": {
+  "title": "The Huang Money File",
+  "desc": "An interactive, fully sourced map of Jensen Huang’s family: who does what at Nvidia, the family foundation, which stocks you can buy, and the money on the public record.",
+  "eyebrow": "<b>File #011</b> · The Huang family · Data as of <span data-asof></span>",
+  "h1": "The man behind the <span class=\"gold\">AI boom</span> has a family. We followed the <span class=\"u-red\">money</span>.",
+  "lede": "Who’s who, what each of them does at Nvidia, which companies you can buy stock in, the family foundation, and the money on the public record. Every number links to its source.",
+  "worthLabel": "Jensen Huang’s net worth",
+  "worthBig": "$209,500,000,000",
+  "familyLede": "Tap anyone to open their file: what they own, what they do, and where every fact comes from. Jensen and Lori’s two children are adults who both work at Nvidia.",
+  "investLede": "Nvidia trades on the Nasdaq as NVDA. AMD, the rival run by one of Jensen’s relatives, trades too, but the Huangs have no reported stake in it.",
+  "moneyTitle": "Where the money is",
+  "moneyLede": "Nearly all of it is Nvidia stock, held directly and through trusts and a partnership. Only Jensen has a published net worth.",
+  "recordLede": "What trading-plan sales, SEC filings and the family foundation’s records show. Filings and reporting, not guesses.",
+  "trailLede": "From a boarding school in Kentucky to the seventh-largest fortune on Earth.",
+  "calcYearsK": "Years to earn what Jensen has",
+  "footLabel": "File #011: the Huang family"
+ },
+ "tree": {
+  "groups": [
+   [
+    "center",
+    "The center"
+   ],
+   [
+    "parents",
+    "Parents"
+   ],
+   [
+    "spouse",
+    "Wife"
+   ],
+   [
+    "children",
+    "Children",
+    "Both adults; both work at Nvidia."
+   ],
+   [
+    "relatives",
+    "Relatives",
+    "AMD’s CEO is a cousin."
+   ]
+  ],
+  "order": [
+   "jensen",
+   "lori",
+   "spencer",
+   "madison",
+   "father",
+   "mother",
+   "lisa"
+  ],
+  "coParents": [],
+  "couples": [
+   [
+    "father",
+    "mother",
+    ""
+   ],
+   [
+    "jensen",
+    "lori",
+    "m. 1985"
+   ]
+  ],
+  "forks": [
+   {
+    "frm": [
+     "father",
+     "mother"
+    ],
+    "kids": [
+     "jensen"
+    ]
+   },
+   {
+    "frm": [
+     "jensen",
+     "lori"
+    ],
+    "kids": [
+     "spencer",
+     "madison"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "wiki_jensen",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Jensen Huang",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Jensen_Huang"
+  },
+  {
+   "id": "osu_huang",
+   "group": "family",
+   "pub": "Oregon State University College of Engineering",
+   "title": "Jen-Hsun Huang: Oregon Stater award profile",
+   "date": "accessed Oct 2026",
+   "url": "https://engineering.oregonstate.edu/alumni-partners/oregon-stater-awards/searchable-awards-database/jen-hsun-huang-engineering-hall"
+  },
+  {
+   "id": "forbes_jensen",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Real-time profile: Jensen Huang ($209.5B, #7 in the world)",
+   "date": "Oct 6, 2026",
+   "url": "https://www.forbes.com/profile/jensen-huang/"
+  },
+  {
+   "id": "forbes_200b",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Jensen Huang’s Fortune Breaks $200 Billion As Nvidia Stock Reaches Record High",
+   "date": "Oct 2, 2026",
+   "url": "https://www.forbes.com/sites/conormurray/2026/10/02/jensen-huangs-fortune-breaks-200-billion-as-nvidia-stock-reaches-record-high/"
+  },
+  {
+   "id": "cnbc_foundation",
+   "group": "money",
+   "pub": "CNBC (via NBC News)",
+   "title": "Jensen Huang’s charitable foundation balloons on Nvidia stock gains",
+   "date": "Jun 12, 2025",
+   "url": "https://www.nbcnews.com/business/personal-finance/jensen-huangs-charitable-foundation-balloons-nvidia-stock-gains-rcna212755"
+  },
+  {
+   "id": "cnbc_plan2024",
+   "group": "record",
+   "pub": "CNBC (via NBC New York)",
+   "title": "Nvidia shares pop as CEO may be done selling shares after hitting preset plan limit",
+   "date": "Sep 24, 2024",
+   "url": "https://nbcnewyork.com/news/business/money-report/nvidia-shares-pop-as-ceo-may-be-done-selling-shares-after-hitting-preset-plan-limit/5825189"
+  },
+  {
+   "id": "qz_2025",
+   "group": "record",
+   "pub": "Quartz",
+   "title": "Jensen Huang starts selling Nvidia stock. He could unload more than $800 million in shares this year",
+   "date": "Jun 24, 2025",
+   "url": "https://qz.com/jensen-huang-nvidia-stock-sale-plan-800-million"
+  },
+  {
+   "id": "bloomberg_1b",
+   "group": "record",
+   "pub": "Bloomberg (via Bloomberg Law)",
+   "title": "Nvidia CEO Jensen Huang Completes $1 Billion Share Sale",
+   "date": "Oct 31, 2025",
+   "url": "https://news.bloomberglaw.com/capital-markets/nvidia-ceo-jensen-huang-completes-1-billion-share-sale"
+  }
+ ],
+ "people": [
+  {
+   "id": "jensen",
+   "name": "Jensen Huang",
+   "short": "Jensen",
+   "rel": "The center of the map",
+   "tag": "$209.5B",
+   "tagKind": "money",
+   "born": "Born 1963 in Taipei, Taiwan",
+   "bornSrc": [
+    "wiki_jensen"
+   ],
+   "group": "center",
+   "layout": {
+    "row": 2,
+    "big": true
+   },
+   "photo": "jensen",
+   "wiki": "Jensen Huang",
+   "summary": {
+    "t": "Cofounded Nvidia in 1993 and has run it ever since. Under him, Nvidia’s chips came to dominate gaming and then AI, and in 2025 it became the first company worth $5 trillion.",
+    "src": [
+     "forbes_jensen",
+     "bloomberg_1b"
+    ]
+   },
+   "worth": {
+    "value": "$209.5 billion",
+    "by": "Forbes real-time estimate",
+    "date": "Oct 6, 2026",
+    "src": [
+     "forbes_jensen"
+    ],
+    "also": {
+     "short": "Rank",
+     "value": "#7 in the world",
+     "by": "Forbes rank",
+     "src": [
+      "forbes_jensen"
+     ]
+    }
+   },
+   "owns": [
+    {
+     "co": "nvidia",
+     "t": "Cofounder, president and CEO since 1993. Owns about 4% of the company, per Forbes.",
+     "src": [
+      "forbes_jensen"
+     ]
+    }
+   ],
+   "record": [
+    {
+     "h": "Share sales in 2024",
+     "t": "Under a trading plan adopted in March 2024, he sold 6 million Nvidia shares from June to September 2024 for more than $700 million. Afterward he held 75.4 million shares directly and 786 million more through trusts and a partnership.",
+     "src": [
+      "cnbc_plan2024"
+     ]
+    },
+    {
+     "h": "Share sales in 2025",
+     "t": "A plan adopted in March 2025 let him sell up to 6 million shares by year-end, worth about $865 million when sales began in June. By Oct. 31, 2025, he had sold more than $1 billion of stock.",
+     "src": [
+      "bloomberg_1b",
+      "qz_2025"
+     ]
+    },
+    {
+     "h": "The family foundation",
+     "t": "He and Lori started the Jen-Hsun and Lori Huang Foundation in 2007 with 370,000 Nvidia shares worth $12.6 million. By 2025 its assets topped $9.1 billion, by FoundationMark’s count.",
+     "src": [
+      "cnbc_foundation"
+     ]
+    },
+    {
+     "h": "University gifts",
+     "t": "He has given Stanford $30 million for an engineering center and, in 2022, gave Oregon State $50 million for a research center that bears his name.",
+     "src": [
+      "forbes_jensen"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "He and his cofounders, Chris Malachowsky and Curtis Priem, planned Nvidia in a Denny’s booth in East San Jose.",
+     "src": [
+      "wiki_jensen"
+     ]
+    },
+    {
+     "t": "Sent to the U.S. at age 9, he ended up at Oneida Baptist Institute, a school in rural Kentucky.",
+     "src": [
+      "wiki_jensen"
+     ]
+    },
+    {
+     "t": "He earned his Stanford master’s degree in 1992 by taking classes at night while working.",
+     "src": [
+      "wiki_jensen"
+     ]
+    },
+    {
+     "t": "His fortune passed $200 billion in October 2026, when Nvidia stock hit a record.",
+     "src": [
+      "forbes_200b"
+     ]
+    }
+   ],
+   "kidsNote": {
+    "t": "Jensen and Lori have two children, Spencer and Madison. Both are adults and both work at Nvidia.",
+    "src": [
+     "wiki_jensen"
+    ]
+   }
+  },
+  {
+   "id": "lori",
+   "name": "Lori Huang",
+   "short": "Lori",
+   "rel": "Wife · married 1985",
+   "tag": "Foundation co-founder",
+   "group": "spouse",
+   "layout": {
+    "row": 2
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Born Lori Mills. She was Jensen’s lab partner in an electrical engineering class at Oregon State, and they married five years later. She co-founded the family foundation with him.",
+    "src": [
+     "osu_huang",
+     "wiki_jensen",
+     "cnbc_foundation"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate of her own."
+   },
+   "record": [
+    {
+     "h": "The 2025 gift",
+     "t": "In June 2025 the couple’s trust gave 440,000 Nvidia shares worth $60 million to their foundation, and half as many shares to a donor-advised fund, an SEC filing showed.",
+     "src": [
+      "cnbc_foundation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lisa",
+   "name": "Lisa Su",
+   "short": "Lisa",
+   "rel": "First cousin once removed",
+   "tag": "AMD CEO",
+   "group": "relatives",
+   "layout": {
+    "row": 2
+   },
+   "photo": "lisa",
+   "wiki": "Lisa Su",
+   "summary": {
+    "t": "Chair and CEO of AMD, Nvidia’s rival in chips. Jensen’s mother is the youngest sister of Su’s maternal grandfather, so the two are first cousins once removed.",
+    "src": [
+     "wiki_jensen"
+    ]
+   },
+   "worth": {
+    "none": "Not covered in this file."
+   },
+   "owns": [
+    {
+     "co": "amd",
+     "t": "Runs it as chair and CEO.",
+     "src": [
+      "wiki_jensen"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "spencer",
+   "name": "Spencer Huang",
+   "short": "Spencer",
+   "rel": "Son",
+   "tag": "Nvidia",
+   "group": "children",
+   "layout": {
+    "row": 3
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Opened a cocktail bar in Taipei in 2015 that Forbes listed among Asia’s 50 best bars. It closed in April 2021. He is now a product manager at Nvidia.",
+    "src": [
+     "wiki_jensen"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   },
+   "owns": [
+    {
+     "co": "rdlab",
+     "t": "Founded it in 2015.",
+     "src": [
+      "wiki_jensen"
+     ]
+    },
+    {
+     "co": "nvidia",
+     "t": "Product manager.",
+     "src": [
+      "wiki_jensen"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "madison",
+   "name": "Madison Huang",
+   "short": "Madison",
+   "rel": "Daughter",
+   "tag": "Nvidia",
+   "group": "children",
+   "layout": {
+    "row": 3
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Worked in the hotel industry before joining Nvidia, where she works in product marketing.",
+    "src": [
+     "wiki_jensen"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   },
+   "owns": [
+    {
+     "co": "nvidia",
+     "t": "Product marketing.",
+     "src": [
+      "wiki_jensen"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "father",
+   "name": "Huang Hsing-tai",
+   "short": "Hsing-tai",
+   "rel": "Father",
+   "tag": "Chemical engineer",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "A chemical engineer at an oil refinery in Taiwan.",
+    "src": [
+     "wiki_jensen"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "mother",
+   "name": "Lo Tsai-hsiu",
+   "short": "Tsai-hsiu",
+   "rel": "Mother",
+   "tag": "Teacher",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "A schoolteacher.",
+    "src": [
+     "wiki_jensen"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  }
+ ],
+ "photos": {
+  "jensen": {
+   "file": "Jen-Hsun Huang 2025.jpg",
+   "author": "The White House",
+   "license": "Public domain",
+   "w": 645,
+   "h": 839,
+   "fx": 0.51,
+   "fy": 0.52,
+   "zoom": 1.0,
+   "year": "2025"
+  },
+  "lisa": {
+   "file": "SXSW-2024-alih-OB7A0861-Lisa Su (cropped 2).jpg",
+   "author": "Fuzheado",
+   "license": "CC BY 4.0",
+   "w": 1911,
+   "h": 2551,
+   "fx": 0.52,
+   "fy": 0.39,
+   "zoom": 1.25,
+   "year": "2024"
+  }
+ },
+ "licenses": {
+  "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+  "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+  "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+ },
+ "companies": [
+  {
+   "id": "nvidia",
+   "name": "Nvidia",
+   "status": "public",
+   "ticker": "NVDA",
+   "exchange": "Nasdaq",
+   "quote": "https://www.nasdaq.com/market-activity/stocks/nvda",
+   "color": "#76B900",
+   "who": "Jensen (cofounder and CEO, about 4%) · Spencer and Madison (employees)",
+   "t": "Jensen cofounded it in 1993 and took it public in 1999. In 2025 it became the first company worth $5 trillion.",
+   "src": [
+    "forbes_jensen",
+    "bloomberg_1b"
+   ]
+  },
+  {
+   "id": "amd",
+   "name": "AMD",
+   "status": "nostake",
+   "ticker": "AMD",
+   "exchange": "Nasdaq",
+   "quote": "https://www.nasdaq.com/market-activity/stocks/amd",
+   "color": "#ED1C24",
+   "who": "Run by Lisa Su, a relative. No Huang stake reported.",
+   "t": "Nvidia’s rival in chips. Its chair and CEO, Lisa Su, is Jensen’s first cousin once removed.",
+   "src": [
+    "wiki_jensen"
+   ]
+  },
+  {
+   "id": "rdlab",
+   "name": "R&D Cocktail Lab",
+   "status": "gone",
+   "gone": "Closed 2021",
+   "color": "#B79CFF",
+   "who": "Spencer (founder)",
+   "t": "Spencer’s cocktail bar in Taipei. It opened in 2015, made Forbes’s list of Asia’s 50 best bars, and closed in April 2021.",
+   "src": [
+    "wiki_jensen"
+   ]
+  }
+ ],
+ "companiesExtra": [],
+ "ladder": {
+  "items": [
+   {
+    "name": "Jensen Huang",
+    "short": "Jensen",
+    "v": 209500000000,
+    "label": "$209.5B",
+    "src": [
+     "forbes_jensen"
+    ]
+   }
+  ],
+  "rest": "Everyone else on the map"
+ },
+ "calc": {
+  "worth": 209500000000
+ },
+ "ledger": [
+  {
+   "who": "Jensen",
+   "what": "Nvidia stake (Forbes estimate)",
+   "amt": "≈4%",
+   "when": "Oct 2026",
+   "src": [
+    "forbes_jensen"
+   ]
+  },
+  {
+   "who": "Jensen",
+   "what": "6 million shares sold under his 2024 trading plan",
+   "amt": "$700M+",
+   "when": "Jun–Sep 2024",
+   "src": [
+    "cnbc_plan2024"
+   ]
+  },
+  {
+   "who": "Jensen",
+   "what": "Nvidia shares held directly / through trusts and a partnership",
+   "amt": "75.4M / 786M",
+   "when": "Sep 2024",
+   "src": [
+    "cnbc_plan2024"
+   ]
+  },
+  {
+   "who": "Jensen",
+   "what": "Shares sold under his 2025 trading plan",
+   "amt": "$1B+",
+   "when": "Jun–Oct 2025",
+   "src": [
+    "bloomberg_1b"
+   ]
+  },
+  {
+   "who": "Jensen & Lori",
+   "what": "440,000 Nvidia shares given to their foundation",
+   "amt": "$60M",
+   "when": "Jun 2025",
+   "src": [
+    "cnbc_foundation"
+   ]
+  },
+  {
+   "who": "Huang foundation",
+   "what": "Assets (FoundationMark estimate)",
+   "amt": "$9.1B+",
+   "when": "2025",
+   "src": [
+    "cnbc_foundation"
+   ]
+  },
+  {
+   "who": "Huang foundation",
+   "what": "Seed gift of 370,000 Nvidia shares",
+   "amt": "$12.6M",
+   "when": "2007",
+   "src": [
+    "cnbc_foundation"
+   ]
+  },
+  {
+   "who": "Jensen",
+   "what": "Gift to Oregon State for a research center",
+   "amt": "$50M",
+   "when": "2022",
+   "src": [
+    "forbes_jensen"
+   ]
+  },
+  {
+   "who": "Jensen",
+   "what": "Gift to Stanford for an engineering center",
+   "amt": "$30M",
+   "when": "—",
+   "src": [
+    "forbes_jensen"
+   ]
+  }
+ ],
+ "trail": [
+  {
+   "when": "1963",
+   "h": "Born in Taipei, Taiwan",
+   "t": "",
+   "src": [
+    "wiki_jensen"
+   ]
+  },
+  {
+   "when": "1973",
+   "h": "Sent to the U.S. at 9",
+   "t": "He lands at Oneida Baptist Institute in Kentucky.",
+   "src": [
+    "wiki_jensen"
+   ]
+  },
+  {
+   "when": "1984",
+   "h": "Graduates from Oregon State in electrical engineering",
+   "t": "His lab partner there, Lori Mills, becomes his wife in 1985.",
+   "src": [
+    "osu_huang",
+    "wiki_jensen"
+   ]
+  },
+  {
+   "when": "1993",
+   "h": "Cofounds Nvidia",
+   "t": "The plan comes together in a Denny’s booth in East San Jose.",
+   "src": [
+    "wiki_jensen"
+   ]
+  },
+  {
+   "when": "1999",
+   "h": "Nvidia goes public",
+   "t": "",
+   "src": [
+    "forbes_jensen"
+   ]
+  },
+  {
+   "when": "2007",
+   "h": "Starts the family foundation with Lori",
+   "amt": "$12.6M",
+   "t": "The seed: 370,000 Nvidia shares.",
+   "src": [
+    "cnbc_foundation"
+   ]
+  },
+  {
+   "when": "2015",
+   "h": "Spencer opens a cocktail bar in Taipei",
+   "t": "It closes in 2021; he later joins Nvidia.",
+   "src": [
+    "wiki_jensen"
+   ]
+  },
+  {
+   "when": "2022",
+   "h": "Gives Oregon State $50 million",
+   "amt": "$50M",
+   "t": "",
+   "src": [
+    "forbes_jensen"
+   ]
+  },
+  {
+   "when": "2024",
+   "h": "Sells 6 million shares under a trading plan",
+   "amt": "$700M+",
+   "t": "",
+   "src": [
+    "cnbc_plan2024"
+   ]
+  },
+  {
+   "when": "2025",
+   "h": "Sells more than $1 billion of stock; Nvidia hits $5 trillion",
+   "amt": "$1B+",
+   "t": "",
+   "src": [
+    "bloomberg_1b"
+   ]
+  },
+  {
+   "when": "Oct 2026",
+   "h": "His fortune passes $200 billion",
+   "amt": "$209.5B",
+   "t": "Forbes ranks him seventh in the world.",
+   "src": [
+    "forbes_200b",
+    "forbes_jensen"
+   ]
+  }
+ ]
+}

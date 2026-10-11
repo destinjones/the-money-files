@@ -1,0 +1,808 @@
+{
+ "meta": {
+  "asOf": "2026-10-06",
+  "asOfLabel": "Oct 6, 2026",
+  "file": "File #025",
+  "repo": "https://github.com/destinjones/the-money-files",
+  "center": "cristiano",
+  "slug": "ronaldo",
+  "og": "assets/og-hub.jpg",
+  "pronoun": "his"
+ },
+ "copy": {
+  "title": "The Ronaldo Money File",
+  "desc": "An interactive, fully sourced map of Cristiano Ronaldo’s family: Al-Nassr, Nike, the CR7 hotels, Perplexity, and the money on the public record.",
+  "eyebrow": "<b>File #025</b> · The Ronaldo family · Data as of <span data-asof></span>",
+  "h1": "Football’s first <span class=\"gold\">billionaire</span> has a family. We followed the <span class=\"u-red\">money</span>.",
+  "lede": "Who’s who, what each of them runs, which companies you can buy stock in, and the money on the public record. Every number links to its source.",
+  "worthLabel": "Cristiano Ronaldo’s net worth",
+  "worthBig": "$1,200,000,000",
+  "familyLede": "Tap anyone to open their file: what they run, what’s on the record, and where every fact comes from. Cristiano’s five children appear by first name only.",
+  "investLede": "His own businesses are private. Nike, which pays him under a lifetime deal, trades on the NYSE, but the family doesn’t own it.",
+  "moneyTitle": "Where the money is",
+  "moneyLede": "Mostly pay. Forbes says he’s the first active athlete to earn more than $2 billion before taxes and fees, and that Al-Nassr pays him more than $200 million a year. He’s the only one here with a published net worth.",
+  "recordLede": "What his contracts, deals and a Spanish court record show. Filings and reporting, not guesses.",
+  "trailLede": "From Funchal, Madeira, to football’s first billionaire.",
+  "calcYearsK": "Years to earn what Cristiano has",
+  "footLabel": "File #025: the Ronaldo family"
+ },
+ "tree": {
+  "groups": [
+   [
+    "center",
+    "The center"
+   ],
+   [
+    "partners",
+    "Wife & children",
+    "Kids by first name only."
+   ],
+   [
+    "parents",
+    "Parents"
+   ],
+   [
+    "siblings",
+    "Siblings",
+    "All three are older than Cristiano."
+   ]
+  ],
+  "order": [
+   "cristiano",
+   "georgina",
+   "dolores",
+   "jose",
+   "elma",
+   "hugo",
+   "katia"
+  ],
+  "coParents": [],
+  "couples": [
+   [
+    "jose",
+    "dolores",
+    ""
+   ]
+  ],
+  "forks": [
+   {
+    "frm": [
+     "jose",
+     "dolores"
+    ],
+    "kids": [
+     "elma",
+     "hugo",
+     "cristiano",
+     "katia"
+    ]
+   },
+   {
+    "frm": "cristiano",
+    "kids": [
+     "georgina"
+    ],
+    "toNodeTop": true
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "wiki_ronaldo",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Cristiano Ronaldo",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo"
+  },
+  {
+   "id": "wiki_georgina",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Georgina Rodríguez",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Georgina_Rodr%C3%ADguez"
+  },
+  {
+   "id": "hola_family",
+   "group": "family",
+   "pub": "¡Hola!",
+   "title": "Cristiano Ronaldo’s family, who’s who (in Spanish)",
+   "date": "Sep 3, 2023",
+   "url": "https://www.hola.com/actualidad/20230903238192/cristiano-ronaldo-familia-quien-es-quien/"
+  },
+  {
+   "id": "afp_wedding",
+   "group": "family",
+   "pub": "AFP (via Citizen Digital)",
+   "title": "Cristiano Ronaldo marries long-term partner Georgina Rodriguez",
+   "date": "Aug 12, 2026",
+   "url": "https://citizen.digital/article/cristiano-ronaldo-marries-long-term-partner-georgina-rodriguez-n388150"
+  },
+  {
+   "id": "euronews_wedding",
+   "group": "family",
+   "pub": "Euronews",
+   "title": "Vogue releases exclusive photos of Ronaldo and Georgina’s wedding",
+   "date": "Aug 16, 2026",
+   "url": "https://www.euronews.com/2026/08/16/vogue-releases-exclusive-photos-of-ronaldo-and-georginas-wedding"
+  },
+  {
+   "id": "forbes_ronaldo",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Real-time profile: Cristiano Ronaldo ($1.2B)",
+   "date": "Oct 6, 2026",
+   "url": "https://www.forbes.com/profile/cristiano-ronaldo/"
+  },
+  {
+   "id": "reuters_billionaire",
+   "group": "money",
+   "pub": "Reuters (via RTHK)",
+   "title": "Ronaldo becomes world’s first football billionaire",
+   "date": "Oct 9, 2025",
+   "url": "https://news.rthk.hk/rthk/en/component/k2/1826451-20251009.htm"
+  },
+  {
+   "id": "hopper_2024",
+   "group": "money",
+   "pub": "Hopper HQ",
+   "title": "The 2024 Instagram Rich List",
+   "date": "Jul 23, 2024",
+   "url": "https://www.hopperhq.com/blog/2024-instagram-rich-list/"
+  },
+  {
+   "id": "fortune_nike",
+   "group": "record",
+   "pub": "Fortune (TIME)",
+   "title": "Cristiano Ronaldo signs a lifetime deal with Nike",
+   "date": "Nov 10, 2016",
+   "url": "https://fortune.com/2016/11/10/cristiano-ronaldo-nike-lifetime-athlete"
+  },
+  {
+   "id": "nbc_nike",
+   "group": "record",
+   "pub": "NBC Sports",
+   "title": "Ronaldo signs reported $1 billion lifetime deal with Nike",
+   "date": "Nov 9, 2016",
+   "url": "https://nbcsports.com/soccer/news/ronaldo-signs-reported-1-billion-lifetime-deal-with-nike"
+  },
+  {
+   "id": "bein_hotels",
+   "group": "record",
+   "pub": "beIN Sports",
+   "title": "Ronaldo to invest €37m in CR7 hotels",
+   "date": "2015",
+   "url": "https://www.beinsports.com/en-mena/football/articles/football-ronaldo-to-invest-e37m-in-cr7-hotels"
+  },
+  {
+   "id": "hm_hotels",
+   "group": "record",
+   "pub": "Hotel Management",
+   "title": "Real Madrid star Cristiano Ronaldo opens second hotel in Lisbon",
+   "date": "Oct 3, 2016",
+   "url": "https://www.hotelmanagement.net/development/real-madrid-star-cristiano-ronaldo-opens-second-hotel-lisbon-portugal"
+  },
+  {
+   "id": "pestana_cr7",
+   "group": "record",
+   "pub": "Pestana Hotel Group",
+   "title": "Pestana CR7 Lifestyle Hotels",
+   "date": "accessed Oct 2026",
+   "url": "https://www.pestana.com/en/cr7-lifestyle-hotels"
+  },
+  {
+   "id": "bloomberg_perplexity",
+   "group": "record",
+   "pub": "Bloomberg (via Bloomberg Tax)",
+   "title": "Cristiano Ronaldo Invests in Perplexity AI, Enters Partnership",
+   "date": "Dec 5, 2025",
+   "url": "https://news.bloombergtax.com/artificial-intelligence/cristiano-ronaldo-invests-in-perplexity-ai-enters-partnership"
+  },
+  {
+   "id": "fmt_tax",
+   "group": "record",
+   "pub": "Free Malaysia Today",
+   "title": "Ronaldo accepts fine for tax evasion, avoids jail",
+   "date": "Jan 22, 2019",
+   "url": "https://www.freemalaysiatoday.com/category/sports/2019/01/22/ronaldo-accepts-fine-for-tax-evasion-avoids-jail"
+  }
+ ],
+ "people": [
+  {
+   "id": "jose",
+   "name": "José Dinis Aveiro",
+   "short": "José",
+   "rel": "Father · died 2005",
+   "tag": "Gardener",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "A municipal gardener and part-time kit man at the local club, Andorinha. He died in 2005 at 52.",
+    "src": [
+     "wiki_ronaldo",
+     "hola_family"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "dolores",
+   "name": "Dolores Aveiro",
+   "short": "Dolores",
+   "rel": "Mother",
+   "tag": "Family matriarch",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Worked as a cook and cleaner when Cristiano was young. Since her husband died in 2005 she has been the head of the family.",
+    "src": [
+     "wiki_ronaldo",
+     "hola_family"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "elma",
+   "name": "Elma Aveiro",
+   "short": "Elma",
+   "rel": "Sister",
+   "tag": "Businesswoman",
+   "group": "siblings",
+   "layout": {
+    "row": 2
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Cristiano’s oldest sibling. A businesswoman with a jewelry line and a clothing store dedicated to her brother.",
+    "src": [
+     "hola_family",
+     "wiki_ronaldo"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "hugo",
+   "name": "Hugo Aveiro",
+   "short": "Hugo",
+   "rel": "Brother",
+   "tag": "Museu CR7",
+   "group": "siblings",
+   "layout": {
+    "row": 2
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Cristiano’s older brother. He runs the museum dedicated to Cristiano in Madeira.",
+    "src": [
+     "hola_family"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "cristiano",
+   "name": "Cristiano Ronaldo",
+   "short": "Cristiano",
+   "rel": "The center of the map",
+   "tag": "$1.2B",
+   "tagKind": "money",
+   "born": "Born 1985 in Funchal, Madeira, Portugal",
+   "bornSrc": [
+    "wiki_ronaldo"
+   ],
+   "group": "center",
+   "layout": {
+    "row": 2,
+    "big": true
+   },
+   "photo": "cristiano",
+   "wiki": "Cristiano Ronaldo",
+   "summary": {
+    "t": "The Portuguese star played for Manchester United, Real Madrid and Juventus before joining Saudi club Al-Nassr in 2023. In October 2025 Bloomberg called him the first footballer to become a billionaire.",
+    "src": [
+     "forbes_ronaldo",
+     "reuters_billionaire"
+    ]
+   },
+   "worth": {
+    "value": "$1.2 billion",
+    "by": "Forbes real-time estimate",
+    "date": "Oct 6, 2026",
+    "src": [
+     "forbes_ronaldo"
+    ],
+    "also": {
+     "short": "Bloomberg",
+     "value": "$1.4B (Oct 2025)",
+     "by": "Bloomberg Billionaires Index",
+     "src": [
+      "reuters_billionaire"
+     ]
+    }
+   },
+   "owns": [
+    {
+     "co": "alnassr",
+     "t": "Plays for the club and holds a reported 15% stake under his 2025 contract.",
+     "src": [
+      "reuters_billionaire"
+     ]
+    },
+    {
+     "co": "pestanacr7",
+     "t": "Owns the hotel brand 50-50 with the Pestana Hotel Group.",
+     "src": [
+      "bein_hotels",
+      "hm_hotels"
+     ]
+    },
+    {
+     "co": "perplexity",
+     "t": "Investor since December 2025; stake not disclosed.",
+     "src": [
+      "bloomberg_perplexity"
+     ]
+    }
+   ],
+   "record": [
+    {
+     "h": "The Al-Nassr contract",
+     "t": "His new contract, signed in June 2025, was reportedly worth more than $400 million: an annual salary of £177 million ($237.5 million), plus bonuses and a reported 15% stake in the club.",
+     "src": [
+      "reuters_billionaire"
+     ]
+    },
+    {
+     "h": "Nike for life",
+     "t": "Nike has sponsored him since 2003 and signed him to a lifetime deal in November 2016, making him its third lifetime athlete after Michael Jordan and LeBron James. Terms weren’t disclosed; Bloomberg estimates the deal pays him nearly $18 million a year.",
+     "src": [
+      "fortune_nike",
+      "reuters_billionaire"
+     ]
+    },
+    {
+     "h": "The CR7 hotels",
+     "t": "He and the Pestana Hotel Group split the €75 million first phase 50-50, about €37 million each. Pestana CR7 hotels now operate in Funchal, Lisbon, Madrid, Marrakech and New York.",
+     "src": [
+      "bein_hotels",
+      "pestana_cr7"
+     ]
+    },
+    {
+     "h": "The tax case in Spain",
+     "t": "In January 2019 he accepted a 23-month suspended sentence and an €18.8 million fine in a Madrid court, in a case over his image-rights income in Spain from 2011 to 2014.",
+     "src": [
+      "fmt_tax"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "Forbes ranked him the world’s highest-paid athlete in 2026, the fourth year in a row.",
+     "src": [
+      "forbes_ronaldo"
+     ]
+    },
+    {
+     "t": "He has nearly 1 billion followers across Instagram, Facebook and X, Forbes says.",
+     "src": [
+      "forbes_ronaldo"
+     ]
+    },
+    {
+     "t": "Hopper HQ estimated in 2024 that he could charge about $3.4 million for one sponsored Instagram post.",
+     "src": [
+      "hopper_2024"
+     ]
+    },
+    {
+     "t": "He had 973 career goals at the start of the 2026 World Cup and wants to be the first to reach 1,000.",
+     "src": [
+      "forbes_ronaldo"
+     ]
+    }
+   ],
+   "kidsNote": {
+    "t": "Cristiano has five children: Cristiano Jr., the twins Eva and Mateo, and his daughters with Georgina, Alana Martina and Bella Esmeralda. We list first names only.",
+    "src": [
+     "euronews_wedding"
+    ]
+   }
+  },
+  {
+   "id": "katia",
+   "name": "Katia Aveiro",
+   "short": "Katia",
+   "rel": "Sister",
+   "tag": "Singer",
+   "group": "siblings",
+   "layout": {
+    "row": 2
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Cristiano’s older sister, a singer with records such as Pronta P’ra Te Amar.",
+    "src": [
+     "hola_family",
+     "wiki_ronaldo"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "georgina",
+   "name": "Georgina Rodríguez",
+   "short": "Georgina",
+   "rel": "Wife · married 2026",
+   "tag": "I Am Georgina",
+   "group": "partners",
+   "layout": {
+    "row": 3,
+    "partner": true
+   },
+   "photo": "georgina",
+   "wiki": "Georgina Rodríguez",
+   "summary": {
+    "t": "Born in Buenos Aires and raised in Spain, she met Cristiano in 2016 while working at a Gucci store in Madrid. She produces and stars in the Netflix series I Am Georgina and started the clothing brand OM by G in 2021.",
+    "src": [
+     "wiki_georgina"
+    ]
+   },
+   "worth": {
+    "none": "No Forbes or Bloomberg estimate."
+   },
+   "record": [
+    {
+     "h": "The wedding",
+     "t": "They married in a civil ceremony at home in Cascais on Aug. 11, 2026, a year to the day after announcing their engagement. They married under a separation-of-assets regime, Euronews reported.",
+     "src": [
+      "afp_wedding",
+      "euronews_wedding"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "She launched an activewear line, Mimoa, in 2026.",
+     "src": [
+      "wiki_georgina"
+     ]
+    }
+   ],
+   "kids": [
+    {
+     "name": "Cristiano Jr."
+    },
+    {
+     "name": "Eva"
+    },
+    {
+     "name": "Mateo"
+    },
+    {
+     "name": "Alana Martina"
+    },
+    {
+     "name": "Bella Esmeralda"
+    }
+   ],
+   "kidsLabel": "The five children",
+   "kidsSrc": [
+    "euronews_wedding"
+   ]
+  }
+ ],
+ "photos": {
+  "cristiano": {
+   "file": "Cristiano Ronaldo Croatia v Portugal 2 July 2026-075 (cropped).jpg",
+   "author": "Bryan Berlin",
+   "license": "CC BY-SA 4.0",
+   "w": 2812,
+   "h": 4215,
+   "fx": 0.49,
+   "fy": 0.23,
+   "zoom": 2.0,
+   "year": "2026"
+  },
+  "georgina": {
+   "file": "Georgina Rodriguez-1234.jpg",
+   "author": "Harald Krichel",
+   "license": "CC BY-SA 4.0",
+   "w": 3001,
+   "h": 4499,
+   "fx": 0.46,
+   "fy": 0.28,
+   "zoom": 2.0,
+   "year": "2026"
+  }
+ },
+ "licenses": {
+  "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+  "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+  "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+ },
+ "companies": [
+  {
+   "id": "alnassr",
+   "name": "Al-Nassr",
+   "status": "private",
+   "color": "#FACC15",
+   "who": "Cristiano (player; a reported 15% stake)",
+   "t": "Saudi Pro League club he joined in 2023. His June 2025 contract was reportedly worth more than $400 million.",
+   "src": [
+    "forbes_ronaldo",
+    "reuters_billionaire"
+   ]
+  },
+  {
+   "id": "pestanacr7",
+   "name": "Pestana CR7 hotels",
+   "status": "private",
+   "color": "#3DDC97",
+   "who": "Cristiano (50%) · Pestana Hotel Group (50%)",
+   "t": "Hotel brand with locations in Funchal, Lisbon, Madrid, Marrakech and New York. The first two opened in 2016.",
+   "src": [
+    "pestana_cr7",
+    "hm_hotels",
+    "bein_hotels"
+   ]
+  },
+  {
+   "id": "perplexity",
+   "name": "Perplexity",
+   "status": "private",
+   "color": "#20B8CD",
+   "who": "Cristiano (investor; stake not disclosed)",
+   "t": "AI search company valued at $20 billion in September 2025. He invested and signed a sponsorship deal in December 2025.",
+   "src": [
+    "bloomberg_perplexity"
+   ]
+  },
+  {
+   "id": "nike",
+   "name": "Nike",
+   "status": "nostake",
+   "ticker": "NKE",
+   "exchange": "NYSE",
+   "quote": "https://www.nasdaq.com/market-activity/stocks/nke",
+   "color": "#F97316",
+   "who": "Pays Cristiano under a lifetime deal. No family stake.",
+   "t": "His sponsor since 2003. The lifetime deal’s terms weren’t disclosed; NBC Sports cited a TMZ report of about $1 billion.",
+   "src": [
+    "fortune_nike",
+    "nbc_nike"
+   ]
+  }
+ ],
+ "companiesExtra": [],
+ "ladder": {
+  "items": [
+   {
+    "name": "Cristiano Ronaldo",
+    "short": "Cristiano",
+    "v": 1200000000,
+    "label": "$1.2B",
+    "src": [
+     "forbes_ronaldo"
+    ]
+   }
+  ],
+  "rest": "Everyone else on the map"
+ },
+ "calc": {
+  "worth": 1200000000
+ },
+ "ledger": [
+  {
+   "who": "Cristiano",
+   "what": "Net worth, Bloomberg Billionaires Index: football’s first billionaire",
+   "amt": "$1.4B",
+   "when": "Oct 2025",
+   "src": [
+    "reuters_billionaire"
+   ]
+  },
+  {
+   "who": "Cristiano",
+   "what": "Career earnings before taxes and fees (Forbes)",
+   "amt": "$2B+",
+   "when": "2026",
+   "src": [
+    "forbes_ronaldo"
+   ]
+  },
+  {
+   "who": "Cristiano",
+   "what": "Club salary, 2002 to 2023 (Bloomberg)",
+   "amt": "$550M+",
+   "when": "2002–2023",
+   "src": [
+    "reuters_billionaire"
+   ]
+  },
+  {
+   "who": "Al-Nassr",
+   "what": "Reported value of his 2025 contract",
+   "amt": "$400M+",
+   "when": "Jun 2025",
+   "src": [
+    "reuters_billionaire"
+   ]
+  },
+  {
+   "who": "Al-Nassr",
+   "what": "Reported annual salary under that contract",
+   "amt": "$237.5M",
+   "when": "2025",
+   "src": [
+    "reuters_billionaire"
+   ]
+  },
+  {
+   "who": "Nike",
+   "what": "Estimated yearly pay under his deal (Bloomberg)",
+   "amt": "≈$18M",
+   "when": "Yearly",
+   "src": [
+    "reuters_billionaire"
+   ]
+  },
+  {
+   "who": "Cristiano",
+   "what": "Endorsements such as Armani and Castrol (Bloomberg)",
+   "amt": "$175M+",
+   "when": "Career",
+   "src": [
+    "reuters_billionaire"
+   ]
+  },
+  {
+   "who": "Cristiano",
+   "what": "His half of the first CR7 hotels phase",
+   "amt": "€37M",
+   "when": "2015–16",
+   "src": [
+    "bein_hotels"
+   ]
+  },
+  {
+   "who": "Cristiano",
+   "what": "Estimated price of one sponsored Instagram post (Hopper HQ)",
+   "amt": "$3.43M",
+   "when": "2024",
+   "src": [
+    "hopper_2024"
+   ]
+  },
+  {
+   "who": "Cristiano",
+   "what": "Fine in the Spanish tax case",
+   "amt": "€18.8M",
+   "when": "Jan 2019",
+   "src": [
+    "fmt_tax"
+   ]
+  }
+ ],
+ "trail": [
+  {
+   "when": "1985",
+   "h": "Born in Funchal, Madeira",
+   "t": "",
+   "src": [
+    "wiki_ronaldo"
+   ]
+  },
+  {
+   "when": "2003",
+   "h": "Nike becomes his sponsor",
+   "t": "",
+   "src": [
+    "fortune_nike"
+   ]
+  },
+  {
+   "when": "2016",
+   "h": "Opens his first CR7 hotels, in Funchal and Lisbon",
+   "t": "",
+   "src": [
+    "hm_hotels"
+   ]
+  },
+  {
+   "when": "2016",
+   "h": "Signs a lifetime deal with Nike; meets Georgina Rodríguez",
+   "t": "",
+   "src": [
+    "fortune_nike",
+    "wiki_georgina"
+   ]
+  },
+  {
+   "when": "2019",
+   "h": "Accepts a suspended sentence and a fine in a Spanish tax case",
+   "amt": "€18.8M",
+   "t": "",
+   "src": [
+    "fmt_tax"
+   ]
+  },
+  {
+   "when": "2023",
+   "h": "Joins Al-Nassr in Saudi Arabia",
+   "t": "",
+   "src": [
+    "forbes_ronaldo"
+   ]
+  },
+  {
+   "when": "Jun 2025",
+   "h": "Signs a new Al-Nassr contract",
+   "amt": "$400M+",
+   "t": "",
+   "src": [
+    "reuters_billionaire"
+   ]
+  },
+  {
+   "when": "Oct 2025",
+   "h": "Bloomberg names him football’s first billionaire",
+   "amt": "$1.4B",
+   "t": "",
+   "src": [
+    "reuters_billionaire"
+   ]
+  },
+  {
+   "when": "Dec 2025",
+   "h": "Invests in Perplexity",
+   "t": "",
+   "src": [
+    "bloomberg_perplexity"
+   ]
+  },
+  {
+   "when": "Aug 2026",
+   "h": "Marries Georgina Rodríguez in Cascais",
+   "t": "",
+   "src": [
+    "afp_wedding"
+   ]
+  },
+  {
+   "when": "Oct 2026",
+   "h": "Forbes puts his fortune at $1.2 billion",
+   "amt": "$1.2B",
+   "t": "",
+   "src": [
+    "forbes_ronaldo"
+   ]
+  }
+ ]
+}

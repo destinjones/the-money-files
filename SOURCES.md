@@ -310,6 +310,94 @@ Every numbered source on the site. Each family page numbers its own sources; the
 - Bill Gates: [Bill Gates at the European Commission - P067383-987995 (cropped) 5.jpg](https://commons.wikimedia.org/wiki/File:Bill_Gates_at_the_European_Commission_-_P067383-987995_(cropped)_5.jpg) by Bogdan Hoyaux / European Union (2025), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 - Melinda French Gates: [Melinda Gates 2014.jpg](https://commons.wikimedia.org/wiki/File:Melinda_Gates_2014.jpg) by Ministry of Women and Child Development (2014), [GODL-India](https://data.gov.in/government-open-data-license-india)
 
+## The Huang family (File #011, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Jensen_Huang): Jensen Huang (accessed Oct 2026)
+2. [Oregon State University College of Engineering](https://engineering.oregonstate.edu/alumni-partners/oregon-stater-awards/searchable-awards-database/jen-hsun-huang-engineering-hall): Jen-Hsun Huang: Oregon Stater award profile (accessed Oct 2026)
+
+### The money
+
+3. [Forbes](https://www.forbes.com/profile/jensen-huang/): Real-time profile: Jensen Huang ($209.5B, #7 in the world) (Oct 6, 2026)
+4. [Forbes](https://www.forbes.com/sites/conormurray/2026/10/02/jensen-huangs-fortune-breaks-200-billion-as-nvidia-stock-reaches-record-high/): Jensen Huang’s Fortune Breaks $200 Billion As Nvidia Stock Reaches Record High (Oct 2, 2026)
+5. [CNBC (via NBC News)](https://www.nbcnews.com/business/personal-finance/jensen-huangs-charitable-foundation-balloons-nvidia-stock-gains-rcna212755): Jensen Huang’s charitable foundation balloons on Nvidia stock gains (Jun 12, 2025)
+
+### On the record
+
+6. [CNBC (via NBC New York)](https://nbcnewyork.com/news/business/money-report/nvidia-shares-pop-as-ceo-may-be-done-selling-shares-after-hitting-preset-plan-limit/5825189): Nvidia shares pop as CEO may be done selling shares after hitting preset plan limit (Sep 24, 2024)
+7. [Quartz](https://qz.com/jensen-huang-nvidia-stock-sale-plan-800-million): Jensen Huang starts selling Nvidia stock. He could unload more than $800 million in shares this year (Jun 24, 2025)
+8. [Bloomberg (via Bloomberg Law)](https://news.bloomberglaw.com/capital-markets/nvidia-ceo-jensen-huang-completes-1-billion-share-sale): Nvidia CEO Jensen Huang Completes $1 Billion Share Sale (Oct 31, 2025)
+
+### Photo credits
+
+- Jensen Huang: [Jen-Hsun Huang 2025.jpg](https://commons.wikimedia.org/wiki/File:Jen-Hsun_Huang_2025.jpg) by The White House (2025), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Lisa Su: [SXSW-2024-alih-OB7A0861-Lisa Su (cropped 2).jpg](https://commons.wikimedia.org/wiki/File:SXSW-2024-alih-OB7A0861-Lisa_Su_(cropped_2).jpg) by Fuzheado (2024), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+## The Brin family (File #012, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Sergey_Brin): Sergey Brin (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Anne_Wojcicki): Anne Wojcicki (accessed Oct 2026)
+3. [Wikipedia](https://en.wikipedia.org/wiki/Nicole_Shanahan): Nicole Shanahan (accessed Oct 2026)
+4. [Wikipedia](https://en.wikipedia.org/wiki/Susan_Wojcicki): Susan Wojcicki (accessed Oct 2026)
+
+### The money
+
+5. [Forbes](https://www.forbes.com/profile/sergey-brin/): Real-time profile: Sergey Brin ($262.6B, #5 in the world) (Oct 6, 2026)
+6. [Fortune (Bloomberg)](https://fortune.com/2025/11/30/sergey-brin-gift-1-billion-alphabet-stock-ai-rally-michael-j-fox): Sergey Brin gifts $1.1 billion in Alphabet stock to charities after AI rally (Nov 30, 2025)
+
+### On the record
+
+7. [SEC (Alphabet Inc.)](https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm): 2026 proxy statement (DEF 14A): security ownership of beneficial owners (Apr 24, 2026)
+8. [AP (via WBTV)](https://www.wbtv.com/2025/07/02/anne-wojcickis-nonprofit-gets-court-approval-buy-23andme-305-million/): Anne Wojcicki’s nonprofit gets court approval to buy 23andMe for $305 million (Jul 2, 2025)
+
+### Photo credits
+
+- Sergey Brin: [Sergey Brin Ted 2010 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Sergey_Brin_Ted_2010_(cropped).jpg) by Steve Jurvetson (2010), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Anne Wojcicki: [Anne Wojcicki (36938473750) (cropped).jpg](https://commons.wikimedia.org/wiki/File:Anne_Wojcicki_(36938473750)_(cropped).jpg) by TechCrunch (2017), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Nicole Shanahan: [Nicole Shanahan 2024 (3x4 cropped).jpg](https://commons.wikimedia.org/wiki/File:Nicole_Shanahan_2024_(3x4_cropped).jpg) by Gage Skidmore (2024), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Susan Wojcicki: [Susan Wojcicki (29393944130).jpg](https://commons.wikimedia.org/wiki/File:Susan_Wojcicki_(29393944130).jpg) by TechCrunch (2016), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+
+## The Buffett family (File #013, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Warren_Buffett): Warren Buffett (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Susan_Thompson_Buffett): Susan Thompson Buffett (accessed Oct 2026)
+3. [Wikipedia](https://en.wikipedia.org/wiki/Susan_Alice_Buffett): Susan Alice Buffett (accessed Oct 2026)
+4. [Wikipedia](https://en.wikipedia.org/wiki/Howard_Graham_Buffett): Howard Graham Buffett (accessed Oct 2026)
+5. [Wikipedia](https://en.wikipedia.org/wiki/Peter_Buffett): Peter Buffett (accessed Oct 2026)
+6. [Wikipedia](https://en.wikipedia.org/wiki/Howard_Buffett): Howard Buffett (accessed Oct 2026)
+
+### The money
+
+7. [Forbes](https://www.forbes.com/profile/warren-buffett/): Real-time profile: Warren Buffett ($144.5B, #10 in the world) (Oct 6, 2026)
+8. [Forbes](https://www.forbes.com/sites/chasewithorn/2024/06/28/warren-buffett-just-gave-another-53-billion-to-charity/): Warren Buffett Just Gave Another $5.3 Billion To Charity (Jun 28, 2024)
+9. [Forbes](https://www.forbes.com/sites/zacharyfolk/2026/07/14/warren-buffett-excludes-gates-foundation-from-midyear-donations/): Warren Buffett Drops Gates Foundation From Nearly $6B In Donations—First Time In 20 Years (Jul 14, 2026)
+10. [Forbes](https://www.forbes.com/sites/siladityaray/2026/09/18/billionaire-warren-buffett-steps-down-as-berkshire-hathaway-chair/): Billionaire Warren Buffett Steps Down As Berkshire Hathaway Chair (Sep 18, 2026)
+
+### On the record
+
+11. [Berkshire Hathaway](https://www.berkshirehathaway.com/news/may0525.pdf): News release: Greg Abel to become President and CEO on Jan. 1, 2026 (May 4, 2025)
+12. [Berkshire Hathaway](https://www.berkshirehathaway.com/news/jun2725.pdf): News release: Warren Buffett’s 2025 gifts of Class B shares (Jun 27, 2025)
+13. [Berkshire Hathaway](https://www.berkshirehathaway.com/news/nov1025.pdf): News release: Warren Buffett’s Thanksgiving letter and gifts (Nov 10, 2025)
+14. [Berkshire Hathaway](https://www.berkshirehathaway.com/news/jul1426.pdf): News release: Warren Buffett’s 2026 gifts to four family foundations (Jul 14, 2026)
+15. [Berkshire Hathaway](https://www.berkshirehathaway.com/news/sep1826.pdf): News release: Howard G. Buffett becomes Chairman; Warren Buffett becomes Chairman Emeritus (Sep 18, 2026)
+16. [SEC (Warren E. Buffett)](https://www.sec.gov/Archives/edgar/data/0001067983/000119312526304838/primary_doc.xml): Schedule 13D/A: Berkshire Hathaway Class A and Class B holdings (Jul 15, 2026)
+17. [SEC (Berkshire Hathaway Inc.)](https://www.sec.gov/Archives/edgar/data/1067983/000119312526106253/d882687ddef14a.htm): 2026 proxy statement (DEF 14A): director nominees and share ownership (Mar 2026)
+
+### The homes
+
+18. [Fortune](https://www.fortune.com/article/warren-buffett-advice-home-ownership-real-estate-31500-omaha-house/): Warren Buffett’s advice on home ownership and the $31,500 Omaha house (Dec 22, 2024)
+
+### Photo credits
+
+- Warren Buffett: [Warren Buffett at the 2015 SelectUSA Investment Summit (cropped).jpg](https://commons.wikimedia.org/wiki/File:Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_(cropped).jpg) by USA International Trade Administration (2015), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Howard G. Buffett: [Howard Buffett unveiled a plaque dedicated to himself, as an American philanthropist, on the Walk of the Brave in Kyiv, Ukraine on 18;December 2023 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Howard_Buffett_unveiled_a_plaque_dedicated_to_himself,_as_an_American_philanthropist,_on_the_Walk_of_the_Brave_in_Kyiv,_Ukraine_on_18;December_2023_(cropped).jpg) by President of Ukraine (2023), [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
+- Howard Buffett: [Howard Buffett.jpg](https://commons.wikimedia.org/wiki/File:Howard_Buffett.jpg) by Office of the Clerk, U.S. House of Representatives (1953), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+
 ## The Walton family (File #014, data as of Oct 6, 2026)
 
 ### The family
@@ -522,6 +610,38 @@ Every numbered source on the site. Each family page numbers its own sources; the
 - Travis Kelce: [Travis Kelce in the Oval Office of the White House on June 5, 2023 - P20230605AS-0902 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Travis_Kelce_in_the_Oval_Office_of_the_White_House_on_June_5,_2023_-_P20230605AS-0902_(cropped).jpg) by Adam Schultz (2023), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
 - Jason Kelce: [JasonKelce.jpg](https://commons.wikimedia.org/wiki/File:JasonKelce.jpg) by All-Pro Reels (2022), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
 
+## The Fenty family (File #019, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Rihanna): Rihanna (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/ASAP_Rocky): ASAP Rocky (accessed Oct 2026)
+3. [FOX 5 New York](https://www.fox5ny.com/news/rihanna-asap-rocky-third-child-birth): Rihanna and A$AP Rocky welcome third child, a baby girl named Rocki (Sep 24, 2025)
+
+### The money
+
+4. [Forbes](https://www.forbes.com/profile/rihanna/): Real-time profile: Rihanna ($1B) (Sep 26, 2026)
+5. [Forbes](https://www.forbes.com/sites/maddieberg/2021/08/04/fentys-fortune-rihanna-is-now-officially-a-billionaire/): Fenty’s Fortune: Rihanna Is Now Officially A Billionaire (Aug 4, 2021)
+6. [Forbes](https://www.forbes.com/sites/korihale/2021/02/16/rihannas-savage-x-fenty-reaches-1-billion-valuation-in-lingerie-equity/): Rihanna’s Savage X Fenty Reaches $1 Billion Valuation In Lingerie Equity (Feb 16, 2021)
+7. [Fortune (Bloomberg)](https://fortune.com/2022/03/11/rihanna-savage-x-fenty-lingerie-3-billion-ipo-valuation): Rihanna thinks her Savage X Fenty lingerie is worth $3 billion (Mar 11, 2022)
+8. [Wikipedia](https://en.wikipedia.org/wiki/Clara_Lionel_Foundation): Clara Lionel Foundation (accessed Oct 2026)
+
+### On the record
+
+9. [Retail Dive](https://www.retaildive.com/news/savage-x-fenty-new-ceo/653799): Savage x Fenty appoints new CEO (Jun 23, 2023)
+10. [Reuters (via The Standard)](https://www.thestandard.com.hk/market/article/314785/LVMH-explores-sale-of-its-50-percent-stake-in-Rihanna-backed-Fenty-Beauty-sources-say): LVMH explores sale of its 50 percent stake in Rihanna-backed Fenty Beauty, sources say (Oct 22, 2025)
+11. [Cosmetics Business](https://cosmeticsbusiness.com/marcypen-capital-partners-in-talks-to-buy-fenty-beauty): MarcyPen Capital Partners reportedly in talks to buy LVMH’s stake in Fenty Beauty (Jun 16, 2026)
+12. [BBC (via Barbados Today)](https://barbadostoday.bb/2021/09/08/rihanna-drops-legal-case-against-her-father/): Rihanna drops legal case against her father (Sep 8, 2021)
+
+### The homes
+
+13. [Architectural Digest (via Yahoo)](https://www.yahoo.com/lifestyle/articles/properties-rihanna-called-home-200754885.html): Where Does Rihanna Live? Examining the Star’s Homes, From Luxe LA Rentals to Her Barbados Getaway (accessed Oct 2026)
+
+### Photo credits
+
+- Rihanna: [Rihanna Fenty 2018.png](https://commons.wikimedia.org/wiki/File:Rihanna_Fenty_2018.png) by SIGMA (2018), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+- A$AP Rocky: [A$AP Rocky at the 2025 Cannes Film Festival (cropped 3x4).jpg](https://commons.wikimedia.org/wiki/File:A$AP_Rocky_at_the_2025_Cannes_Film_Festival_(cropped_3x4).jpg) by Gabriel Hutchinson (2025), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
 ## The Carter family (File #020, data as of Oct 6, 2026)
 
 ### The family
@@ -557,6 +677,40 @@ Every numbered source on the site. Each family page numbers its own sources; the
 - Tina Knowles: [Tina Knowles at Hollyrod 2023 Design Care gala (cropped).jpg](https://commons.wikimedia.org/wiki/File:Tina_Knowles_at_Hollyrod_2023_Design_Care_gala_(cropped).jpg) by Ewingmason (2023), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Mathew Knowles: [Mathew Knowles at Black Week 2025 - 01.jpg](https://commons.wikimedia.org/wiki/File:Mathew_Knowles_at_Black_Week_2025_-_01.jpg) by Danielle G. Campbell (2025), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Solange Knowles: [Solange Knowles, Bonnaroo Music and Arts Festival 2019 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Solange_Knowles,_Bonnaroo_Music_and_Arts_Festival_2019_(cropped).jpg) by Raph_PH (2019), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+
+## The Winfrey family (File #021, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Oprah_Winfrey): Oprah Winfrey (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Stedman_Graham): Stedman Graham (accessed Oct 2026)
+3. [WSMV](https://www.wsmv.com/2022/07/09/vernon-winfrey-father-oprah-winfrey-former-councilman-dies-88): Vernon Winfrey, father of Oprah Winfrey and former councilman, dies at 88 (Jul 9, 2022)
+
+### The money
+
+4. [Forbes](https://www.forbes.com/profile/oprah-winfrey/): Real-time profile: Oprah Winfrey ($3.4B) (Oct 6, 2026)
+5. [NPR](https://www.npr.org/2007/01/03/6716116/oprah-opens-leadership-academy-in-south-africa): Oprah Opens Leadership Academy in South Africa (Jan 3, 2007)
+6. [AP (via ABC10)](https://www.abc10.com/article/news/nation-world/oprah-winfrey-to-close-south-african-girls-school-after-nearly-20-years/507-159b7d04-8f3c-41ee-9ad8-0bfd55e292d3): Oprah Winfrey to close South African girls’ academy after nearly 20 years (Jul 2026)
+7. [Morehouse College](https://news.morehouse.edu/inside-morehouse/oprah-winfrey-announces-13-million-gift-to-morehouse-college-for-scholars-fund): Oprah Winfrey announces $13 million gift to Morehouse College for scholars fund (Oct 7, 2019)
+
+### On the record
+
+8. [Discovery, Inc.](https://ir.corporate.discovery.com/news-and-events/financial-news/financial-news-details/2017/Discovery-Increases-Ownership-Interest-in-OWN-Oprah-Winfrey-Network/default.aspx): Discovery Increases Ownership Interest in OWN: Oprah Winfrey Network (Dec 4, 2017)
+9. [Bloomberg (via BNN Bloomberg)](https://www.bnnbloomberg.ca/oprah-winfrey-sells-most-of-own-stake-to-discovery-for-36-million-1.1540303): Oprah Winfrey sells most of OWN stake to Discovery for US$36 million (Dec 22, 2020)
+10. [AP (via CBS News)](https://www.cbsnews.com/texas/news/oprah-winfrey-goes-on-diet-gains-weight-watchers-deal/): Oprah Winfrey goes on diet, gains Weight Watchers deal (Oct 19, 2015)
+11. [AP (via KSAT)](https://www.ksat.com/business/2024/02/29/winfrey-leaving-weightwatchers-board-donating-all-of-her-interest-in-the-company-to-a-museum/): Winfrey leaving WeightWatchers board, donating all of her interest in the company to a museum (Feb 29, 2024)
+12. [Axios](https://www.axios.com/2025/05/06/weight-watchers-bankruptcy-filing-chapter-11-ozempic): WeightWatchers files bankruptcy amid weight-loss drugs disruption (May 6, 2025)
+13. [SEC (WW International)](https://www.sec.gov/Archives/edgar/data/105319/000119312525177438/d71795dex992.htm): Q2 2025 shareholder letter (exhibit to Form 8-K) (Aug 11, 2025)
+
+### The homes
+
+14. [House Beautiful (via AOL)](https://www.aol.com/inside-oprah-winfreys-massive-real-120000789.html): Inside Oprah Winfrey’s Massive Real Estate Portfolio (Dec 26, 2023)
+15. [Maui Now](https://mauinow.com/2023/03/02/oprah-buys-870-acres-of-land-in-kula-for-nearly-6-6-million-over-recent-months/): Oprah buys 870 acres of land in Kula for nearly $6.6 million over recent months (Mar 2, 2023)
+
+### Photo credits
+
+- Oprah Winfrey: [Oprah Winfrey 2016.jpg](https://commons.wikimedia.org/wiki/File:Oprah_Winfrey_2016.jpg) by U.S. Embassy South Africa (2016), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Stedman Graham: [Stedman Graham and Grant Schreiber during an interview in Cape Town, 2014 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Stedman_Graham_and_Grant_Schreiber_during_an_interview_in_Cape_Town,_2014_(cropped).jpg) by George Caulfield (2014), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ## The Donaldson family (File #022, data as of Oct 6, 2026)
 
@@ -648,6 +802,37 @@ Every numbered source on the site. Each family page numbers its own sources; the
 ### Photo credits
 
 - Michael Jordan: [Michael jordan admad rashad (51276390562) (cropped).jpg](https://commons.wikimedia.org/wiki/File:Michael_jordan_admad_rashad_(51276390562)_(cropped).jpg) by Zach Catanzareti Photo (2021), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+
+## The Ronaldo family (File #025, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Cristiano_Ronaldo): Cristiano Ronaldo (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Georgina_Rodr%C3%ADguez): Georgina Rodríguez (accessed Oct 2026)
+3. [¡Hola!](https://www.hola.com/actualidad/20230903238192/cristiano-ronaldo-familia-quien-es-quien/): Cristiano Ronaldo’s family, who’s who (in Spanish) (Sep 3, 2023)
+4. [AFP (via Citizen Digital)](https://citizen.digital/article/cristiano-ronaldo-marries-long-term-partner-georgina-rodriguez-n388150): Cristiano Ronaldo marries long-term partner Georgina Rodriguez (Aug 12, 2026)
+5. [Euronews](https://www.euronews.com/2026/08/16/vogue-releases-exclusive-photos-of-ronaldo-and-georginas-wedding): Vogue releases exclusive photos of Ronaldo and Georgina’s wedding (Aug 16, 2026)
+
+### The money
+
+6. [Forbes](https://www.forbes.com/profile/cristiano-ronaldo/): Real-time profile: Cristiano Ronaldo ($1.2B) (Oct 6, 2026)
+7. [Reuters (via RTHK)](https://news.rthk.hk/rthk/en/component/k2/1826451-20251009.htm): Ronaldo becomes world’s first football billionaire (Oct 9, 2025)
+8. [Hopper HQ](https://www.hopperhq.com/blog/2024-instagram-rich-list/): The 2024 Instagram Rich List (Jul 23, 2024)
+
+### On the record
+
+9. [Fortune (TIME)](https://fortune.com/2016/11/10/cristiano-ronaldo-nike-lifetime-athlete): Cristiano Ronaldo signs a lifetime deal with Nike (Nov 10, 2016)
+10. [NBC Sports](https://nbcsports.com/soccer/news/ronaldo-signs-reported-1-billion-lifetime-deal-with-nike): Ronaldo signs reported $1 billion lifetime deal with Nike (Nov 9, 2016)
+11. [beIN Sports](https://www.beinsports.com/en-mena/football/articles/football-ronaldo-to-invest-e37m-in-cr7-hotels): Ronaldo to invest €37m in CR7 hotels (2015)
+12. [Hotel Management](https://www.hotelmanagement.net/development/real-madrid-star-cristiano-ronaldo-opens-second-hotel-lisbon-portugal): Real Madrid star Cristiano Ronaldo opens second hotel in Lisbon (Oct 3, 2016)
+13. [Pestana Hotel Group](https://www.pestana.com/en/cr7-lifestyle-hotels): Pestana CR7 Lifestyle Hotels (accessed Oct 2026)
+14. [Bloomberg (via Bloomberg Tax)](https://news.bloombergtax.com/artificial-intelligence/cristiano-ronaldo-invests-in-perplexity-ai-enters-partnership): Cristiano Ronaldo Invests in Perplexity AI, Enters Partnership (Dec 5, 2025)
+15. [Free Malaysia Today](https://www.freemalaysiatoday.com/category/sports/2019/01/22/ronaldo-accepts-fine-for-tax-evasion-avoids-jail): Ronaldo accepts fine for tax evasion, avoids jail (Jan 22, 2019)
+
+### Photo credits
+
+- Cristiano Ronaldo: [Cristiano Ronaldo Croatia v Portugal 2 July 2026-075 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_(cropped).jpg) by Bryan Berlin (2026), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Georgina Rodríguez: [Georgina Rodriguez-1234.jpg](https://commons.wikimedia.org/wiki/File:Georgina_Rodriguez-1234.jpg) by Harald Krichel (2026), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ## The Trump family (File #026, data as of Oct 6, 2026)
 

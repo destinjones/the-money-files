@@ -62,7 +62,9 @@
 
   function initials(p) {
     if (p.initials) return p.initials;
-    var w = p.name.replace(/[^A-Za-z .'-]/g, '').split(/[\s-]+/).filter(Boolean);
+    var w = p.name.replace(/[^A-Za-z .'-]/g, '').split(/[\s-]+/).filter(function (x) { return x && !/^(Jr|Sr|II|III|IV)\.?$/.test(x); });
+    var caps = w.filter(function (x) { return /^[A-Z]/.test(x); });
+    if (caps.length) w = caps;
     return (w[0] ? w[0][0] : '') + (w.length > 1 ? w[w.length - 1][0] : '');
   }
   function photoURL(ph) {
