@@ -232,13 +232,71 @@
    "url": "https://abc7news.com/post/former-house-speaker-nancy-pelosi-announces-retirement-end-term-congress-2027/18120442/"
   }
  ],
- "photos": {},
+ "photos": {
+  "thomas": {
+   "file": "Thomas D'Alesandro Jr (1).jpg",
+   "author": "United States Congress",
+   "license": "Public domain",
+   "w": 852,
+   "h": 1137,
+   "fx": 0.6,
+   "fy": 0.24,
+   "zoom": 2.2,
+   "year": "1939"
+  },
+  "tommy": {
+   "file": "1d'alesandro.jpg",
+   "author": "Marylandstater",
+   "license": "CC0",
+   "w": 2081,
+   "h": 2304,
+   "fx": 0.45,
+   "fy": 0.28,
+   "zoom": 1.0,
+   "year": "2011"
+  },
+  "nancy": {
+   "file": "Official photo of Speaker Nancy Pelosi in 2019.jpg",
+   "author": "John Harrington",
+   "license": "Public domain",
+   "w": 3000,
+   "h": 3750,
+   "fx": 0.53,
+   "fy": 0.37,
+   "zoom": 1.2,
+   "year": "2019"
+  },
+  "paul": {
+   "file": "Paul Pelosi 2022.jpg",
+   "author": "Presidenza della Repubblica",
+   "license": "Attribution",
+   "w": 615,
+   "h": 929,
+   "fx": 0.53,
+   "fy": 0.29,
+   "zoom": 1.0,
+   "year": "2022"
+  },
+  "christine": {
+   "file": "Christine Pelosi 2013 (cropped).jpg",
+   "author": "Financial Times",
+   "license": "CC BY 2.0",
+   "w": 724,
+   "h": 1005,
+   "fx": 0.43,
+   "fy": 0.39,
+   "zoom": 1.1,
+   "year": "2013"
+  }
+ },
  "licenses": {
   "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
   "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
   "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
   "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
-  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "CC0": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "Attribution": "https://commons.wikimedia.org/wiki/Template:Attribution"
  },
  "people": [
   {
@@ -256,7 +314,7 @@
    "layout": {
     "row": 1
    },
-   "photo": null,
+   "photo": "thomas",
    "wiki": "Thomas D'Alesandro Jr.",
    "summary": {
     "t": "Represented Baltimore in the U.S. House from 1939 to 1947, then served as mayor of Baltimore from 1947 to 1959. Worked as an insurance and real estate broker before politics.",
@@ -308,7 +366,7 @@
    "layout": {
     "row": 2
    },
-   "photo": null,
+   "photo": "tommy",
    "wiki": "Thomas D'Alesandro III",
    "summary": {
     "t": "Her eldest brother. President of the Baltimore City Council in the 1960s and mayor of Baltimore from 1967 to 1971.",
@@ -335,7 +393,7 @@
     "row": 2,
     "big": true
    },
-   "photo": null,
+   "photo": "nancy",
    "wiki": "Nancy Pelosi",
    "summary": {
     "t": "Has represented San Francisco in the U.S. House since 1987. Speaker of the House from 2007 to 2011 and from 2019 to 2023. Announced in November 2025 that she won’t seek reelection; her term ends Jan. 3, 2027.",
@@ -419,7 +477,7 @@
    "layout": {
     "row": 2
    },
-   "photo": null,
+   "photo": "paul",
    "wiki": "Paul Pelosi",
    "summary": {
     "t": "Businessman who owns and runs Financial Leasing Services, a San Francisco real estate and venture capital investment and consulting firm. The trades on Nancy’s reports are filed under the spouse (SP) owner code.",
@@ -481,7 +539,7 @@
    "layout": {
     "row": 3
    },
-   "photo": null,
+   "photo": "christine",
    "wiki": "Christine Pelosi",
    "summary": {
     "t": "Lawyer, author and Democratic Party official. Chaired the California Democratic Party’s Women’s Caucus from 2011 to 2021 and has served on the Democratic National Committee. Wrote The Nancy Pelosi Way (2019).",

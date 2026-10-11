@@ -229,7 +229,52 @@
    "url": "https://fortune.com/article/how-many-homes-does-mark-zuckerberg-own-palo-alto-neighbors-construction-noise-headphones"
   }
  ],
- "photos": {},
+ "photos": {
+  "randi": {
+   "file": "Randi Zuckerberg WEF 2012 (cropped).jpg",
+   "author": "World Economic Forum",
+   "license": "CC BY-SA 2.0",
+   "w": 2370,
+   "h": 3080,
+   "fx": 0.51,
+   "fy": 0.46,
+   "zoom": 1.0,
+   "year": "2012"
+  },
+  "mark": {
+   "file": "P20260929DT-1655 (55561811540) (cropped 2).jpg",
+   "author": "The White House",
+   "license": "Public domain",
+   "w": 414,
+   "h": 552,
+   "fx": 0.46,
+   "fy": 0.36,
+   "zoom": 1.0,
+   "year": "2026"
+  },
+  "priscilla": {
+   "file": "Priscilla Chan at SXSW 2025 01 (cropped 3).jpg",
+   "author": "Rosiestep",
+   "license": "CC BY 4.0",
+   "w": 1262,
+   "h": 1683,
+   "fx": 0.48,
+   "fy": 0.36,
+   "zoom": 1.1,
+   "year": "2025"
+  },
+  "donna": {
+   "file": "Donna Zuckerberg at NTNU Big Challenge Science Festival.jpg",
+   "author": "NTNU – Norwegian University of Science and Technology",
+   "license": "CC BY-SA 2.0",
+   "w": 3971,
+   "h": 5183,
+   "fx": 0.5,
+   "fy": 0.22,
+   "zoom": 2.2,
+   "year": "2019"
+  }
+ },
  "licenses": {
   "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
   "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
@@ -252,7 +297,7 @@
    "layout": {
     "row": 2
    },
-   "photo": null,
+   "photo": "randi",
    "wiki": "Randi Zuckerberg",
    "summary": {
     "t": "Joined Facebook in 2005 as one of its first dozen employees. Left in 2011 as director of market development and a spokesperson, and founded Zuckerberg Media that year.",
@@ -305,7 +350,7 @@
     "row": 2,
     "big": true
    },
-   "photo": null,
+   "photo": "mark",
    "wiki": "Mark Zuckerberg",
    "summary": {
     "t": "Started Facebook in 2004, at 19, and still runs it as Meta’s founder, chairman and CEO. He owns about 13% of the company and controls a majority of its votes.",
@@ -426,7 +471,7 @@
     "row": 3,
     "partner": true
    },
-   "photo": null,
+   "photo": "priscilla",
    "wiki": "Priscilla Chan",
    "summary": {
     "t": "Pediatrician and the co-founder and co-CEO of the Chan Zuckerberg Initiative, where she runs day-to-day operations. Her parents were ethnic Chinese refugees from Vietnam.",
@@ -562,7 +607,7 @@
    "layout": {
     "row": 2
    },
-   "photo": null,
+   "photo": "donna",
    "wiki": "Donna Zuckerberg",
    "summary": {
     "t": "Classics scholar with a PhD from Princeton. She founded and edited Eidolon, an online classics journal that closed in 2020.",

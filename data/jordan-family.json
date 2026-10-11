@@ -221,7 +221,19 @@
    "url": "https://www.si.com/onsi/athlete-lifestyle/real-estate/michael-jordan-s-mansion-sells-for-shocking-price-after-over-12-years-on-market"
   }
  ],
- "photos": {},
+ "photos": {
+  "michael": {
+   "file": "Michael jordan admad rashad (51276390562) (cropped).jpg",
+   "author": "Zach Catanzareti Photo",
+   "license": "CC BY 2.0",
+   "w": 1177,
+   "h": 1571,
+   "fx": 0.51,
+   "fy": 0.38,
+   "zoom": 1.15,
+   "year": "2021"
+  }
+ },
  "licenses": {
   "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
   "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
@@ -246,7 +258,7 @@
     "row": 2,
     "big": true
    },
-   "photo": null,
+   "photo": "michael",
    "wiki": "Michael Jordan",
    "summary": {
     "t": "Won six NBA titles with the Chicago Bulls. Forbes says his playing salaries totaled about $90 million, while deals with Nike, Hanes and Gatorade have paid him ten figures.",

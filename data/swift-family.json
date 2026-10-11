@@ -414,7 +414,7 @@
     "row": 2,
     "big": true
    },
-   "photo": null,
+   "photo": "taylor",
    "wiki": "Taylor Swift",
    "summary": {
     "t": "Singer-songwriter. Forbes says she is the first musician to become a billionaire mainly from her songs and performances.",
@@ -524,7 +524,7 @@
    "layout": {
     "row": 2
    },
-   "photo": null,
+   "photo": "travis",
    "wiki": "Travis Kelce",
    "summary": {
     "t": "Tight end for the Kansas City Chiefs since 2013 and a three-time Super Bowl champion. Co-hosts the New Heights podcast with his brother Jason.",
@@ -608,7 +608,7 @@
    "layout": {
     "row": 2
    },
-   "photo": null,
+   "photo": "jason",
    "wiki": "Jason Kelce",
    "summary": {
     "t": "Travis’s older brother. Played center for the Philadelphia Eagles for 13 seasons, won Super Bowl LII and retired in March 2024. Joined ESPN as an analyst that year.",
@@ -646,13 +646,48 @@
    ]
   }
  ],
- "photos": {},
+ "photos": {
+  "taylor": {
+   "file": "Taylor Swift at the 2023 MTV Video Music Awards (3).png",
+   "author": "iHeartRadioCA",
+   "license": "CC BY 3.0",
+   "w": 1801,
+   "h": 2560,
+   "fx": 0.52,
+   "fy": 0.31,
+   "zoom": 1.3,
+   "year": "2023"
+  },
+  "travis": {
+   "file": "Travis Kelce in the Oval Office of the White House on June 5, 2023 - P20230605AS-0902 (cropped).jpg",
+   "author": "Adam Schultz",
+   "license": "Public domain",
+   "w": 361,
+   "h": 474,
+   "fx": 0.53,
+   "fy": 0.33,
+   "zoom": 1.05,
+   "year": "2023"
+  },
+  "jason": {
+   "file": "JasonKelce.jpg",
+   "author": "All-Pro Reels",
+   "license": "CC BY-SA 2.0",
+   "w": 655,
+   "h": 944,
+   "fx": 0.44,
+   "fy": 0.38,
+   "zoom": 1.1,
+   "year": "2022"
+  }
+ },
  "licenses": {
   "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
   "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
   "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
   "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
-  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/"
  },
  "companies": [
   {

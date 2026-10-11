@@ -184,7 +184,19 @@
    "url": "https://www.aap.com.au/aapreleases/cision20260115ae64217"
   }
  ],
- "photos": {},
+ "photos": {
+  "jimmy": {
+   "file": "MrBeast in 2026 (cropped 4).png",
+   "author": "Tyren Redd",
+   "license": "CC BY 4.0",
+   "w": 1862,
+   "h": 2484,
+   "fx": 0.48,
+   "fy": 0.37,
+   "zoom": 1.0,
+   "year": "2026"
+  }
+ },
  "licenses": {
   "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
   "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
@@ -232,7 +244,7 @@
     "row": 2,
     "big": true
    },
-   "photo": null,
+   "photo": "jimmy",
    "wiki": "MrBeast",
    "summary": {
     "t": "Runs the most-subscribed channel on YouTube. He founded Beast Industries, the company behind his videos, Feastables chocolate, Lunchly lunch kits and the Viewstats analytics tool. He also makes the Beast Games show for Amazon’s Prime Video.",

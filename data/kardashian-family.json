@@ -359,7 +359,7 @@
     "row": 2,
     "big": true
    },
-   "photo": null,
+   "photo": "kim",
    "wiki": "Kim Kardashian",
    "summary": {
     "t": "Reality-TV star turned founder. Most of her fortune is her stake in SKIMS, the shapewear and clothing company she started in 2019. Forbes first counted her as a billionaire in April 2021.",
@@ -464,7 +464,7 @@
     "row": 3,
     "partner": true
    },
-   "photo": null,
+   "photo": "kanye",
    "wiki": "Kanye West",
    "summary": {
     "t": "Rapper and designer who now goes by Ye. Adidas ended its Yeezy partnership with him in October 2022, citing his antisemitic remarks. Forbes then cut its estimate of his fortune to $400 million.",
@@ -576,7 +576,7 @@
    "layout": {
     "row": 1
    },
-   "photo": null,
+   "photo": "kris",
    "wiki": "Kris Jenner",
    "summary": {
     "t": "Runs the business side of the family and was behind Keeping Up with the Kardashians. Forbes says she takes a 10% cut of what her children earn from modeling, licensing and their beauty companies.",
@@ -658,7 +658,7 @@
    "layout": {
     "row": 1
    },
-   "photo": null,
+   "photo": "caitlyn",
    "wiki": "Caitlyn Jenner",
    "summary": {
     "t": "Won the 1976 Olympic decathlon in Montreal with a world-record score. Married to Kris from 1991 to 2015; they are Kendall and Kylie’s parents. Ran for governor in California’s 2021 recall election and finished 13th.",
@@ -684,7 +684,7 @@
    "layout": {
     "row": 2
    },
-   "photo": null,
+   "photo": "kourtney",
    "wiki": "Kourtney Kardashian Barker",
    "summary": {
     "t": "The eldest of Robert and Kris’s four children. Started the lifestyle site Poosh in 2019 and the supplement brand Lemme in 2022. Married Travis Barker in 2022.",
@@ -727,7 +727,7 @@
    "layout": {
     "row": 2
    },
-   "photo": null,
+   "photo": "khloe",
    "wiki": "Khloé Kardashian",
    "summary": {
     "t": "Co-founded the clothing brand Good American with Emma Grede in 2016. Launched the protein-popcorn brand Khloud in 2025.",
@@ -797,7 +797,7 @@
    "layout": {
     "row": 2
    },
-   "photo": null,
+   "photo": "kendall",
    "wiki": "Kendall Jenner",
    "summary": {
     "t": "Model. Forbes named her the world’s highest-paid model in 2017. Launched 818 Tequila in 2021.",
@@ -834,7 +834,7 @@
    "layout": {
     "row": 2
    },
-   "photo": null,
+   "photo": "kylie",
    "wiki": "Kylie Jenner",
    "summary": {
     "t": "Started Kylie Cosmetics with lip kits in 2015 and sold 51% of it to Coty for $600 million. Launched the clothing line Khy in 2024.",
@@ -912,13 +912,104 @@
    ]
   }
  ],
- "photos": {},
+ "photos": {
+  "kim": {
+   "file": "Kim Kardashian West 2014.jpg",
+   "author": "Eva Rinaldi",
+   "license": "CC BY-SA 2.0",
+   "w": 2336,
+   "h": 3504,
+   "fx": 0.48,
+   "fy": 0.36,
+   "zoom": 1.0,
+   "year": "2014"
+  },
+  "kanye": {
+   "file": "Kanye West at the 2009 Tribeca Film Festival (crop 2).jpg",
+   "author": "David Shankbone",
+   "license": "Public domain",
+   "w": 1727,
+   "h": 2301,
+   "fx": 0.49,
+   "fy": 0.36,
+   "zoom": 1.0,
+   "year": "2009"
+  },
+  "kris": {
+   "file": "Kris Jenner by Gage Skidmore.jpg",
+   "author": "Gage Skidmore",
+   "license": "CC BY-SA 3.0",
+   "w": 3983,
+   "h": 5464,
+   "fx": 0.5,
+   "fy": 0.37,
+   "zoom": 1.0,
+   "year": "2025"
+  },
+  "caitlyn": {
+   "file": "Web Summit 2017 - Future Societies SM0 1242 (38228173296) (cropped).jpg",
+   "author": "Web Summit",
+   "license": "CC BY 2.0",
+   "w": 1441,
+   "h": 2053,
+   "fx": 0.59,
+   "fy": 0.43,
+   "zoom": 1.0,
+   "year": "2017"
+  },
+  "kourtney": {
+   "file": "Kourtney Kardashian 2 2009.jpg",
+   "author": "Toglenn",
+   "license": "CC BY-SA 3.0",
+   "w": 699,
+   "h": 1049,
+   "fx": 0.45,
+   "fy": 0.41,
+   "zoom": 1.15,
+   "year": "2009"
+  },
+  "khloe": {
+   "file": "Khloe Kardashian Glamour 2.png",
+   "author": "Eric Longden",
+   "license": "CC BY 3.0",
+   "w": 643,
+   "h": 894,
+   "fx": 0.66,
+   "fy": 0.34,
+   "zoom": 1.3,
+   "year": "2016"
+  },
+  "kendall": {
+   "file": "Kendall Jenner Venice Film Festival 2 (cropped).jpg",
+   "author": "Colleen Sturtevant",
+   "license": "CC BY-SA 4.0",
+   "w": 1876,
+   "h": 2540,
+   "fx": 0.54,
+   "fy": 0.31,
+   "zoom": 1.4,
+   "year": "2026"
+  },
+  "kylie": {
+   "file": "Kylie Jenner2 (cropped).png",
+   "author": "Hayu",
+   "license": "CC BY 3.0",
+   "w": 563,
+   "h": 690,
+   "fx": 0.5,
+   "fy": 0.3,
+   "zoom": 1.2,
+   "year": "2017"
+  }
+ },
  "licenses": {
   "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
   "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
   "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
   "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
-  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/"
  },
  "companies": [
   {

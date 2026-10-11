@@ -333,7 +333,7 @@
     "row": 2,
     "big": true
    },
-   "photo": null,
+   "photo": "rob",
    "wiki": "Rob Walton",
    "summary": {
     "t": "Sam Walton’s eldest son. Chairman of Walmart from 1992 to 2015 and a director until 2024. In 2022 he led the group that bought the Denver Broncos.",
@@ -425,7 +425,7 @@
    "layout": {
     "row": 2
    },
-   "photo": null,
+   "photo": "jim",
    "wiki": "Jim Walton",
    "summary": {
     "t": "Sam’s youngest son. Chairman of the family’s Arvest Bank Group. He sat on Walmart’s board for more than a decade, then gave the seat to his son Steuart in 2016.",
@@ -498,7 +498,7 @@
    "layout": {
     "row": 2
    },
-   "photo": null,
+   "photo": "alice",
    "wiki": "Alice Walton",
    "summary": {
     "t": "Sam’s only daughter. She stayed off Walmart’s board and focused on art and giving. She founded the Crystal Bridges Museum of American Art in Bentonville in 2011 and opened a medical school there in 2025.",
@@ -630,7 +630,7 @@
    "layout": {
     "row": 1
    },
-   "photo": null,
+   "photo": "sam",
    "wiki": "Sam Walton",
    "summary": {
     "t": "Opened the first Walmart in Rogers, Arkansas, in 1962, at 44. Took the company public in 1970. He died in 1992, shortly after receiving the Presidential Medal of Freedom.",
@@ -907,13 +907,59 @@
    ]
   }
  ],
- "photos": {},
+ "photos": {
+  "rob": {
+   "file": "S. Robson Walton by Gage Skidmore.jpg",
+   "author": "Gage Skidmore",
+   "license": "CC BY-SA 3.0",
+   "w": 2536,
+   "h": 3520,
+   "fx": 0.42,
+   "fy": 0.28,
+   "zoom": 1.2,
+   "year": "2017"
+  },
+  "jim": {
+   "file": "Jim Walton attends shareholders meeting.jpg",
+   "author": "Walmart",
+   "license": "CC BY 2.0",
+   "w": 690,
+   "h": 787,
+   "fx": 0.52,
+   "fy": 0.43,
+   "zoom": 1.1,
+   "year": "2011"
+  },
+  "alice": {
+   "file": "Alice Walton portrait (cropped).jpg",
+   "author": "Stephen Ironside",
+   "license": "CC BY 4.0",
+   "w": 888,
+   "h": 1180,
+   "fx": 0.41,
+   "fy": 0.23,
+   "zoom": 1.8,
+   "year": "2021"
+  },
+  "sam": {
+   "file": "Sam Walton (1992 2) (cropped).jpg",
+   "author": "George Bush Presidential Library and Museum",
+   "license": "Public domain",
+   "w": 508,
+   "h": 683,
+   "fx": 0.48,
+   "fy": 0.37,
+   "zoom": 1.0,
+   "year": "1992"
+  }
+ },
  "licenses": {
   "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
   "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
   "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
   "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
-  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/"
  },
  "companies": [
   {

@@ -249,7 +249,7 @@
     "row": 2,
     "big": true
    },
-   "photo": null,
+   "photo": "rupert",
    "wiki": "Rupert Murdoch",
    "summary": {
     "t": "Turned the Adelaide newspaper he inherited into a global media business that includes Fox News, The Wall Street Journal, the New York Post and The Times of London. He stepped down as chairman of Fox and News Corp in 2023.",
@@ -453,7 +453,7 @@
    "layout": {
     "row": 3
    },
-   "photo": null,
+   "photo": "elisabeth",
    "wiki": "Elisabeth Murdoch (businesswoman)",
    "summary": {
     "t": "Managing director of Sky Networks in the late 1990s. Founded the TV producer Shine in 2001 and co-founded the production company Sister in 2019.",
@@ -515,7 +515,7 @@
    "layout": {
     "row": 3
    },
-   "photo": null,
+   "photo": "lachlan",
    "wiki": "Lachlan Murdoch",
    "summary": {
     "t": "Executive chair and CEO of Fox Corp since 2019 and chair of News Corp since his father retired in 2023. Since the 2025 settlement he alone votes the shares the family company, LGC Holdco, holds in both.",
@@ -592,7 +592,7 @@
    "layout": {
     "row": 3
    },
-   "photo": null,
+   "photo": "james",
    "wiki": "James Murdoch",
    "summary": {
     "t": "CEO of 21st Century Fox from 2015 to 2019. Resigned from News Corp’s board in July 2020, citing disagreements over editorial content and strategy. Runs his own investment company, Lupa Systems.",
@@ -641,7 +641,52 @@
    ]
   }
  ],
- "photos": {},
+ "photos": {
+  "rupert": {
+   "file": "Rupert Murdoch - Flickr - Eva Rinaldi Celebrity and Live Music Photographer.jpg",
+   "author": "Eva Rinaldi",
+   "license": "CC BY-SA 2.0",
+   "w": 1013,
+   "h": 1351,
+   "fx": 0.5,
+   "fy": 0.35,
+   "zoom": 1.0,
+   "year": "2012"
+  },
+  "elisabeth": {
+   "file": "Nordiske Mediedager 2010 - Thursday - NMD 2010 (4583813556) (cropped).jpg",
+   "author": "Eirik Helland Urke / Nordiske Mediedager",
+   "license": "CC BY-SA 2.0",
+   "w": 2551,
+   "h": 3264,
+   "fx": 0.46,
+   "fy": 0.23,
+   "zoom": 2.0,
+   "year": "2010"
+  },
+  "lachlan": {
+   "file": "Lachlan Murdoch in May 2013 (cropped).jpg",
+   "author": "Eva Rinaldi",
+   "license": "CC BY-SA 2.0",
+   "w": 354,
+   "h": 484,
+   "fx": 0.45,
+   "fy": 0.37,
+   "zoom": 1.0,
+   "year": "2013"
+  },
+  "james": {
+   "file": "James Murdoch 2008- NRKbeta (cropped).jpg",
+   "author": "NRKbeta",
+   "license": "CC BY-SA 2.0",
+   "w": 878,
+   "h": 1100,
+   "fx": 0.55,
+   "fy": 0.24,
+   "zoom": 1.4,
+   "year": "2008"
+  }
+ },
  "licenses": {
   "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
   "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",

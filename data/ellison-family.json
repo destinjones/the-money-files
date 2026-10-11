@@ -254,7 +254,7 @@
     "row": 2,
     "big": true
    },
-   "photo": null,
+   "photo": "larry",
    "wiki": "Larry Ellison",
    "summary": {
     "t": "Co-founded Oracle in 1977 and ran it as CEO until 2014. Now its executive chair, chief technology officer and largest stockholder.",
@@ -531,7 +531,19 @@
    }
   }
  ],
- "photos": {},
+ "photos": {
+  "larry": {
+   "file": "Larry Ellison 2016.png",
+   "author": "Oracle PR Hartmann Studios",
+   "license": "CC BY 2.0",
+   "w": 940,
+   "h": 1253,
+   "fx": 0.48,
+   "fy": 0.4,
+   "zoom": 1.0,
+   "year": "2016"
+  }
+ },
  "licenses": {
   "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
   "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",

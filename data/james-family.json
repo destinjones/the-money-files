@@ -169,7 +169,30 @@
    "url": "https://www.si.com/nba/contract-details-bronny-james-lakers-revealed-report"
   }
  ],
- "photos": {},
+ "photos": {
+  "lebron": {
+   "file": "LeBron James (51959977144) (cropped2).jpg",
+   "author": "Erik Drost",
+   "license": "CC BY 2.0",
+   "w": 1197,
+   "h": 1387,
+   "fx": 0.5,
+   "fy": 0.15,
+   "zoom": 2.4,
+   "year": "2022"
+  },
+  "savannah": {
+   "file": "Savannah Brinson James.jpg",
+   "author": "Michael Kain",
+   "license": "CC BY 2.0",
+   "w": 902,
+   "h": 1173,
+   "fx": 0.58,
+   "fy": 0.38,
+   "zoom": 1.5,
+   "year": "2012"
+  }
+ },
  "licenses": {
   "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
   "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
@@ -194,7 +217,7 @@
     "row": 2,
     "big": true
    },
-   "photo": null,
+   "photo": "lebron",
    "wiki": "LeBron James",
    "summary": {
     "t": "The NBA’s career scoring leader and, per Forbes, the first active NBA player to become a billionaire. After eight seasons with the Lakers, he signed with the Philadelphia 76ers in July 2026.",
@@ -342,7 +365,7 @@
     "row": 3,
     "partner": true
    },
-   "photo": null,
+   "photo": "savannah",
    "wiki": "Savannah James",
    "summary": {
     "t": "LeBron’s high school sweetheart from Akron. They married on September 14, 2013, in San Diego. She launched the skincare brand Reframe Beauty in 2025.",

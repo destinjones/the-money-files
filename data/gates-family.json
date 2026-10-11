@@ -285,7 +285,7 @@
     "row": 2,
     "big": true
    },
-   "photo": null,
+   "photo": "bill",
    "wiki": "Bill Gates",
    "summary": {
     "t": "Started Microsoft with Paul Allen in 1975 and ran it as CEO until 2000. Now chairs the Gates Foundation. His private investment firm, Cascade, holds his stakes in other companies.",
@@ -442,7 +442,7 @@
     "row": 3,
     "partner": true
    },
-   "photo": null,
+   "photo": "melinda",
    "wiki": "Melinda French Gates",
    "summary": {
     "t": "Former Microsoft manager who co-chaired the Gates Foundation until June 2024. Runs Pivotal Ventures, which she founded in 2015 to work on problems facing U.S. women and families.",
@@ -680,13 +680,37 @@
    }
   }
  ],
- "photos": {},
+ "photos": {
+  "bill": {
+   "file": "Bill Gates at the European Commission - P067383-987995 (cropped) 5.jpg",
+   "author": "Bogdan Hoyaux / European Union",
+   "license": "CC BY 4.0",
+   "w": 1000,
+   "h": 1335,
+   "fx": 0.5,
+   "fy": 0.28,
+   "zoom": 1.15,
+   "year": "2025"
+  },
+  "melinda": {
+   "file": "Melinda Gates 2014.jpg",
+   "author": "Ministry of Women and Child Development",
+   "license": "GODL-India",
+   "w": 546,
+   "h": 683,
+   "fx": 0.39,
+   "fy": 0.32,
+   "zoom": 1.4,
+   "year": "2014"
+  }
+ },
  "licenses": {
   "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
   "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
   "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
   "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
-  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "GODL-India": "https://data.gov.in/government-open-data-license-india"
  },
  "companies": [
   {

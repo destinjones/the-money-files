@@ -229,6 +229,13 @@ Every numbered source on the site. Each family page numbers its own sources; the
 16. [Robb Report](https://robbreport.com/shelter/celebrity-homes/mark-zuckerberg-property-portfolio-1236712447): Inside Mark Zuckerberg’s $300 million property portfolio (accessed Oct 2026)
 17. [Fortune](https://fortune.com/article/how-many-homes-does-mark-zuckerberg-own-palo-alto-neighbors-construction-noise-headphones): Zuckerberg gave Palo Alto neighbors noise-canceling headphones over construction at his 11 homes (Dec 25, 2025)
 
+### Photo credits
+
+- Randi Zuckerberg: [Randi Zuckerberg WEF 2012 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Randi_Zuckerberg_WEF_2012_(cropped).jpg) by World Economic Forum (2012), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Mark Zuckerberg: [P20260929DT-1655 (55561811540) (cropped 2).jpg](https://commons.wikimedia.org/wiki/File:P20260929DT-1655_(55561811540)_(cropped_2).jpg) by The White House (2026), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Priscilla Chan: [Priscilla Chan at SXSW 2025 01 (cropped 3).jpg](https://commons.wikimedia.org/wiki/File:Priscilla_Chan_at_SXSW_2025_01_(cropped_3).jpg) by Rosiestep (2025), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Donna Zuckerberg: [Donna Zuckerberg at NTNU Big Challenge Science Festival.jpg](https://commons.wikimedia.org/wiki/File:Donna_Zuckerberg_at_NTNU_Big_Challenge_Science_Festival.jpg) by NTNU – Norwegian University of Science and Technology (2019), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+
 ## The Ellison family (File #009, data as of Oct 6, 2026)
 
 ### The family
@@ -257,6 +264,10 @@ Every numbered source on the site. Each family page numbers its own sources; the
 
 14. [Forbes (Colombia edition, from Forbes US)](https://forbes.co/2026/02/26/actualidad/larry-ellison-se-muda-al-patio-trasero-de-trump/): Larry Ellison moves to Trump’s backyard in Palm Beach (Feb 26, 2026)
 15. [Business Insider (via AOL)](https://www.aol.com/oracle-billionaire-larry-ellisons-incredible-132632868.html): Larry Ellison’s real estate portfolio (Sep 1, 2024)
+
+### Photo credits
+
+- Larry Ellison: [Larry Ellison 2016.png](https://commons.wikimedia.org/wiki/File:Larry_Ellison_2016.png) by Oracle PR Hartmann Studios (2016), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
 
 ## The Gates family (File #010, data as of Oct 6, 2026)
 
@@ -293,6 +304,11 @@ Every numbered source on the site. Each family page numbers its own sources; the
 
 21. [Fortune](https://fortune.com/2026/02/08/bill-gates-house-for-sale-xanadu-2-seattle-washington-reversal-on-downsizing): Bill Gates lists a $4.8 million house next to his Medina mansion (Feb 8, 2026)
 22. [Forbes Brasil](https://forbes.com.br/forbeslife/2021/05/conheca-as-propriedades-que-estao-em-jogo-no-divorcio-de-bill-e-melinda-gates/): As propriedades que estão em jogo no divórcio de Bill e Melinda Gates (May 6, 2021)
+
+### Photo credits
+
+- Bill Gates: [Bill Gates at the European Commission - P067383-987995 (cropped) 5.jpg](https://commons.wikimedia.org/wiki/File:Bill_Gates_at_the_European_Commission_-_P067383-987995_(cropped)_5.jpg) by Bogdan Hoyaux / European Union (2025), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Melinda French Gates: [Melinda Gates 2014.jpg](https://commons.wikimedia.org/wiki/File:Melinda_Gates_2014.jpg) by Ministry of Women and Child Development (2014), [GODL-India](https://data.gov.in/government-open-data-license-india)
 
 ## The Walton family (File #014, data as of Oct 6, 2026)
 
@@ -332,6 +348,13 @@ Every numbered source on the site. Each family page numbers its own sources; the
 26. [Talk Business & Politics](https://talkbusiness.net/2025/05/jim-walton-reduces-walmart-holdings-by-more-than-1-5-billion/): Walton family reduce Walmart holdings by more than $1.5 billion (May 20, 2025)
 27. [Institutional Investor](https://www.institutionalinvestor.com/article/b14z9y6p6vggjz/building-an-american-art-mecca-in-arkansas): Building an American art mecca in Arkansas (Jul 9, 2015)
 
+### Photo credits
+
+- Rob Walton: [S. Robson Walton by Gage Skidmore.jpg](https://commons.wikimedia.org/wiki/File:S._Robson_Walton_by_Gage_Skidmore.jpg) by Gage Skidmore (2017), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Jim Walton: [Jim Walton attends shareholders meeting.jpg](https://commons.wikimedia.org/wiki/File:Jim_Walton_attends_shareholders_meeting.jpg) by Walmart (2011), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Alice Walton: [Alice Walton portrait (cropped).jpg](https://commons.wikimedia.org/wiki/File:Alice_Walton_portrait_(cropped).jpg) by Stephen Ironside (2021), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Sam Walton: [Sam Walton (1992 2) (cropped).jpg](https://commons.wikimedia.org/wiki/File:Sam_Walton_(1992_2)_(cropped).jpg) by George Bush Presidential Library and Museum (1992), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+
 ## The Arnault family (File #015, data as of Oct 6, 2026)
 
 ### The family
@@ -359,6 +382,13 @@ Every numbered source on the site. Each family page numbers its own sources; the
 15. [Reuters (via Malay Mail)](https://malaymail.com/news/money/2026/01/26/lvmh-investors-press-for-clarity-as-bernard-arnaults-succession-plan-remains-elusive/206871): LVMH investors press for clarity as Bernard Arnault’s succession plan remains elusive (Jan 26, 2026)
 16. [Bloomberg (via The Business Standard)](https://www.tbsnews.net/node/581558): The world’s richest person is trying to head off a succession battle (Feb 7, 2023)
 17. [AFP (via Fortuneo)](https://bourse.fortuneo.fr/actualites/foot-le-rachat-du-paris-fc-par-la-famille-arnault-officialise-4269333): Foot : le rachat du Paris FC par la famille Arnault officialisé (Nov 29, 2024)
+
+### Photo credits
+
+- Bernard Arnault: [Bernard Arnault (3) - 2017 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Bernard_Arnault_(3)_-_2017_(cropped).jpg) by Jérémy Barande (2017), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Hélène Mercier-Arnault: [HÉLÈNE MERCIER ARNAULT.jpg](https://commons.wikimedia.org/wiki/File:HÉLÈNE_MERCIER_ARNAULT.jpg) by Elias Benarosch (2009), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Antoine Arnault: [Antoine Arnault lors de l’inauguration de la Maison LVMH le 22 juillet 2024.jpg](https://commons.wikimedia.org/wiki/File:Antoine_Arnault_lors_de_l’inauguration_de_la_Maison_LVMH_le_22_juillet_2024.jpg) by David Atlan (2024), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Frédéric Arnault: [Frederic Arnault 28 mai 2022 Monaco au Restaurant Ceto.jpg](https://commons.wikimedia.org/wiki/File:Frederic_Arnault_28_mai_2022_Monaco_au_Restaurant_Ceto.jpg) by Sedentaire (2022), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ## The Murdoch family (File #016, data as of Oct 6, 2026)
 
@@ -390,6 +420,13 @@ Every numbered source on the site. Each family page numbers its own sources; the
 18. [AP (via Anchorage Daily News)](https://www.adn.com/nation-world/2025/09/08/murdoch-family-resolves-dispute-over-media-empire-ownership-in-billion-dollar-deal/): Murdoch family resolves dispute over media empire in multibillion-dollar succession deal (Sep 8, 2025)
 19. [Fortune](https://fortune.com/2025/09/08/rupert-murdoch-settlement-trust-lachlan-james-fox-news-wall-street-journal): Rupert Murdoch’s real-life ‘Succession’ battle ends in a multibillion-dollar deal (Sep 8, 2025)
 20. [Forbes](https://www.forbes.com/sites/maryroeloffs/2024/12/09/rupert-murdochs-plan-to-protect-his-outlets-right-wing-slant-rejected-by-court-report-says/): Lachlan Murdoch can’t have sole control of media empire, Nevada court reportedly rules (Dec 9, 2024)
+
+### Photo credits
+
+- Rupert Murdoch: [Rupert Murdoch - Flickr - Eva Rinaldi Celebrity and Live Music Photographer.jpg](https://commons.wikimedia.org/wiki/File:Rupert_Murdoch_-_Flickr_-_Eva_Rinaldi_Celebrity_and_Live_Music_Photographer.jpg) by Eva Rinaldi (2012), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Elisabeth Murdoch: [Nordiske Mediedager 2010 - Thursday - NMD 2010 (4583813556) (cropped).jpg](https://commons.wikimedia.org/wiki/File:Nordiske_Mediedager_2010_-_Thursday_-_NMD_2010_(4583813556)_(cropped).jpg) by Eirik Helland Urke / Nordiske Mediedager (2010), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Lachlan Murdoch: [Lachlan Murdoch in May 2013 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Lachlan_Murdoch_in_May_2013_(cropped).jpg) by Eva Rinaldi (2013), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- James Murdoch: [James Murdoch 2008- NRKbeta (cropped).jpg](https://commons.wikimedia.org/wiki/File:James_Murdoch_2008-_NRKbeta_(cropped).jpg) by NRKbeta (2008), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
 
 ## The Kardashian-Jenner family (File #017, data as of Oct 6, 2026)
 
@@ -434,6 +471,17 @@ Every numbered source on the site. Each family page numbers its own sources; the
 28. [People (via AOL)](https://www.aol.com/entertainment/kanye-west-sells-malibu-home-010322067.html): Kanye West sells his Malibu home for $21 million (Aug 22, 2024)
 29. [Inman](https://inman.com/2020/04/28/kylie-jenner-buys-beverly-hills-spec-mansion-for-37m): Kylie Jenner pays $36.5 million for a Holmby Hills mansion (Apr 28, 2020)
 
+### Photo credits
+
+- Kim Kardashian: [Kim Kardashian West 2014.jpg](https://commons.wikimedia.org/wiki/File:Kim_Kardashian_West_2014.jpg) by Eva Rinaldi (2014), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Kanye West: [Kanye West at the 2009 Tribeca Film Festival (crop 2).jpg](https://commons.wikimedia.org/wiki/File:Kanye_West_at_the_2009_Tribeca_Film_Festival_(crop_2).jpg) by David Shankbone (2009), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Kris Jenner: [Kris Jenner by Gage Skidmore.jpg](https://commons.wikimedia.org/wiki/File:Kris_Jenner_by_Gage_Skidmore.jpg) by Gage Skidmore (2025), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Caitlyn Jenner: [Web Summit 2017 - Future Societies SM0 1242 (38228173296) (cropped).jpg](https://commons.wikimedia.org/wiki/File:Web_Summit_2017_-_Future_Societies_SM0_1242_(38228173296)_(cropped).jpg) by Web Summit (2017), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Kourtney Kardashian Barker: [Kourtney Kardashian 2 2009.jpg](https://commons.wikimedia.org/wiki/File:Kourtney_Kardashian_2_2009.jpg) by Toglenn (2009), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Khloé Kardashian: [Khloe Kardashian Glamour 2.png](https://commons.wikimedia.org/wiki/File:Khloe_Kardashian_Glamour_2.png) by Eric Longden (2016), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+- Kendall Jenner: [Kendall Jenner Venice Film Festival 2 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Kendall_Jenner_Venice_Film_Festival_2_(cropped).jpg) by Colleen Sturtevant (2026), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Kylie Jenner: [Kylie Jenner2 (cropped).png](https://commons.wikimedia.org/wiki/File:Kylie_Jenner2_(cropped).png) by Hayu (2017), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+
 ## The Swift family (File #018, data as of Oct 6, 2026)
 
 ### The family
@@ -468,6 +516,12 @@ Every numbered source on the site. Each family page numbers its own sources; the
 19. [Business Insider (via Yahoo)](https://sg.news.yahoo.com/check-taylor-swifts-150-million-144317148.html): Check out Taylor Swift’s $100 million real estate portfolio (May 2, 2024)
 20. [Robb Report](https://robbreport.com.my/?p=119714): Inside Taylor Swift’s US$150 million property portfolio (Aug 20, 2025)
 
+### Photo credits
+
+- Taylor Swift: [Taylor Swift at the 2023 MTV Video Music Awards (3).png](https://commons.wikimedia.org/wiki/File:Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_(3).png) by iHeartRadioCA (2023), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+- Travis Kelce: [Travis Kelce in the Oval Office of the White House on June 5, 2023 - P20230605AS-0902 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Travis_Kelce_in_the_Oval_Office_of_the_White_House_on_June_5,_2023_-_P20230605AS-0902_(cropped).jpg) by Adam Schultz (2023), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Jason Kelce: [JasonKelce.jpg](https://commons.wikimedia.org/wiki/File:JasonKelce.jpg) by All-Pro Reels (2022), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+
 ## The Carter family (File #020, data as of Oct 6, 2026)
 
 ### The family
@@ -496,6 +550,14 @@ Every numbered source on the site. Each family page numbers its own sources; the
 16. [Square](https://squareup.com/us/en/press/tidal): Square, Inc. announces plans to acquire majority ownership stake in TIDAL (Mar 4, 2021)
 17. [SEC (Block, Inc.)](https://www.sec.gov/Archives/edgar/data/0001512673/000162828026027203/sq-20260423.htm): 2026 proxy statement (DEF 14A): directors and their pay (Apr 2026)
 
+### Photo credits
+
+- Jay-Z: [Jay-Z meets with New York Senate Majority Leader in Albany (cropped).webp](https://commons.wikimedia.org/wiki/File:Jay-Z_meets_with_New_York_Senate_Majority_Leader_in_Albany_(cropped).webp) by NYS Senate Media Services (2025), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Beyoncé: [Beyoncé - Tottenham Hotspur Stadium - 1st June 2023 (10 of 118) (52946364598) (best crop).jpg](https://commons.wikimedia.org/wiki/File:Beyoncé_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_(10_of_118)_(52946364598)_(best_crop).jpg) by Raph_PH (2023), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Tina Knowles: [Tina Knowles at Hollyrod 2023 Design Care gala (cropped).jpg](https://commons.wikimedia.org/wiki/File:Tina_Knowles_at_Hollyrod_2023_Design_Care_gala_(cropped).jpg) by Ewingmason (2023), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Mathew Knowles: [Mathew Knowles at Black Week 2025 - 01.jpg](https://commons.wikimedia.org/wiki/File:Mathew_Knowles_at_Black_Week_2025_-_01.jpg) by Danielle G. Campbell (2025), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Solange Knowles: [Solange Knowles, Bonnaroo Music and Arts Festival 2019 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Solange_Knowles,_Bonnaroo_Music_and_Arts_Festival_2019_(cropped).jpg) by Raph_PH (2019), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+
 ## The Donaldson family (File #022, data as of Oct 6, 2026)
 
 ### The family
@@ -521,6 +583,10 @@ Every numbered source on the site. Each family page numbers its own sources; the
 
 14. [Bitmine Immersion Technologies (press release via AAP)](https://www.aap.com.au/aapreleases/cision20260115ae64217): Bitmine (BMNR) announces $200 million investment in Beast Industries (Jan 15, 2026)
 
+### Photo credits
+
+- Jimmy “MrBeast” Donaldson: [MrBeast in 2026 (cropped 4).png](https://commons.wikimedia.org/wiki/File:MrBeast_in_2026_(cropped_4).png) by Tyren Redd (2026), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
 ## The James family (File #023, data as of Oct 6, 2026)
 
 ### The family
@@ -543,6 +609,11 @@ Every numbered source on the site. Each family page numbers its own sources; the
 
 11. [ESPN (via ABC7 News)](https://abc7news.com/19569047/): LeBron James to join the Philadelphia 76ers, will sign 2-year, $8 million contract (Jul 24, 2026)
 12. [Sports Illustrated](https://www.si.com/nba/contract-details-bronny-james-lakers-revealed-report): Contract details for Bronny James’s multiyear deal with the Lakers revealed (Jul 3, 2024)
+
+### Photo credits
+
+- LeBron James: [LeBron James (51959977144) (cropped2).jpg](https://commons.wikimedia.org/wiki/File:LeBron_James_(51959977144)_(cropped2).jpg) by Erik Drost (2022), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Savannah James: [Savannah Brinson James.jpg](https://commons.wikimedia.org/wiki/File:Savannah_Brinson_James.jpg) by Michael Kain (2012), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
 
 ## The Jordan family (File #024, data as of Oct 6, 2026)
 
@@ -573,6 +644,10 @@ Every numbered source on the site. Each family page numbers its own sources; the
 
 15. [ABC7 Chicago](https://abc7chicago.com/post/michael-jordan-mansion-sold-what-led-chicago-bulls-legends-highland-park-home-selling-below-29m-asking-price/15648192/): Michael Jordan mansion sold well below $29M asking price (Dec 13, 2024)
 16. [Sports Illustrated](https://www.si.com/onsi/athlete-lifestyle/real-estate/michael-jordan-s-mansion-sells-for-shocking-price-after-over-12-years-on-market): Michael Jordan’s mansion sells after more than 12 years on the market (Dec 12, 2024)
+
+### Photo credits
+
+- Michael Jordan: [Michael jordan admad rashad (51276390562) (cropped).jpg](https://commons.wikimedia.org/wiki/File:Michael_jordan_admad_rashad_(51276390562)_(cropped).jpg) by Zach Catanzareti Photo (2021), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
 
 ## The Trump family (File #026, data as of Oct 6, 2026)
 
@@ -610,6 +685,19 @@ Every numbered source on the site. Each family page numbers its own sources; the
 24. [AFP (via L’Orient Today)](https://today.lorientlejour.com/article/1539896/trump-earned-over-1billion-from-crypto-ventures-in-2025.html): Trump earned over $1 billion from crypto ventures in 2025 (Jul 1, 2026)
 25. [Anchorage Daily News](https://www.adn.com/nation-world/2025/06/14/trump-reports-over-600-million-in-income-in-latest-financial-disclosure): Trump reports over $600 million in income in latest financial disclosure (Jun 14, 2025)
 
+### Photo credits
+
+- Ivana Trump: [Ivana Trump cropped retouched.jpg](https://commons.wikimedia.org/wiki/File:Ivana_Trump_cropped_retouched.jpg) by Christopherpeterson (2007), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Donald Trump: [Official Presidential Portrait of President Donald J. Trump (2025).jpg](https://commons.wikimedia.org/wiki/File:Official_Presidential_Portrait_of_President_Donald_J._Trump_(2025).jpg) by Daniel Torok (2025), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Melania Trump: [Melania Trump at Fort Bragg, Friday, February 13, 2026.jpg](https://commons.wikimedia.org/wiki/File:Melania_Trump_at_Fort_Bragg,_Friday,_February_13,_2026.jpg) by The White House (2026), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Marla Maples: [Marla Maples (2014).jpg](https://commons.wikimedia.org/wiki/File:Marla_Maples_(2014).jpg) by Zakirmithu (2014), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Fred Trump: [Fred Trump in the 1980s (cropped3).jpg](https://commons.wikimedia.org/wiki/File:Fred_Trump_in_the_1980s_(cropped3).jpg) by Bernard Gotfryd (1986), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Donald Trump Jr.: [Donald Trump, Jr. (55021618832) (cropped 2).jpg](https://commons.wikimedia.org/wiki/File:Donald_Trump,_Jr._(55021618832)_(cropped_2).jpg) by Gage Skidmore (2025), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Ivanka Trump: [Ivanka Trump official portrait 2020.jpg](https://commons.wikimedia.org/wiki/File:Ivanka_Trump_official_portrait_2020.jpg) by Andrea Hanks/Official White House Photo (2020), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Eric Trump: [Consensus 2025 - Eric Trump 10 (3x4 cropped).jpg](https://commons.wikimedia.org/wiki/File:Consensus_2025_-_Eric_Trump_10_(3x4_cropped).jpg) by Xuthoria (2025), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Tiffany Trump: [Tiffany Trump RNC 2016 cropped 2.jpg](https://commons.wikimedia.org/wiki/File:Tiffany_Trump_RNC_2016_cropped_2.jpg) by Ali Shaker/VOA (2016), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Barron Trump: [Barron Trump SOTU February 2026 (3x4 cropped).jpg](https://commons.wikimedia.org/wiki/File:Barron_Trump_SOTU_February_2026_(3x4_cropped).jpg) by The White House (2026), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+
 ## The Pelosi family (File #027, data as of Oct 6, 2026)
 
 ### The family
@@ -637,3 +725,11 @@ Every numbered source on the site. Each family page numbers its own sources; the
 15. [Benzinga (via Webull)](https://www.webull.ca/news-detail/15459478465889280): Pelosi discloses Bloom Energy and Intel stock and options trades (Aug 24, 2026)
 16. [AP (via PBS NewsHour)](https://www.pbs.org/newshour/politics/nancy-pelosi-announces-she-wont-seek-reelection-ending-storied-u-s-house-career): Nancy Pelosi announces she won’t seek reelection (Nov 6, 2025)
 17. [ABC7 News](https://abc7news.com/post/former-house-speaker-nancy-pelosi-announces-retirement-end-term-congress-2027/18120442/): Nancy Pelosi announces retirement at the end of her term in Congress in 2027 (Nov 7, 2025)
+
+### Photo credits
+
+- Thomas D’Alesandro Jr.: [Thomas D'Alesandro Jr (1).jpg](https://commons.wikimedia.org/wiki/File:Thomas_D'Alesandro_Jr_(1).jpg) by United States Congress (1939), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Thomas D’Alesandro III: [1d'alesandro.jpg](https://commons.wikimedia.org/wiki/File:1d'alesandro.jpg) by Marylandstater (2011), [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
+- Nancy Pelosi: [Official photo of Speaker Nancy Pelosi in 2019.jpg](https://commons.wikimedia.org/wiki/File:Official_photo_of_Speaker_Nancy_Pelosi_in_2019.jpg) by John Harrington (2019), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Paul Pelosi: [Paul Pelosi 2022.jpg](https://commons.wikimedia.org/wiki/File:Paul_Pelosi_2022.jpg) by Presidenza della Repubblica (2022), [Attribution](https://commons.wikimedia.org/wiki/Template:Attribution)
+- Christine Pelosi: [Christine Pelosi 2013 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Christine_Pelosi_2013_(cropped).jpg) by Financial Times (2013), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
