@@ -20,7 +20,7 @@
   <section class="wrap hero" aria-labelledby="h-hero">
     <div>
       <p class="eyebrow">{{eyebrow}}</p>
-      <h1 id="h-hero">{{h1}}</h1>
+      <h1 id="h-hero" class="{{h1Class}}">{{h1}}</h1>
       <p class="lede">{{lede}}</p>
       <div class="ctas">
         <a class="btn" href="#family">Open the family map</a>
@@ -89,7 +89,7 @@
         </div>
         <div class="panel">
           <h3>The family money ladder</h3>
-          <p class="fine">Only two family members have a published net worth estimate. Bars are drawn to scale.</p>
+          <p class="fine" id="ladder-note"></p>
           <div class="ladder" id="ladder"></div>
         </div>
       </div>
@@ -136,7 +136,7 @@
           <tbody></tbody>
         </table>
       </div>
-      <p class="foot">* SEC rules count his super-voting Class B shares as if they were converted to Class A. &#8220;Our sum&#8221; means simple addition of the linked filings or reports.</p>
+      <p class="foot">{{ledgerFoot}}</p>
     </div>
   </section>
 
@@ -167,8 +167,8 @@
         </div>
         <div class="outs">
           <div class="out"><p class="k">{{calcYearsK}}</p><p class="v" id="o-years">&#8212;</p><p class="s">at that income, with no taxes or spending</p></div>
-          <div class="out"><p class="k">A whole year of your pay equals</p><p class="v" id="o-secs">&#8212;</p><p class="s">of his average growth over the past year</p></div>
-          <div class="out"><p class="k">Spending $1 million every day</p><p class="v" id="o-spend">&#8212;</p><p class="s">before his fortune runs out (ignoring growth)</p></div>
+          <div class="out"><p class="k">A whole year of your pay equals</p><p class="v" id="o-secs">&#8212;</p><p class="s">of {{his}} average growth over the past year</p></div>
+          <div class="out"><p class="k">Spending $1 million every day</p><p class="v" id="o-spend">&#8212;</p><p class="s">before {{his}} fortune runs out (ignoring growth)</p></div>
           <div class="out"><p class="k" id="o-kimbal-k"></p><p class="v" id="o-kimbal">&#8212;</p><p class="s" id="o-kimbal-s"></p></div>
         </div>
       </div>
@@ -203,6 +203,17 @@
     </div>
   </section>
 </main>
+
+<section class="section more" id="more" aria-labelledby="h-more">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="exhibit">Keep following the money</p>
+      <h2 id="h-more">More files</h2>
+    </header>
+    <div class="more-grid">{{moreFiles}}</div>
+    <p class="more-all"><a class="btn ghost" href="../#files">See all {{fileCount}} files</a></p>
+  </div>
+</section>
 
 <footer class="site-foot">
   <div class="wrap">

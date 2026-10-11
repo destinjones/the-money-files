@@ -1,0 +1,1056 @@
+{
+ "meta": {
+  "asOf": "2026-10-06",
+  "asOfLabel": "Oct 6, 2026",
+  "file": "File #020",
+  "repo": "https://github.com/destinjones/the-money-files",
+  "center": "jay",
+  "slug": "carter",
+  "og": "assets/og-hub.jpg",
+  "pronoun": "his"
+ },
+ "copy": {
+  "title": "The Carter Money File",
+  "desc": "An interactive, fully sourced map of Jay-Z and Beyoncé’s family: who owns what, the one stock you can buy, the homes, and the money on the public record.",
+  "eyebrow": "<b>File #020</b> · The Carter family · Data as of <span data-asof></span>",
+  "h1": "Hip-hop’s first <span class=\"gold\">billionaire</span> is married to another one. We followed the <span class=\"u-red\">money</span>.",
+  "lede": "Who’s who, what each of them owns, which of their companies you can buy stock in, the homes, and the money on the public record. Every number links to its source.",
+  "worthLabel": "Jay-Z’s net worth",
+  "worthBig": "$2,800,000,000",
+  "familyLede": "Tap anyone to open their file: what they own, what’s on the record, and where every fact comes from. The three kids appear by first name only.",
+  "investLede": "One company on this map trades on the stock market: Block, which owns most of Tidal and has Jay-Z on its board. The rest are private.",
+  "moneyTitle": "Where the money is",
+  "moneyLede": "Both of them have a published net worth. Forbes ties his to liquor brands, music, art and company stakes, and hers mostly to her music and tours.",
+  "homesTitle": "About $321 million in homes",
+  "homesLede": "What they paid, as reported. The Malibu house set a California record. No street addresses here.",
+  "homesFlipLabel": "Four homes, at purchase price (our math)",
+  "homesChart": "Each house: what they paid",
+  "recordLede": "The deals behind the fortune: brand sales, an SEC filing and Forbes’s own math. Filings and reporting, not guesses.",
+  "trailLede": "From Brooklyn’s Marcy Houses to a marriage of two billionaires.",
+  "calcYearsK": "Years to earn what Jay-Z has",
+  "footLabel": "File #020: the Carter family"
+ },
+ "tree": {
+  "groups": [
+   [
+    "center",
+    "The center"
+   ],
+   [
+    "partners",
+    "Wife & children",
+    "Kids by first name only."
+   ],
+   [
+    "parents",
+    "Mother"
+   ],
+   [
+    "knowles",
+    "Beyoncé’s family",
+    "Her parents and sister."
+   ]
+  ],
+  "order": [
+   "jay",
+   "beyonce",
+   "gloria",
+   "tina",
+   "mathew",
+   "solange"
+  ],
+  "coParents": [
+   "beyonce"
+  ],
+  "couples": [
+   [
+    "tina",
+    "mathew",
+    "m. 1980–2011"
+   ]
+  ],
+  "forks": [
+   {
+    "frm": "gloria",
+    "kids": [
+     "jay"
+    ]
+   },
+   {
+    "frm": "jay",
+    "kids": [
+     "beyonce"
+    ],
+    "toNodeTop": true
+   },
+   {
+    "frm": [
+     "tina",
+     "mathew"
+    ],
+    "kids": [
+     "beyonce",
+     "solange"
+    ],
+    "toNodeTop": true
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "britannica_jay",
+   "group": "family",
+   "pub": "Britannica",
+   "title": "JAY-Z",
+   "date": "accessed Oct 2026",
+   "url": "https://www.britannica.com/biography/JAY-Z"
+  },
+  {
+   "id": "wiki_jay",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Jay-Z",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Jay-Z"
+  },
+  {
+   "id": "britannica_beyonce",
+   "group": "family",
+   "pub": "Britannica",
+   "title": "Beyoncé",
+   "date": "accessed Oct 2026",
+   "url": "https://www.britannica.com/biography/Beyonce"
+  },
+  {
+   "id": "wiki_tina",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Tina Knowles",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Tina_Knowles"
+  },
+  {
+   "id": "wiki_mathew",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Mathew Knowles",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Mathew_Knowles"
+  },
+  {
+   "id": "wiki_solange",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Solange Knowles",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Solange_Knowles"
+  },
+  {
+   "id": "forbes_jay",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Real-time profile: Jay-Z ($2.8B)",
+   "date": "Oct 6, 2026",
+   "url": "https://www.forbes.com/profile/jay-z/"
+  },
+  {
+   "id": "forbes_beyonce",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Real-time profile: Beyoncé Knowles-Carter ($1B)",
+   "date": "Oct 6, 2026",
+   "url": "https://www.forbes.com/profile/beyonce-knowles/"
+  },
+  {
+   "id": "forbes_beyonce_billion",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Beyoncé Is Now A Billionaire",
+   "date": "Dec 29, 2025",
+   "url": "https://www.forbes.com/sites/mattcraig/2025/12/23/beyonce-is-now-a-billionaire/"
+  },
+  {
+   "id": "forbes_jay_2019",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Artist, Icon, Billionaire: How Jay-Z Created His $1 Billion Fortune",
+   "date": "Jun 3, 2019",
+   "url": "https://www.forbes.com/sites/zackomalleygreenburg/2019/06/03/jay-z-billionaire-worth/"
+  },
+  {
+   "id": "forbes_cecred",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Beyoncé Turns Haircare Into Big Business With Cécred",
+   "date": "Aug 31, 2025",
+   "url": "https://www.forbes.com/sites/braedonmontgomery/2025/08/31/beyonc-turns-haircare-into-big-business-with-ccred/"
+  },
+  {
+   "id": "forbes_sirdavis",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Beyoncé Launches New Whisky With Moët Hennessy: SirDavis",
+   "date": "Aug 20, 2024",
+   "url": "https://www.forbes.com/sites/rachelking/2024/08/20/inside-beyonces-new-whisky-with-moet-hennessy-sirdavis/"
+  },
+  {
+   "id": "block_ticker",
+   "group": "money",
+   "pub": "Block",
+   "title": "Block announces ticker symbol change to XYZ",
+   "date": "Jan 9, 2025",
+   "url": "https://investors.block.xyz/investor-news/news-details/2025/Block-Announces-Ticker-Symbol-Change-to-XYZ-To-Report-Fourth-Quarter-Results/default.aspx"
+  },
+  {
+   "id": "cnbc_armand",
+   "group": "record",
+   "pub": "CNBC",
+   "title": "LVMH buys 50% stake in Jay-Z’s champagne brand Armand de Brignac",
+   "date": "Feb 22, 2021",
+   "url": "https://www.cnbc.com/2021/02/22/lvmh-buys-50percent-stake-in-jay-zs-champagne-brand-armand-de-brignac.html"
+  },
+  {
+   "id": "bacardi_dusse",
+   "group": "record",
+   "pub": "Bacardi (press release via AAP)",
+   "title": "Shawn “JAY-Z” Carter and Bacardi redefine the next chapter of the D’USSÉ brand",
+   "date": "Feb 2023",
+   "url": "https://www.aap.com.au/aapreleases/cision20230203ae05278"
+  },
+  {
+   "id": "square_tidal",
+   "group": "record",
+   "pub": "Square",
+   "title": "Square, Inc. announces plans to acquire majority ownership stake in TIDAL",
+   "date": "Mar 4, 2021",
+   "url": "https://squareup.com/us/en/press/tidal"
+  },
+  {
+   "id": "block_proxy_2026",
+   "group": "record",
+   "pub": "SEC (Block, Inc.)",
+   "title": "2026 proxy statement (DEF 14A): directors and their pay",
+   "date": "Apr 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001512673/000162828026027203/sq-20260423.htm"
+  }
+ ],
+ "people": [
+  {
+   "id": "jay",
+   "name": "Jay-Z",
+   "short": "Jay-Z",
+   "initials": "JZ",
+   "rel": "The center of the map",
+   "tag": "$2.8B",
+   "tagKind": "money",
+   "born": "Born Shawn Carter, 1969, Brooklyn",
+   "bornSrc": [
+    "britannica_jay",
+    "wiki_jay"
+   ],
+   "group": "center",
+   "layout": {
+    "row": 2,
+    "big": true
+   },
+   "photo": null,
+   "wiki": "Jay-Z",
+   "summary": {
+    "t": "Rapper and businessman, born Shawn Carter and raised in Brooklyn’s Marcy Houses. Co-founder and chairman of Roc Nation. Forbes named him hip-hop’s first billionaire in 2019.",
+    "src": [
+     "wiki_jay",
+     "forbes_jay",
+     "forbes_jay_2019"
+    ]
+   },
+   "worth": {
+    "value": "$2.8 billion",
+    "by": "Forbes real-time estimate",
+    "date": "Oct 6, 2026",
+    "src": [
+     "forbes_jay"
+    ],
+    "also": {
+     "short": "Rank",
+     "value": "#1,488 in the world",
+     "by": "Forbes rank",
+     "src": [
+      "forbes_jay"
+     ]
+    }
+   },
+   "owns": [
+    {
+     "co": "rocnation",
+     "t": "Launched it in 2008 as a joint venture with Live Nation. It runs a record label, artist management and a sports agency. He is chairman.",
+     "src": [
+      "wiki_jay",
+      "forbes_jay_2019",
+      "forbes_jay"
+     ]
+    },
+    {
+     "co": "armand",
+     "t": "Owned all of the champagne brand from 2014. Sold half to LVMH’s Moët Hennessy in February 2021; terms weren’t disclosed.",
+     "src": [
+      "cnbc_armand",
+      "forbes_jay"
+     ]
+    },
+    {
+     "co": "dusse",
+     "t": "Launched the cognac with Bacardi in 2012. Bacardi bought a majority from him in February 2023, and he kept what it called a significant stake.",
+     "src": [
+      "bacardi_dusse",
+      "forbes_jay"
+     ]
+    },
+    {
+     "co": "block",
+     "t": "On Block’s board since May 2021 and a shareholder. Block paid him $320,530 in stock for board service in 2025.",
+     "src": [
+      "block_proxy_2026",
+      "forbes_jay"
+     ]
+    },
+    {
+     "co": "tidal",
+     "t": "Bought Aspiro, the company behind Tidal, for $56 million in 2015. Sold a majority to Square (now Block) in 2021 and still owns a stake.",
+     "src": [
+      "wiki_jay",
+      "square_tidal",
+      "forbes_jay"
+     ]
+    },
+    {
+     "co": "rocawear",
+     "t": "Started the clothing brand in 1999 and sold it to Iconix for $204 million in 2007.",
+     "src": [
+      "forbes_jay_2019",
+      "wiki_jay"
+     ]
+    }
+   ],
+   "record": [
+    {
+     "h": "Hip-hop’s first billionaire",
+     "t": "In 2019 Forbes valued his fortune at $1 billion: $310 million for Armand de Brignac, $220 million in cash and investments, $100 million each for D’Ussé and Tidal, $75 million each for Roc Nation and his music catalog, $70 million in art and $50 million in real estate.",
+     "src": [
+      "forbes_jay_2019"
+     ]
+    },
+    {
+     "h": "A casino bid",
+     "t": "Roc Nation joined Caesars Entertainment in a 2022 bid to build a casino hotel in Times Square. A community advisory committee voted it down in September 2025.",
+     "src": [
+      "wiki_jay"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "Forbes says he has more than doubled his fortune since 2019, thanks to his liquor brands.",
+     "src": [
+      "forbes_jay"
+     ]
+    },
+    {
+     "t": "Reportedly bought into Uber for $2 million in 2013. Forbes valued that stake at about $70 million in 2019.",
+     "src": [
+      "forbes_jay_2019"
+     ]
+    },
+    {
+     "t": "Paid a reported $4.5 million for Basquiat’s painting “Mecca” in 2013.",
+     "src": [
+      "forbes_jay_2019"
+     ]
+    },
+    {
+     "t": "Ran Def Jam Recordings as president and CEO from 2004 to 2007.",
+     "src": [
+      "wiki_jay"
+     ]
+    }
+   ],
+   "kidsNote": {
+    "t": "Jay-Z and Beyoncé have three children. They appear here by first name only.",
+    "src": [
+     "britannica_beyonce",
+     "forbes_jay"
+    ]
+   }
+  },
+  {
+   "id": "beyonce",
+   "name": "Beyoncé",
+   "short": "Beyoncé",
+   "rel": "Wife · married 2008",
+   "tag": "$1B",
+   "tagKind": "money",
+   "born": "Born 1981, Houston",
+   "bornSrc": [
+    "britannica_beyonce"
+   ],
+   "group": "partners",
+   "layout": {
+    "row": 3,
+    "partner": true
+   },
+   "photo": null,
+   "wiki": "Beyoncé",
+   "summary": {
+    "t": "Singer who first found fame in Destiny’s Child. She holds the record for most Grammy wins, with 35. Forbes counted her as a billionaire in December 2025.",
+    "src": [
+     "britannica_beyonce",
+     "forbes_beyonce",
+     "forbes_beyonce_billion"
+    ]
+   },
+   "worth": {
+    "value": "$1 billion",
+    "by": "Forbes real-time estimate",
+    "date": "Oct 6, 2026",
+    "src": [
+     "forbes_beyonce"
+    ]
+   },
+   "owns": [
+    {
+     "co": "parkwood",
+     "t": "Founded it in 2010 to manage her own career. It produces her music, documentaries and concerts and pays most of the costs up front, so she keeps more of the profits.",
+     "src": [
+      "forbes_beyonce_billion"
+     ]
+    },
+    {
+     "co": "cecred",
+     "t": "Launched the hair-care line on Feb. 20, 2024. Her mother, Tina, is vice chair.",
+     "src": [
+      "forbes_cecred"
+     ]
+    },
+    {
+     "co": "sirdavis",
+     "t": "Whisky made with LVMH’s Moët Hennessy and named for her great-grandfather Davis Hogue. It went on sale in September 2024 at $89 a bottle.",
+     "src": [
+      "forbes_sirdavis"
+     ]
+    }
+   ],
+   "record": [
+    {
+     "h": "Becoming a billionaire",
+     "t": "Forbes says most of her wealth comes from her music: owning the rights to her catalog and touring. She is the fifth musician it counts as a billionaire.",
+     "src": [
+      "forbes_beyonce_billion"
+     ]
+    },
+    {
+     "h": "The tours",
+     "t": "Her Renaissance tour grossed nearly $600 million in 2023. Cowboy Carter was the world’s highest-grossing tour of 2025, per Forbes.",
+     "src": [
+      "forbes_beyonce_billion"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "Started the House of Deréon fashion line with her mother in 2004. Her Ivy Park clothing line ended in 2024.",
+     "src": [
+      "forbes_cecred",
+      "forbes_beyonce_billion"
+     ]
+    },
+    {
+     "t": "She and Jay-Z paid a reported $200 million for a house in Malibu in May 2023, the most ever paid for a home in California.",
+     "src": [
+      "forbes_beyonce"
+     ]
+    }
+   ],
+   "kids": [
+    {
+     "name": "Blue Ivy"
+    },
+    {
+     "name": "Rumi"
+    },
+    {
+     "name": "Sir"
+    }
+   ],
+   "kidsSrc": [
+    "britannica_beyonce"
+   ]
+  },
+  {
+   "id": "gloria",
+   "name": "Gloria Carter",
+   "short": "Gloria",
+   "rel": "Mother",
+   "tag": "Shawn Carter Foundation",
+   "born": "",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Raised Jay-Z and his three older siblings in Brooklyn after his father left. In 2003 she and Jay-Z started the Shawn Carter Foundation, which helps students facing hardship get through college.",
+    "src": [
+     "wiki_jay"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "tina",
+   "name": "Tina Knowles",
+   "short": "Tina",
+   "rel": "Mother-in-law",
+   "tag": "Cécred vice chair",
+   "born": "Born 1954, Galveston, Texas",
+   "bornSrc": [
+    "wiki_tina"
+   ],
+   "group": "knowles",
+   "layout": {
+    "row": 2
+   },
+   "photo": null,
+   "wiki": "Tina Knowles",
+   "summary": {
+    "t": "Beyoncé’s mother. A businesswoman and designer who opened the Headliners salon in Houston in 1990 and started the House of Deréon fashion line with Beyoncé in 2004.",
+    "src": [
+     "wiki_tina"
+    ]
+   },
+   "worth": {
+    "none": "No reliable public estimate."
+   },
+   "owns": [
+    {
+     "co": "cecred",
+     "t": "Vice chair since the February 2024 launch. The brand grew out of her Headliners salon.",
+     "src": [
+      "wiki_tina",
+      "forbes_cecred"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "Her memoir, Matriarch, came out in April 2025 and was Oprah’s Book Club pick that month.",
+     "src": [
+      "wiki_tina"
+     ]
+    },
+    {
+     "t": "Married Mathew Knowles in 1980; they divorced in 2011.",
+     "src": [
+      "wiki_tina"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mathew",
+   "name": "Mathew Knowles",
+   "short": "Mathew",
+   "rel": "Father-in-law",
+   "tag": "Music World",
+   "born": "Born 1952, Gadsden, Alabama",
+   "bornSrc": [
+    "wiki_mathew"
+   ],
+   "group": "knowles",
+   "layout": {
+    "row": 2
+   },
+   "photo": null,
+   "wiki": "Mathew Knowles",
+   "summary": {
+    "t": "Beyoncé’s father. Founded Music World Entertainment in 1992 and managed Destiny’s Child and the solo careers of Beyoncé and Solange. He is a visiting professor at Texas Southern University.",
+    "src": [
+     "wiki_mathew"
+    ]
+   },
+   "worth": {
+    "none": "No reliable public estimate."
+   },
+   "owns": [
+    {
+     "co": "musicworld",
+     "t": "Founded the music company in 1992.",
+     "src": [
+      "wiki_mathew"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "solange",
+   "name": "Solange Knowles",
+   "short": "Solange",
+   "rel": "Sister-in-law",
+   "tag": "Saint Records",
+   "born": "Born 1986, Houston",
+   "bornSrc": [
+    "wiki_solange"
+   ],
+   "group": "knowles",
+   "layout": {
+    "row": 3
+   },
+   "photo": null,
+   "wiki": "Solange Knowles",
+   "summary": {
+    "t": "Beyoncé’s younger sister, a singer and songwriter. Her 2016 album A Seat at the Table reached No. 1, and she won a Grammy in 2017.",
+    "src": [
+     "wiki_solange"
+    ]
+   },
+   "worth": {
+    "none": "No reliable public estimate."
+   },
+   "owns": [
+    {
+     "co": "saint",
+     "t": "Launched the record label in 2013, the same year she started the arts platform Saint Heron.",
+     "src": [
+      "wiki_solange"
+     ]
+    }
+   ]
+  }
+ ],
+ "photos": {},
+ "licenses": {
+  "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+  "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+  "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+ },
+ "companies": [
+  {
+   "id": "block",
+   "name": "Block",
+   "status": "public",
+   "ticker": "XYZ",
+   "exchange": "NYSE",
+   "quote": "https://www.nasdaq.com/market-activity/stocks/xyz",
+   "color": "#00D64F",
+   "who": "Jay-Z (director since 2021, shareholder)",
+   "t": "Bought a majority of Tidal in 2021 for $297 million in cash and stock and put Jay-Z on its board. Trades as XYZ since January 2025.",
+   "src": [
+    "square_tidal",
+    "block_proxy_2026",
+    "block_ticker",
+    "forbes_jay"
+   ]
+  },
+  {
+   "id": "rocnation",
+   "name": "Roc Nation",
+   "status": "private",
+   "color": "#C0C7D6",
+   "who": "Jay-Z (co-founder, chairman)",
+   "t": "Entertainment company started in 2008 as a joint venture with Live Nation. Forbes valued his stake at $75 million in 2019. No public shares.",
+   "src": [
+    "wiki_jay",
+    "forbes_jay_2019",
+    "forbes_jay"
+   ]
+  },
+  {
+   "id": "armand",
+   "name": "Armand de Brignac",
+   "status": "private",
+   "color": "#D4AF37",
+   "who": "Jay-Z (half) · LVMH’s Moët Hennessy (half)",
+   "t": "The “Ace of Spades” champagne. Moët Hennessy bought 50% in 2021. Private.",
+   "src": [
+    "cnbc_armand",
+    "forbes_jay"
+   ]
+  },
+  {
+   "id": "dusse",
+   "name": "D’Ussé",
+   "status": "private",
+   "color": "#C2410C",
+   "who": "Jay-Z (minority stake) · Bacardi (majority)",
+   "t": "Cognac launched with Bacardi in 2012. Bacardi took a majority in 2023. Private.",
+   "src": [
+    "bacardi_dusse",
+    "forbes_jay"
+   ]
+  },
+  {
+   "id": "parkwood",
+   "name": "Parkwood Entertainment",
+   "status": "private",
+   "color": "#A78BFA",
+   "who": "Beyoncé (founder, 2010)",
+   "t": "Manages her career and produces her music, documentaries and concerts. Private.",
+   "src": [
+    "forbes_beyonce_billion"
+   ]
+  },
+  {
+   "id": "cecred",
+   "name": "Cécred",
+   "status": "private",
+   "color": "#E8C39E",
+   "who": "Beyoncé (founder) · Tina Knowles (vice chair)",
+   "t": "Hair-care brand launched in February 2024 and sold in Ulta Beauty stores since 2025. Private.",
+   "src": [
+    "forbes_cecred",
+    "wiki_tina"
+   ]
+  }
+ ],
+ "companiesExtra": [
+  {
+   "id": "tidal",
+   "name": "Tidal",
+   "status": "gone",
+   "who": "Jay-Z (minority stake; Block owns most)"
+  },
+  {
+   "id": "rocawear",
+   "name": "Rocawear",
+   "status": "gone",
+   "who": "Jay-Z (co-founder; sold in 2007)"
+  },
+  {
+   "id": "sirdavis",
+   "name": "SirDavis",
+   "status": "private",
+   "who": "Beyoncé (with Moët Hennessy)"
+  },
+  {
+   "id": "musicworld",
+   "name": "Music World Entertainment",
+   "status": "private",
+   "who": "Mathew (founder)"
+  },
+  {
+   "id": "saint",
+   "name": "Saint Records",
+   "status": "private",
+   "who": "Solange (founder)"
+  }
+ ],
+ "ladder": {
+  "items": [
+   {
+    "name": "Jay-Z",
+    "short": "Jay-Z",
+    "v": 2800000000,
+    "label": "$2.8B",
+    "src": [
+     "forbes_jay"
+    ]
+   },
+   {
+    "name": "Beyoncé",
+    "v": 1000000000,
+    "label": "$1B",
+    "src": [
+     "forbes_beyonce"
+    ]
+   }
+  ],
+  "rest": "Everyone else on the map"
+ },
+ "calc": {
+  "worth": 2800000000,
+  "compareK": "Beyoncé is a billionaire too",
+  "compareS": "her $1B as a share of Jay-Z’s fortune",
+  "compareV": 1000000000
+ },
+ "homes": {
+  "props": [
+   {
+    "name": "Tadao Ando–designed house",
+    "area": "Malibu, California",
+    "by": "2023",
+    "b": 200,
+    "note": "Reported as the most ever paid for a home in California.",
+    "src": [
+     "forbes_beyonce",
+     "wiki_jay"
+    ]
+   },
+   {
+    "name": "Estate",
+    "area": "Bel Air, Los Angeles",
+    "by": "2017",
+    "b": 88,
+    "src": [
+     "forbes_jay_2019"
+    ]
+   },
+   {
+    "name": "Mansion",
+    "area": "East Hampton, New York",
+    "by": "2017",
+    "b": 26,
+    "src": [
+     "forbes_jay_2019"
+    ]
+   },
+   {
+    "name": "Penthouse (Jay-Z’s)",
+    "area": "Tribeca, Manhattan",
+    "by": "2004",
+    "b": 6.85,
+    "src": [
+     "forbes_jay_2019"
+    ]
+   }
+  ],
+  "summary": {
+   "value": "≈$321M",
+   "note": "What the four homes cost when they were bought, 2004–2023 (our math). Forbes put his real estate at $50 million in 2019, before Malibu.",
+   "src": [
+    "forbes_jay_2019",
+    "forbes_beyonce",
+    "wiki_jay"
+   ]
+  },
+  "extra": [
+   {
+    "t": "The Malibu house, bought in May 2023, was designed by the architect Tadao Ando.",
+    "src": [
+     "wiki_jay",
+     "forbes_beyonce"
+    ]
+   },
+   {
+    "t": "The Bel Air and East Hampton houses were both bought in 2017.",
+    "src": [
+     "forbes_jay_2019"
+    ]
+   }
+  ]
+ },
+ "ledger": [
+  {
+   "who": "Jay-Z",
+   "what": "Sold Rocawear to Iconix",
+   "amt": "$204M",
+   "when": "2007",
+   "src": [
+    "forbes_jay_2019",
+    "wiki_jay"
+   ]
+  },
+  {
+   "who": "Jay-Z",
+   "what": "Bought Aspiro, the company behind Tidal",
+   "amt": "$56M",
+   "when": "2015",
+   "src": [
+    "wiki_jay"
+   ]
+  },
+  {
+   "who": "Jay-Z",
+   "what": "Forbes’s first billion-dollar estimate",
+   "amt": "$1B",
+   "when": "Jun 2019",
+   "src": [
+    "forbes_jay_2019"
+   ]
+  },
+  {
+   "who": "Jay-Z",
+   "what": "Sold half of Armand de Brignac to Moët Hennessy",
+   "amt": "Not disclosed",
+   "when": "Feb 2021",
+   "src": [
+    "cnbc_armand"
+   ]
+  },
+  {
+   "who": "Jay-Z & artist owners",
+   "what": "Square (now Block) buys a majority of Tidal",
+   "amt": "$297M cash + stock",
+   "when": "Mar 2021",
+   "src": [
+    "square_tidal"
+   ]
+  },
+  {
+   "who": "Jay-Z",
+   "what": "Sold a majority of D’Ussé to Bacardi",
+   "amt": "Not disclosed",
+   "when": "Feb 2023",
+   "src": [
+    "bacardi_dusse"
+   ]
+  },
+  {
+   "who": "Beyoncé",
+   "what": "Renaissance tour gross",
+   "amt": "~$600M",
+   "when": "2023",
+   "src": [
+    "forbes_beyonce_billion"
+   ]
+  },
+  {
+   "who": "Jay-Z & Beyoncé",
+   "what": "Bought a house in Malibu (reported)",
+   "amt": "$200M",
+   "when": "May 2023",
+   "src": [
+    "forbes_beyonce",
+    "wiki_jay"
+   ]
+  },
+  {
+   "who": "Jay-Z",
+   "what": "Block board pay, all in stock (SEC filing)",
+   "amt": "$320,530",
+   "when": "2025",
+   "src": [
+    "block_proxy_2026"
+   ]
+  }
+ ],
+ "trail": [
+  {
+   "when": "1969",
+   "h": "Born in Brooklyn; grows up in the Marcy Houses",
+   "t": "",
+   "src": [
+    "britannica_jay",
+    "wiki_jay"
+   ]
+  },
+  {
+   "when": "1996",
+   "h": "Releases his debut album on his own label, Roc-A-Fella",
+   "t": "",
+   "src": [
+    "forbes_jay_2019"
+   ]
+  },
+  {
+   "when": "2007",
+   "h": "Sells Rocawear, the clothing brand he started in 1999",
+   "amt": "$204M",
+   "t": "",
+   "src": [
+    "forbes_jay_2019"
+   ]
+  },
+  {
+   "when": "2008",
+   "h": "Marries Beyoncé and launches Roc Nation",
+   "t": "",
+   "src": [
+    "wiki_jay",
+    "britannica_beyonce"
+   ]
+  },
+  {
+   "when": "2010",
+   "h": "Beyoncé founds Parkwood Entertainment",
+   "t": "",
+   "src": [
+    "forbes_beyonce_billion"
+   ]
+  },
+  {
+   "when": "2012",
+   "h": "D’Ussé cognac launches with Bacardi",
+   "t": "",
+   "src": [
+    "bacardi_dusse"
+   ]
+  },
+  {
+   "when": "2014",
+   "h": "Takes full ownership of Armand de Brignac",
+   "t": "",
+   "src": [
+    "cnbc_armand"
+   ]
+  },
+  {
+   "when": "2015",
+   "h": "Buys the company behind Tidal",
+   "amt": "$56M",
+   "t": "",
+   "src": [
+    "wiki_jay"
+   ]
+  },
+  {
+   "when": "2019",
+   "h": "Forbes names him hip-hop’s first billionaire",
+   "amt": "$1B",
+   "t": "",
+   "src": [
+    "forbes_jay_2019"
+   ]
+  },
+  {
+   "when": "2021",
+   "h": "Sells half of Armand de Brignac to LVMH and most of Tidal to Square",
+   "amt": "$297M for Tidal",
+   "t": "He joined Square’s board, now Block’s, that May.",
+   "src": [
+    "cnbc_armand",
+    "square_tidal",
+    "block_proxy_2026"
+   ]
+  },
+  {
+   "when": "2023",
+   "h": "Bacardi takes a majority of D’Ussé; the couple buys in Malibu",
+   "amt": "$200M house",
+   "t": "",
+   "src": [
+    "bacardi_dusse",
+    "forbes_beyonce"
+   ]
+  },
+  {
+   "when": "2024",
+   "h": "Beyoncé launches Cécred and SirDavis",
+   "t": "",
+   "src": [
+    "forbes_cecred",
+    "forbes_sirdavis"
+   ]
+  },
+  {
+   "when": "Dec 2025",
+   "h": "Beyoncé becomes a billionaire",
+   "amt": "$1B",
+   "t": "",
+   "src": [
+    "forbes_beyonce_billion"
+   ]
+  },
+  {
+   "when": "Oct 2026",
+   "h": "Forbes puts Jay-Z at $2.8 billion",
+   "amt": "$2.8B",
+   "t": "",
+   "src": [
+    "forbes_jay"
+   ]
+  }
+ ]
+}

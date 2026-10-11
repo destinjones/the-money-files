@@ -197,3 +197,443 @@ Every numbered source on the site. Each family page numbers its own sources; the
 - Jeff Bezos: [260202-D-PM193-2205 SECWAR Arsenal of Freedom Tour - Florida (3x4 cropped on Bezos and rotated).jpg](https://commons.wikimedia.org/wiki/File:260202-D-PM193-2205_SECWAR_Arsenal_of_Freedom_Tour_-_Florida_(3x4_cropped_on_Bezos_and_rotated).jpg) by U.S. Navy PO1 Alexander Kubitza, U.S. Dept. of War (2026), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
 - MacKenzie Scott: [MacKenzie Scott.jpg](https://commons.wikimedia.org/wiki/File:MacKenzie_Scott.jpg) by Barry Bahler, U.S. DHS (2016), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
 - Lauren Sánchez Bezos: [Lauren Sanchez Headshot.jpg](https://commons.wikimedia.org/wiki/File:Lauren_Sanchez_Headshot.jpg) by Angela Kohler (2022), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+## The Zuckerberg family (File #008, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Mark_Zuckerberg): Mark Zuckerberg (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Priscilla_Chan): Priscilla Chan (accessed Oct 2026)
+3. [TODAY](https://www.today.com/today/amp/rcna76553): Zuckerberg and Chan welcome a third daughter, Aurelia (Mar 2023)
+4. [People (via AOL)](https://aol.com/mark-zuckerbergs-3-siblings-meta-141817414.html): All about Mark Zuckerberg’s sisters Randi, Donna and Arielle (Mar 28, 2025)
+5. [Wikipedia](https://en.wikipedia.org/wiki/Randi_Zuckerberg): Randi Zuckerberg (accessed Oct 2026)
+6. [Wikipedia](https://en.wikipedia.org/wiki/Donna_Zuckerberg): Donna Zuckerberg (accessed Oct 2026)
+7. [TechCrunch](https://techcrunch.com/?p=1214385): Arielle Zuckerberg, Zuck’s youngest sister, is joining Kleiner Perkins (Sep 22, 2015)
+
+### The money
+
+8. [Forbes](https://www.forbes.com/profile/mark-zuckerberg/): Real-time profile: Mark Zuckerberg ($253.3B, #6) (Oct 6, 2026)
+9. [SEC (Meta Platforms)](https://www.sec.gov/Archives/edgar/data/1326801/000162828026025532/meta-20260416.htm): 2026 proxy statement (DEF 14A) (Apr 16, 2026)
+10. [Fortune](https://fortune.com/2015/12/02/zuckerberg-charity): Mark Zuckerberg is giving away his money, but with a twist (Dec 2, 2015)
+
+### On the record
+
+11. [CNBC](https://www.cnbc.com/2017/09/22/mark-zuckerberg-selling-up-to-75-million-facebook-shares.html): Mark Zuckerberg selling up to 75 million Facebook shares (Sep 22, 2017)
+12. [SEC (Form 4)](https://www.sec.gov/Archives/edgar/data/0001326801/000095010326014647/ownership.xml): Meta share sales by Zuckerberg-controlled entities, Sept 24, 2026 (Sep 28, 2026)
+13. [Zuckerberg San Francisco General](https://zuckerbergsanfranciscogeneral.org/about-us/): About the hospital (accessed Oct 2026)
+
+### The homes
+
+14. [Bloomberg](https://www.bloomberg.com/news/articles/2026-03-02/mark-zuckerberg-breaks-miami-record-with-170-million-mansion): Zuckerberg breaks Miami record with $170 million mansion (Mar 2, 2026)
+15. [Robb Report](https://robbreport.com.my/shelter/real-estate/mark-zuckerberg-properties/): Inside Mark Zuckerberg’s US$450 million property portfolio (Apr 6, 2026)
+16. [Robb Report](https://robbreport.com/shelter/celebrity-homes/mark-zuckerberg-property-portfolio-1236712447): Inside Mark Zuckerberg’s $300 million property portfolio (accessed Oct 2026)
+17. [Fortune](https://fortune.com/article/how-many-homes-does-mark-zuckerberg-own-palo-alto-neighbors-construction-noise-headphones): Zuckerberg gave Palo Alto neighbors noise-canceling headphones over construction at his 11 homes (Dec 25, 2025)
+
+## The Ellison family (File #009, data as of Oct 6, 2026)
+
+### The family
+
+1. [Britannica](https://www.britannica.com/money/Larry-Ellison): Larry Ellison (updated Sep 4, 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Larry_Ellison): Larry Ellison (accessed Oct 2026)
+3. [Wikipedia](https://en.wikipedia.org/wiki/David_Ellison): David Ellison (accessed Oct 2026)
+4. [Wikipedia](https://en.wikipedia.org/wiki/Megan_Ellison): Megan Ellison (accessed Oct 2026)
+5. [The Hollywood Reporter](https://www.hollywoodreporter.com/news/general-news/larry-ellison-mystery-bride-unveiled-1236097890/): Lucky No. 5: Larry Ellison’s new mystery bride unveiled (Jan 3, 2025)
+
+### The money
+
+6. [Forbes](https://www.forbes.com/profile/larry-ellison/): Real-time profile: Larry Ellison ($187.4B, #8) (Oct 6, 2026)
+7. [Oracle (SEC filing)](https://www.sec.gov/Archives/edgar/data/0001341439/000119312526402816/orcl-20260925.htm): 2026 proxy statement: Ellison had pledged 413 million shares (Sep 25, 2026)
+8. [Paramount Skydance (SEC filing)](https://www.sec.gov/Archives/edgar/data/0002041610/000204161026000054/psky-20260630.htm): Quarterly report (10-Q): Ellison family control and the $46.7 billion equity commitment (quarter ended Jun 30, 2026)
+9. [Bloomberg](https://news.bgov.com/bloomberg-government-news/ellisons-pledge-to-backstop-paramount-bid-would-reshape-fortune): Ellison’s vow to backstop Paramount bid would reshape wealth (Dec 23, 2025)
+
+### On the record
+
+10. [Warner Bros. Discovery (SEC filing)](https://www.sec.gov/Archives/edgar/data/1437107/000143710726000018/exhibit991.htm): Paramount to acquire Warner Bros. Discovery (Feb 27, 2026)
+11. [NPR (via Michigan Public)](https://www.michiganpublic.org/2026-04-23/warner-bros-discovery-shareholders-approve-110b-merger-with-paramount-skydance): Warner Bros. Discovery shareholders approve $110B merger with Paramount Skydance (Apr 23, 2026)
+12. [Paramount Skydance (SEC filing)](https://www.sec.gov/Archives/edgar/data/0002041610/000110465926112829/tm2626659d2_ex99-2.htm): Paramount Skydance and Warner Bros. Discovery announce anticipated closing date (Sep 30, 2026)
+13. [Times Higher Education](https://www.timeshighereducation.com/node/739477): Ellison invests a further £890 million in Oxford science campus (Oct 14, 2025)
+
+### The homes
+
+14. [Forbes (Colombia edition, from Forbes US)](https://forbes.co/2026/02/26/actualidad/larry-ellison-se-muda-al-patio-trasero-de-trump/): Larry Ellison moves to Trump’s backyard in Palm Beach (Feb 26, 2026)
+15. [Business Insider (via AOL)](https://www.aol.com/oracle-billionaire-larry-ellisons-incredible-132632868.html): Larry Ellison’s real estate portfolio (Sep 1, 2024)
+
+## The Gates family (File #010, data as of Oct 6, 2026)
+
+### The family
+
+1. [Britannica](https://www.britannica.com/biography/Bill-Gates): Bill Gates (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Bill_Gates): Bill Gates (accessed Oct 2026)
+3. [Wikipedia](https://en.wikipedia.org/wiki/Bill_Gates_Sr.): Bill Gates Sr. (accessed Oct 2026)
+4. [Wikipedia](https://en.wikipedia.org/wiki/Mary_Maxwell_Gates): Mary Maxwell Gates (accessed Oct 2026)
+5. [Wikipedia](https://en.wikipedia.org/wiki/Mimi_Gardner_Gates): Mimi Gardner Gates (accessed Oct 2026)
+6. [Wikipedia](https://en.wikipedia.org/wiki/Melinda_French_Gates): Melinda French Gates (accessed Oct 2026)
+7. [TODAY](https://www.today.com/today/amp/rcna190567): Bill Gates says he’s ‘lucky to have a serious girlfriend.’ What to know about Paula Hurd (Feb 4, 2025)
+
+### The money
+
+8. [Forbes](https://www.forbes.com/profile/bill-gates/): Real-time profile: Bill Gates ($114.2B, #17) (Oct 3, 2026)
+9. [Forbes](https://www.forbes.com/profile/melinda-french-gates/): Real-time profile: Melinda French Gates ($34.5B) (Oct 5, 2026)
+10. [Forbes](https://www.forbes.com/sites/forbeswealthteam/article/bill-gates/): Bill Gates’ Road To Riches: Behind The Billions (asset breakdown) (Nov 1, 2022)
+11. [Bloomberg (via Business Standard)](https://www.business-standard.com/article/companies/gates-divorce-casts-harsh-glare-on-trusted-170-billion-money-manager-121062200089_1.html): Gates divorce casts harsh glare on trusted $170 billion money manager (Jun 22, 2021)
+12. [Bloomberg (via Air Freight News)](https://airfreight.news/articles/full/bill-gates-sells-940-million-of-cn-rail-stock-trimming-stake-to-9): Bill Gates sells $940 million of CN Rail stock, trimming stake to 9% (May 16, 2022)
+13. [Wikipedia](https://en.wikipedia.org/wiki/Four_Seasons_Hotels_and_Resorts): Four Seasons Hotels and Resorts (ownership) (accessed Oct 2026)
+14. [24/7 Wall St.](https://247wallst.com/investing/2026/08/24/gates-backed-cascade-sees-opportunity-in-republic-services-that-half-of-wall-street-misses/): Gates-backed Cascade sees opportunity in Republic Services (Form 4 filings) (Aug 24, 2026)
+15. [The Land Report](https://landreport.com/land-report-100): The Land Report 100: America’s biggest landowners (2026) (2026)
+
+### On the record
+
+16. [Gates Foundation](https://www.gatesfoundation.org/about/foundation-fact-sheet): Foundation fact sheet (accessed Oct 2026)
+17. [Gates Foundation](https://www.gatesfoundation.org/ideas/articles/next-chapter): Bill Gates: My new deadline: 20 years to give away virtually all my wealth (May 8, 2025)
+18. [Fortune (Bloomberg)](https://fortune.com/2021/05/06/bill-melinda-gates-2-billion-divorce-settlement): Cascade moves more than $2 billion of stock to Melinda as the divorce is announced (May 6, 2021)
+19. [Forbes](https://www.forbes.com/sites/mollybohannon/2024/05/13/melinda-french-gates-leaving-gates-foundation-after-more-than-20-years/): Melinda French Gates leaving Gates Foundation after more than 20 years (May 13, 2024)
+20. [Forbes](https://www.forbes.com/sites/monicahunter-hart/2025/12/23/bill-gates-gave-billions-to-his-ex-wifes-foundation-last-year-and-merely-millions-to-his-own/): Why Bill Gates gave billions to his ex-wife’s foundation last year (tax filings) (Dec 23, 2025)
+
+### The homes
+
+21. [Fortune](https://fortune.com/2026/02/08/bill-gates-house-for-sale-xanadu-2-seattle-washington-reversal-on-downsizing): Bill Gates lists a $4.8 million house next to his Medina mansion (Feb 8, 2026)
+22. [Forbes Brasil](https://forbes.com.br/forbeslife/2021/05/conheca-as-propriedades-que-estao-em-jogo-no-divorcio-de-bill-e-melinda-gates/): As propriedades que estão em jogo no divórcio de Bill e Melinda Gates (May 6, 2021)
+
+## The Walton family (File #014, data as of Oct 6, 2026)
+
+### The family
+
+1. [Walmart](https://corporate.walmart.com/about/sam-walton): Sam Walton (accessed Oct 2026)
+2. [Walmart](https://corporate.walmart.com/news/2007/04/19/helen-robson-walton-1919-2007): Helen Robson Walton: 1919–2007 (Apr 19, 2007)
+3. [Wikipedia](https://en.wikipedia.org/wiki/Helen_Walton): Helen Walton (accessed Oct 2026)
+4. [Wikipedia](https://en.wikipedia.org/wiki/Rob_Walton): Rob Walton (accessed Oct 2026)
+5. [Wikipedia](https://en.wikipedia.org/wiki/John_T._Walton): John T. Walton (accessed Oct 2026)
+6. [Wikipedia](https://en.wikipedia.org/wiki/Alice_Walton): Alice Walton (accessed Oct 2026)
+7. [Wikipedia](https://en.wikipedia.org/wiki/Lukas_Walton): Lukas Walton (accessed Oct 2026)
+8. [Wikipedia](https://en.wikipedia.org/wiki/Greg_Penner): Greg Penner (accessed Oct 2026)
+9. [Walmart](https://corporate.walmart.com/about/board-of-directors/gregory-penner): Board of directors: Gregory B. Penner (accessed Oct 2026)
+10. [Denver Broncos](https://denverbroncos.com/team/front-office-roster/greg-penner): Greg Penner, Owner & CEO (accessed Oct 2026)
+11. [Colorado Public Radio](https://www.cpr.org/2022/06/08/who-are-the-waltons-and-the-penners-the-likely-next-owners-of-the-denver-broncos/): Who are the Waltons and the Penners, the likely next owners of the Denver Broncos? (Jun 8, 2022)
+
+### The money
+
+12. [Forbes](https://www.forbes.com/profile/rob-walton/): Real-time profile: Rob Walton & family ($131.6B, #12) (Oct 6, 2026)
+13. [Forbes](https://www.forbes.com/profile/jim-walton/): Real-time profile: Jim Walton & family ($125.8B, #13) (Oct 3, 2026)
+14. [Forbes](https://www.forbes.com/profile/alice-walton/): Real-time profile: Alice Walton ($118.3B, #14) (Oct 6, 2026)
+15. [Forbes](https://www.forbes.com/profile/lukas-walton/): Real-time profile: Lukas Walton ($44.2B, #46) (Sep 19, 2026)
+16. [Forbes](https://www.forbes.com/sites/chrisdobstaff/2026/07/07/forbes-daily-americas-wealthiest-family-is-richer-than-ever/): Forbes Daily: Waltons increase lead as America’s wealthiest family (Jul 7, 2026)
+17. [Business Insider (via AOL)](https://www.aol.com/walmart-heirs-worth-330-billion-084602186.html): The Walmart heirs are worth $330 billion. Sam Walton’s smart move in the 1950s is a big reason why. (Aug 25, 2024)
+18. [Walmart](https://corporate.walmart.com/about/history): Walmart history (accessed Oct 2026)
+19. [Walmart](https://corporate.walmart.com/news/2025/11/20/walmart-to-transfer-stock-exchange-listing-to-nasdaq): Walmart to transfer stock exchange listing to Nasdaq (Nov 20, 2025)
+
+### On the record
+
+20. [SEC](https://www.sec.gov/Archives/edgar/data/0000104169/000114036124049960/primary_doc.xml): Schedule 13D: Walton Enterprises and Walton Family Holdings Trust (Walmart) (Dec 19, 2024)
+21. [SEC](https://www.sec.gov/Archives/edgar/data/0000104169/000114036126007628/primary_doc.xml): Schedule 13D/A, Amendment No. 1 (Walmart) (Mar 3, 2026)
+22. [SEC](https://www.sec.gov/Archives/edgar/data/104169/000114036126007628/ef20066973_ex-6.htm): Schedule 13D/A, Exhibit 6: family members’ Walmart shares (Mar 3, 2026)
+23. [SEC](https://www.sec.gov/Archives/edgar/data/0000104169/000119312526173673/wmt-20260423.htm): Walmart 2026 proxy statement (DEF 14A) (Apr 23, 2026)
+24. [AP (via News4JAX)](https://www.news4jax.com/sports/2022/08/09/broncos-sale-to-walton-group-unanimously-oked-by-nfl-owners/): Broncos sale to Walton group unanimously OK’d by NFL owners (Aug 9, 2022)
+25. [Fortune (with Bloomberg)](https://www.fortune.com/2024/02/26/walmart-walton-family-sells-1-5-billion-stock/): Walmart’s Walton family sells $1.5 billion of stock (Feb 26, 2024)
+26. [Talk Business & Politics](https://talkbusiness.net/2025/05/jim-walton-reduces-walmart-holdings-by-more-than-1-5-billion/): Walton family reduce Walmart holdings by more than $1.5 billion (May 20, 2025)
+27. [Institutional Investor](https://www.institutionalinvestor.com/article/b14z9y6p6vggjz/building-an-american-art-mecca-in-arkansas): Building an American art mecca in Arkansas (Jul 9, 2015)
+
+## The Arnault family (File #015, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Bernard_Arnault): Bernard Arnault (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/H%C3%A9l%C3%A8ne_Mercier-Arnault): Hélène Mercier-Arnault (accessed Oct 2026)
+3. [Wikipedia](https://en.wikipedia.org/wiki/Delphine_Arnault): Delphine Arnault (accessed Oct 2026)
+4. [Wikipedia](https://en.wikipedia.org/wiki/Antoine_Arnault): Antoine Arnault (accessed Oct 2026)
+5. [Wikipedia](https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Arnault): Frédéric Arnault (accessed Oct 2026)
+6. [LVMH](https://www.lvmh.com/en/our-group/governance/bernard-arnault): Bernard Arnault, Chairman and CEO (accessed Oct 2026)
+7. [Reuters (via FashionNetwork)](https://us.fashionnetwork.com/news/Lvmh-roles-held-by-bernard-arnault-s-children%2C1679353.html): LVMH roles held by Bernard Arnault’s children (Nov 14, 2024)
+8. [FashionUnited](https://fashionunited.uk/news/people/bertrand-deputy-ceo-of-louis-vuitton-frederic-arnault-ceo-of-loro-piana-and-angeloglou-at-the-helm-of-christian-dior-couture/2025031280596): Frédéric Arnault named CEO of Loro Piana in LVMH reshuffle (Mar 12, 2025)
+9. [The Edge Malaysia](https://theedgemalaysia.com/node/801105): Billionaire Bernard Arnault’s children speak at LVMH annual meeting (2026)
+
+### The money
+
+10. [Forbes](https://www.forbes.com/profile/bernard-arnault/): Real-time profile: Bernard Arnault & family ($117.5B, #16) (Oct 6, 2026)
+11. [Forbes](https://www.forbes.com/sites/aliciapark/2026/04/13/lvmh-founder-bernard-arnaults-fortune-falls-50-billion-this-year/): LVMH founder Bernard Arnault’s fortune falls $50 billion this year (Apr 13, 2026)
+12. [LVMH](https://www.lvmh.com/static/letter-to-shareholders-january-2026/): Letter to shareholders: 2025 results (Jan 2026)
+13. [Luxury Tribune](https://www.luxurytribune.com/en/the-arnault-family-exceeds-50-of-lvmhs-capital): The Arnault family exceeds 50% of LVMH’s capital (AMF filings) (Feb 25, 2026)
+14. [Bloomberg (via Business Standard)](https://www.business-standard.com/world-news/arnault-tightens-control-on-lvmh-with-simpler-holding-structure-126092401515_1.html): Arnault tightens control on LVMH with simpler holding structure (Sep 24, 2026)
+
+### On the record
+
+15. [Reuters (via Malay Mail)](https://malaymail.com/news/money/2026/01/26/lvmh-investors-press-for-clarity-as-bernard-arnaults-succession-plan-remains-elusive/206871): LVMH investors press for clarity as Bernard Arnault’s succession plan remains elusive (Jan 26, 2026)
+16. [Bloomberg (via The Business Standard)](https://www.tbsnews.net/node/581558): The world’s richest person is trying to head off a succession battle (Feb 7, 2023)
+17. [AFP (via Fortuneo)](https://bourse.fortuneo.fr/actualites/foot-le-rachat-du-paris-fc-par-la-famille-arnault-officialise-4269333): Foot : le rachat du Paris FC par la famille Arnault officialisé (Nov 29, 2024)
+
+## The Murdoch family (File #016, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Rupert_Murdoch): Rupert Murdoch (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Succession_of_Rupert_Murdoch): Succession of Rupert Murdoch (accessed Oct 2026)
+3. [AP (via NY1)](https://ny1.com/nyc/all-boroughs/ap-top-news/2023/09/21/who-are-rupert-murdochs-children-what-to-know-about-the-media-magnates-successor-and-family): Who are Rupert Murdoch’s children? What to know about the media magnate’s successor and family (Sep 21, 2023)
+4. [Wikipedia](https://en.wikipedia.org/wiki/Prudence_MacLeod): Prudence MacLeod (accessed Oct 2026)
+5. [Wikipedia](https://en.wikipedia.org/wiki/Elisabeth_Murdoch_(businesswoman)): Elisabeth Murdoch (businesswoman) (accessed Oct 2026)
+6. [Wikipedia](https://en.wikipedia.org/wiki/Lachlan_Murdoch): Lachlan Murdoch (accessed Oct 2026)
+7. [Wikipedia](https://en.wikipedia.org/wiki/James_Murdoch): James Murdoch (accessed Oct 2026)
+
+### The money
+
+8. [Forbes](https://www.forbes.com/profile/rupert-murdoch/): Real-time profile: Rupert Murdoch & family ($24.5B, #103) (Oct 3, 2026)
+9. [Forbes](https://www.forbes.com/sites/martinadilicosa/2025/09/10/how-much-are-the-murdoch-kids-worth-post-succession-battle/): Here’s how much each of Rupert Murdoch’s kids could be worth (Sep 10, 2025)
+10. [Forbes](https://www.forbes.com/sites/antoniopequenoiv/2025/09/08/murdochs-resolve-succession-dispute-with-multibillion-dollar-deal-favoring-lachlan/): Murdochs resolve succession dispute with multibillion-dollar deal favoring Lachlan (Sep 8, 2025)
+11. [Forbes](https://www.forbes.com/sites/maryroeloffs/2026/05/20/james-murdoch-buys-vox-new-york-magazine-portfolio-for-300m-charging-into-his-fathers-industry/): James Murdoch buys Vox, New York magazine portfolio for $300M (May 20, 2026)
+12. [Forbes](https://www.forbes.com/sites/jemimamcevoy/2021/12/11/rupert-murdoch-just-bought-a-200-million-ranch-here-are-his-other-mega-properties/): Rupert Murdoch just bought a $200 million ranch: here are his other mega-properties (Dec 11, 2021)
+
+### On the record
+
+13. [SEC: Fox Corp 8-K exhibit 99.1](https://www.sec.gov/Archives/edgar/data/1754301/000119312525198394/d90919dex991.htm): Fox Corporation announces resolution of Murdoch Family Trust matter (Sep 8, 2025)
+14. [SEC: Fox Corp 8-K](https://www.sec.gov/Archives/edgar/data/1754301/000119312525198394/d90919d8k.htm): Trust beneficiaries to offer about 16.9 million Class B shares (FOXA, FOX on Nasdaq) (Sep 8, 2025)
+15. [SEC: Fox Corp 8-K](https://www.sec.gov/Archives/edgar/data/1754301/000119312525200134/d91736d8k.htm): 16,835,016 Class B shares sold at $53.46; new stockholders agreement (Sep 10, 2025)
+16. [SEC: News Corp 8-K](https://www.sec.gov/Archives/edgar/data/1564708/000110465925089069/tm2521115d3_8k.htm): 14,071,293 Class B shares sold at $31.98; new stockholders agreement (NWSA, NWS on Nasdaq) (Sep 10, 2025)
+17. [Reuters (via Cyprus Mail)](https://cyprus-mail.com/2025/09/09/real-life-succession-ends-lachlan-murdoch-takes-control-and-siblings-take-cash): Real-life ‘Succession’ ends: Lachlan Murdoch takes control and siblings take cash (Sep 9, 2025)
+18. [AP (via Anchorage Daily News)](https://www.adn.com/nation-world/2025/09/08/murdoch-family-resolves-dispute-over-media-empire-ownership-in-billion-dollar-deal/): Murdoch family resolves dispute over media empire in multibillion-dollar succession deal (Sep 8, 2025)
+19. [Fortune](https://fortune.com/2025/09/08/rupert-murdoch-settlement-trust-lachlan-james-fox-news-wall-street-journal): Rupert Murdoch’s real-life ‘Succession’ battle ends in a multibillion-dollar deal (Sep 8, 2025)
+20. [Forbes](https://www.forbes.com/sites/maryroeloffs/2024/12/09/rupert-murdochs-plan-to-protect-his-outlets-right-wing-slant-rejected-by-court-report-says/): Lachlan Murdoch can’t have sole control of media empire, Nevada court reportedly rules (Dec 9, 2024)
+
+## The Kardashian-Jenner family (File #017, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Kardashian_family): Kardashian family (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Kim_Kardashian_West): Kim Kardashian (accessed Oct 2026)
+3. [Wikipedia](https://en.wikipedia.org/wiki/Kris_Jenner): Kris Jenner (accessed Oct 2026)
+4. [Wikipedia](https://en.wikipedia.org/wiki/Robert_Kardashian): Robert Kardashian (accessed Oct 2026)
+5. [Wikipedia](https://en.wikipedia.org/wiki/Caitlyn_Jenner): Caitlyn Jenner (accessed Oct 2026)
+6. [Wikipedia](https://en.wikipedia.org/wiki/Kourtney_Kardashian): Kourtney Kardashian Barker (accessed Oct 2026)
+7. [Wikipedia](https://en.wikipedia.org/wiki/Khlo%C3%A9_Kardashian): Khloé Kardashian (accessed Oct 2026)
+8. [Wikipedia](https://en.wikipedia.org/wiki/Rob_Kardashian): Rob Kardashian (accessed Oct 2026)
+9. [Wikipedia](https://en.wikipedia.org/wiki/Kendall_Jenner): Kendall Jenner (accessed Oct 2026)
+10. [Wikipedia](https://en.wikipedia.org/wiki/Kylie_Jenner): Kylie Jenner (accessed Oct 2026)
+11. [Wikipedia](https://en.wikipedia.org/wiki/Kanye_West): Kanye West (accessed Oct 2026)
+
+### The money
+
+12. [Forbes](https://www.forbes.com/profile/kim-kardashian/?list=celebrities): Real-time profile: Kim Kardashian ($1.9B) (Oct 6, 2026)
+13. [Forbes](https://www.forbes.com/profile/kylie-jenner/): Profile: Kylie Jenner ($670M; #52 on 2025 Richest Self-Made Women) (Jun 3, 2025)
+14. [Forbes](https://www.forbes.com/profile/kanye-west/): Profile: Kanye West ($400M) (Aug 31, 2026)
+15. [Forbes](https://www.forbes.com/profile/kris-jenner/): Profile: Kris Jenner (accessed Oct 2026)
+16. [Forbes](https://www.forbes.com/sites/lisettevoytko/2022/10/14/how-kris-jenner-made-the-kardashians-famous-rich-and-insanely-influential/): How Kris Jenner made the Kardashians famous, rich and insanely influential (Oct 14, 2022)
+17. [Forbes](https://www.forbes.com/sites/maddieberg/2021/04/06/kim-kardashian-west-is-officially-a-billionaire/): Kim Kardashian West is officially a billionaire (Apr 6, 2021)
+18. [Forbes](https://www.forbes.com/sites/chasewithorn/2023/07/19/kim-kardashian-just-got-500-million-richer-thanks-to-skims/): Kim Kardashian just got $500 million richer thanks to Skims (Jul 19, 2023)
+19. [Forbes](https://forbes.com/sites/dereksaul/2022/09/07/kim-kardashian-launches-private-equity-firm-skky/amp): Kim Kardashian launches private equity firm SKKY (Sep 7, 2022)
+20. [Bloomberg (via Bloomberg Law)](https://news.bloomberglaw.com/private-equity/kim-kardashians-skims-valued-at-5-billion-in-new-funding-round): Kim Kardashian’s Skims valued at $5 billion in new funding round (Nov 12, 2025)
+21. [Bloomberg (via Gulf News)](https://gulfnews.com/business/markets/kylie-jenner-considers-buying-back-cotys-600-million-stake-in-her-makeup-brand-1.97838859): Kylie Jenner considers buying back Coty’s $600 million stake in her makeup brand (Aug 31, 2023)
+22. [Forbes Argentina](https://www.forbesargentina.com/negocios/el-imperio-kardashian-uno-uno-empresas-familia-paso-reality-negocios-multimillonarios-n91631): The Kardashian empire, company by company (in Spanish) (May 30, 2026)
+
+### On the record
+
+23. [SEC: Coty 8-K exhibit 99.1](https://www.sec.gov/Archives/edgar/data/1024305/000119312519294319/d837125dex991.htm): Coty to buy 51% of Kylie Jenner’s beauty business for $600 million (Nov 18, 2019)
+24. [Coty (via Business Wire)](https://www.businesswire.com/news/home/20200106005914/en/Coty-and-Kylie-Jenner-Commence-Strategic-Partnership): Coty and Kylie Jenner commence strategic partnership (deal closed) (Jan 6, 2020)
+25. [SEC: Coty exhibit 99.1](https://www.sec.gov/Archives/edgar/data/1024305/000095012320006453/d947698dex991.htm): Coty to buy 20% of Kim Kardashian West’s beauty business for $200 million (Jun 29, 2020)
+26. [Forbes](https://www.forbes.com/sites/siladityaray/2022/11/30/kim-and-kanye-reach-divorce-settlement-heres-what-to-know/): Kim and Kanye reach divorce settlement: here’s what to know (Nov 30, 2022)
+
+### The homes
+
+27. [W Magazine](https://www.wmagazine.com/culture/kim-kardashian-real-estate-malibu-beach-house-70-million): Kim Kardashian buys Cindy Crawford’s former Malibu estate for $70.4 million (Sep 21, 2022)
+28. [People (via AOL)](https://www.aol.com/entertainment/kanye-west-sells-malibu-home-010322067.html): Kanye West sells his Malibu home for $21 million (Aug 22, 2024)
+29. [Inman](https://inman.com/2020/04/28/kylie-jenner-buys-beverly-hills-spec-mansion-for-37m): Kylie Jenner pays $36.5 million for a Holmby Hills mansion (Apr 28, 2020)
+
+## The Swift family (File #018, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Taylor_Swift): Taylor Swift (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Austin_Swift): Austin Swift (accessed Oct 2026)
+3. [Wikipedia](https://en.wikipedia.org/wiki/Travis_Kelce): Travis Kelce (accessed Oct 2026)
+4. [Wikipedia](https://en.wikipedia.org/wiki/Jason_Kelce): Jason Kelce (accessed Oct 2026)
+5. [Wikipedia](https://en.wikipedia.org/wiki/Donna_Kelce): Donna Kelce (accessed Oct 2026)
+6. [Bloomberg (via Bloomberg Law)](https://news.bloomberglaw.com/new-york-brief/taylor-swift-and-travis-kelce-marry-in-star-studded-wedding): Taylor Swift and Travis Kelce marry in star-studded wedding (Jul 3, 2026)
+7. [FOX 10 Phoenix](https://fox10phoenix.com/news/new-era-taylor-swift-travis-kelce-married): Taylor Swift and Travis Kelce are married, publicist says (Jul 3, 2026)
+
+### The money
+
+8. [Forbes](https://www.forbes.com/profile/taylor-swift/): Real-time profile: Taylor Swift ($2B) (Oct 6, 2026)
+9. [Forbes](https://www.forbes.com/sites/mattcraig/2026/07/01/how-taylor-swifts-net-worth-has-more-than-doubled-since-she-became-a-billionaire/): How Taylor Swift’s net worth has more than doubled since she became a billionaire (Jul 1, 2026)
+10. [Forbes](https://www.forbes.com/profile/travis-kelce/): Profile: Travis Kelce (No. 8 on the 2025 highest-paid NFL players list) (accessed Oct 2026)
+11. [Billboard](https://www.billboard.com/pro/taylor-swift-regains-control-master-recordings-shamrock/): Taylor Swift buys back her masters from Shamrock, reclaiming her first six albums (May 30, 2025)
+12. [Variety (via AOL)](https://www.aol.com/official-taylor-swift-eras-tour-153100263.html): It’s official: Taylor Swift’s Eras Tour is history’s first $2 billion tour (Dec 9, 2024)
+13. [TheWrap](https://thewrap.com/kelce-brothers-new-heights-wondery-podcast-deal): Kelce brothers ink New Heights podcast deal with Amazon’s Wondery worth over $100 million (Aug 27, 2024)
+14. [AP (via ABC7 New York)](https://abc7ny.com/post/activist-investor-group-includes-travis-kelce-aims-revive-struggling-flags/18056246/): Activist investor group that includes Travis Kelce aims to revive struggling Six Flags (Oct 22, 2025)
+15. [Six Flags (Business Wire)](https://www.businesswire.com/news/home/20260310579873/en): Six Flags announces strategic partnership with NFL legend Travis Kelce (Mar 10, 2026)
+
+### On the record
+
+16. [NBC New York](https://www.nbcnewyork.com/news/sports/nfl/travis-kelce-returning-chiefs-14th-season/6474229/): Travis Kelce returning to Chiefs on 1-year deal for 14th NFL season: Reports (Mar 9, 2026)
+17. [Rolling Stone](https://www.rollingstone.com/music/music-news/taylor-swift-scooter-braun-scott-borchetta-explainer-853424/): Taylor Swift vs. Scooter Braun and Scott Borchetta: what happened? (2019)
+18. [Hypebot](https://www.hypebot.com/hypebot/2019/07/borchetta-bites-back-taylor-its-time-for-some-truth-and-shares-contract-details.html): Borchetta bites back: Taylor, “It’s time for some truth” (Jul 1, 2019)
+
+### The homes
+
+19. [Business Insider (via Yahoo)](https://sg.news.yahoo.com/check-taylor-swifts-150-million-144317148.html): Check out Taylor Swift’s $100 million real estate portfolio (May 2, 2024)
+20. [Robb Report](https://robbreport.com.my/?p=119714): Inside Taylor Swift’s US$150 million property portfolio (Aug 20, 2025)
+
+## The Carter family (File #020, data as of Oct 6, 2026)
+
+### The family
+
+1. [Britannica](https://www.britannica.com/biography/JAY-Z): JAY-Z (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Jay-Z): Jay-Z (accessed Oct 2026)
+3. [Britannica](https://www.britannica.com/biography/Beyonce): Beyoncé (accessed Oct 2026)
+4. [Wikipedia](https://en.wikipedia.org/wiki/Tina_Knowles): Tina Knowles (accessed Oct 2026)
+5. [Wikipedia](https://en.wikipedia.org/wiki/Mathew_Knowles): Mathew Knowles (accessed Oct 2026)
+6. [Wikipedia](https://en.wikipedia.org/wiki/Solange_Knowles): Solange Knowles (accessed Oct 2026)
+
+### The money
+
+7. [Forbes](https://www.forbes.com/profile/jay-z/): Real-time profile: Jay-Z ($2.8B) (Oct 6, 2026)
+8. [Forbes](https://www.forbes.com/profile/beyonce-knowles/): Real-time profile: Beyoncé Knowles-Carter ($1B) (Oct 6, 2026)
+9. [Forbes](https://www.forbes.com/sites/mattcraig/2025/12/23/beyonce-is-now-a-billionaire/): Beyoncé Is Now A Billionaire (Dec 29, 2025)
+10. [Forbes](https://www.forbes.com/sites/zackomalleygreenburg/2019/06/03/jay-z-billionaire-worth/): Artist, Icon, Billionaire: How Jay-Z Created His $1 Billion Fortune (Jun 3, 2019)
+11. [Forbes](https://www.forbes.com/sites/braedonmontgomery/2025/08/31/beyonc-turns-haircare-into-big-business-with-ccred/): Beyoncé Turns Haircare Into Big Business With Cécred (Aug 31, 2025)
+12. [Forbes](https://www.forbes.com/sites/rachelking/2024/08/20/inside-beyonces-new-whisky-with-moet-hennessy-sirdavis/): Beyoncé Launches New Whisky With Moët Hennessy: SirDavis (Aug 20, 2024)
+13. [Block](https://investors.block.xyz/investor-news/news-details/2025/Block-Announces-Ticker-Symbol-Change-to-XYZ-To-Report-Fourth-Quarter-Results/default.aspx): Block announces ticker symbol change to XYZ (Jan 9, 2025)
+
+### On the record
+
+14. [CNBC](https://www.cnbc.com/2021/02/22/lvmh-buys-50percent-stake-in-jay-zs-champagne-brand-armand-de-brignac.html): LVMH buys 50% stake in Jay-Z’s champagne brand Armand de Brignac (Feb 22, 2021)
+15. [Bacardi (press release via AAP)](https://www.aap.com.au/aapreleases/cision20230203ae05278): Shawn “JAY-Z” Carter and Bacardi redefine the next chapter of the D’USSÉ brand (Feb 2023)
+16. [Square](https://squareup.com/us/en/press/tidal): Square, Inc. announces plans to acquire majority ownership stake in TIDAL (Mar 4, 2021)
+17. [SEC (Block, Inc.)](https://www.sec.gov/Archives/edgar/data/0001512673/000162828026027203/sq-20260423.htm): 2026 proxy statement (DEF 14A): directors and their pay (Apr 2026)
+
+## The Donaldson family (File #022, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/MrBeast): MrBeast (accessed Oct 2026)
+2. [Biography.com](https://www.biography.com/business-leaders/mrbeast): MrBeast: biography (updated Jul 22, 2026)
+
+### The money
+
+3. [Forbes](https://www.forbes.com/profile/mrbeast/): Profile: MrBeast ($300M in 2026 Top Creators earnings, #1) (Jun 23, 2026)
+4. [Forbes](https://www.forbes.com/sites/pr/2026/06/23/forbes-unveils-2026-top-creators-list-as-collective-earnings-surpass-1-billion-for-the-first-time/): Forbes unveils 2026 Top Creators list as collective earnings surpass $1 billion (Jun 23, 2026)
+5. [Tubefilter](https://www.tubefilter.com/2026/06/23/forbes-top-50-creators-2026-1-billion/): Forbes Top 50 Creators 2026: more than $1 billion in earnings (Jun 23, 2026)
+6. [Forbes](https://www.forbes.com/sites/chloesorvino/2022/11/30/could-mrbeast-be-the-first-youtuber-billionaire/): Could MrBeast be the first YouTuber billionaire? (Nov 30, 2022)
+7. [Bloomberg (via InvestmentNews)](https://investmentnews.com/industry-news/mrbeast-investors-more-likely-to-gain-from-chocolate-than-videos/259646): MrBeast investors more likely to gain from chocolate than videos (Mar 11, 2025)
+8. [Wikipedia](https://en.wikipedia.org/wiki/Feastables): Feastables (accessed Oct 2026)
+9. [Forbes](https://www.forbes.com/sites/maryroeloffs/2024/09/16/mrbeast-logan-paul-and-ksi-launch-lunchables-competitor-lunchly-heres-what-to-know/): What we know about Lunchly, the new food brand from MrBeast, Logan Paul and KSI (Sep 16, 2024)
+10. [Wikipedia](https://en.wikipedia.org/wiki/Lunchly): Lunchly (accessed Oct 2026)
+11. [Forbes](https://www.forbes.com/sites/maryroeloffs/2024/03/18/mrbeast-game-show-from-amazon-promises-5-million-jackpot-largest-ever-on-tv/): MrBeast game show from Amazon promises $5 million jackpot, the largest ever on TV (Mar 18, 2024)
+12. [Wikipedia](https://en.wikipedia.org/wiki/Beast_Games): Beast Games (accessed Oct 2026)
+13. [Wikipedia](https://en.wikipedia.org/wiki/MrBeast_Burger): MrBeast Burger (accessed Oct 2026)
+
+### On the record
+
+14. [Bitmine Immersion Technologies (press release via AAP)](https://www.aap.com.au/aapreleases/cision20260115ae64217): Bitmine (BMNR) announces $200 million investment in Beast Industries (Jan 15, 2026)
+
+## The James family (File #023, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/LeBron_James): LeBron James (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Savannah_James): Savannah James (accessed Oct 2026)
+3. [Sports Illustrated](https://www.si.com/onsi/athlete-lifestyle/news/who-is-zhuri-james-lebron-james-daughter): Who is Zhuri James, LeBron James’s daughter? (accessed Oct 2026)
+4. [Wikipedia](https://en.wikipedia.org/wiki/Bronny_James): Bronny James (accessed Oct 2026)
+
+### The money
+
+5. [Forbes](https://www.forbes.com/profile/lebron-james/): Real-time profile: LeBron James ($1.4B) (Oct 5, 2026)
+6. [Forbes](https://www.forbes.com/sites/kirkogunrinde/2025/10/07/lebron-james-big-decision-day-announcement-is-a-new-hennessey-deal/): LeBron James’s big ‘Decision Day’ announcement is a new Hennessy deal (Oct 7, 2025)
+7. [Forbes](https://www.forbes.com/sites/chasewithorn/2022/06/02/lebron-james-is-officially-a-billionaire/): LeBron James is officially a billionaire (Jun 2, 2022)
+8. [Forbes](https://www.forbes.com/sites/justinbirnbaum/2023/02/08/how-lebron-james-became-the-nbas-top-scorer-highest-paid-player-and-first-billionaire/): How LeBron James became the NBA’s top scorer, highest-paid player and first active billionaire (Feb 8, 2023)
+9. [Forbes](https://www.forbes.com/sites/kurtbadenhausen/2018/11/20/how-lebron-james-built-a-net-worth-of-450-million/): How LeBron James built a net worth of $450 million (Nov 20, 2018)
+10. [CNBC (via NBC Los Angeles)](https://www.nbclosangeles.com/news/business/money-report/lebron-james-springhill-to-merge-with-the-kardashians-producer-fulwell-73/3563102/?amp=1): LeBron James’ SpringHill to merge with ‘The Kardashians’ producer Fulwell 73 (Nov 18, 2024)
+
+### On the record
+
+11. [ESPN (via ABC7 News)](https://abc7news.com/19569047/): LeBron James to join the Philadelphia 76ers, will sign 2-year, $8 million contract (Jul 24, 2026)
+12. [Sports Illustrated](https://www.si.com/nba/contract-details-bronny-james-lakers-revealed-report): Contract details for Bronny James’s multiyear deal with the Lakers revealed (Jul 3, 2024)
+
+## The Jordan family (File #024, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Michael_Jordan): Michael Jordan (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/James_R._Jordan_Sr.): James R. Jordan Sr. (accessed Oct 2026)
+3. [Wikipedia](https://en.wikipedia.org/wiki/Yvette_Prieto): Yvette Prieto (accessed Oct 2026)
+4. [Simon & Schuster](https://www.simonandschuster.com/authors/Deloris-Jordan/1671281): Deloris Jordan: author page (accessed Oct 2026)
+5. [Simon & Schuster](https://www.simonandschuster.co.in/authors/Roslyn-M-Jordan/1671282): Roslyn M. Jordan: author page (accessed Oct 2026)
+6. [Marie Claire](https://www.marieclaire.com/celebrity/a32405907/michael-jordan-kids/): Who are Michael Jordan’s children, Jeffrey, Marcus, Jasmine, Victoria and Ysabel? (Jul 21, 2020)
+7. [Marie Claire](https://marieclaire.com/celebrity/a32367794/juanita-vanoy-michael-jordan-ex-wife): Juanita Vanoy and Michael Jordan were married for 17 years (Jul 20, 2020)
+
+### The money
+
+8. [Forbes](https://www.forbes.com/profile/michael-jordan/): Real-time profile: Michael Jordan ($4.7B, #367 on the 2026 Forbes 400) (Oct 6, 2026)
+9. [Fortune (Associated Press)](https://www.fortune.com/2023/06/16/michael-jordan-selling-control-charlotte-hornets-nba-gabe-plotkin-rick-schnall): Michael Jordan is selling control of the Charlotte Hornets (Jun 16, 2023)
+10. [CBS Sports](https://www.cbssports.com/nba/news/michael-jordans-13-year-run-as-hornets-owner-ends-as-franchise-completes-3-billion-sale/): Michael Jordan’s 13-year run as Hornets owner ends as franchise completes $3 billion sale (Aug 3, 2023)
+11. [Associated Press (via Food Manufacturing)](https://www.foodmanufacturing.com/home/news/21101292/taking-his-shot-jordan-nba-owners-enter-tequila-business): Taking his shot: Jordan, NBA owners enter tequila business (Sep 18, 2019)
+12. [Fox Business](https://www.foxbusiness.com/sports/derek-jeter-serena-williams-all-star-athletes-join-cincoro-tequila-founders-including-michael-jordan): Derek Jeter, Serena Williams, other athletes join Cincoro Tequila founders (May 2, 2024)
+
+### On the record
+
+13. [Associated Press (via WTVY)](https://www.wtvy.com/2025/12/11/nascar-settles-federal-antitrust-case-filed-by-2-its-teams-one-owned-by-nba-great-michael-jordan): NASCAR settles federal antitrust case filed by 2 of its teams, one owned by Michael Jordan (Dec 11, 2025)
+14. [Marie Claire](https://marieclaire.com/celebrity/a32448732/juanita-vanoy-divorce-money-michael-jordan): Michael Jordan and Juanita Vanoy’s divorce was among the most expensive in history (Jul 19, 2020)
+
+### The homes
+
+15. [ABC7 Chicago](https://abc7chicago.com/post/michael-jordan-mansion-sold-what-led-chicago-bulls-legends-highland-park-home-selling-below-29m-asking-price/15648192/): Michael Jordan mansion sold well below $29M asking price (Dec 13, 2024)
+16. [Sports Illustrated](https://www.si.com/onsi/athlete-lifestyle/real-estate/michael-jordan-s-mansion-sells-for-shocking-price-after-over-12-years-on-market): Michael Jordan’s mansion sells after more than 12 years on the market (Dec 12, 2024)
+
+## The Trump family (File #026, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Trump_family): Trump family (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Donald_Trump): Donald Trump (accessed Oct 2026)
+3. [Wikipedia](https://en.wikipedia.org/wiki/Fred_Trump): Fred Trump (accessed Oct 2026)
+4. [Wikipedia](https://en.wikipedia.org/wiki/Mary_Anne_MacLeod_Trump): Mary Anne MacLeod Trump (accessed Oct 2026)
+5. [Wikipedia](https://en.wikipedia.org/wiki/Ivana_Trump): Ivana Trump (accessed Oct 2026)
+6. [Wikipedia](https://en.wikipedia.org/wiki/Melania_Trump): Melania Trump (accessed Oct 2026)
+7. [Wikipedia](https://en.wikipedia.org/wiki/Marla_Maples): Marla Maples (accessed Oct 2026)
+8. [Wikipedia](https://en.wikipedia.org/wiki/Donald_Trump_Jr): Donald Trump Jr. (accessed Oct 2026)
+9. [Wikipedia](https://en.wikipedia.org/wiki/Ivanka_Trump): Ivanka Trump (accessed Oct 2026)
+10. [Wikipedia](https://en.wikipedia.org/wiki/Eric_Trump): Eric Trump (accessed Oct 2026)
+11. [Wikipedia](https://en.wikipedia.org/wiki/Tiffany_Trump): Tiffany Trump (accessed Oct 2026)
+12. [Wikipedia](https://en.wikipedia.org/wiki/Barron_Trump): Barron Trump (accessed Oct 2026)
+
+### The money
+
+13. [Forbes](https://www.forbes.com/profile/donald-trump/): Real-time profile: Donald Trump ($6.9B, #587 in the world) (Oct 6, 2026)
+14. [Forbes](https://www.forbes.com/sites/luisakroll/2026/03/10/heres-how-much-donald-trump-is-worth/): Here’s how much Donald Trump is worth (Mar 10, 2026)
+15. [CNBC (via NBC Bay Area)](https://nbcbayarea.com/news/business/money-report/trump-transfers-all-his-djt-shares-to-his-revocable-trust-sec-filings-show/3741540): Trump transfers all his DJT shares to his revocable trust, SEC filings show (Dec 19, 2024)
+16. [Decrypt](https://decrypt.co/344907/what-is-world-liberty-financial-the-trump-family-defi-project-explained): What is World Liberty Financial? The Trump family DeFi project explained (Feb 6, 2026)
+17. [Decrypt](https://decrypt.co/301808/what-is-trump-donald-trumps-official-solana-meme-coin): What is $TRUMP, Donald Trump’s official Solana meme coin? (Jan 20, 2025)
+18. [The Block](https://www.theblock.co/post/369400/trump-backed-bitcoin-company-soars-in-nasdaq-debut-as-presidents-sons-expand-crypto-fortunes): Trump-backed bitcoin company soars in Nasdaq debut as president’s sons expand crypto fortunes (Sep 3, 2025)
+19. [Yahoo Finance](https://finance.yahoo.com/news/american-bitcoin-backed-by-president-trumps-sons-listed-on-the-nasdaq-141359243.html): American Bitcoin, backed by President Trump’s sons, listed on the Nasdaq (Sep 3, 2025)
+20. [Wikipedia](https://en.wikipedia.org/wiki/Mar-a-Lago): Mar-a-Lago (accessed Oct 2026)
+
+### On the record
+
+21. [SEC (Trump Media & Technology Group)](https://www.sec.gov/Archives/edgar/data/0001849635/000143774926031534/djt20260922_s4.htm): Form S-4 for the TAE Technologies merger, with the trust’s share count (Sep 2026)
+22. [ABC News](https://www.goodmorningamerica.com/news/story/trump-made-1-billion-crypto-financial-disclosure-shows-134358357): Trump’s financial disclosure for 2025: more than $1.4 billion from crypto (Jul 1, 2026)
+23. [Bloomberg (via Honolulu Star-Advertiser)](https://www.staradvertiser.com/2026/06/30/breaking-news/trump-reports-at-least-1-4-billion-in-2025-crypto-earnings/): Trump reports at least $1.4 billion in 2025 crypto earnings (Jun 30, 2026)
+24. [AFP (via L’Orient Today)](https://today.lorientlejour.com/article/1539896/trump-earned-over-1billion-from-crypto-ventures-in-2025.html): Trump earned over $1 billion from crypto ventures in 2025 (Jul 1, 2026)
+25. [Anchorage Daily News](https://www.adn.com/nation-world/2025/06/14/trump-reports-over-600-million-in-income-in-latest-financial-disclosure): Trump reports over $600 million in income in latest financial disclosure (Jun 14, 2025)
+
+## The Pelosi family (File #027, data as of Oct 6, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Nancy_Pelosi): Nancy Pelosi (accessed Oct 2026)
+2. [Office of Rep. Nancy Pelosi](https://pelosi.house.gov/biography): Biography (accessed Oct 2026)
+3. [Britannica](https://www.britannica.com/biography/Nancy-Pelosi): Nancy Pelosi (accessed Oct 2026)
+4. [Wikipedia](https://en.wikipedia.org/wiki/Paul_Pelosi): Paul Pelosi (accessed Oct 2026)
+5. [Wikipedia](https://en.wikipedia.org/wiki/Thomas_D%27Alesandro_Jr.): Thomas D’Alesandro Jr. (accessed Oct 2026)
+6. [Wikipedia](https://en.wikipedia.org/wiki/Thomas_D%27Alesandro_III): Thomas D’Alesandro III (accessed Oct 2026)
+7. [Wikipedia](https://en.wikipedia.org/wiki/Christine_Pelosi): Christine Pelosi (accessed Oct 2026)
+
+### The money
+
+8. [Quiver Quantitative](https://www.quiverquant.com/news/Net%2BWorth%2BUpdate%3A%2BRepresentative%2BNancy%2BPelosi%2BMade%2Ban%2BEstimated%2B%243.6M%2Bin%2Bthe%2BStock%2BMarket%2BLast%2BMonth): Net worth update: Nancy Pelosi estimated at $256.6M (based on her disclosures) (Aug 3, 2025)
+9. [Yahoo Finance](https://finance.yahoo.com/quote/NANC/profile): NANC fund profile: objective, issuer and expenses (accessed Oct 2026)
+10. [SEC (Cboe BZX Exchange)](https://www.sec.gov/Archives/edgar/data/1650149/000141783523000014/8A_Cert_NANC_KRUZ.pdf): Certification approving NANC for listing on Cboe BZX (Feb 6, 2023)
+11. [SEC (Tidal Trust I)](https://www.sec.gov/Archives/edgar/data/0001742912/000199937126018270/subversive-497_082026.htm): Prospectus supplement: Subversive Congressional Democrats Trading ETF (NANC) (Aug 20, 2026)
+
+### On the record
+
+12. [U.S. House Clerk](https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10075701.pdf): Nancy Pelosi, annual financial disclosure for 2025 (Filing ID 10075701) (May 15, 2026)
+13. [U.S. House Clerk](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf): Nancy Pelosi, periodic transaction report (Filing ID 20033725) (Jan 23, 2026)
+14. [Fox Business](https://www-ak-ms.foxbusiness.com/politics/nancy-pelosi-sells-nvidia-apple-buys-alphabet-amazon): Pelosi discloses sales of Nvidia and Apple shares, purchase of Alphabet and Amazon (Jan 22, 2025)
+15. [Benzinga (via Webull)](https://www.webull.ca/news-detail/15459478465889280): Pelosi discloses Bloom Energy and Intel stock and options trades (Aug 24, 2026)
+16. [AP (via PBS NewsHour)](https://www.pbs.org/newshour/politics/nancy-pelosi-announces-she-wont-seek-reelection-ending-storied-u-s-house-career): Nancy Pelosi announces she won’t seek reelection (Nov 6, 2025)
+17. [ABC7 News](https://abc7news.com/post/former-house-speaker-nancy-pelosi-announces-retirement-end-term-congress-2027/18120442/): Nancy Pelosi announces retirement at the end of her term in Congress in 2027 (Nov 7, 2025)

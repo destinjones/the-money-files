@@ -6,7 +6,8 @@
   "repo": "https://github.com/destinjones/the-money-files",
   "center": "elon",
   "slug": "musk",
-  "og": "assets/og.jpg"
+  "og": "assets/og.jpg",
+  "pronoun": "his"
  },
  "sources": [
   {
@@ -2209,7 +2210,8 @@
    "src": [
     "tsla_solarcity_announce",
     "tsla_solarcity_close"
-   ]
+   ],
+   "into": "Tesla"
   },
   {
    "id": "paypal",
@@ -2222,7 +2224,8 @@
    "src": [
     "ebay_paypal_8k",
     "bi_zip2_paypal"
-   ]
+   ],
+   "chip": "No Musk stake"
   },
   {
    "id": "openai",
@@ -2234,7 +2237,8 @@
    "src": [
     "court_openai_jan2026",
     "ap_openai_verdict"
-   ]
+   ],
+   "chip": "No Musk stake"
   }
  ],
  "companiesExtra": [
@@ -3068,7 +3072,8 @@
   "recordLede": "The money that shows up in SEC filings, tax returns, court records and FEC reports. These are filings, not estimates.",
   "trailLede": "From a city-guide startup in 1995 to the first trillion in 2026.",
   "calcYearsK": "Years to earn what Elon has",
-  "footLabel": "File #006: the Musk family"
+  "footLabel": "File #006: the Musk family",
+  "ledgerFoot": "* SEC rules count his super-voting Class B shares as if they were converted to Class A. “Our sum” means simple addition of the linked filings or reports."
  },
  "tree": {
   "rowTop": {

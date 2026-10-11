@@ -3,6 +3,7 @@
   <div class="wrap">
     <a class="brand" href="./" aria-label="The Money Files, home"><span class="brand-mark" aria-hidden="true">$</span><span>The Money Files</span></a>
     <nav class="nav" aria-label="Sections">
+      <a href="#leaderboard">Leaderboard</a>
       <a href="#files">The files</a>
       <a href="#how">How it works</a>
       <a href="#cases">Case files</a>
@@ -14,15 +15,32 @@
 <main id="top">
   <section class="wrap hero" aria-labelledby="h-hero">
     <div>
-      <p class="eyebrow"><b>Follow the money</b> · Data as of <span data-asof></span></p>
+      <p class="eyebrow"><b>Follow the money</b> · {{COUNT}} files · Data as of <span data-asof></span></p>
       <h1 id="h-hero">Every fortune leaves a <span class="gold">paper trail</span>. We <span class="u-red">follow</span> it.</h1>
-      <p class="lede">The Money Files maps the richest families on Earth using public records only: SEC filings, court cases, tax returns and news reporting. Pick a family, tap a face, and see who owns what, which of their companies you can buy stock in, the homes, and the receipts. Every number links to its source.</p>
+      <p class="lede">The Money Files maps the richest and most famous families on Earth using public records only: SEC filings, court records, financial disclosures and news reporting. Pick a family, tap a face, and see who owns what, which of their companies you can buy stock in, the homes, and the receipts. Every number links to its source.</p>
       <div class="ctas">
         <a class="btn" href="#files">Pick a file</a>
-        <a class="btn ghost" href="#how">How it works</a>
+        <a class="btn ghost" href="#leaderboard">See the leaderboard</a>
       </div>
     </div>
     <div class="worth-card" id="hub-stat"></div>
+  </section>
+
+  <section class="section" id="leaderboard" aria-labelledby="h-lb">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="exhibit">The leaderboard</p>
+        <h2 id="h-lb">Every fortune on one scale</h2>
+        <p class="sec-lede">The person at the center of each file, by their Forbes or Bloomberg estimate. The bars are drawn to scale, so some of them are thinner than a hair. Pick someone to measure everyone else in them.</p>
+      </header>
+      <div class="lb-tools">
+        <label for="unit">Measure everyone in</label>
+        <select id="unit"></select>
+        <p class="fine" id="lb-cap" aria-live="polite"></p>
+      </div>
+      <ol class="lb" id="lb"></ol>
+      <p class="fine lb-note" id="lb-note"></p>
+    </div>
   </section>
 
   <section class="section" id="files" aria-labelledby="h-files">
@@ -30,9 +48,13 @@
       <header class="sec-head">
         <p class="exhibit">The files</p>
         <h2 id="h-files">Pick a family</h2>
-        <p class="sec-lede">Each file is an interactive family map. More files are on the way.</p>
+        <p class="sec-lede">Each file is an interactive family map with its own sources. Filter by world, or sort by fortune.</p>
       </header>
-      <div class="files" id="files-grid"></div>
+      <div class="filters">
+        <div class="chips" id="cat-chips" role="group" aria-label="Filter the files"></div>
+        <div class="chips sort" id="sort-chips" role="group" aria-label="Sort the files"></div>
+      </div>
+      <div class="files" id="files-grid" aria-live="polite"></div>
     </div>
   </section>
 
@@ -45,10 +67,10 @@
       </header>
       <ol class="steps">
         <li><h3>Start with a name or a brand</h3><p>A billionaire, a candy bar, a streaming app. Somebody owns it, and that owner usually has to say so somewhere public.</p></li>
-        <li><h3>Pull the public records</h3><p>SEC filings show who owns shares. Court records and tax returns show settlements and foundations. Property records and reporting show the homes.</p></li>
+        <li><h3>Pull the public records</h3><p>SEC filings show who owns shares. Court records and financial disclosures show settlements, foundations and trades. Property records and reporting show the homes.</p></li>
         <li><h3>Connect the dots and cite them</h3><p>Every number gets a link to where it came from, so you can check it yourself. Estimates are labeled as estimates.</p></li>
       </ol>
-      <p class="rules">The rules: no street addresses, kids by name only (and not at all when their names are private), private relatives left out, and nothing here is investment advice.</p>
+      <p class="rules">The rules: no street addresses, kids by first name only (and not at all when their names are private), private relatives left out, no gossip or unproven allegations, and nothing here is investment advice.</p>
     </div>
   </section>
 
@@ -80,8 +102,14 @@
   function $(s) { return document.querySelector(s); }
   function el(tag, attrs) {
     var n = document.createElement(tag);
-    Object.keys(attrs || {}).forEach(function (k) { if (attrs[k] != null) { if (k === 'class') n.className = attrs[k]; else n.setAttribute(k, attrs[k]); } });
-    for (var i = 2; i < arguments.length; i++) { var c = arguments[i]; if (c == null) continue; (Array.isArray(c) ? c : [c]).forEach(function (x) { n.appendChild(x instanceof Node ? x : document.createTextNode(String(x))); }); }
+    Object.keys(attrs || {}).forEach(function (k) {
+      var v = attrs[k];
+      if (v == null || v === false) return;
+      if (k === 'class') n.className = v;
+      else if (k.indexOf('on') === 0) n.addEventListener(k.slice(2), v);
+      else n.setAttribute(k, v === true ? '' : v);
+    });
+    for (var i = 2; i < arguments.length; i++) { var c = arguments[i]; if (c == null) continue; (Array.isArray(c) ? c : [c]).forEach(function (x) { if (x != null) n.appendChild(x instanceof Node ? x : document.createTextNode(String(x))); }); }
     return n;
   }
   function face(f) {
@@ -89,26 +117,99 @@
     if (ph) {
       var r = ph.h / ph.w, w = Math.max(1, ph.w / ph.h) * ph.zoom, hh = w * r;
       var left = Math.min(0, Math.max(1 - w, 0.5 - ph.fx * w)), top = Math.min(0, Math.max(1 - hh, 0.46 - ph.fy * hh));
-      var img = el('img', { src: 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(ph.file.replace(/ /g, '_')) + (ph.w > 400 ? '?width=400' : ''), alt: '', loading: 'lazy', referrerpolicy: 'no-referrer',
+      var img = el('img', { src: 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(ph.file.replace(/ /g, '_')) + (ph.w > 400 ? '?width=400' : ''), alt: '', loading: 'lazy', decoding: 'async', referrerpolicy: 'no-referrer',
         style: 'width:' + (w * 100).toFixed(2) + '%;left:' + (left * 100).toFixed(2) + '%;top:' + (top * 100).toFixed(2) + '%' });
       img.addEventListener('error', function () { img.remove(); });
       span.appendChild(img);
     }
     return span;
   }
+  function money(n) {
+    if (n >= 1e12) return '$' + (n / 1e12).toFixed(3).replace(/\.?0+$/, '') + 'T';
+    if (n >= 1e9) return '$' + (n / 1e9).toFixed(1).replace(/\.0$/, '') + 'B';
+    return '$' + Math.round(n / 1e6) + 'M';
+  }
+  function times(x) {
+    if (x >= 100) return Math.round(x).toLocaleString('en-US');
+    if (x >= 10) return x.toFixed(0);
+    if (x >= 1) return x.toFixed(1).replace(/\.0$/, '');
+    if (x >= 0.01) return x.toFixed(2);
+    return x.toFixed(4);
+  }
   [].forEach.call(document.querySelectorAll('[data-asof]'), function (n) { n.textContent = D.asOfLabel; });
   $('#repo-link').href = $('#repo-link-2').href = D.repo;
-  var total = D.families.reduce(function (a, f) { return a + f.worthV; }, 0);
+
+  var F = D.families, ranked = F.filter(function (f) { return f.worthV; }).sort(function (a, b) { return b.worthV - a.worthV; });
+  var total = ranked.reduce(function (a, f) { return a + f.worthV; }, 0), top = ranked[0];
+
+  /* stat card */
   var stat = $('#hub-stat');
-  stat.appendChild(el('p', { class: 'label' }, D.families.length + ' families on file'));
+  stat.appendChild(el('p', { class: 'label' }, F.length + ' families on file'));
   stat.appendChild(el('p', { class: 'big-number' }, '$' + (total / 1e12).toFixed(2) + ' trillion'));
-  stat.appendChild(el('p', { class: 'fine' }, D.families.map(function (f) { return f.name + ' ' + f.worthShort; }).join(' · ') + ' · Forbes estimates, ' + D.asOfLabel));
-  D.families.forEach(function (f) {
-    $('#files-grid').appendChild(el('a', { class: 'file-card', href: f.slug + '/' },
-      face(f), el('p', { class: 'fn' }, f.file), el('h3', null, f.title), el('p', { class: 'w' }, f.worthShort),
-      el('p', { class: 'tz' }, f.teaser), el('p', { class: 'meta' }, f.people + ' people · ' + f.sources + ' sources'), el('span', { class: 'go' }, 'Open the file →')));
-  });
-  $('#files-grid').appendChild(el('div', { class: 'file-card soon' }, el('p', { class: 'fn' }, 'Next file'), el('h3', null, 'More families soon'), el('p', { class: 'tz' }, 'Got a name we should trace? Open an issue on GitHub.')));
+  stat.appendChild(el('p', { class: 'fine' }, 'The combined fortunes of the ' + ranked.length + ' people at the center of these files who have a Forbes or Bloomberg estimate (our math). Data as of ' + D.asOfLabel + '.'));
+  if (top) stat.appendChild(el('div', { class: 'stat-split' },
+    el('div', { class: 'split-bar', role: 'img', 'aria-label': top.name + ' holds ' + (top.worthV / total * 100).toFixed(0) + '% of the total' },
+      el('span', { style: 'width:' + (top.worthV / total * 100).toFixed(2) + '%' })),
+    el('p', null, el('b', { class: 'gold' }, top.name + ': ' + (top.worthV / total * 100).toFixed(0) + '%'), ' of it. Everyone else on the leaderboard shares the rest.')));
+
+  /* files grid */
+  var cat = 'all', sort = 'rich', grid = $('#files-grid');
+  var catNames = {}; D.cats.forEach(function (c) { catNames[c[0]] = c[1]; });
+  function chip(label, on, fn, count) {
+    return el('button', { type: 'button', class: 'fchip' + (on ? ' on' : ''), 'aria-pressed': on ? 'true' : 'false', onclick: fn }, label, count != null ? el('span', { class: 'n' }, String(count)) : null);
+  }
+  function drawChips() {
+    var cc = $('#cat-chips'), sc = $('#sort-chips');
+    cc.textContent = ''; sc.textContent = '';
+    cc.appendChild(chip('All', cat === 'all', function () { cat = 'all'; draw(); }, F.length));
+    D.cats.forEach(function (c) {
+      var n = F.filter(function (f) { return f.cat === c[0]; }).length;
+      if (n) cc.appendChild(chip(c[1], cat === c[0], function () { cat = c[0]; draw(); }, n));
+    });
+    sc.appendChild(chip('Richest first', sort === 'rich', function () { sort = 'rich'; draw(); }));
+    sc.appendChild(chip('File number', sort === 'file', function () { sort = 'file'; draw(); }));
+  }
+  function draw() {
+    drawChips();
+    grid.textContent = '';
+    var list = F.filter(function (f) { return cat === 'all' || f.cat === cat; }).slice();
+    if (sort === 'rich') list.sort(function (a, b) { return (b.worthV || 0) - (a.worthV || 0); });
+    else list.sort(function (a, b) { return a.file < b.file ? -1 : 1; });
+    list.forEach(function (f) {
+      grid.appendChild(el('a', { class: 'file-card', href: f.slug + '/' },
+        el('div', { class: 'fc-top' }, face(f), el('div', { class: 'fc-id' }, el('p', { class: 'fn' }, f.file + ' · ' + catNames[f.cat]), el('h3', null, f.title), el('p', { class: 'w' + (f.worthV ? '' : ' role') }, f.worthShort))),
+        el('p', { class: 'tz' }, f.teaser),
+        el('p', { class: 'meta' }, f.people + ' people · ' + f.sources + ' sources · data as of ' + f.asOfLabel),
+        el('span', { class: 'go' }, 'Open the file →')));
+    });
+    grid.appendChild(el('div', { class: 'file-card soon' }, el('p', { class: 'fn' }, 'Next file'), el('h3', null, 'Who should we trace next?'), el('p', { class: 'tz' }, 'Open an issue on GitHub with a name and a source or two.')));
+  }
+  draw();
+
+  /* leaderboard */
+  var unitSel = $('#unit'), lb = $('#lb');
+  unitSel.appendChild(el('option', { value: '' }, 'Dollars'));
+  ranked.slice().reverse().forEach(function (f) { unitSel.appendChild(el('option', { value: f.slug }, f.name + '’s fortune')); });
+  function drawLb() {
+    lb.textContent = '';
+    var unit = null; ranked.forEach(function (f) { if (f.slug === unitSel.value) unit = f; });
+    ranked.forEach(function (f, i) {
+      var pc = f.worthV / top.worthV * 100, val = unit ? (f === unit ? '1×' : times(f.worthV / unit.worthV) + '×') : money(f.worthV);
+      lb.appendChild(el('li', { class: 'lb-row' + (unit === f ? ' unit' : '') },
+        el('span', { class: 'lb-rank' }, String(i + 1)),
+        el('a', { class: 'lb-who', href: f.slug + '/' }, face(f), el('span', { class: 'lb-name' }, f.name, el('span', { class: 'lb-file' }, f.title))),
+        el('span', { class: 'lb-track', 'aria-hidden': 'true' }, el('span', { class: 'lb-fill', style: 'width:' + Math.max(pc, 0.15).toFixed(3) + '%' })),
+        el('span', { class: 'lb-val' }, val),
+        el('span', { class: 'lb-pc' }, i ? (pc < 1 ? pc.toFixed(2) : pc.toFixed(1)) + '% of ' + top.short + '’s' : 'The top')));
+    });
+  }
+  unitSel.addEventListener('change', function () { drawLb(); var u = unitSel.options[unitSel.selectedIndex]; $('#lb-cap').textContent = unitSel.value ? 'Each number is how many times bigger (or smaller) that fortune is than ' + u.textContent + ' of ' + money(ranked.filter(function (f) { return f.slug === unitSel.value; })[0].worthV) + '.' : ''; });
+  drawLb();
+  var off = F.filter(function (f) { return !f.worthV; });
+  $('#lb-note').textContent = (off.length ? 'Not on the board, because Forbes and Bloomberg don’t publish a net worth for them: ' + off.map(function (f) { return f.name; }).join(', ') + '. ' : '') +
+    'Each figure is from that file’s data date, ' + D.asOfLabel + '. Some Forbes figures cover a person and their family together; each file says which.';
+
+  /* case files */
   D.cases.forEach(function (c) {
     var chain = el('p', { class: 'chain' });
     c.chain.forEach(function (s, i) { if (i) chain.appendChild(el('i', { 'aria-hidden': 'true' }, '→')); chain.appendChild(el('span', { class: 'link' }, s)); });

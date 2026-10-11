@@ -55,14 +55,14 @@
   /* ---------------- people, companies, photos ---------------- */
   var PEOPLE = {}, ORDER = [];
   D.people.forEach(function (p) { PEOPLE[p.id] = p; });
-  D.tree.order.forEach(function (id) { if (PEOPLE[id]) ORDER.push(id); });
+  (D.tree.order || D.people.map(function (p) { return p.id; })).forEach(function (id) { if (PEOPLE[id] && !PEOPLE[id].connector) ORDER.push(id); });
   var CENTER = PEOPLE[D.meta.center];
   var CO = {};
   D.companies.concat(D.companiesExtra).forEach(function (c) { CO[c.id] = c; });
 
   function initials(p) {
     if (p.initials) return p.initials;
-    var w = p.name.replace(/[^A-Za-z .'-]/g, '').split(/\s+/).filter(Boolean);
+    var w = p.name.replace(/[^A-Za-z .'-]/g, '').split(/[\s-]+/).filter(Boolean);
     return (w[0] ? w[0][0] : '') + (w.length > 1 ? w[w.length - 1][0] : '');
   }
   function photoURL(ph) {
@@ -90,25 +90,33 @@
 
   /* ---------------- hero ---------------- */
   $$('[data-asof]').forEach(function (n) { n.textContent = D.meta.asOfLabel; });
-  var elon = CENTER, W = elon.worth;
-  add($('#hero-worth-src'), [W.by + ', ' + W.date, refs(W.src), W.also ? ' · ' + (W.also.short || W.also.by) + ': ' + W.also.value : null, W.also ? refs(W.also.src) : null]);
+  var HIS = D.meta.pronoun || 'his', W = CENTER.worth || {};
+  if (W.by) add($('#hero-worth-src'), [W.by + (W.date ? ', ' + W.date : ''), refs(W.src), W.also ? ' · ' + (W.also.short || W.also.by) + ': ' + W.also.value : null, W.also ? refs(W.also.src) : null]);
   var perSec = D.pace ? D.pace.yoy / (365.25 * 86400) : 0;
   if (D.pace) {
-    add($('#pace-line'), ['Over the past year his fortune grew ', el('b', null, money(D.pace.yoy).replace('B', ' billion')), refs(D.pace.src.slice(0, 1)), '. That works out to about ', el('b', { class: 'gold' }, '$' + fmtInt(perSec) + ' every second'), ', on average.']);
+    add($('#pace-line'), ['Over the past year ' + HIS + ' fortune grew ', el('b', null, money(D.pace.yoy).replace('B', ' billion')), refs(D.pace.src.slice(0, 1)), '. That works out to about ', el('b', { class: 'gold' }, '$' + fmtInt(perSec) + ' every second'), ', on average.']);
     var t0 = Date.now(), since = $('#since');
     var tick = function () { since.value = since.textContent = '+$' + fmtInt(perSec * (Date.now() - t0) / 1000); };
     tick(); setInterval(tick, 250);
   } else { $('.pace').hidden = true; }
 
   /* ---------------- family board ---------------- */
-  var ROW_TOP = D.tree.rowTop, GROUPS = D.tree.groups;
+  var GROUPS = D.tree.groups;
+  (function autoX() {
+    var rows = {};
+    D.people.forEach(function (p) { var L = p.layout || (p.layout = {}); if (L.row == null) L.row = 2; (rows[L.row] = rows[L.row] || []).push(p); });
+    Object.keys(rows).forEach(function (r) {
+      var list = rows[r], n = list.length, part = list.some(function (p) { return p.layout.partner; }), sp = Math.min(100 / n, part ? 21 : 16);
+      list.forEach(function (p, i) { if (p.layout.x == null) p.layout.x = +(50 + (i - (n - 1) / 2) * sp).toFixed(2); });
+    });
+  })();
   var board = $('#board');
   function nodeFor(p) {
     var L = p.layout || {};
     var cls = 'node' + (L.big ? ' big' : '') + (L.small ? ' small' : '') + (L.partner ? ' partner' : '') + (p.connector ? ' connector' : '');
     var b = p.connector
-      ? el('div', { class: cls, 'data-id': p.id, style: '--x:' + L.x + ';--top:' + ROW_TOP[L.row] + 'px', title: p.summary ? p.summary.t : null })
-      : el('button', { class: cls, type: 'button', 'data-id': p.id, style: '--x:' + L.x + ';--top:' + ROW_TOP[L.row] + 'px', 'aria-label': 'Open the file on ' + p.name });
+      ? el('div', { class: cls, 'data-id': p.id, 'data-row': L.row, style: '--x:' + L.x + ';--top:0px', title: p.summary ? p.summary.t : null })
+      : el('button', { class: cls, type: 'button', 'data-id': p.id, 'data-row': L.row, style: '--x:' + L.x + ';--top:0px', 'aria-label': 'Open the file on ' + p.name });
     var text = el('span', { class: 'n-text' },
       el('span', { class: 'n-name' }, p.name),
       el('span', { class: 'n-rel' }, p.rel),
@@ -145,9 +153,14 @@
   function drawWires() {
     while (wires.firstChild) wires.removeChild(wires.firstChild);
     if (!desk.matches) { board.style.height = ''; return; }
-    var low = 0;
-    $$('.node', board).forEach(function (n) { low = Math.max(low, n.offsetTop + n.offsetHeight); });
-    board.style.height = (low + 12) + 'px';
+    var byRow = {}, top = 0;
+    $$('.node', board).forEach(function (n) { var r = n.getAttribute('data-row'); (byRow[r] = byRow[r] || []).push(n); });
+    Object.keys(byRow).sort(function (a, b) { return a - b; }).forEach(function (r) {
+      var h = 0;
+      byRow[r].forEach(function (n) { n.style.setProperty('--top', top + 'px'); h = Math.max(h, n.offsetHeight); });
+      top += h + 66;
+    });
+    board.style.height = (top - 54) + 'px';
     var B = board.getBoundingClientRect();
     function R(id) {
       var n = $('.node[data-id="' + id + '"]', board), f = $('.face', n), nr = n.getBoundingClientRect(), fr = f.getBoundingClientRect();
@@ -190,7 +203,7 @@
   /* ---------------- dossier ---------------- */
   var dossier = $('#dossier'), scrim = $('#scrim'), lastFocus = null, current = null;
   function chipFor(c) {
-    var s = c.status, label = { public: 'Public · ' + (c.ticker || ''), private: 'Private', absorbed: 'Part of Tesla', nostake: 'No Musk stake', gone: 'Acquired' }[s] || s;
+    var s = c.status, label = c.chip || { public: 'Public · ' + (c.ticker || ''), private: 'Private', absorbed: c.into ? 'Part of ' + c.into : 'Absorbed', nostake: 'No family stake', gone: c.gone || 'Acquired' }[s] || s;
     return el('span', { class: 'chip ' + s }, label);
   }
   function section(title, kids) { return kids && kids.length ? el('div', { class: 'd-sec' }, el('h3', null, title), kids) : null; }
@@ -304,7 +317,8 @@
   window.addEventListener('hashchange', syncHash);
 
   /* ---------------- invest ---------------- */
-  D.companies.forEach(function (c) {
+  if (!(D.companies || []).length) $('#invest').hidden = true;
+  (D.companies || []).forEach(function (c) {
     if (c.status === 'public') {
       $('#invest-big').appendChild(el('article', { class: 'inv big' },
         el('div', { class: 'tick', style: 'color:' + c.color }, c.ticker),
@@ -338,7 +352,7 @@
   else (function () {
     var H = D.holdings, hb = holdingsBar(false), host = $('#hold-stack');
     host.parentNode.replaceChild(hb.stack, host);
-    add($('#hold-src'), ['Bloomberg Billionaires Index estimate, ' + H.date + '. Shares of the four, not of his total net worth.', refs(H.src)]);
+    add($('#hold-src'), ['Bloomberg Billionaires Index estimate, ' + H.date + '. Shares of the four, not of ' + HIS + ' total net worth.', refs(H.src)]);
     H.items.forEach(function (x) {
       $('#hold-legend').appendChild(el('li', { style: '--c:' + x.color }, el('span', { class: 'k' }, x.name), el('span', { class: 'v' }, '$' + x.v + 'B'), el('span', { class: 'p' }, (x.v / hb.tot * 100).toFixed(1) + '% of the four')));
     });
@@ -404,11 +418,12 @@
   (function () {
     var L = D.ladder, lad = $('#ladder');
     if (!L) { lad.closest('.panel').hidden = true; return; }
-    var top = L.items[0];
+    var top = L.items[0], n = L.items.length;
+    $('#ladder-note').textContent = L.note || ((n === 1 ? 'Only one fortune on this map has a published estimate.' : (n === 2 ? 'Only two people on this map have' : n + ' people on this map have') + ' a published net worth estimate.') + ' Bars are drawn to scale.');
     L.items.forEach(function (r, i) {
       var pc = r.v / top.v * 100;
       lad.appendChild(el('div', { class: 'rung' }, el('div', { class: 'top-line' }, el('span', null, r.name), el('b', null, r.label)), el('div', { class: 'track' }, el('div', { class: 'fill', style: 'width:' + pc.toFixed(3) + '%' })),
-        i ? el('p', { class: 'scribble' }, (pc < 1 ? '↑ that sliver is ' : '↑ that’s ') + pc.toFixed(2) + '% of ' + top.short + '’s fortune') : null, i ? refs(r.src.concat(top.src)) : null));
+        i ? el('p', { class: 'scribble' }, (pc < 1 ? '↑ that sliver is ' : '↑ that’s ') + pc.toFixed(2) + '% of ' + (top.short || top.name) + '’s fortune') : null, i ? refs(r.src.concat(top.src)) : null));
     });
     if (L.rest) lad.appendChild(el('div', { class: 'rung muted' }, el('div', { class: 'top-line' }, el('span', null, L.rest), el('b', null, 'No reliable estimate'))));
   })();
@@ -460,13 +475,15 @@
   /* ---------------- ledger ---------------- */
   (function () {
     var tb = $('#ledger tbody');
+    if (!(D.ledger || []).length) { $('#record').hidden = true; return; }
     D.ledger.forEach(function (r) {
       tb.appendChild(el('tr', null, el('td', { class: 'who' }, r.who), el('td', null, r.what), el('td', { class: 'amt' }, r.amt), el('td', { class: 'when' }, r.when), el('td', null, refs(r.src))));
     });
   })();
 
   /* ---------------- trail ---------------- */
-  D.trail.forEach(function (t) {
+  if (!(D.trail || []).length) $('#trail').hidden = true;
+  (D.trail || []).forEach(function (t) {
     $('#trail-list').appendChild(el('li', null, el('time', null, t.when), el('div', null,
       el('h3', null, t.h, t.t ? null : refs(t.src)),
       t.amt ? el('span', { class: 'amt' }, t.amt) : null,
@@ -475,7 +492,9 @@
 
   /* ---------------- perspective ---------------- */
   (function () {
-    var inp = $('#income'), C = D.calc, worth = C.worth;
+    var C = D.calc || { worth: D.ladder ? D.ladder.items[0].v : 0 }, worth = C.worth, inp = $('#income');
+    if (!worth) { $('#perspective').hidden = true; return; }
+    if (!C.compareV) $('#o-kimbal').closest('.out').hidden = true;
     [['$35K', 35000], ['$60K', 60000], ['$100K', 100000], ['$250K', 250000], ['$1M', 1000000]].forEach(function (p) {
       $('#presets').appendChild(el('button', { type: 'button', onclick: function () { inp.value = p[1]; calc(); } }, p[0]));
     });
@@ -494,8 +513,8 @@
     }
     if (!perSec) $('#o-secs').closest('.out').hidden = true;
     $('#o-spend').textContent = fmtInt(worth / 1e6 / 365.25) + ' years';
-    $('#o-kimbal').textContent = (C.compareV / worth * 100).toFixed(2) + '%';
-    $('#o-kimbal-k').textContent = C.compareK; $('#o-kimbal-s').textContent = C.compareS;
+    if (C.compareV) $('#o-kimbal').textContent = (C.compareV / worth * 100).toFixed(2) + '%';
+    $('#o-kimbal-k').textContent = C.compareK || ''; $('#o-kimbal-s').textContent = C.compareS || '';
     inp.addEventListener('input', calc);
     calc();
   })();
@@ -535,6 +554,8 @@
   $('#repo-link').href = D.meta.repo;
   $('#issues-link').href = D.meta.repo + '/issues';
 
+  if ($('#money .panel:not([hidden])') == null) $('#money').hidden = true;
+  $$('.nav a[href^="#"]').forEach(function (a) { var t = $(a.getAttribute('href')); if (t && t.hidden) a.hidden = true; });
   /* deep link to a file, e.g. #kimbal */
   syncHash();
 })();

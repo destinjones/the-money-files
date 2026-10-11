@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>The Money Files</title>
-<meta name="description" content="Follow the money: interactive, fully sourced maps of the richest families on Earth. Who owns what, which stocks you can buy, the homes, and the receipts.">
+<meta name="description" content="Follow the money: interactive, fully sourced maps of 16 of the richest and most famous families on Earth. Who owns what, which stocks you can buy, the homes, and the receipts.">
 <meta name="theme-color" content="#0B0F17">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23FFB020'/%3E%3Ctext x='32' y='46' font-family='Impact,Anton,sans-serif' font-size='40' text-anchor='middle' fill='%231a1205'%3E$%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:title" content="The Money Files">
-<meta property="og:description" content="Follow the money: interactive, fully sourced maps of the richest families on Earth. Who owns what, which stocks you can buy, the homes, and the receipts.">
+<meta property="og:description" content="Follow the money: interactive, fully sourced maps of 16 of the richest and most famous families on Earth. Who owns what, which stocks you can buy, the homes, and the receipts.">
 <meta property="og:image" content="https://destinjones.github.io/the-money-files/assets/og-hub.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -93,6 +93,7 @@ a:hover { color: var(--ink); }
 .label { color: var(--ink-3); }
 h1, h2 { font-family: var(--f-display); font-weight: 400; text-transform: uppercase; margin: 0; text-wrap: balance; letter-spacing: .005em; }
 h1 { font-size: clamp(2.6rem, 7.2vw, 5.5rem); line-height: .97; }
+h1.long { font-size: clamp(2.3rem, 5.8vw, 4.5rem); }
 h2 { font-size: clamp(2.1rem, 5vw, 3.6rem); line-height: 1; }
 h3 { text-wrap: balance; }
 .gold { color: var(--gold); }
@@ -505,25 +506,77 @@ table.ledger { width: 100%; border-collapse: collapse; font-size: .92rem; min-wi
 }
 
 /* ---------- hub + multi-family ---------- */
-.files { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-.file-card { display: flex; flex-direction: column; gap: 10px; border: 1px solid var(--line); border-radius: var(--r); background: linear-gradient(160deg, var(--card-2), var(--card)); padding: 22px; text-decoration: none; color: var(--ink); min-width: 0; transition: border-color .18s, transform .18s; }
+.filters { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 18px; margin-bottom: 18px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.fchip { appearance: none; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; font: 700 .7rem/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; padding: 10px 13px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink-2); }
+.fchip:hover { border-color: var(--ink-3); color: var(--ink); }
+.fchip.on { background: var(--gold); border-color: var(--gold); color: #1a1205; }
+.fchip .n { font-weight: 600; opacity: .65; }
+.chips.sort .fchip { background: none; }
+.chips.sort .fchip.on { background: var(--card-2); color: var(--gold); border-color: var(--gold-line); }
+.files { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.file-card { display: flex; flex-direction: column; gap: 10px; border: 1px solid var(--line); border-radius: var(--r); background: linear-gradient(160deg, var(--card-2), var(--card)); padding: 18px; text-decoration: none; color: var(--ink); min-width: 0; transition: border-color .18s, transform .18s; }
 a.file-card:hover { border-color: var(--gold-line); transform: translateY(-2px); color: var(--ink); }
-.file-card .face { --fs: 88px; box-shadow: 0 0 0 3px var(--gold), 0 0 0 8px rgba(255, 176, 32, .12); margin-bottom: 6px; }
-.file-card .fn { margin: 0; font: 700 .7rem/1 var(--f-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--red); }
-.file-card h3 { margin: 0; font: 400 2rem/1 var(--f-display); text-transform: uppercase; letter-spacing: .01em; }
-.file-card .w { margin: 0; font: 400 2.3rem/1 var(--f-display); color: var(--gold); letter-spacing: .01em; }
-.file-card .tz { margin: 0; color: var(--ink-2); font-size: .95rem; }
-.file-card .meta { margin: 0; font: 500 .72rem/1.4 var(--f-mono); color: var(--ink-3); }
-.file-card .go { margin-top: auto; padding-top: 8px; font: 700 .76rem/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
+.fc-top { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.fc-id { min-width: 0; }
+.file-card .face { --fs: 66px; box-shadow: 0 0 0 3px var(--gold), 0 0 0 7px rgba(255, 176, 32, .12); }
+.file-card .fn { margin: 0; font: 700 .64rem/1.3 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--red); }
+.file-card h3 { margin: 4px 0 0; font: 400 1.45rem/1.02 var(--f-display); text-transform: uppercase; letter-spacing: .01em; }
+.file-card .w { margin: 5px 0 0; font: 400 1.5rem/1 var(--f-display); color: var(--gold); letter-spacing: .01em; }
+.file-card .w.role { font: 700 .74rem/1.3 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
+.file-card .tz { margin: 0; color: var(--ink-2); font-size: .93rem; }
+.file-card .meta { margin: 0; font: 500 .68rem/1.4 var(--f-mono); color: var(--ink-3); }
+.file-card .go { margin-top: auto; padding-top: 4px; font: 700 .72rem/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
 .file-card.soon { border-style: dashed; background: none; justify-content: center; }
 .file-card.soon h3 { color: var(--ink-2); }
+@media (max-width: 1080px) { .files { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .files { grid-template-columns: minmax(0, 1fr); } .file-card { padding: 16px; } }
+.stat-split { margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--line); }
+.split-bar { height: 12px; border-radius: 6px; background: var(--line); overflow: hidden; }
+.split-bar span { display: block; height: 100%; background: var(--gold); }
+.stat-split p { margin: 9px 0 0; color: var(--ink-2); font-size: .92rem; }
+.lb-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 14px; }
+.lb-tools label { font: 700 .68rem/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+.lb-tools select { font: 500 .95rem/1.2 var(--f-body); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; max-width: 100%; }
+.lb-tools .fine { flex-basis: 100%; }
+.lb { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: var(--r); background: var(--card); overflow: hidden; }
+.lb-row { display: grid; grid-template-columns: 30px minmax(170px, 250px) minmax(0, 1fr) 96px 132px; grid-template-areas: "rank who track val pc"; align-items: center; gap: 14px; padding: 10px 16px; border-top: 1px solid var(--line-2); }
+.lb-row:first-child { border-top: 0; }
+.lb-row.unit { background: var(--gold-soft); }
+.lb-rank { grid-area: rank; font: 400 1.25rem/1 var(--f-display); color: var(--ink-3); text-align: right; }
+.lb-who { grid-area: who; display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; min-width: 0; }
+.lb-who:hover .lb-name { color: var(--gold); }
+.lb-who .face { --fs: 40px; }
+.lb-name { display: flex; flex-direction: column; min-width: 0; font: 700 .95rem/1.2 var(--f-body); }
+.lb-file { font: 500 .6rem/1.3 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin-top: 2px; }
+.lb-track { grid-area: track; height: 14px; border-radius: 4px; background: var(--bg-2); border: 1px solid var(--line-2); overflow: hidden; }
+.lb-fill { display: block; height: 100%; min-width: 2px; background: linear-gradient(90deg, #d98e0b, var(--gold)); }
+.lb-val { grid-area: val; font: 400 1.3rem/1 var(--f-display); color: var(--gold); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.lb-pc { grid-area: pc; font: 500 .62rem/1.3 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+.lb-note { margin-top: 12px; max-width: 80ch; }
+@media (max-width: 760px) {
+  .lb-row { grid-template-columns: 22px minmax(0, 1fr) auto; grid-template-areas: "rank who val" ". track track" ". pc pc"; gap: 6px 10px; padding: 12px 12px; }
+  .lb-who .face { --fs: 34px; }
+  .lb-pc { font-size: .58rem; }
+}
+.more-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.more-card { display: flex; align-items: center; gap: 12px; padding: 14px; border: 1px solid var(--line); border-radius: var(--r); background: var(--card); color: var(--ink); text-decoration: none; min-width: 0; transition: border-color .18s, transform .18s; }
+.more-card:hover { border-color: var(--gold-line); transform: translateY(-2px); color: var(--ink); }
+.more-card .face { --fs: 52px; box-shadow: 0 0 0 2px var(--gold-line); }
+.mc-text { display: flex; flex-direction: column; min-width: 0; }
+.mc-file { font: 700 .6rem/1.2 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--red); }
+.mc-name { font: 400 1.12rem/1.05 var(--f-display); text-transform: uppercase; letter-spacing: .01em; margin-top: 4px; }
+.mc-worth { font: 600 .76rem/1.3 var(--f-mono); color: var(--gold); margin-top: 4px; }
+.more-all { margin: 18px 0 0; }
+@media (max-width: 960px) { .more-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .more-grid { grid-template-columns: minmax(0, 1fr); } }
 .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; counter-reset: st; }
 .steps li { counter-increment: st; border: 1px solid var(--line); border-radius: var(--r); background: var(--card); padding: 20px; min-width: 0; }
 .steps li::before { content: counter(st, decimal-leading-zero); display: block; margin-bottom: 10px; font: 400 2.4rem/1 var(--f-display); color: var(--gold); }
 .steps h3 { margin: 0 0 6px; font: 700 1.05rem/1.3 var(--f-body); }
 .steps p { margin: 0; color: var(--ink-2); font-size: .95rem; }
 .rules { margin: 18px 0 0; color: var(--ink-3); font-size: .9rem; max-width: 80ch; }
-@media (max-width: 900px) { .files, .steps { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 900px) { .steps { grid-template-columns: minmax(0, 1fr); } }
 .invest-big:has(> :only-child) { grid-template-columns: minmax(0, 1fr); }
 .homes-top:has(> .quotes[hidden]) { grid-template-columns: minmax(0, 1fr); }
 .outs:has(> .out[hidden]) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -537,6 +590,7 @@ p.kids-none { margin: 6px 0 0; }
   <div class="wrap">
     <a class="brand" href="./" aria-label="The Money Files, home"><span class="brand-mark" aria-hidden="true">$</span><span>The Money Files</span></a>
     <nav class="nav" aria-label="Sections">
+      <a href="#leaderboard">Leaderboard</a>
       <a href="#files">The files</a>
       <a href="#how">How it works</a>
       <a href="#cases">Case files</a>
@@ -548,15 +602,32 @@ p.kids-none { margin: 6px 0 0; }
 <main id="top">
   <section class="wrap hero" aria-labelledby="h-hero">
     <div>
-      <p class="eyebrow"><b>Follow the money</b> · Data as of <span data-asof></span></p>
+      <p class="eyebrow"><b>Follow the money</b> · 16 files · Data as of <span data-asof></span></p>
       <h1 id="h-hero">Every fortune leaves a <span class="gold">paper trail</span>. We <span class="u-red">follow</span> it.</h1>
-      <p class="lede">The Money Files maps the richest families on Earth using public records only: SEC filings, court cases, tax returns and news reporting. Pick a family, tap a face, and see who owns what, which of their companies you can buy stock in, the homes, and the receipts. Every number links to its source.</p>
+      <p class="lede">The Money Files maps the richest and most famous families on Earth using public records only: SEC filings, court records, financial disclosures and news reporting. Pick a family, tap a face, and see who owns what, which of their companies you can buy stock in, the homes, and the receipts. Every number links to its source.</p>
       <div class="ctas">
         <a class="btn" href="#files">Pick a file</a>
-        <a class="btn ghost" href="#how">How it works</a>
+        <a class="btn ghost" href="#leaderboard">See the leaderboard</a>
       </div>
     </div>
     <div class="worth-card" id="hub-stat"></div>
+  </section>
+
+  <section class="section" id="leaderboard" aria-labelledby="h-lb">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="exhibit">The leaderboard</p>
+        <h2 id="h-lb">Every fortune on one scale</h2>
+        <p class="sec-lede">The person at the center of each file, by their Forbes or Bloomberg estimate. The bars are drawn to scale, so some of them are thinner than a hair. Pick someone to measure everyone else in them.</p>
+      </header>
+      <div class="lb-tools">
+        <label for="unit">Measure everyone in</label>
+        <select id="unit"></select>
+        <p class="fine" id="lb-cap" aria-live="polite"></p>
+      </div>
+      <ol class="lb" id="lb"></ol>
+      <p class="fine lb-note" id="lb-note"></p>
+    </div>
   </section>
 
   <section class="section" id="files" aria-labelledby="h-files">
@@ -564,9 +635,13 @@ p.kids-none { margin: 6px 0 0; }
       <header class="sec-head">
         <p class="exhibit">The files</p>
         <h2 id="h-files">Pick a family</h2>
-        <p class="sec-lede">Each file is an interactive family map. More files are on the way.</p>
+        <p class="sec-lede">Each file is an interactive family map with its own sources. Filter by world, or sort by fortune.</p>
       </header>
-      <div class="files" id="files-grid"></div>
+      <div class="filters">
+        <div class="chips" id="cat-chips" role="group" aria-label="Filter the files"></div>
+        <div class="chips sort" id="sort-chips" role="group" aria-label="Sort the files"></div>
+      </div>
+      <div class="files" id="files-grid" aria-live="polite"></div>
     </div>
   </section>
 
@@ -579,10 +654,10 @@ p.kids-none { margin: 6px 0 0; }
       </header>
       <ol class="steps">
         <li><h3>Start with a name or a brand</h3><p>A billionaire, a candy bar, a streaming app. Somebody owns it, and that owner usually has to say so somewhere public.</p></li>
-        <li><h3>Pull the public records</h3><p>SEC filings show who owns shares. Court records and tax returns show settlements and foundations. Property records and reporting show the homes.</p></li>
+        <li><h3>Pull the public records</h3><p>SEC filings show who owns shares. Court records and financial disclosures show settlements, foundations and trades. Property records and reporting show the homes.</p></li>
         <li><h3>Connect the dots and cite them</h3><p>Every number gets a link to where it came from, so you can check it yourself. Estimates are labeled as estimates.</p></li>
       </ol>
-      <p class="rules">The rules: no street addresses, kids by name only (and not at all when their names are private), private relatives left out, and nothing here is investment advice.</p>
+      <p class="rules">The rules: no street addresses, kids by first name only (and not at all when their names are private), private relatives left out, no gossip or unproven allegations, and nothing here is investment advice.</p>
     </div>
   </section>
 
@@ -604,7 +679,7 @@ p.kids-none { margin: 6px 0 0; }
     <span><a id="repo-link-2" href="#" target="_blank" rel="noopener">Source code and data on GitHub</a></span>
   </div>
 </footer>
-<script id="hub-data" type="application/json">{"asOfLabel":"Oct 6, 2026","repo":"https://github.com/destinjones/the-money-files","families":[{"slug":"musk","title":"The Musk family","teaser":"The first trillionaire. SpaceX, Tesla, the brothers, the cousins and 14 kids.","file":"File #006","name":"Elon Musk","worthV":1046000000000.0,"worthShort":"$1.046T","photo":{"file":"Elon Musk - 54820081119 (cropped).jpg","author":"Gage Skidmore","license":"CC BY-SA 4.0","w":2924,"h":3843,"fx":0.5,"fy":0.38,"zoom":1.35,"year":"2025"},"initials":"EM","people":14,"sources":129},{"slug":"bezos","title":"The Bezos family","teaser":"Amazon, Blue Origin, The Washington Post, and about $700 million in homes.","file":"File #007","name":"Jeff Bezos","worthV":374500000000.0,"worthShort":"$374.5B","photo":{"file":"260202-D-PM193-2205 SECWAR Arsenal of Freedom Tour - Florida (3x4 cropped on Bezos and rotated).jpg","author":"U.S. Navy PO1 Alexander Kubitza, U.S. Dept. of War","license":"Public domain","w":1046,"h":1395,"fx":0.5,"fy":0.36,"zoom":1.3,"year":"2026"},"initials":"JB","people":8,"sources":20}],"redirects":{"elon":"musk/","kimbal":"musk/","tosca":"musk/","maye":"musk/","errol":"musk/","kaye":"musk/","haldemans":"musk/","lyndon":"musk/","peter":"musk/","russ":"musk/","justine":"musk/","talulah":"musk/","grimes":"musk/","shivon":"musk/","ashley":"musk/","jeff":"bezos/","mackenzie":"bezos/","lauren":"bezos/","jackie":"bezos/","mike":"bezos/","ted":"bezos/","mark":"bezos/","christina":"bezos/"},"cases":[{"n":"#001","title":"The M&M’s File","img":"assets/cases/case-001-mms.jpg","hook":"The company that makes M&M’s might own your dog’s vet.","chain":["M&M’s","Mars","Banfield & VCA vets","Kellanova","Ferrero"],"links":["https://www.mars.com/about/history","https://www.mars.com/our-brands","https://www.mars.com/our-brands/petcare","https://marsveterinary.com/who-we-are/our-companies/","https://www.mars.com/news-and-stories/press-releases-statements/mars-completes-acquisition-of-kellanova","https://www.mars.com/news-and-stories/press-releases-statements/mars-acquisition-august-2024","https://newsroom.kellanova.com/2023-10-02-KELLANOVA,-FORMERLY-KELLOGG-COMPANY,-ANNOUNCES-COMPLETION-OF-THE-SEPARATION-OF-ITS-NORTH-AMERICAN-CEREAL-BUSINESS","https://www.ferrero.com/int/en/news-stories/news/ferrero-completes-acquisition-of-wk-kellogg-co"]},{"n":"#002","title":"The Simpsons File","img":"assets/cases/case-002-simpsons.jpg","hook":"The company behind Mickey Mouse owns The Simpsons.","chain":["Your TV remote","Disney","21st Century Fox","The Simpsons","Hulu"],"links":["https://thewaltdisneycompany.com/press-releases/the-walt-disney-company-signs-amended-acquisition-agreement-to-acquire-twenty-first-century-fox-inc-for-71-3-billion-in-cash-and-stock/","https://thewaltdisneycompany.com/press-releases/disney-21st-century-fox-acquisition-closing-date/","https://variety.com/2017/tv/news/the-simpsons-disney-fox-1202640989/","https://www.cnbc.com/2025/06/09/disney-comcast-hulu-valuation.html","https://www.espn.com/espn/story/_/id/47793895/regulators-ok-espn-purchase-nfl-network-redzone-rights-nfl-equity-stake","https://deadline.com/2025/04/the-simpsons-family-guy-bobs-burgers-american-dad-renewed-1236356360/","https://thewaltdisneycompany.com/news/fubo-hulu-live-tv/","https://www.britannica.com/money/Disney-Company/Continuing-expansion-ABC-Pixar-Marvel-Entertainment-and-Lucasfilm"]},{"n":"#003","title":"The Bond File","img":"assets/cases/case-003-bond.jpg","hook":"The company that delivers your packages controls James Bond.","chain":["A cardboard box","Amazon","MGM","James Bond"],"links":["https://www.aboutamazon.com/news/company-news/amazon-mgm-studios-james-bond","https://www.cnbc.com/2022/07/21/amazon-one-medical-joins-whole-foods-mgm-as-strategic-growth-buys.html","https://press.aboutamazon.com/2021/5/amazon-and-mgm-have-signed-an-agreement-for-amazon-to-acquire-mgm","https://press.aboutamazon.com/2014/8/amazon-com-to-acquire-twitch","https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm","https://www.aboutamazon.com/news/workplace/first-amazon-office-jeff-bezos-garage","https://help.imdb.com/article/imdb/general-information/imdb-history/G836CY29Z4SGNMK5"]},{"n":"#004","title":"The KitKat File","img":"assets/cases/case-004-kitkat.jpg","hook":"The company that makes your cat’s food owns a fifth of L’Oréal.","chain":["A coffee pod","Nestlé","Purina","L’Oréal","KitKat"],"links":["https://www.nestleusa.com/brands","https://investor.starbucks.com/news/financial-releases/news-details/2018/Starbucks-and-Nestl-Form-Global-Coffee-Alliance-to-Elevate-and-Expand-Consumer-Packaged-Goods-and-Foodservice-Categories-Around-the-World/default.aspx","https://www.swissinfo.ch/eng/agribusiness/nestl%C3%A9-chief-wants-to-reduce-debt-without-selling-lor%C3%A9al/91826264","https://us.fashionnetwork.com/news/Nestle-s-stake-in-l-oreal-is-a-financial-investment-nestle-ceo-says,1794120.html","https://www.cbsnews.com/news/ferrero-buys-nestles-u-s-candy-business-for-2-8-billion/","https://www.cnn.com/2023/09/02/business/kit-kat-international-flavors-curious-consumer","https://www.loreal-finance.com/eng/shareholders-guide-2025/en/article/12/"]},{"n":"#005","title":"The Ray-Ban File","img":"assets/cases/case-005-rayban.jpg","hook":"The company that makes Ray-Bans might own the store you bought them at.","chain":["Ray-Ban","EssilorLuxottica","Sunglass Hut & LensCrafters","EyeMed","Meta"],"links":["https://www.vfc.com/news/press-release/1841/essilorluxottica-completes-acquisition-of-supreme-from-vf","https://www.reuters.com/world/europe/meta-takes-around-3-stake-ray-ban-parent-essilorluxottica-source-says-2025-07-08/","https://www.reuters.com/business/finance/essilorluxottica-director-says-metas-stake-ray-ban-maker-at-least-3-2025-12-09/","https://fashionunited.uk/news/business/prada-and-essilorluxottica-renew-eyewear-licensing-agreement/2024121879263","https://finance.yahoo.com/news/essilorluxottica-michael-kors-announce-extended-060000710.html","https://www.essilorluxottica.com/en/cap/content/284350/","https://www.globenewswire.com/news-release/2024/09/17/2947143/0/en/EssilorLuxottica-and-Meta-Announce-Long-Term-Partnership-Shaping-the-Future-of-the-Smart-Eyewear-Category.html","https://www.eyemed.com/en-us/about-us/"]},{"n":"MASTER","title":"The Master File","img":"assets/cases/master-file.jpg","hook":"Your Dunkin’ and your Subway have the same owner.","chain":["7 AM to midnight","Roark Capital","Inspire Brands","PepsiCo","Vanguard"],"links":["https://www.sec.gov/Archives/edgar/data/21665/000002166526000003/a4q2025pressreleasetables.htm","https://www.colgatepalmolive.com/en-us/who-we-are/history","https://abcnews.com/Business/story?id=88989&page=1","https://inspirebrands.com/inspire-brands-completes-acquisition-of-dunkin-brands/","https://inspirebrands.com/about-us/","https://www.cnbc.com/2023/08/24/subway-sells-to-dunkin-owner-roark-capital.html","https://www.restaurantbusinessonline.com/financing/subway-completes-its-sale-roark-capital","https://www.roarkcapital.com/portfolio","https://blogs.microsoft.com/blog/2023/10/13/welcoming-the-legendary-teams-at-activision-blizzard-king-to-team-xbox/","https://somnigroup.com/newsroom/news-details/2025/Tempur-Sealy-Successfully-Completes-Acquisition-of-Mattress-Firm/default.aspx","https://www.sec.gov/Archives/edgar/data/2100119/000210011926001527/13F_0002100119_20260630.xml","https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/sets-us-apart/ownership.html"]}]}</script>
+<script id="hub-data" type="application/json">{"asOfLabel":"Oct 6, 2026","repo":"https://github.com/destinjones/the-money-files","families":[{"slug":"musk","title":"The Musk family","cat":"tech","teaser":"The first trillionaire. SpaceX, Tesla, the brothers, the cousins and 14 kids.","file":"File #006","name":"Elon Musk","short":"Elon","worthV":1046000000000.0,"worthShort":"$1.046T","photo":{"file":"Elon Musk - 54820081119 (cropped).jpg","author":"Gage Skidmore","license":"CC BY-SA 4.0","w":2924,"h":3843,"fx":0.5,"fy":0.38,"zoom":1.35,"year":"2025"},"initials":"EM","people":14,"sources":129,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes real-time estimate"},{"slug":"bezos","title":"The Bezos family","cat":"tech","teaser":"Amazon, Blue Origin, The Washington Post, and about $700 million in homes.","file":"File #007","name":"Jeff Bezos","short":"Jeff","worthV":374500000000.0,"worthShort":"$374.5B","photo":{"file":"260202-D-PM193-2205 SECWAR Arsenal of Freedom Tour - Florida (3x4 cropped on Bezos and rotated).jpg","author":"U.S. Navy PO1 Alexander Kubitza, U.S. Dept. of War","license":"Public domain","w":1046,"h":1395,"fx":0.5,"fy":0.36,"zoom":1.3,"year":"2026"},"initials":"JB","people":8,"sources":20,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes real-time estimate"},{"slug":"zuckerberg","title":"The Zuckerberg family","cat":"tech","teaser":"Meta, a 99% giving pledge, three sisters and a $170 million Miami compound.","file":"File #008","name":"Mark Zuckerberg","short":"Mark","worthV":253300000000.0,"worthShort":"$253.3B","photo":null,"initials":"MZ","people":7,"sources":17,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes real-time estimate"},{"slug":"ellison","title":"The Ellison family","cat":"tech","teaser":"Oracle, 98% of a Hawaiian island, and a son who runs Paramount.","file":"File #009","name":"Larry Ellison","short":"Larry","worthV":187400000000.0,"worthShort":"$187.4B","photo":null,"initials":"LE","people":6,"sources":15,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes real-time estimate"},{"slug":"gates","title":"The Gates family","cat":"tech","teaser":"Microsoft, a foundation set to close in 2045, and a family office called Cascade.","file":"File #010","name":"Bill Gates","short":"Bill","worthV":114200000000,"worthShort":"$114.2B","photo":null,"initials":"BG","people":6,"sources":22,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes real-time estimate"},{"slug":"walton","title":"The Walton family","cat":"business","teaser":"America’s richest family: about 44% of Walmart, the Broncos and four billionaires.","file":"File #014","name":"Rob Walton","short":"Rob","worthV":131600000000,"worthShort":"$131.6B","photo":null,"initials":"RW","people":9,"sources":27,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes real-time estimate"},{"slug":"arnault","title":"The Arnault family","cat":"business","teaser":"LVMH, Dior, Paris FC and five children running the brands.","file":"File #015","name":"Bernard Arnault","short":"Bernard","worthV":117500000000,"worthShort":"$117.5B","photo":null,"initials":"BA","people":7,"sources":17,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes real-time estimate (with family)"},{"slug":"murdoch","title":"The Murdoch family","cat":"business","teaser":"Fox, News Corp and the trust fight that left Lachlan in control.","file":"File #016","name":"Rupert Murdoch","short":"Rupert","worthV":24500000000,"worthShort":"$24.5B","photo":null,"initials":"RM","people":6,"sources":20,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes real-time estimate (Rupert Murdoch & family)"},{"slug":"kardashian","title":"The Kardashian-Jenner family","cat":"entertainment","teaser":"SKIMS, Kylie Cosmetics, Good American: the TV family’s businesses, mapped.","file":"File #017","name":"Kim Kardashian","short":"Kim","worthV":1900000000,"worthShort":"$1.9B","photo":null,"initials":"KK","people":10,"sources":29,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes real-time estimate"},{"slug":"swift","title":"The Swift family","cat":"entertainment","teaser":"The masters she bought back, the first $2 billion tour, and a new family.","file":"File #018","name":"Taylor Swift","short":"Taylor","worthV":2000000000,"worthShort":"$2B","photo":null,"initials":"TS","people":7,"sources":20,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes real-time estimate"},{"slug":"carter","title":"The Carter family","cat":"entertainment","teaser":"Jay-Z and Beyoncé: Roc Nation, champagne, cognac, Tidal and two billionaires.","file":"File #020","name":"Jay-Z","short":"Jay-Z","worthV":2800000000,"worthShort":"$2.8B","photo":null,"initials":"JZ","people":6,"sources":17,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes real-time estimate"},{"slug":"mrbeast","title":"The Donaldson family","cat":"entertainment","teaser":"MrBeast’s Beast Industries, Feastables, Beast Games and a $5 billion valuation.","file":"File #022","name":"Jimmy “MrBeast” Donaldson","short":"Jimmy","worthV":null,"worthShort":"Beast Industries","photo":null,"initials":"JD","people":4,"sources":14,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes 2026 Top Creators list (earnings, not net worth)"},{"slug":"james","title":"The James family","cat":"sports","teaser":"The first active NBA billionaire: Nike for life, Fenway Sports Group and Beats.","file":"File #023","name":"LeBron James","short":"LeBron","worthV":1400000000.0,"worthShort":"$1.4B","photo":null,"initials":"LJ","people":3,"sources":12,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes real-time estimate"},{"slug":"jordan","title":"The Jordan family","cat":"sports","teaser":"The Nike deal, the Hornets sale, a NASCAR team and a tequila brand.","file":"File #024","name":"Michael Jordan","short":"Michael","worthV":4700000000.0,"worthShort":"$4.7B","photo":null,"initials":"MJ","people":6,"sources":16,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes real-time estimate"},{"slug":"trump","title":"The Trump family","cat":"politics","teaser":"Trump Media, World Liberty, the $TRUMP coin, Mar-a-Lago and who runs what.","file":"File #026","name":"Donald Trump","short":"Donald","worthV":6900000000.0,"worthShort":"$6.9B","photo":null,"initials":"DT","people":11,"sources":25,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Forbes real-time estimate"},{"slug":"pelosi","title":"The Pelosi family","cat":"politics","teaser":"Her House disclosures, Paul Pelosi’s reported trades, and two Baltimore mayors.","file":"File #027","name":"Nancy Pelosi","short":"Nancy","worthV":null,"worthShort":"Speaker emerita","photo":null,"initials":"NP","people":6,"sources":17,"asOf":"2026-10-06","asOfLabel":"Oct 6, 2026","by":"Quiver Quantitative estimate, based on her disclosures"}],"cats":[["tech","Tech"],["business","Business"],["entertainment","Entertainment"],["sports","Sports"],["politics","Politics"]],"redirects":{"elon":"musk/","kimbal":"musk/","tosca":"musk/","maye":"musk/","errol":"musk/","kaye":"musk/","haldemans":"musk/","lyndon":"musk/","peter":"musk/","russ":"musk/","justine":"musk/","talulah":"musk/","grimes":"musk/","shivon":"musk/","ashley":"musk/"},"cases":[{"n":"#001","title":"The M&M’s File","img":"assets/cases/case-001-mms.jpg","hook":"The company that makes M&M’s might own your dog’s vet.","chain":["M&M’s","Mars","Banfield & VCA vets","Kellanova","Ferrero"],"links":["https://www.mars.com/about/history","https://www.mars.com/our-brands","https://www.mars.com/our-brands/petcare","https://marsveterinary.com/who-we-are/our-companies/","https://www.mars.com/news-and-stories/press-releases-statements/mars-completes-acquisition-of-kellanova","https://www.mars.com/news-and-stories/press-releases-statements/mars-acquisition-august-2024","https://newsroom.kellanova.com/2023-10-02-KELLANOVA,-FORMERLY-KELLOGG-COMPANY,-ANNOUNCES-COMPLETION-OF-THE-SEPARATION-OF-ITS-NORTH-AMERICAN-CEREAL-BUSINESS","https://www.ferrero.com/int/en/news-stories/news/ferrero-completes-acquisition-of-wk-kellogg-co"]},{"n":"#002","title":"The Simpsons File","img":"assets/cases/case-002-simpsons.jpg","hook":"The company behind Mickey Mouse owns The Simpsons.","chain":["Your TV remote","Disney","21st Century Fox","The Simpsons","Hulu"],"links":["https://thewaltdisneycompany.com/press-releases/the-walt-disney-company-signs-amended-acquisition-agreement-to-acquire-twenty-first-century-fox-inc-for-71-3-billion-in-cash-and-stock/","https://thewaltdisneycompany.com/press-releases/disney-21st-century-fox-acquisition-closing-date/","https://variety.com/2017/tv/news/the-simpsons-disney-fox-1202640989/","https://www.cnbc.com/2025/06/09/disney-comcast-hulu-valuation.html","https://www.espn.com/espn/story/_/id/47793895/regulators-ok-espn-purchase-nfl-network-redzone-rights-nfl-equity-stake","https://deadline.com/2025/04/the-simpsons-family-guy-bobs-burgers-american-dad-renewed-1236356360/","https://thewaltdisneycompany.com/news/fubo-hulu-live-tv/","https://www.britannica.com/money/Disney-Company/Continuing-expansion-ABC-Pixar-Marvel-Entertainment-and-Lucasfilm"]},{"n":"#003","title":"The Bond File","img":"assets/cases/case-003-bond.jpg","hook":"The company that delivers your packages controls James Bond.","chain":["A cardboard box","Amazon","MGM","James Bond"],"links":["https://www.aboutamazon.com/news/company-news/amazon-mgm-studios-james-bond","https://www.cnbc.com/2022/07/21/amazon-one-medical-joins-whole-foods-mgm-as-strategic-growth-buys.html","https://press.aboutamazon.com/2021/5/amazon-and-mgm-have-signed-an-agreement-for-amazon-to-acquire-mgm","https://press.aboutamazon.com/2014/8/amazon-com-to-acquire-twitch","https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm","https://www.aboutamazon.com/news/workplace/first-amazon-office-jeff-bezos-garage","https://help.imdb.com/article/imdb/general-information/imdb-history/G836CY29Z4SGNMK5"]},{"n":"#004","title":"The KitKat File","img":"assets/cases/case-004-kitkat.jpg","hook":"The company that makes your cat’s food owns a fifth of L’Oréal.","chain":["A coffee pod","Nestlé","Purina","L’Oréal","KitKat"],"links":["https://www.nestleusa.com/brands","https://investor.starbucks.com/news/financial-releases/news-details/2018/Starbucks-and-Nestl-Form-Global-Coffee-Alliance-to-Elevate-and-Expand-Consumer-Packaged-Goods-and-Foodservice-Categories-Around-the-World/default.aspx","https://www.swissinfo.ch/eng/agribusiness/nestl%C3%A9-chief-wants-to-reduce-debt-without-selling-lor%C3%A9al/91826264","https://us.fashionnetwork.com/news/Nestle-s-stake-in-l-oreal-is-a-financial-investment-nestle-ceo-says,1794120.html","https://www.cbsnews.com/news/ferrero-buys-nestles-u-s-candy-business-for-2-8-billion/","https://www.cnn.com/2023/09/02/business/kit-kat-international-flavors-curious-consumer","https://www.loreal-finance.com/eng/shareholders-guide-2025/en/article/12/"]},{"n":"#005","title":"The Ray-Ban File","img":"assets/cases/case-005-rayban.jpg","hook":"The company that makes Ray-Bans might own the store you bought them at.","chain":["Ray-Ban","EssilorLuxottica","Sunglass Hut & LensCrafters","EyeMed","Meta"],"links":["https://www.vfc.com/news/press-release/1841/essilorluxottica-completes-acquisition-of-supreme-from-vf","https://www.reuters.com/world/europe/meta-takes-around-3-stake-ray-ban-parent-essilorluxottica-source-says-2025-07-08/","https://www.reuters.com/business/finance/essilorluxottica-director-says-metas-stake-ray-ban-maker-at-least-3-2025-12-09/","https://fashionunited.uk/news/business/prada-and-essilorluxottica-renew-eyewear-licensing-agreement/2024121879263","https://finance.yahoo.com/news/essilorluxottica-michael-kors-announce-extended-060000710.html","https://www.essilorluxottica.com/en/cap/content/284350/","https://www.globenewswire.com/news-release/2024/09/17/2947143/0/en/EssilorLuxottica-and-Meta-Announce-Long-Term-Partnership-Shaping-the-Future-of-the-Smart-Eyewear-Category.html","https://www.eyemed.com/en-us/about-us/"]},{"n":"MASTER","title":"The Master File","img":"assets/cases/master-file.jpg","hook":"Your Dunkin’ and your Subway have the same owner.","chain":["7 AM to midnight","Roark Capital","Inspire Brands","PepsiCo","Vanguard"],"links":["https://www.sec.gov/Archives/edgar/data/21665/000002166526000003/a4q2025pressreleasetables.htm","https://www.colgatepalmolive.com/en-us/who-we-are/history","https://abcnews.com/Business/story?id=88989&page=1","https://inspirebrands.com/inspire-brands-completes-acquisition-of-dunkin-brands/","https://inspirebrands.com/about-us/","https://www.cnbc.com/2023/08/24/subway-sells-to-dunkin-owner-roark-capital.html","https://www.restaurantbusinessonline.com/financing/subway-completes-its-sale-roark-capital","https://www.roarkcapital.com/portfolio","https://blogs.microsoft.com/blog/2023/10/13/welcoming-the-legendary-teams-at-activision-blizzard-king-to-team-xbox/","https://somnigroup.com/newsroom/news-details/2025/Tempur-Sealy-Successfully-Completes-Acquisition-of-Mattress-Firm/default.aspx","https://www.sec.gov/Archives/edgar/data/2100119/000210011926001527/13F_0002100119_20260630.xml","https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/sets-us-apart/ownership.html"]}]}</script>
 <script>
 (function () {
   'use strict';
@@ -614,8 +689,14 @@ p.kids-none { margin: 6px 0 0; }
   function $(s) { return document.querySelector(s); }
   function el(tag, attrs) {
     var n = document.createElement(tag);
-    Object.keys(attrs || {}).forEach(function (k) { if (attrs[k] != null) { if (k === 'class') n.className = attrs[k]; else n.setAttribute(k, attrs[k]); } });
-    for (var i = 2; i < arguments.length; i++) { var c = arguments[i]; if (c == null) continue; (Array.isArray(c) ? c : [c]).forEach(function (x) { n.appendChild(x instanceof Node ? x : document.createTextNode(String(x))); }); }
+    Object.keys(attrs || {}).forEach(function (k) {
+      var v = attrs[k];
+      if (v == null || v === false) return;
+      if (k === 'class') n.className = v;
+      else if (k.indexOf('on') === 0) n.addEventListener(k.slice(2), v);
+      else n.setAttribute(k, v === true ? '' : v);
+    });
+    for (var i = 2; i < arguments.length; i++) { var c = arguments[i]; if (c == null) continue; (Array.isArray(c) ? c : [c]).forEach(function (x) { if (x != null) n.appendChild(x instanceof Node ? x : document.createTextNode(String(x))); }); }
     return n;
   }
   function face(f) {
@@ -623,26 +704,99 @@ p.kids-none { margin: 6px 0 0; }
     if (ph) {
       var r = ph.h / ph.w, w = Math.max(1, ph.w / ph.h) * ph.zoom, hh = w * r;
       var left = Math.min(0, Math.max(1 - w, 0.5 - ph.fx * w)), top = Math.min(0, Math.max(1 - hh, 0.46 - ph.fy * hh));
-      var img = el('img', { src: 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(ph.file.replace(/ /g, '_')) + (ph.w > 400 ? '?width=400' : ''), alt: '', loading: 'lazy', referrerpolicy: 'no-referrer',
+      var img = el('img', { src: 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(ph.file.replace(/ /g, '_')) + (ph.w > 400 ? '?width=400' : ''), alt: '', loading: 'lazy', decoding: 'async', referrerpolicy: 'no-referrer',
         style: 'width:' + (w * 100).toFixed(2) + '%;left:' + (left * 100).toFixed(2) + '%;top:' + (top * 100).toFixed(2) + '%' });
       img.addEventListener('error', function () { img.remove(); });
       span.appendChild(img);
     }
     return span;
   }
+  function money(n) {
+    if (n >= 1e12) return '$' + (n / 1e12).toFixed(3).replace(/\.?0+$/, '') + 'T';
+    if (n >= 1e9) return '$' + (n / 1e9).toFixed(1).replace(/\.0$/, '') + 'B';
+    return '$' + Math.round(n / 1e6) + 'M';
+  }
+  function times(x) {
+    if (x >= 100) return Math.round(x).toLocaleString('en-US');
+    if (x >= 10) return x.toFixed(0);
+    if (x >= 1) return x.toFixed(1).replace(/\.0$/, '');
+    if (x >= 0.01) return x.toFixed(2);
+    return x.toFixed(4);
+  }
   [].forEach.call(document.querySelectorAll('[data-asof]'), function (n) { n.textContent = D.asOfLabel; });
   $('#repo-link').href = $('#repo-link-2').href = D.repo;
-  var total = D.families.reduce(function (a, f) { return a + f.worthV; }, 0);
+
+  var F = D.families, ranked = F.filter(function (f) { return f.worthV; }).sort(function (a, b) { return b.worthV - a.worthV; });
+  var total = ranked.reduce(function (a, f) { return a + f.worthV; }, 0), top = ranked[0];
+
+  /* stat card */
   var stat = $('#hub-stat');
-  stat.appendChild(el('p', { class: 'label' }, D.families.length + ' families on file'));
+  stat.appendChild(el('p', { class: 'label' }, F.length + ' families on file'));
   stat.appendChild(el('p', { class: 'big-number' }, '$' + (total / 1e12).toFixed(2) + ' trillion'));
-  stat.appendChild(el('p', { class: 'fine' }, D.families.map(function (f) { return f.name + ' ' + f.worthShort; }).join(' · ') + ' · Forbes estimates, ' + D.asOfLabel));
-  D.families.forEach(function (f) {
-    $('#files-grid').appendChild(el('a', { class: 'file-card', href: f.slug + '/' },
-      face(f), el('p', { class: 'fn' }, f.file), el('h3', null, f.title), el('p', { class: 'w' }, f.worthShort),
-      el('p', { class: 'tz' }, f.teaser), el('p', { class: 'meta' }, f.people + ' people · ' + f.sources + ' sources'), el('span', { class: 'go' }, 'Open the file →')));
-  });
-  $('#files-grid').appendChild(el('div', { class: 'file-card soon' }, el('p', { class: 'fn' }, 'Next file'), el('h3', null, 'More families soon'), el('p', { class: 'tz' }, 'Got a name we should trace? Open an issue on GitHub.')));
+  stat.appendChild(el('p', { class: 'fine' }, 'The combined fortunes of the ' + ranked.length + ' people at the center of these files who have a Forbes or Bloomberg estimate (our math). Data as of ' + D.asOfLabel + '.'));
+  if (top) stat.appendChild(el('div', { class: 'stat-split' },
+    el('div', { class: 'split-bar', role: 'img', 'aria-label': top.name + ' holds ' + (top.worthV / total * 100).toFixed(0) + '% of the total' },
+      el('span', { style: 'width:' + (top.worthV / total * 100).toFixed(2) + '%' })),
+    el('p', null, el('b', { class: 'gold' }, top.name + ': ' + (top.worthV / total * 100).toFixed(0) + '%'), ' of it. Everyone else on the leaderboard shares the rest.')));
+
+  /* files grid */
+  var cat = 'all', sort = 'rich', grid = $('#files-grid');
+  var catNames = {}; D.cats.forEach(function (c) { catNames[c[0]] = c[1]; });
+  function chip(label, on, fn, count) {
+    return el('button', { type: 'button', class: 'fchip' + (on ? ' on' : ''), 'aria-pressed': on ? 'true' : 'false', onclick: fn }, label, count != null ? el('span', { class: 'n' }, String(count)) : null);
+  }
+  function drawChips() {
+    var cc = $('#cat-chips'), sc = $('#sort-chips');
+    cc.textContent = ''; sc.textContent = '';
+    cc.appendChild(chip('All', cat === 'all', function () { cat = 'all'; draw(); }, F.length));
+    D.cats.forEach(function (c) {
+      var n = F.filter(function (f) { return f.cat === c[0]; }).length;
+      if (n) cc.appendChild(chip(c[1], cat === c[0], function () { cat = c[0]; draw(); }, n));
+    });
+    sc.appendChild(chip('Richest first', sort === 'rich', function () { sort = 'rich'; draw(); }));
+    sc.appendChild(chip('File number', sort === 'file', function () { sort = 'file'; draw(); }));
+  }
+  function draw() {
+    drawChips();
+    grid.textContent = '';
+    var list = F.filter(function (f) { return cat === 'all' || f.cat === cat; }).slice();
+    if (sort === 'rich') list.sort(function (a, b) { return (b.worthV || 0) - (a.worthV || 0); });
+    else list.sort(function (a, b) { return a.file < b.file ? -1 : 1; });
+    list.forEach(function (f) {
+      grid.appendChild(el('a', { class: 'file-card', href: f.slug + '/' },
+        el('div', { class: 'fc-top' }, face(f), el('div', { class: 'fc-id' }, el('p', { class: 'fn' }, f.file + ' · ' + catNames[f.cat]), el('h3', null, f.title), el('p', { class: 'w' + (f.worthV ? '' : ' role') }, f.worthShort))),
+        el('p', { class: 'tz' }, f.teaser),
+        el('p', { class: 'meta' }, f.people + ' people · ' + f.sources + ' sources · data as of ' + f.asOfLabel),
+        el('span', { class: 'go' }, 'Open the file →')));
+    });
+    grid.appendChild(el('div', { class: 'file-card soon' }, el('p', { class: 'fn' }, 'Next file'), el('h3', null, 'Who should we trace next?'), el('p', { class: 'tz' }, 'Open an issue on GitHub with a name and a source or two.')));
+  }
+  draw();
+
+  /* leaderboard */
+  var unitSel = $('#unit'), lb = $('#lb');
+  unitSel.appendChild(el('option', { value: '' }, 'Dollars'));
+  ranked.slice().reverse().forEach(function (f) { unitSel.appendChild(el('option', { value: f.slug }, f.name + '’s fortune')); });
+  function drawLb() {
+    lb.textContent = '';
+    var unit = null; ranked.forEach(function (f) { if (f.slug === unitSel.value) unit = f; });
+    ranked.forEach(function (f, i) {
+      var pc = f.worthV / top.worthV * 100, val = unit ? (f === unit ? '1×' : times(f.worthV / unit.worthV) + '×') : money(f.worthV);
+      lb.appendChild(el('li', { class: 'lb-row' + (unit === f ? ' unit' : '') },
+        el('span', { class: 'lb-rank' }, String(i + 1)),
+        el('a', { class: 'lb-who', href: f.slug + '/' }, face(f), el('span', { class: 'lb-name' }, f.name, el('span', { class: 'lb-file' }, f.title))),
+        el('span', { class: 'lb-track', 'aria-hidden': 'true' }, el('span', { class: 'lb-fill', style: 'width:' + Math.max(pc, 0.15).toFixed(3) + '%' })),
+        el('span', { class: 'lb-val' }, val),
+        el('span', { class: 'lb-pc' }, i ? (pc < 1 ? pc.toFixed(2) : pc.toFixed(1)) + '% of ' + top.short + '’s' : 'The top')));
+    });
+  }
+  unitSel.addEventListener('change', function () { drawLb(); var u = unitSel.options[unitSel.selectedIndex]; $('#lb-cap').textContent = unitSel.value ? 'Each number is how many times bigger (or smaller) that fortune is than ' + u.textContent + ' of ' + money(ranked.filter(function (f) { return f.slug === unitSel.value; })[0].worthV) + '.' : ''; });
+  drawLb();
+  var off = F.filter(function (f) { return !f.worthV; });
+  $('#lb-note').textContent = (off.length ? 'Not on the board, because Forbes and Bloomberg don’t publish a net worth for them: ' + off.map(function (f) { return f.name; }).join(', ') + '. ' : '') +
+    'Each figure is from that file’s data date, ' + D.asOfLabel + '. Some Forbes figures cover a person and their family together; each file says which.';
+
+  /* case files */
   D.cases.forEach(function (c) {
     var chain = el('p', { class: 'chain' });
     c.chain.forEach(function (s, i) { if (i) chain.appendChild(el('i', { 'aria-hidden': 'true' }, '→')); chain.appendChild(el('span', { class: 'link' }, s)); });

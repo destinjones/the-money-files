@@ -6,7 +6,8 @@
   "repo": "https://github.com/destinjones/the-money-files",
   "center": "jeff",
   "slug": "bezos",
-  "og": "assets/og-hub.jpg"
+  "og": "assets/og-hub.jpg",
+  "pronoun": "his"
  },
  "copy": {
   "title": "The Bezos Money File",
