@@ -2,6 +2,18 @@
 .game-hero { padding-block: clamp(28px, 5vw, 56px) 8px; }
 .game-hero h1 { font-size: clamp(2.4rem, 6.5vw, 4.6rem); }
 .game-hero .lede { max-width: 640px; }
+.modes { display: flex; gap: 8px; flex-wrap: wrap; margin: 22px 0 8px; }
+.modes button { font: 700 .76rem/1 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; padding: 11px 15px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--ink-2); cursor: pointer; }
+.modes button:hover { border-color: var(--ink-3); color: var(--ink); }
+.modes button[aria-selected="true"] { background: var(--gold); border-color: var(--gold); color: #1a1205; }
+.mode-note { color: var(--ink-3); font-size: .9rem; margin: 6px 0 0; max-width: 640px; }
+.hud { margin-top: 14px !important; }
+.face.logo { background: var(--c); display: grid; place-items: center; }
+.face.logo::before { content: none; }
+.face.logo span { font: 400 calc(var(--fs) * .36)/1 var(--f-display); color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,.35); letter-spacing: .02em; }
+.over .grid { font-size: 1.6rem; letter-spacing: .12em; margin: 4px 0 6px; min-height: 0; }
+.over .grid:empty { display: none; }
+@media (max-width: 520px) { .over .grid { font-size: 1.1rem; letter-spacing: .02em; white-space: nowrap; } }
 .hud { display: flex; gap: 10px; flex-wrap: wrap; margin: 22px 0 18px; }
 .hud .chip { font: 700 .74rem/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); border: 1px solid var(--line); border-radius: 999px; padding: 9px 14px; background: var(--card); }
 .hud .chip b { color: var(--gold); font-size: .95rem; margin-left: 6px; letter-spacing: .02em; }
@@ -65,12 +77,18 @@
 </header>
 <main>
   <section class="wrap game-hero" aria-labelledby="h-game">
-    <p class="eyebrow"><b>The game</b> · {{N}} fortunes · Data as of <span data-asof></span></p>
+    <p class="eyebrow"><b>The game</b> · {{N}} fortunes · {{NC}} companies · Data as of <span data-asof></span></p>
     <h1 id="h-game">Who’s <span class="gold">richer</span>? Guess <span class="u-red">higher</span> or lower.</h1>
-    <p class="lede">Every fortune here is a real Forbes or Bloomberg estimate from our files. Guess whether the next person is worth more or less. One wrong guess ends the run.</p>
+    <p class="lede">Guess whether the next one is worth more or less. Play endless, take today’s challenge, or switch to companies.</p>
+    <div class="modes" role="group" aria-label="Game mode">
+      <button type="button" data-mode="endless" aria-selected="true">Endless</button>
+      <button type="button" data-mode="daily">Daily challenge</button>
+      <button type="button" data-mode="companies">Companies</button>
+    </div>
+    <p class="mode-note" id="mode-note"></p>
     <div class="hud" aria-live="polite">
-      <span class="chip">Streak<b id="score">0</b></span>
-      <span class="chip">Best<b id="best">0</b></span>
+      <span class="chip"><span id="l1">Streak</span><b id="score">0</b></span>
+      <span class="chip"><span id="l2">Best</span><b id="best">0</b></span>
     </div>
     <div class="arena" id="arena">
       <article class="pcard" id="left"></article>
@@ -79,9 +97,10 @@
     </div>
     <p class="ratio" id="ratio" aria-live="polite"></p>
     <div class="over" id="over" role="dialog" aria-labelledby="over-verdict">
-      <p class="eyebrow">Run over</p>
+      <p class="eyebrow" id="over-eyebrow">Run over</p>
       <p class="big" id="over-score">0</p>
       <p class="verdict" id="over-verdict"></p>
+      <p class="grid" id="grid" aria-label="Your results"></p>
       <p id="over-fact"></p>
       <div class="row">
         <button class="btn" id="again" type="button">Play again</button>
@@ -90,7 +109,7 @@
       <p class="copied" id="copied"></p>
       <p id="over-links"></p>
     </div>
-    <p class="rules">Fortunes are the latest Forbes or Bloomberg estimates in each file; some cover a person and their family together, and each file says which. They move every trading day. Not investment advice.</p>
+    <p class="rules">Fortunes are the latest Forbes or Bloomberg estimates in each file; some cover a person and their family together, and each file says which. Company stock market values are as of {{MCAPDATE}} (<a href="{{MCAPURL}}" target="_blank" rel="noopener">source</a>); other company figures are funding-round valuations or prices paid, labeled on each card and sourced in its file. Everything moves every trading day. Not investment advice.</p>
   </section>
 </main>
 <footer class="site-foot">
@@ -143,30 +162,56 @@
   [].forEach.call(document.querySelectorAll('[data-asof]'), function (n) { n.textContent = D.asOfLabel; });
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  var score = 0, best = +(store('mf-hl-best') || 0), cur, next, seen = [], busy = false;
-  $('#best').textContent = best;
-
-  // Pick an opponent that isn't a near-tie; as the streak grows, prefer closer calls.
-  function pick(from) {
-    var opts = P.filter(function (p) {
-      if (p === from || seen.indexOf(p) >= 0) return false;
-      var r = Math.max(p.v, from.v) / Math.min(p.v, from.v);
-      return r >= 1.06;
-    });
-    if (!opts.length) { seen = [from]; return pick(from); }
-    var maxR = score < 3 ? Infinity : score < 7 ? 12 : 3.5;
-    var close = opts.filter(function (p) { var r = Math.max(p.v, from.v) / Math.min(p.v, from.v); return r <= maxR; });
+  var MODES = {
+    endless: { pool: D.pool, best: 'mf-hl-best', note: 'Every fortune is a real Forbes or Bloomberg estimate from our files. One wrong guess ends the run.' },
+    daily: { pool: D.pool, note: 'Ten pairs, the same for everyone today. Play all ten, then share your grid. A new set comes at midnight.' },
+    companies: { pool: D.companies, best: 'mf-hl-best-co', note: 'Companies from the files: stock market values, funding-round valuations and price tags, each labeled. One wrong guess ends the run.' }
+  };
+  var mode = 'endless', P, score = 0, best = 0, cur, next, seen = [], busy = false, pairs = [], di = 0, results = [];
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function today() { var d = new Date(); return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  var DAY = today(), DAYNO = Math.round((Date.parse(DAY + 'T00:00:00Z') - Date.parse('2026-10-12T00:00:00Z')) / 864e5) + 1;
+  function rng(seedStr) {
+    var h = 1779033703 ^ seedStr.length;
+    for (var i = 0; i < seedStr.length; i++) { h = Math.imul(h ^ seedStr.charCodeAt(i), 3432918353); h = h << 13 | h >>> 19; }
+    return function () { h = Math.imul(h ^ h >>> 16, 2246822507); h = Math.imul(h ^ h >>> 13, 3266489909); var t = (h ^= h >>> 16) >>> 0; return t / 4294967296; };
+  }
+  function ratio(a, b) { return Math.max(a.v, b.v) / Math.min(a.v, b.v); }
+  function maxR(n) { return n < 3 ? Infinity : n < 7 ? 12 : 3.5; }
+  // Pick an opponent that isn't a near-tie; the further along, the closer the call.
+  function pick(from, n, rand, avoid) {
+    var opts = P.filter(function (p) { return p !== from && avoid.indexOf(p) < 0 && ratio(p, from) >= 1.06; });
+    if (!opts.length) opts = P.filter(function (p) { return p !== from && ratio(p, from) >= 1.06; });
+    var close = opts.filter(function (p) { return ratio(p, from) <= maxR(n); });
     var list = close.length ? close : opts;
-    return list[Math.floor(Math.random() * list.length)];
+    return list[Math.floor(rand() * list.length)];
+  }
+  function dailyPairs() {
+    var rand = rng('mf-daily-' + DAY), used = [], out = [];
+    for (var i = 0; i < 10; i++) {
+      var fresh = P.filter(function (p) { return used.indexOf(p) < 0; });
+      var a = fresh[Math.floor(rand() * fresh.length)] || P[0];
+      used.push(a);
+      var b = pick(a, i, rand, used); used.push(b);
+      out.push([a, b]);
+    }
+    return out;
+  }
+  function logo(p) {
+    return el('span', { class: 'face logo', style: '--c:' + (p.color || '#FFB020'), 'aria-hidden': 'true' }, el('span', null, p.initials));
   }
   function card(p, hidden) {
     var meta = el('div', { class: 'meta' },
       el('h2', { class: 'who' }, p.name),
       el('p', { class: 'rel' }, p.sub),
-      el('p', { class: 'val' + (hidden ? ' hidden' : ''), 'data-val': '' }, hidden ? '$ ?' : money(p.v)),
+      el('p', { class: 'val' + (hidden ? ' hidden' : '') }, hidden ? '$ ?' : money(p.v)),
       hidden ? null : el('p', { class: 'by' }, p.by),
       el('a', { class: 'file-link', href: p.href }, 'Open the file →'));
-    return [face(p), meta];
+    return [p.logo ? logo(p) : face(p), meta];
+  }
+  function hud() {
+    if (mode === 'daily') { $('#l1').textContent = 'Round'; $('#score').textContent = Math.min(di + 1, 10) + '/10'; $('#l2').textContent = 'Right'; $('#best').textContent = results.filter(Boolean).length; }
+    else { $('#l1').textContent = 'Streak'; $('#score').textContent = score; $('#l2').textContent = 'Best'; $('#best').textContent = best; }
   }
   function render() {
     var L = $('#left'), R = $('#right');
@@ -179,8 +224,9 @@
       el('button', { type: 'button', class: 'higher', onclick: function () { guess(true); } }, '▲ Higher'),
       el('button', { type: 'button', class: 'lower', onclick: function () { guess(false); } }, '▼ Lower')));
     $('#ratio').textContent = '';
+    hud();
     busy = false;
-    var b = R.querySelector('button'); if (b && score > 0) b.focus({ preventScroll: true });
+    var b = R.querySelector('button'); if (b && (score > 0 || di > 0)) b.focus({ preventScroll: true });
   }
   function countUp(node, to, done) {
     if (reduce) { node.textContent = money(to); return done(); }
@@ -200,50 +246,98 @@
     var val = R.querySelector('.val'); val.classList.remove('hidden');
     countUp(val, next.v, function () {
       var right = higher ? next.v > cur.v : next.v < cur.v;
-      var big = Math.max(next.v, cur.v), small = Math.min(next.v, cur.v), bigP = next.v > cur.v ? next : cur, smallP = bigP === next ? cur : next;
+      var bigP = next.v > cur.v ? next : cur, smallP = bigP === next ? cur : next;
       var q = R.querySelector('.q'); if (q) q.remove();
       val.after(el('p', { class: 'by' }, next.by));
       var ch = R.querySelector('.choices'); if (ch) ch.remove();
       R.classList.add(right ? 'right' : 'wrong');
       $('#vs').className = 'vs ' + (right ? 'right' : 'wrong'); $('#vs').textContent = right ? '✓' : '✗';
-      $('#ratio').replaceChildren(bigP.short + '’s fortune is ', el('b', null, times(big / small) + '×'), ' ' + smallP.short + '’s.');
+      $('#ratio').replaceChildren(bigP.short + (bigP.logo ? ' is worth ' : '’s fortune is '), el('b', null, times(bigP.v / smallP.v) + '×'), ' ' + smallP.short + (smallP.logo ? '.' : '’s.'));
+      var wait = reduce ? 500 : 1300;
+      if (mode === 'daily') {
+        results.push(right); hud();
+        if (di < 9) setTimeout(function () { di++; cur = pairs[di][0]; next = pairs[di][1]; render(); }, wait + 300);
+        else { store('mf-daily-' + DAY, JSON.stringify(results)); setTimeout(dailyOver, 700); }
+        return;
+      }
       if (right) {
-        score++; $('#score').textContent = score;
-        if (score > best) { best = score; store('mf-hl-best', best); $('#best').textContent = best; }
+        score++;
+        if (score > best) { best = score; store(MODES[mode].best, best); }
+        hud();
         seen.push(cur); if (seen.length > 12) seen.shift();
-        setTimeout(function () { cur = next; next = pick(cur); render(); }, reduce ? 500 : 1300);
+        setTimeout(function () { cur = next; next = pick(cur, score, Math.random, seen); render(); }, wait);
       } else {
-        setTimeout(function () { over(bigP, smallP, big / small); }, 600);
+        setTimeout(function () { over(bigP, smallP); }, 600);
       }
     });
   }
   var VERDICTS = [[0, 'Back to the files'], [3, 'Getting warmer'], [6, 'You read the filings'], [10, 'Forbes should hire you'], [15, 'Insider trading? Kidding']];
-  function over(bigP, smallP, r) {
-    var v = VERDICTS.filter(function (x) { return score >= x[0]; }).pop()[1];
-    $('#over-score').textContent = score;
-    $('#over-verdict').textContent = v;
-    $('#over-fact').textContent = 'The one that got you: ' + bigP.name + ' (' + money(bigP.v) + ') vs. ' + smallP.name + ' (' + money(smallP.v) + ').';
-    $('#over-links').replaceChildren('Read the files: ', el('a', { href: bigP.href }, bigP.name), ' · ', el('a', { href: smallP.href }, smallP.name));
+  var DVERDICTS = [[0, 'Rough day on the market'], [4, 'Not bad'], [7, 'You read the filings'], [9, 'Forbes should hire you'], [10, 'Perfect day']];
+  function showOver() {
     $('#copied').textContent = '';
     $('#over').classList.add('show');
     $('#again').focus({ preventScroll: true });
     $('#over').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
   }
-  function start() {
-    score = 0; $('#score').textContent = 0; seen = [];
+  function over(bigP, smallP) {
+    $('#over-eyebrow').textContent = mode === 'companies' ? 'Run over · Companies' : 'Run over';
+    $('#over-score').textContent = score;
+    $('#over-verdict').textContent = VERDICTS.filter(function (x) { return score >= x[0]; }).pop()[1];
+    $('#over-fact').textContent = 'The one that got you: ' + bigP.name + ' (' + money(bigP.v) + ') vs. ' + smallP.name + ' (' + money(smallP.v) + ').';
+    $('#grid').textContent = '';
+    $('#over-links').replaceChildren('Read the files: ', el('a', { href: bigP.href }, bigP.name), ' · ', el('a', { href: smallP.href }, smallP.name));
+    $('#again').textContent = 'Play again'; $('#again').hidden = false;
+    showOver();
+  }
+  function grid() { return results.map(function (r) { return r ? '🟩' : '🟥'; }).join(''); }
+  function dailyOver(already) {
+    var n = results.filter(Boolean).length;
+    $('#over-eyebrow').textContent = 'Daily challenge #' + DAYNO + (already ? ' · already played today' : '');
+    $('#over-score').textContent = n + '/10';
+    $('#over-verdict').textContent = DVERDICTS.filter(function (x) { return n >= x[0]; }).pop()[1];
+    $('#grid').textContent = grid();
+    $('#over-fact').textContent = 'A new set of ten comes at midnight. Until then, try endless mode or companies.';
+    $('#over-links').textContent = '';
+    $('#again').textContent = 'Play endless mode';
+    showOver();
+  }
+  function shareText() {
+    var url = location.href.split('#')[0].split('?')[0];
+    if (mode === 'daily') return 'The Money Files daily #' + DAYNO + ': ' + results.filter(Boolean).length + '/10\n' + grid() + '\n' + url;
+    return 'I got a streak of ' + score + ' on Higher or Lower' + (mode === 'companies' ? ' (companies)' : '') + ': who’s richer? ' + url;
+  }
+  function start(m) {
+    mode = m || mode; P = MODES[mode].pool;
+    [].forEach.call(document.querySelectorAll('.modes button'), function (b) { b.setAttribute('aria-selected', String(b.dataset.mode === mode)); });
+    $('#mode-note').textContent = MODES[mode].note;
     $('#over').classList.remove('show');
-    cur = P[Math.floor(Math.random() * P.length)];
-    next = pick(cur);
+    $('#arena').hidden = false;
+    score = 0; seen = []; di = 0; results = [];
+    if (mode === 'daily') {
+      pairs = dailyPairs();
+      var done = store('mf-daily-' + DAY);
+      if (done) { try { results = JSON.parse(done); } catch (e) { results = []; } }
+      if (results.length >= 10) { $('#arena').hidden = true; $('#ratio').textContent = ''; di = 9; hud(); dailyOver(true); return; }
+      results = [];
+      cur = pairs[0][0]; next = pairs[0][1];
+    } else {
+      best = +(store(MODES[mode].best) || 0);
+      cur = P[Math.floor(Math.random() * P.length)];
+      next = pick(cur, 0, Math.random, seen);
+    }
     render();
   }
-  $('#again').addEventListener('click', function () { start(); $('#arena').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' }); });
+  [].forEach.call(document.querySelectorAll('.modes button'), function (b) {
+    b.addEventListener('click', function () { if (busy && b.dataset.mode === mode) return; start(b.dataset.mode); });
+  });
+  $('#again').addEventListener('click', function () { start(mode === 'daily' ? 'endless' : mode); $('#arena').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' }); });
   $('#share').addEventListener('click', function () {
-    var text = 'I got a streak of ' + score + ' on Higher or Lower: who’s richer? ' + location.href.split('#')[0];
+    var text = shareText();
     if (navigator.share) { navigator.share({ title: 'Higher or Lower: The Money Files', text: text }).catch(function () {}); return; }
     function done() { $('#copied').textContent = 'Copied. Paste it anywhere.'; }
     if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, function () { $('#copied').textContent = text; });
     else $('#copied').textContent = text;
   });
-  start();
+  start(/daily/.test(location.hash) ? 'daily' : /compan/.test(location.hash) ? 'companies' : 'endless');
 })();
 </script>

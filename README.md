@@ -45,7 +45,7 @@ Interactive, fully sourced "follow the money" maps from the Follow the Money vid
 
 - **The leaderboard.** The person at the center of each file, ranked by their Forbes or Bloomberg estimate, with bars drawn to scale. Pick anyone on the board to measure everyone else in their fortune, for example how many LeBron James fortunes fit in Elon Musk's.
 - **The files.** Every family as a card. Filter by world (tech, business, entertainment, sports, politics) or sort by fortune or file number.
-- **Higher or Lower** (`/game/`). Two faces, one hidden fortune: guess who’s richer. Uses every Forbes and Bloomberg figure in the files, gets harder as your streak grows, and saves your best score on your device.
+- **Higher or Lower** (`/game/`). Two cards, one hidden number: guess higher or lower. Three modes: endless (36 Forbes and Bloomberg fortunes, harder as your streak grows), a daily challenge (the same ten pairs for everyone each day, with a shareable 🟩🟥 grid), and companies (29 companies from the files, by stock market value, valuation or price paid).
 - **The case files.** The short videos that trace everyday brands back to who owns them, each with its sources.
 
 ## What's on each family page

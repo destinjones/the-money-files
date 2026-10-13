@@ -217,6 +217,57 @@ def hub_page(cards, preview=False):
     return doc('The Money Files', f'Follow the money: interactive, fully sourced maps of {len(cards)} of the richest and most famous families on Earth. '
                'Who owns what, which stocks you can buy, the homes, and the receipts.', 'assets/og-hub.jpg', body, preview)
 
+MCAP_DATE, MCAP_URL = 'Oct 9, 2026', 'https://chartrow.com/lists/biggest-companies'
+# (name, short, value in $, how it was valued, family slug, company id in that family's file)
+GAME_COMPANIES = [
+    ('Nvidia', 'Nvidia', 5.53e12, 'Stock market value, Oct 9, 2026', 'huang', 'nvidia'),
+    ('Alphabet (Google)', 'Alphabet', 4.30e12, 'Stock market value, Oct 9, 2026', 'page', 'alphabet'),
+    ('Microsoft', 'Microsoft', 3.97e12, 'Stock market value, Oct 9, 2026', 'gates', 'microsoft'),
+    ('Amazon', 'Amazon', 2.83e12, 'Stock market value, Oct 9, 2026', 'bezos', 'amazon'),
+    ('SpaceX', 'SpaceX', 2.26e12, 'Stock market value, Oct 5, 2026 (our math)', 'musk', 'spacex'),
+    ('Meta', 'Meta', 1.83e12, 'Stock market value, Oct 9, 2026', 'zuckerberg', 'meta'),
+    ('Tesla', 'Tesla', 1.51e12, 'Stock market value, Oct 9, 2026', 'musk', 'tesla'),
+    ('Berkshire Hathaway', 'Berkshire', 1.10e12, 'Stock market value, Oct 9, 2026', 'buffett', 'berkshire'),
+    ('AMD', 'AMD', 993e9, 'Stock market value, Oct 9, 2026', 'huang', 'amd'),
+    ('Walmart', 'Walmart', 883e9, 'Stock market value, Oct 9, 2026', 'walton', 'walmart'),
+    ('Oracle', 'Oracle', 428e9, 'Stock market value, Oct 9, 2026', 'ellison', 'oracle'),
+    ('21st Century Fox (most of it)', '21st Century Fox', 71.3e9, 'Price Disney paid, 2019', 'murdoch', 'twentyfirst'),
+    ('The Boring Company', 'Boring', 23e9, 'Valuation, Sep 2026', 'musk', 'boring'),
+    ('Perplexity', 'Perplexity', 20e9, 'Valuation, Sep 2025', 'ronaldo', 'perplexity'),
+    ('SKIMS', 'SKIMS', 5e9, 'Valuation, Nov 2025', 'kardashian', 'skims'),
+    ('Beast Industries', 'Beast Industries', 5e9, 'Valuation, 2024 round', 'mrbeast', 'beast'),
+    ('Denver Broncos', 'The Broncos', 4.65e9, 'Price the Waltons paid, 2022', 'walton', 'broncos'),
+    ('Beats', 'Beats', 3e9, 'Price Apple paid, 2014', 'james', 'beats'),
+    ('Charlotte Hornets', 'The Hornets', 3e9, 'Valuation when Jordan sold, 2023', 'jordan', 'hornets'),
+    ('PayPal (in 2002)', 'PayPal', 1.5e9, 'Price eBay paid, 2002', 'musk', 'paypal'),
+    ('Inter Miami CF', 'Inter Miami', 1.35e9, 'Forbes valuation, 2026', 'messi', 'intermiami'),
+    ('Rare Beauty', 'Rare Beauty', 1.3e9, 'Forbes valuation, 2025', 'gomez', 'rarebeauty'),
+    ('Savage X Fenty', 'Savage X Fenty', 1e9, 'Valuation, 2021 round', 'rihanna', 'savage'),
+    ('SpringHill Company', 'SpringHill', 725e6, 'Valuation, 2021 round', 'james', 'springhill'),
+    ('Taylor Swift’s first six albums', 'Swift’s masters', 360e6, 'Price she paid to buy them back, 2025', 'swift', 'masters'),
+    ('23andMe', '23andMe', 305e6, 'Price paid for its assets, 2025', 'brin', '23andme'),
+    ('Tidal (majority)', 'Tidal', 297e6, 'Price Square paid, 2021', 'carter', 'block'),
+    ('The Washington Post', 'The Post', 250e6, 'Price Bezos paid, 2013', 'bezos', 'wapo'),
+    ('Mumbai Indians', 'Mumbai Indians', 111.9e6, 'Price Ambani paid, 2008', 'ambani', 'mumbaiindians'),
+]
+
+
+def game_companies(cards):
+    titles = {c['slug']: c['title'] for c in cards}
+    out = []
+    for name, short, v, basis, slug, cid in GAME_COMPANIES:
+        if slug not in titles:
+            continue
+        d = family(slug)
+        co = next((c for c in d['companies'] + d.get('companiesExtra', []) if c['id'] == cid), None)
+        assert co, (slug, cid)
+        words = [w for w in re.split(r'[^\w]+', short) if w and w[0].isalnum() and w.lower() not in ('the', 'her')]
+        ini = (words[0][0] + (words[1][0] if len(words) > 1 else words[0][1:2])).upper() if words else short[:2].upper()
+        ini = {'AMD': 'AMD', 'SpaceX': 'X', '21st Century Fox': '21C', 'Savage X Fenty': 'SXF', '23andMe': '23', 'Swift’s masters': 'TS', 'The Post': 'WP'}.get(short, ini)
+        out.append(dict(name=name, short=short, v=v, by=basis, sub=titles[slug], href=f'../{slug}/#invest', logo=True,
+                        color=co.get('color', '#FFB020'), initials=ini))
+    return out
+
 
 def game_pool(cards):
     """Everyone with a published Forbes or Bloomberg fortune: each file's center plus the rest of its money ladder."""
@@ -243,9 +294,9 @@ def game_pool(cards):
 
 
 def game_page(cards, preview=False):
-    pool = game_pool(cards)
-    body = (read('src/game.html').replace('{{GAMEDATA}}', blob(dict(pool=pool, asOfLabel=date_range(cards))))
-            .replace('{{N}}', str(len(pool))).replace('{{COUNT}}', str(len(cards))))
+    pool, cos = game_pool(cards), game_companies(cards)
+    body = (read('src/game.html').replace('{{GAMEDATA}}', blob(dict(pool=pool, companies=cos, asOfLabel=date_range(cards))))
+            .replace('{{N}}', str(len(pool))).replace('{{NC}}', str(len(cos))).replace('{{MCAPDATE}}', MCAP_DATE).replace('{{MCAPURL}}', MCAP_URL).replace('{{COUNT}}', str(len(cards))))
     return doc('Higher or Lower: Who’s Richer? · The Money Files',
                f'Guess who’s richer. {len(pool)} real Forbes and Bloomberg fortunes, from Elon Musk to Travis Kelce. How long can your streak last?',
                'assets/og-hub.jpg', body, preview)

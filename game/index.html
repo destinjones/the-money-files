@@ -590,6 +590,18 @@ p.kids-none { margin: 6px 0 0; }
 .game-hero { padding-block: clamp(28px, 5vw, 56px) 8px; }
 .game-hero h1 { font-size: clamp(2.4rem, 6.5vw, 4.6rem); }
 .game-hero .lede { max-width: 640px; }
+.modes { display: flex; gap: 8px; flex-wrap: wrap; margin: 22px 0 8px; }
+.modes button { font: 700 .76rem/1 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; padding: 11px 15px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--ink-2); cursor: pointer; }
+.modes button:hover { border-color: var(--ink-3); color: var(--ink); }
+.modes button[aria-selected="true"] { background: var(--gold); border-color: var(--gold); color: #1a1205; }
+.mode-note { color: var(--ink-3); font-size: .9rem; margin: 6px 0 0; max-width: 640px; }
+.hud { margin-top: 14px !important; }
+.face.logo { background: var(--c); display: grid; place-items: center; }
+.face.logo::before { content: none; }
+.face.logo span { font: 400 calc(var(--fs) * .36)/1 var(--f-display); color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,.35); letter-spacing: .02em; }
+.over .grid { font-size: 1.6rem; letter-spacing: .12em; margin: 4px 0 6px; min-height: 0; }
+.over .grid:empty { display: none; }
+@media (max-width: 520px) { .over .grid { font-size: 1.1rem; letter-spacing: .02em; white-space: nowrap; } }
 .hud { display: flex; gap: 10px; flex-wrap: wrap; margin: 22px 0 18px; }
 .hud .chip { font: 700 .74rem/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); border: 1px solid var(--line); border-radius: 999px; padding: 9px 14px; background: var(--card); }
 .hud .chip b { color: var(--gold); font-size: .95rem; margin-left: 6px; letter-spacing: .02em; }
@@ -653,12 +665,18 @@ p.kids-none { margin: 6px 0 0; }
 </header>
 <main>
   <section class="wrap game-hero" aria-labelledby="h-game">
-    <p class="eyebrow"><b>The game</b> · 36 fortunes · Data as of <span data-asof></span></p>
+    <p class="eyebrow"><b>The game</b> · 36 fortunes · 29 companies · Data as of <span data-asof></span></p>
     <h1 id="h-game">Who’s <span class="gold">richer</span>? Guess <span class="u-red">higher</span> or lower.</h1>
-    <p class="lede">Every fortune here is a real Forbes or Bloomberg estimate from our files. Guess whether the next person is worth more or less. One wrong guess ends the run.</p>
+    <p class="lede">Guess whether the next one is worth more or less. Play endless, take today’s challenge, or switch to companies.</p>
+    <div class="modes" role="group" aria-label="Game mode">
+      <button type="button" data-mode="endless" aria-selected="true">Endless</button>
+      <button type="button" data-mode="daily">Daily challenge</button>
+      <button type="button" data-mode="companies">Companies</button>
+    </div>
+    <p class="mode-note" id="mode-note"></p>
     <div class="hud" aria-live="polite">
-      <span class="chip">Streak<b id="score">0</b></span>
-      <span class="chip">Best<b id="best">0</b></span>
+      <span class="chip"><span id="l1">Streak</span><b id="score">0</b></span>
+      <span class="chip"><span id="l2">Best</span><b id="best">0</b></span>
     </div>
     <div class="arena" id="arena">
       <article class="pcard" id="left"></article>
@@ -667,9 +685,10 @@ p.kids-none { margin: 6px 0 0; }
     </div>
     <p class="ratio" id="ratio" aria-live="polite"></p>
     <div class="over" id="over" role="dialog" aria-labelledby="over-verdict">
-      <p class="eyebrow">Run over</p>
+      <p class="eyebrow" id="over-eyebrow">Run over</p>
       <p class="big" id="over-score">0</p>
       <p class="verdict" id="over-verdict"></p>
+      <p class="grid" id="grid" aria-label="Your results"></p>
       <p id="over-fact"></p>
       <div class="row">
         <button class="btn" id="again" type="button">Play again</button>
@@ -678,7 +697,7 @@ p.kids-none { margin: 6px 0 0; }
       <p class="copied" id="copied"></p>
       <p id="over-links"></p>
     </div>
-    <p class="rules">Fortunes are the latest Forbes or Bloomberg estimates in each file; some cover a person and their family together, and each file says which. They move every trading day. Not investment advice.</p>
+    <p class="rules">Fortunes are the latest Forbes or Bloomberg estimates in each file; some cover a person and their family together, and each file says which. Company stock market values are as of Oct 9, 2026 (<a href="https://chartrow.com/lists/biggest-companies" target="_blank" rel="noopener">source</a>); other company figures are funding-round valuations or prices paid, labeled on each card and sourced in its file. Everything moves every trading day. Not investment advice.</p>
   </section>
 </main>
 <footer class="site-foot">
@@ -687,7 +706,7 @@ p.kids-none { margin: 6px 0 0; }
     <span><a href="../">All 28 files</a></span>
   </div>
 </footer>
-<script id="game-data" type="application/json">{"pool":[{"name":"Elon Musk","short":"Elon","v":1046000000000.0,"sub":"The Musk family","by":"Forbes real-time estimate","href":"../musk/","photo":{"file":"Elon Musk - 54820081119 (cropped).jpg","author":"Gage Skidmore","license":"CC BY-SA 4.0","w":2924,"h":3843,"fx":0.5,"fy":0.38,"zoom":1.35,"year":"2025"},"initials":"EM"},{"name":"Kimbal Musk","short":"Kimbal","v":1700000000.0,"sub":"Brother · The Musk family","by":"Forbes real-time estimate (source of wealth: Tesla, SpaceX)","href":"../musk/#kimbal","photo":{"file":"KIMBAL MUSK OFFICIAL HEADSHOT (cropped).jpg","author":"1000x2020","license":"CC BY-SA 4.0","w":2390,"h":3184,"fx":0.58,"fy":0.47,"zoom":1.08,"year":"2013"},"initials":"KM"},{"name":"Jeff Bezos","short":"Jeff","v":374500000000.0,"sub":"The Bezos family","by":"Forbes real-time estimate","href":"../bezos/","photo":{"file":"260202-D-PM193-2205 SECWAR Arsenal of Freedom Tour - Florida (3x4 cropped on Bezos and rotated).jpg","author":"U.S. Navy PO1 Alexander Kubitza, U.S. Dept. of War","license":"Public domain","w":1046,"h":1395,"fx":0.5,"fy":0.36,"zoom":1.3,"year":"2026"},"initials":"JB"},{"name":"MacKenzie Scott","short":"MacKenzie","v":27500000000.0,"sub":"Ex-wife · 1993–2019 · The Bezos family","by":"Forbes real-time estimate","href":"../bezos/#mackenzie","photo":{"file":"MacKenzie Scott.jpg","author":"Barry Bahler, U.S. DHS","license":"Public domain","w":82,"h":104,"fx":0.5,"fy":0.4,"zoom":1.0,"year":"2016"},"initials":"MS"},{"name":"Mark Zuckerberg","short":"Mark","v":253300000000.0,"sub":"The Zuckerberg family","by":"Forbes real-time estimate","href":"../zuckerberg/","photo":{"file":"P20260929DT-1655 (55561811540) (cropped 2).jpg","author":"The White House","license":"Public domain","w":414,"h":552,"fx":0.46,"fy":0.36,"zoom":1.0,"year":"2026"},"initials":"MZ"},{"name":"Larry Ellison","short":"Larry","v":187400000000.0,"sub":"The Ellison family","by":"Forbes real-time estimate","href":"../ellison/","photo":{"file":"Larry Ellison 2016.png","author":"Oracle PR Hartmann Studios","license":"CC BY 2.0","w":940,"h":1253,"fx":0.48,"fy":0.4,"zoom":1.0,"year":"2016"},"initials":"LE"},{"name":"Bill Gates","short":"Bill","v":114200000000,"sub":"The Gates family","by":"Forbes real-time estimate","href":"../gates/","photo":{"file":"Bill Gates at the European Commission - P067383-987995 (cropped) 5.jpg","author":"Bogdan Hoyaux / European Union","license":"CC BY 4.0","w":1000,"h":1335,"fx":0.5,"fy":0.28,"zoom":1.15,"year":"2025"},"initials":"BG"},{"name":"Melinda French Gates","short":"Melinda","v":34500000000,"sub":"Ex-wife · 1994–2021 · The Gates family","by":"Forbes real-time estimate","href":"../gates/#melinda","photo":{"file":"Melinda Gates 2014.jpg","author":"Ministry of Women and Child Development","license":"GODL-India","w":546,"h":683,"fx":0.39,"fy":0.32,"zoom":1.4,"year":"2014"},"initials":"MG"},{"name":"Jensen Huang","short":"Jensen","v":209500000000,"sub":"The Huang family","by":"Forbes real-time estimate","href":"../huang/","photo":{"file":"Jen-Hsun Huang 2025.jpg","author":"The White House","license":"Public domain","w":645,"h":839,"fx":0.51,"fy":0.52,"zoom":1.0,"year":"2025"},"initials":"JH"},{"name":"Sergey Brin","short":"Sergey","v":262600000000,"sub":"The Brin family","by":"Forbes real-time estimate","href":"../brin/","photo":{"file":"Sergey Brin Ted 2010 (cropped).jpg","author":"Steve Jurvetson","license":"CC BY 2.0","w":1423,"h":2070,"fx":0.45,"fy":0.38,"zoom":1.0,"year":"2010"},"initials":"SB"},{"name":"Larry Page","short":"Larry","v":288800000000,"sub":"The Page family","by":"Forbes real-time estimate","href":"../page/","photo":{"file":"Larry Page in the European Parliament, 17.06.2009 (cropped 2).jpg","author":"Stansfield PL","license":"CC BY-SA 3.0","w":930,"h":1239,"fx":0.48,"fy":0.31,"zoom":1.5,"year":"2009"},"initials":"LP"},{"name":"Warren Buffett","short":"Warren","v":144500000000,"sub":"The Buffett family","by":"Forbes real-time estimate","href":"../buffett/","photo":{"file":"Warren Buffett at the 2015 SelectUSA Investment Summit (cropped).jpg","author":"USA International Trade Administration","license":"Public domain","w":818,"h":1090,"fx":0.48,"fy":0.4,"zoom":1.0,"year":"2015"},"initials":"WB"},{"name":"Rob Walton","short":"Rob","v":131600000000,"sub":"The Walton family","by":"Forbes real-time estimate","href":"../walton/","photo":{"file":"S. Robson Walton by Gage Skidmore.jpg","author":"Gage Skidmore","license":"CC BY-SA 3.0","w":2536,"h":3520,"fx":0.42,"fy":0.28,"zoom":1.2,"year":"2017"},"initials":"RW"},{"name":"Jim Walton","short":"Jim","v":125800000000,"sub":"Brother · The Walton family","by":"Forbes real-time estimate","href":"../walton/#jim","photo":{"file":"Jim Walton attends shareholders meeting.jpg","author":"Walmart","license":"CC BY 2.0","w":690,"h":787,"fx":0.52,"fy":0.43,"zoom":1.1,"year":"2011"},"initials":"JW"},{"name":"Alice Walton","short":"Alice","v":118300000000,"sub":"Sister · The Walton family","by":"Forbes real-time estimate","href":"../walton/#alice","photo":{"file":"Alice Walton portrait (cropped).jpg","author":"Stephen Ironside","license":"CC BY 4.0","w":888,"h":1180,"fx":0.41,"fy":0.23,"zoom":1.8,"year":"2021"},"initials":"AW"},{"name":"Lukas Walton","short":"Lukas","v":44200000000,"sub":"Nephew · John’s son · The Walton family","by":"Forbes real-time estimate","href":"../walton/#lukas","photo":null,"initials":"LW"},{"name":"Bernard Arnault & family","short":"Bernard","v":117500000000,"sub":"The Arnault family","by":"Forbes real-time estimate (with family)","href":"../arnault/","photo":{"file":"Bernard Arnault (3) - 2017 (cropped).jpg","author":"Jérémy Barande","license":"CC BY-SA 2.0","w":1575,"h":2057,"fx":0.4,"fy":0.34,"zoom":1.3,"year":"2017"},"initials":"BA"},{"name":"Rupert Murdoch & family","short":"Rupert","v":24500000000,"sub":"The Murdoch family","by":"Forbes real-time estimate (Rupert Murdoch & family)","href":"../murdoch/","photo":{"file":"Rupert Murdoch - Flickr - Eva Rinaldi Celebrity and Live Music Photographer.jpg","author":"Eva Rinaldi","license":"CC BY-SA 2.0","w":1013,"h":1351,"fx":0.5,"fy":0.35,"zoom":1.0,"year":"2012"},"initials":"RM"},{"name":"Mukesh Ambani","short":"Mukesh","v":80200000000,"sub":"The Ambani family","by":"Forbes real-time estimate","href":"../ambani/","photo":{"file":"Mukesh Ambani.jpg","author":"World Economic Forum","license":"CC BY-SA 2.0","w":268,"h":355,"fx":0.46,"fy":0.37,"zoom":1.15,"year":"2007"},"initials":"MA"},{"name":"Kim Kardashian","short":"Kim","v":1900000000,"sub":"The Kardashian-Jenner family","by":"Forbes real-time estimate","href":"../kardashian/","photo":{"file":"Kim Kardashian West 2014.jpg","author":"Eva Rinaldi","license":"CC BY-SA 2.0","w":2336,"h":3504,"fx":0.48,"fy":0.36,"zoom":1.0,"year":"2014"},"initials":"KK"},{"name":"Kylie Jenner","short":"Kylie","v":670000000,"sub":"Half-sister · Kris & Caitlyn · The Kardashian-Jenner family","by":"Forbes estimate","href":"../kardashian/#kylie","photo":{"file":"Kylie Jenner2 (cropped).png","author":"Hayu","license":"CC BY 3.0","w":563,"h":690,"fx":0.5,"fy":0.3,"zoom":1.2,"year":"2017"},"initials":"KJ"},{"name":"Kanye West","short":"Kanye","v":400000000,"sub":"Ex-husband · 2014–2022 · The Kardashian-Jenner family","by":"Forbes estimate","href":"../kardashian/#kanye","photo":{"file":"Kanye West at the 2009 Tribeca Film Festival (crop 2).jpg","author":"David Shankbone","license":"Public domain","w":1727,"h":2301,"fx":0.49,"fy":0.36,"zoom":1.0,"year":"2009"},"initials":"KW"},{"name":"Taylor Swift","short":"Taylor","v":2000000000,"sub":"The Swift family","by":"Forbes real-time estimate","href":"../swift/","photo":{"file":"Taylor Swift at the 2023 MTV Video Music Awards (3).png","author":"iHeartRadioCA","license":"CC BY 3.0","w":1801,"h":2560,"fx":0.52,"fy":0.31,"zoom":1.3,"year":"2023"},"initials":"TS"},{"name":"Travis Kelce","short":"Travis","v":80000000,"sub":"Husband · married July 2026 · The Swift family","by":"Forbes estimate","href":"../swift/#travis","photo":{"file":"Travis Kelce in the Oval Office of the White House on June 5, 2023 - P20230605AS-0902 (cropped).jpg","author":"Adam Schultz","license":"Public domain","w":361,"h":474,"fx":0.53,"fy":0.33,"zoom":1.05,"year":"2023"},"initials":"TK"},{"name":"Rihanna","short":"Rihanna","v":1000000000,"sub":"The Fenty family","by":"Forbes real-time estimate","href":"../rihanna/","photo":{"file":"Rihanna Fenty 2018.png","author":"SIGMA","license":"CC BY 3.0","w":651,"h":867,"fx":0.49,"fy":0.32,"zoom":2.0,"year":"2018"},"initials":"R"},{"name":"Jay-Z","short":"Jay-Z","v":2800000000,"sub":"The Carter family","by":"Forbes real-time estimate","href":"../carter/","photo":{"file":"Jay-Z meets with New York Senate Majority Leader in Albany (cropped).webp","author":"NYS Senate Media Services","license":"CC BY 2.0","w":387,"h":529,"fx":0.49,"fy":0.33,"zoom":1.05,"year":"2025"},"initials":"JZ"},{"name":"Beyoncé","short":"Beyoncé","v":1000000000,"sub":"Wife · married 2008 · The Carter family","by":"Forbes real-time estimate","href":"../carter/#beyonce","photo":{"file":"Beyoncé - Tottenham Hotspur Stadium - 1st June 2023 (10 of 118) (52946364598) (best crop).jpg","author":"Raph_PH","license":"CC BY 2.0","w":900,"h":1200,"fx":0.42,"fy":0.25,"zoom":2.0,"year":"2023"},"initials":"B"},{"name":"Oprah Winfrey","short":"Oprah","v":3400000000,"sub":"The Winfrey family","by":"Forbes real-time estimate","href":"../winfrey/","photo":{"file":"Oprah Winfrey 2016.jpg","author":"U.S. Embassy South Africa","license":"Public domain","w":1108,"h":1604,"fx":0.51,"fy":0.48,"zoom":1.0,"year":"2016"},"initials":"OW"},{"name":"Selena Gomez","short":"Selena","v":700000000,"sub":"The Gomez family","by":"Forbes estimate","href":"../gomez/","photo":{"file":"Selena Gomez at the 2024 Toronto International Film Festival 10 (cropped).jpg","author":"Frank Sun","license":"CC BY-SA 4.0","w":1551,"h":2090,"fx":0.49,"fy":0.31,"zoom":1.7,"year":"2024"},"initials":"SG"},{"name":"LeBron James","short":"LeBron","v":1400000000.0,"sub":"The James family","by":"Forbes real-time estimate","href":"../james/","photo":{"file":"LeBron James (51959977144) (cropped2).jpg","author":"Erik Drost","license":"CC BY 2.0","w":1197,"h":1387,"fx":0.5,"fy":0.15,"zoom":2.4,"year":"2022"},"initials":"LJ"},{"name":"Michael Jordan","short":"Michael","v":4700000000.0,"sub":"The Jordan family","by":"Forbes real-time estimate","href":"../jordan/","photo":{"file":"Michael jordan admad rashad (51276390562) (cropped).jpg","author":"Zach Catanzareti Photo","license":"CC BY 2.0","w":1177,"h":1571,"fx":0.51,"fy":0.38,"zoom":1.15,"year":"2021"},"initials":"MJ"},{"name":"Cristiano Ronaldo","short":"Cristiano","v":1200000000,"sub":"The Ronaldo family","by":"Forbes real-time estimate","href":"../ronaldo/","photo":{"file":"Cristiano Ronaldo Croatia v Portugal 2 July 2026-075 (cropped).jpg","author":"Bryan Berlin","license":"CC BY-SA 4.0","w":2812,"h":4215,"fx":0.49,"fy":0.23,"zoom":2.0,"year":"2026"},"initials":"CR"},{"name":"Lionel Messi","short":"Lionel","v":1100000000,"sub":"The Messi family","by":"Forbes real-time estimate","href":"../messi/","photo":{"file":"Leo Messi Argentina v Egypt 7 July 2026-1.jpg","author":"Bryan Berlin","license":"CC BY-SA 4.0","w":3333,"h":5000,"fx":0.5,"fy":0.2,"zoom":2.0,"year":"2026"},"initials":"LM"},{"name":"Tiger Woods","short":"Tiger","v":1500000000,"sub":"The Woods family","by":"Forbes real-time estimate","href":"../woods/","photo":{"file":"President Donald Trump hosts a reception honoring Black History Month (54341713089) (cropped).jpg","author":"The White House","license":"Public domain","w":806,"h":1126,"fx":0.55,"fy":0.21,"zoom":1.4,"year":"2025"},"initials":"TW"},{"name":"Donald Trump","short":"Donald","v":6900000000.0,"sub":"The Trump family","by":"Forbes real-time estimate","href":"../trump/","photo":{"file":"Official Presidential Portrait of President Donald J. Trump (2025).jpg","author":"Daniel Torok","license":"Public domain","w":1638,"h":2048,"fx":0.48,"fy":0.43,"zoom":1.0,"year":"2025"},"initials":"DT"},{"name":"Michael Bloomberg","short":"Michael","v":94900000000,"sub":"The Bloomberg family","by":"Forbes real-time estimate","href":"../bloomberg/","photo":{"file":"MichaelBloomberg-byPhilipRomano.jpg","author":"PhilipRomanoPhoto","license":"CC BY-SA 4.0","w":4024,"h":6048,"fx":0.48,"fy":0.35,"zoom":1.2,"year":"2026"},"initials":"MB"}],"asOfLabel":"Oct 6–12, 2026"}</script>
+<script id="game-data" type="application/json">{"pool":[{"name":"Elon Musk","short":"Elon","v":1046000000000.0,"sub":"The Musk family","by":"Forbes real-time estimate","href":"../musk/","photo":{"file":"Elon Musk - 54820081119 (cropped).jpg","author":"Gage Skidmore","license":"CC BY-SA 4.0","w":2924,"h":3843,"fx":0.5,"fy":0.38,"zoom":1.35,"year":"2025"},"initials":"EM"},{"name":"Kimbal Musk","short":"Kimbal","v":1700000000.0,"sub":"Brother · The Musk family","by":"Forbes real-time estimate (source of wealth: Tesla, SpaceX)","href":"../musk/#kimbal","photo":{"file":"KIMBAL MUSK OFFICIAL HEADSHOT (cropped).jpg","author":"1000x2020","license":"CC BY-SA 4.0","w":2390,"h":3184,"fx":0.58,"fy":0.47,"zoom":1.08,"year":"2013"},"initials":"KM"},{"name":"Jeff Bezos","short":"Jeff","v":374500000000.0,"sub":"The Bezos family","by":"Forbes real-time estimate","href":"../bezos/","photo":{"file":"260202-D-PM193-2205 SECWAR Arsenal of Freedom Tour - Florida (3x4 cropped on Bezos and rotated).jpg","author":"U.S. Navy PO1 Alexander Kubitza, U.S. Dept. of War","license":"Public domain","w":1046,"h":1395,"fx":0.5,"fy":0.36,"zoom":1.3,"year":"2026"},"initials":"JB"},{"name":"MacKenzie Scott","short":"MacKenzie","v":27500000000.0,"sub":"Ex-wife · 1993–2019 · The Bezos family","by":"Forbes real-time estimate","href":"../bezos/#mackenzie","photo":{"file":"MacKenzie Scott.jpg","author":"Barry Bahler, U.S. DHS","license":"Public domain","w":82,"h":104,"fx":0.5,"fy":0.4,"zoom":1.0,"year":"2016"},"initials":"MS"},{"name":"Mark Zuckerberg","short":"Mark","v":253300000000.0,"sub":"The Zuckerberg family","by":"Forbes real-time estimate","href":"../zuckerberg/","photo":{"file":"P20260929DT-1655 (55561811540) (cropped 2).jpg","author":"The White House","license":"Public domain","w":414,"h":552,"fx":0.46,"fy":0.36,"zoom":1.0,"year":"2026"},"initials":"MZ"},{"name":"Larry Ellison","short":"Larry","v":187400000000.0,"sub":"The Ellison family","by":"Forbes real-time estimate","href":"../ellison/","photo":{"file":"Larry Ellison 2016.png","author":"Oracle PR Hartmann Studios","license":"CC BY 2.0","w":940,"h":1253,"fx":0.48,"fy":0.4,"zoom":1.0,"year":"2016"},"initials":"LE"},{"name":"Bill Gates","short":"Bill","v":114200000000,"sub":"The Gates family","by":"Forbes real-time estimate","href":"../gates/","photo":{"file":"Bill Gates at the European Commission - P067383-987995 (cropped) 5.jpg","author":"Bogdan Hoyaux / European Union","license":"CC BY 4.0","w":1000,"h":1335,"fx":0.5,"fy":0.28,"zoom":1.15,"year":"2025"},"initials":"BG"},{"name":"Melinda French Gates","short":"Melinda","v":34500000000,"sub":"Ex-wife · 1994–2021 · The Gates family","by":"Forbes real-time estimate","href":"../gates/#melinda","photo":{"file":"Melinda Gates 2014.jpg","author":"Ministry of Women and Child Development","license":"GODL-India","w":546,"h":683,"fx":0.39,"fy":0.32,"zoom":1.4,"year":"2014"},"initials":"MG"},{"name":"Jensen Huang","short":"Jensen","v":209500000000,"sub":"The Huang family","by":"Forbes real-time estimate","href":"../huang/","photo":{"file":"Jen-Hsun Huang 2025.jpg","author":"The White House","license":"Public domain","w":645,"h":839,"fx":0.51,"fy":0.52,"zoom":1.0,"year":"2025"},"initials":"JH"},{"name":"Sergey Brin","short":"Sergey","v":262600000000,"sub":"The Brin family","by":"Forbes real-time estimate","href":"../brin/","photo":{"file":"Sergey Brin Ted 2010 (cropped).jpg","author":"Steve Jurvetson","license":"CC BY 2.0","w":1423,"h":2070,"fx":0.45,"fy":0.38,"zoom":1.0,"year":"2010"},"initials":"SB"},{"name":"Larry Page","short":"Larry","v":288800000000,"sub":"The Page family","by":"Forbes real-time estimate","href":"../page/","photo":{"file":"Larry Page in the European Parliament, 17.06.2009 (cropped 2).jpg","author":"Stansfield PL","license":"CC BY-SA 3.0","w":930,"h":1239,"fx":0.48,"fy":0.31,"zoom":1.5,"year":"2009"},"initials":"LP"},{"name":"Warren Buffett","short":"Warren","v":144500000000,"sub":"The Buffett family","by":"Forbes real-time estimate","href":"../buffett/","photo":{"file":"Warren Buffett at the 2015 SelectUSA Investment Summit (cropped).jpg","author":"USA International Trade Administration","license":"Public domain","w":818,"h":1090,"fx":0.48,"fy":0.4,"zoom":1.0,"year":"2015"},"initials":"WB"},{"name":"Rob Walton","short":"Rob","v":131600000000,"sub":"The Walton family","by":"Forbes real-time estimate","href":"../walton/","photo":{"file":"S. Robson Walton by Gage Skidmore.jpg","author":"Gage Skidmore","license":"CC BY-SA 3.0","w":2536,"h":3520,"fx":0.42,"fy":0.28,"zoom":1.2,"year":"2017"},"initials":"RW"},{"name":"Jim Walton","short":"Jim","v":125800000000,"sub":"Brother · The Walton family","by":"Forbes real-time estimate","href":"../walton/#jim","photo":{"file":"Jim Walton attends shareholders meeting.jpg","author":"Walmart","license":"CC BY 2.0","w":690,"h":787,"fx":0.52,"fy":0.43,"zoom":1.1,"year":"2011"},"initials":"JW"},{"name":"Alice Walton","short":"Alice","v":118300000000,"sub":"Sister · The Walton family","by":"Forbes real-time estimate","href":"../walton/#alice","photo":{"file":"Alice Walton portrait (cropped).jpg","author":"Stephen Ironside","license":"CC BY 4.0","w":888,"h":1180,"fx":0.41,"fy":0.23,"zoom":1.8,"year":"2021"},"initials":"AW"},{"name":"Lukas Walton","short":"Lukas","v":44200000000,"sub":"Nephew · John’s son · The Walton family","by":"Forbes real-time estimate","href":"../walton/#lukas","photo":null,"initials":"LW"},{"name":"Bernard Arnault & family","short":"Bernard","v":117500000000,"sub":"The Arnault family","by":"Forbes real-time estimate (with family)","href":"../arnault/","photo":{"file":"Bernard Arnault (3) - 2017 (cropped).jpg","author":"Jérémy Barande","license":"CC BY-SA 2.0","w":1575,"h":2057,"fx":0.4,"fy":0.34,"zoom":1.3,"year":"2017"},"initials":"BA"},{"name":"Rupert Murdoch & family","short":"Rupert","v":24500000000,"sub":"The Murdoch family","by":"Forbes real-time estimate (Rupert Murdoch & family)","href":"../murdoch/","photo":{"file":"Rupert Murdoch - Flickr - Eva Rinaldi Celebrity and Live Music Photographer.jpg","author":"Eva Rinaldi","license":"CC BY-SA 2.0","w":1013,"h":1351,"fx":0.5,"fy":0.35,"zoom":1.0,"year":"2012"},"initials":"RM"},{"name":"Mukesh Ambani","short":"Mukesh","v":80200000000,"sub":"The Ambani family","by":"Forbes real-time estimate","href":"../ambani/","photo":{"file":"Mukesh Ambani.jpg","author":"World Economic Forum","license":"CC BY-SA 2.0","w":268,"h":355,"fx":0.46,"fy":0.37,"zoom":1.15,"year":"2007"},"initials":"MA"},{"name":"Kim Kardashian","short":"Kim","v":1900000000,"sub":"The Kardashian-Jenner family","by":"Forbes real-time estimate","href":"../kardashian/","photo":{"file":"Kim Kardashian West 2014.jpg","author":"Eva Rinaldi","license":"CC BY-SA 2.0","w":2336,"h":3504,"fx":0.48,"fy":0.36,"zoom":1.0,"year":"2014"},"initials":"KK"},{"name":"Kylie Jenner","short":"Kylie","v":670000000,"sub":"Half-sister · Kris & Caitlyn · The Kardashian-Jenner family","by":"Forbes estimate","href":"../kardashian/#kylie","photo":{"file":"Kylie Jenner2 (cropped).png","author":"Hayu","license":"CC BY 3.0","w":563,"h":690,"fx":0.5,"fy":0.3,"zoom":1.2,"year":"2017"},"initials":"KJ"},{"name":"Kanye West","short":"Kanye","v":400000000,"sub":"Ex-husband · 2014–2022 · The Kardashian-Jenner family","by":"Forbes estimate","href":"../kardashian/#kanye","photo":{"file":"Kanye West at the 2009 Tribeca Film Festival (crop 2).jpg","author":"David Shankbone","license":"Public domain","w":1727,"h":2301,"fx":0.49,"fy":0.36,"zoom":1.0,"year":"2009"},"initials":"KW"},{"name":"Taylor Swift","short":"Taylor","v":2000000000,"sub":"The Swift family","by":"Forbes real-time estimate","href":"../swift/","photo":{"file":"Taylor Swift at the 2023 MTV Video Music Awards (3).png","author":"iHeartRadioCA","license":"CC BY 3.0","w":1801,"h":2560,"fx":0.52,"fy":0.31,"zoom":1.3,"year":"2023"},"initials":"TS"},{"name":"Travis Kelce","short":"Travis","v":80000000,"sub":"Husband · married July 2026 · The Swift family","by":"Forbes estimate","href":"../swift/#travis","photo":{"file":"Travis Kelce in the Oval Office of the White House on June 5, 2023 - P20230605AS-0902 (cropped).jpg","author":"Adam Schultz","license":"Public domain","w":361,"h":474,"fx":0.53,"fy":0.33,"zoom":1.05,"year":"2023"},"initials":"TK"},{"name":"Rihanna","short":"Rihanna","v":1000000000,"sub":"The Fenty family","by":"Forbes real-time estimate","href":"../rihanna/","photo":{"file":"Rihanna Fenty 2018.png","author":"SIGMA","license":"CC BY 3.0","w":651,"h":867,"fx":0.49,"fy":0.32,"zoom":2.0,"year":"2018"},"initials":"R"},{"name":"Jay-Z","short":"Jay-Z","v":2800000000,"sub":"The Carter family","by":"Forbes real-time estimate","href":"../carter/","photo":{"file":"Jay-Z meets with New York Senate Majority Leader in Albany (cropped).webp","author":"NYS Senate Media Services","license":"CC BY 2.0","w":387,"h":529,"fx":0.49,"fy":0.33,"zoom":1.05,"year":"2025"},"initials":"JZ"},{"name":"Beyoncé","short":"Beyoncé","v":1000000000,"sub":"Wife · married 2008 · The Carter family","by":"Forbes real-time estimate","href":"../carter/#beyonce","photo":{"file":"Beyoncé - Tottenham Hotspur Stadium - 1st June 2023 (10 of 118) (52946364598) (best crop).jpg","author":"Raph_PH","license":"CC BY 2.0","w":900,"h":1200,"fx":0.42,"fy":0.25,"zoom":2.0,"year":"2023"},"initials":"B"},{"name":"Oprah Winfrey","short":"Oprah","v":3400000000,"sub":"The Winfrey family","by":"Forbes real-time estimate","href":"../winfrey/","photo":{"file":"Oprah Winfrey 2016.jpg","author":"U.S. Embassy South Africa","license":"Public domain","w":1108,"h":1604,"fx":0.51,"fy":0.48,"zoom":1.0,"year":"2016"},"initials":"OW"},{"name":"Selena Gomez","short":"Selena","v":700000000,"sub":"The Gomez family","by":"Forbes estimate","href":"../gomez/","photo":{"file":"Selena Gomez at the 2024 Toronto International Film Festival 10 (cropped).jpg","author":"Frank Sun","license":"CC BY-SA 4.0","w":1551,"h":2090,"fx":0.49,"fy":0.31,"zoom":1.7,"year":"2024"},"initials":"SG"},{"name":"LeBron James","short":"LeBron","v":1400000000.0,"sub":"The James family","by":"Forbes real-time estimate","href":"../james/","photo":{"file":"LeBron James (51959977144) (cropped2).jpg","author":"Erik Drost","license":"CC BY 2.0","w":1197,"h":1387,"fx":0.5,"fy":0.15,"zoom":2.4,"year":"2022"},"initials":"LJ"},{"name":"Michael Jordan","short":"Michael","v":4700000000.0,"sub":"The Jordan family","by":"Forbes real-time estimate","href":"../jordan/","photo":{"file":"Michael jordan admad rashad (51276390562) (cropped).jpg","author":"Zach Catanzareti Photo","license":"CC BY 2.0","w":1177,"h":1571,"fx":0.51,"fy":0.38,"zoom":1.15,"year":"2021"},"initials":"MJ"},{"name":"Cristiano Ronaldo","short":"Cristiano","v":1200000000,"sub":"The Ronaldo family","by":"Forbes real-time estimate","href":"../ronaldo/","photo":{"file":"Cristiano Ronaldo Croatia v Portugal 2 July 2026-075 (cropped).jpg","author":"Bryan Berlin","license":"CC BY-SA 4.0","w":2812,"h":4215,"fx":0.49,"fy":0.23,"zoom":2.0,"year":"2026"},"initials":"CR"},{"name":"Lionel Messi","short":"Lionel","v":1100000000,"sub":"The Messi family","by":"Forbes real-time estimate","href":"../messi/","photo":{"file":"Leo Messi Argentina v Egypt 7 July 2026-1.jpg","author":"Bryan Berlin","license":"CC BY-SA 4.0","w":3333,"h":5000,"fx":0.5,"fy":0.2,"zoom":2.0,"year":"2026"},"initials":"LM"},{"name":"Tiger Woods","short":"Tiger","v":1500000000,"sub":"The Woods family","by":"Forbes real-time estimate","href":"../woods/","photo":{"file":"President Donald Trump hosts a reception honoring Black History Month (54341713089) (cropped).jpg","author":"The White House","license":"Public domain","w":806,"h":1126,"fx":0.55,"fy":0.21,"zoom":1.4,"year":"2025"},"initials":"TW"},{"name":"Donald Trump","short":"Donald","v":6900000000.0,"sub":"The Trump family","by":"Forbes real-time estimate","href":"../trump/","photo":{"file":"Official Presidential Portrait of President Donald J. Trump (2025).jpg","author":"Daniel Torok","license":"Public domain","w":1638,"h":2048,"fx":0.48,"fy":0.43,"zoom":1.0,"year":"2025"},"initials":"DT"},{"name":"Michael Bloomberg","short":"Michael","v":94900000000,"sub":"The Bloomberg family","by":"Forbes real-time estimate","href":"../bloomberg/","photo":{"file":"MichaelBloomberg-byPhilipRomano.jpg","author":"PhilipRomanoPhoto","license":"CC BY-SA 4.0","w":4024,"h":6048,"fx":0.48,"fy":0.35,"zoom":1.2,"year":"2026"},"initials":"MB"}],"companies":[{"name":"Nvidia","short":"Nvidia","v":5530000000000.0,"by":"Stock market value, Oct 9, 2026","sub":"The Huang family","href":"../huang/#invest","logo":true,"color":"#76B900","initials":"NV"},{"name":"Alphabet (Google)","short":"Alphabet","v":4300000000000.0,"by":"Stock market value, Oct 9, 2026","sub":"The Page family","href":"../page/#invest","logo":true,"color":"#4285F4","initials":"AL"},{"name":"Microsoft","short":"Microsoft","v":3970000000000.0,"by":"Stock market value, Oct 9, 2026","sub":"The Gates family","href":"../gates/#invest","logo":true,"color":"#00A4EF","initials":"MI"},{"name":"Amazon","short":"Amazon","v":2830000000000.0,"by":"Stock market value, Oct 9, 2026","sub":"The Bezos family","href":"../bezos/#invest","logo":true,"color":"#FF9900","initials":"AM"},{"name":"SpaceX","short":"SpaceX","v":2260000000000.0,"by":"Stock market value, Oct 5, 2026 (our math)","sub":"The Musk family","href":"../musk/#invest","logo":true,"color":"#9FB4D3","initials":"X"},{"name":"Meta","short":"Meta","v":1830000000000.0,"by":"Stock market value, Oct 9, 2026","sub":"The Zuckerberg family","href":"../zuckerberg/#invest","logo":true,"color":"#0081FB","initials":"ME"},{"name":"Tesla","short":"Tesla","v":1510000000000.0,"by":"Stock market value, Oct 9, 2026","sub":"The Musk family","href":"../musk/#invest","logo":true,"color":"#E8473D","initials":"TE"},{"name":"Berkshire Hathaway","short":"Berkshire","v":1100000000000.0,"by":"Stock market value, Oct 9, 2026","sub":"The Buffett family","href":"../buffett/#invest","logo":true,"color":"#5B8DEF","initials":"BE"},{"name":"AMD","short":"AMD","v":993000000000.0,"by":"Stock market value, Oct 9, 2026","sub":"The Huang family","href":"../huang/#invest","logo":true,"color":"#ED1C24","initials":"AMD"},{"name":"Walmart","short":"Walmart","v":883000000000.0,"by":"Stock market value, Oct 9, 2026","sub":"The Walton family","href":"../walton/#invest","logo":true,"color":"#4DA3FF","initials":"WA"},{"name":"Oracle","short":"Oracle","v":428000000000.0,"by":"Stock market value, Oct 9, 2026","sub":"The Ellison family","href":"../ellison/#invest","logo":true,"color":"#C74634","initials":"OR"},{"name":"21st Century Fox (most of it)","short":"21st Century Fox","v":71300000000.0,"by":"Price Disney paid, 2019","sub":"The Murdoch family","href":"../murdoch/#invest","logo":true,"color":"#F5A524","initials":"21C"},{"name":"The Boring Company","short":"Boring","v":23000000000.0,"by":"Valuation, Sep 2026","sub":"The Musk family","href":"../musk/#invest","logo":true,"color":"#F5A524","initials":"BO"},{"name":"Perplexity","short":"Perplexity","v":20000000000.0,"by":"Valuation, Sep 2025","sub":"The Ronaldo family","href":"../ronaldo/#invest","logo":true,"color":"#20B8CD","initials":"PE"},{"name":"SKIMS","short":"SKIMS","v":5000000000.0,"by":"Valuation, Nov 2025","sub":"The Kardashian-Jenner family","href":"../kardashian/#invest","logo":true,"color":"#D6B89C","initials":"SK"},{"name":"Beast Industries","short":"Beast Industries","v":5000000000.0,"by":"Valuation, 2024 round","sub":"The Donaldson family","href":"../mrbeast/#invest","logo":true,"color":"#4FA3FF","initials":"BI"},{"name":"Denver Broncos","short":"The Broncos","v":4650000000.0,"by":"Price the Waltons paid, 2022","sub":"The Walton family","href":"../walton/#invest","logo":true,"color":"#FB4F14","initials":"BR"},{"name":"Beats","short":"Beats","v":3000000000.0,"by":"Price Apple paid, 2014","sub":"The James family","href":"../james/#invest","logo":true,"color":"#B7BFCE","initials":"BE"},{"name":"Charlotte Hornets","short":"The Hornets","v":3000000000.0,"by":"Valuation when Jordan sold, 2023","sub":"The Jordan family","href":"../jordan/#invest","logo":true,"color":"#00A3AD","initials":"HO"},{"name":"PayPal (in 2002)","short":"PayPal","v":1500000000.0,"by":"Price eBay paid, 2002","sub":"The Musk family","href":"../musk/#invest","logo":true,"color":"#60A5FA","initials":"PA"},{"name":"Inter Miami CF","short":"Inter Miami","v":1350000000.0,"by":"Forbes valuation, 2026","sub":"The Messi family","href":"../messi/#invest","logo":true,"color":"#F7B5CD","initials":"IM"},{"name":"Rare Beauty","short":"Rare Beauty","v":1300000000.0,"by":"Forbes valuation, 2025","sub":"The Gomez family","href":"../gomez/#invest","logo":true,"color":"#E8A0A6","initials":"RB"},{"name":"Savage X Fenty","short":"Savage X Fenty","v":1000000000.0,"by":"Valuation, 2021 round","sub":"The Fenty family","href":"../rihanna/#invest","logo":true,"color":"#B79CFF","initials":"SXF"},{"name":"SpringHill Company","short":"SpringHill","v":725000000.0,"by":"Valuation, 2021 round","sub":"The James family","href":"../james/#invest","logo":true,"color":"#F5B700","initials":"SP"},{"name":"Taylor Swift’s first six albums","short":"Swift’s masters","v":360000000.0,"by":"Price she paid to buy them back, 2025","sub":"The Swift family","href":"../swift/#invest","logo":true,"color":"#E9B44C","initials":"TS"},{"name":"23andMe","short":"23andMe","v":305000000.0,"by":"Price paid for its assets, 2025","sub":"The Brin family","href":"../brin/#invest","logo":true,"color":"#D50F67","initials":"23"},{"name":"Tidal (majority)","short":"Tidal","v":297000000.0,"by":"Price Square paid, 2021","sub":"The Carter family","href":"../carter/#invest","logo":true,"color":"#00D64F","initials":"TI"},{"name":"The Washington Post","short":"The Post","v":250000000.0,"by":"Price Bezos paid, 2013","sub":"The Bezos family","href":"../bezos/#invest","logo":true,"color":"#B7BFCE","initials":"WP"},{"name":"Mumbai Indians","short":"Mumbai Indians","v":111900000.0,"by":"Price Ambani paid, 2008","sub":"The Ambani family","href":"../ambani/#invest","logo":true,"color":"#004BA0","initials":"MI"}],"asOfLabel":"Oct 6–12, 2026"}</script>
 <script>
 (function () {
   'use strict';
@@ -731,30 +750,56 @@ p.kids-none { margin: 6px 0 0; }
   [].forEach.call(document.querySelectorAll('[data-asof]'), function (n) { n.textContent = D.asOfLabel; });
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  var score = 0, best = +(store('mf-hl-best') || 0), cur, next, seen = [], busy = false;
-  $('#best').textContent = best;
-
-  // Pick an opponent that isn't a near-tie; as the streak grows, prefer closer calls.
-  function pick(from) {
-    var opts = P.filter(function (p) {
-      if (p === from || seen.indexOf(p) >= 0) return false;
-      var r = Math.max(p.v, from.v) / Math.min(p.v, from.v);
-      return r >= 1.06;
-    });
-    if (!opts.length) { seen = [from]; return pick(from); }
-    var maxR = score < 3 ? Infinity : score < 7 ? 12 : 3.5;
-    var close = opts.filter(function (p) { var r = Math.max(p.v, from.v) / Math.min(p.v, from.v); return r <= maxR; });
+  var MODES = {
+    endless: { pool: D.pool, best: 'mf-hl-best', note: 'Every fortune is a real Forbes or Bloomberg estimate from our files. One wrong guess ends the run.' },
+    daily: { pool: D.pool, note: 'Ten pairs, the same for everyone today. Play all ten, then share your grid. A new set comes at midnight.' },
+    companies: { pool: D.companies, best: 'mf-hl-best-co', note: 'Companies from the files: stock market values, funding-round valuations and price tags, each labeled. One wrong guess ends the run.' }
+  };
+  var mode = 'endless', P, score = 0, best = 0, cur, next, seen = [], busy = false, pairs = [], di = 0, results = [];
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function today() { var d = new Date(); return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  var DAY = today(), DAYNO = Math.round((Date.parse(DAY + 'T00:00:00Z') - Date.parse('2026-10-12T00:00:00Z')) / 864e5) + 1;
+  function rng(seedStr) {
+    var h = 1779033703 ^ seedStr.length;
+    for (var i = 0; i < seedStr.length; i++) { h = Math.imul(h ^ seedStr.charCodeAt(i), 3432918353); h = h << 13 | h >>> 19; }
+    return function () { h = Math.imul(h ^ h >>> 16, 2246822507); h = Math.imul(h ^ h >>> 13, 3266489909); var t = (h ^= h >>> 16) >>> 0; return t / 4294967296; };
+  }
+  function ratio(a, b) { return Math.max(a.v, b.v) / Math.min(a.v, b.v); }
+  function maxR(n) { return n < 3 ? Infinity : n < 7 ? 12 : 3.5; }
+  // Pick an opponent that isn't a near-tie; the further along, the closer the call.
+  function pick(from, n, rand, avoid) {
+    var opts = P.filter(function (p) { return p !== from && avoid.indexOf(p) < 0 && ratio(p, from) >= 1.06; });
+    if (!opts.length) opts = P.filter(function (p) { return p !== from && ratio(p, from) >= 1.06; });
+    var close = opts.filter(function (p) { return ratio(p, from) <= maxR(n); });
     var list = close.length ? close : opts;
-    return list[Math.floor(Math.random() * list.length)];
+    return list[Math.floor(rand() * list.length)];
+  }
+  function dailyPairs() {
+    var rand = rng('mf-daily-' + DAY), used = [], out = [];
+    for (var i = 0; i < 10; i++) {
+      var fresh = P.filter(function (p) { return used.indexOf(p) < 0; });
+      var a = fresh[Math.floor(rand() * fresh.length)] || P[0];
+      used.push(a);
+      var b = pick(a, i, rand, used); used.push(b);
+      out.push([a, b]);
+    }
+    return out;
+  }
+  function logo(p) {
+    return el('span', { class: 'face logo', style: '--c:' + (p.color || '#FFB020'), 'aria-hidden': 'true' }, el('span', null, p.initials));
   }
   function card(p, hidden) {
     var meta = el('div', { class: 'meta' },
       el('h2', { class: 'who' }, p.name),
       el('p', { class: 'rel' }, p.sub),
-      el('p', { class: 'val' + (hidden ? ' hidden' : ''), 'data-val': '' }, hidden ? '$ ?' : money(p.v)),
+      el('p', { class: 'val' + (hidden ? ' hidden' : '') }, hidden ? '$ ?' : money(p.v)),
       hidden ? null : el('p', { class: 'by' }, p.by),
       el('a', { class: 'file-link', href: p.href }, 'Open the file →'));
-    return [face(p), meta];
+    return [p.logo ? logo(p) : face(p), meta];
+  }
+  function hud() {
+    if (mode === 'daily') { $('#l1').textContent = 'Round'; $('#score').textContent = Math.min(di + 1, 10) + '/10'; $('#l2').textContent = 'Right'; $('#best').textContent = results.filter(Boolean).length; }
+    else { $('#l1').textContent = 'Streak'; $('#score').textContent = score; $('#l2').textContent = 'Best'; $('#best').textContent = best; }
   }
   function render() {
     var L = $('#left'), R = $('#right');
@@ -767,8 +812,9 @@ p.kids-none { margin: 6px 0 0; }
       el('button', { type: 'button', class: 'higher', onclick: function () { guess(true); } }, '▲ Higher'),
       el('button', { type: 'button', class: 'lower', onclick: function () { guess(false); } }, '▼ Lower')));
     $('#ratio').textContent = '';
+    hud();
     busy = false;
-    var b = R.querySelector('button'); if (b && score > 0) b.focus({ preventScroll: true });
+    var b = R.querySelector('button'); if (b && (score > 0 || di > 0)) b.focus({ preventScroll: true });
   }
   function countUp(node, to, done) {
     if (reduce) { node.textContent = money(to); return done(); }
@@ -788,51 +834,99 @@ p.kids-none { margin: 6px 0 0; }
     var val = R.querySelector('.val'); val.classList.remove('hidden');
     countUp(val, next.v, function () {
       var right = higher ? next.v > cur.v : next.v < cur.v;
-      var big = Math.max(next.v, cur.v), small = Math.min(next.v, cur.v), bigP = next.v > cur.v ? next : cur, smallP = bigP === next ? cur : next;
+      var bigP = next.v > cur.v ? next : cur, smallP = bigP === next ? cur : next;
       var q = R.querySelector('.q'); if (q) q.remove();
       val.after(el('p', { class: 'by' }, next.by));
       var ch = R.querySelector('.choices'); if (ch) ch.remove();
       R.classList.add(right ? 'right' : 'wrong');
       $('#vs').className = 'vs ' + (right ? 'right' : 'wrong'); $('#vs').textContent = right ? '✓' : '✗';
-      $('#ratio').replaceChildren(bigP.short + '’s fortune is ', el('b', null, times(big / small) + '×'), ' ' + smallP.short + '’s.');
+      $('#ratio').replaceChildren(bigP.short + (bigP.logo ? ' is worth ' : '’s fortune is '), el('b', null, times(bigP.v / smallP.v) + '×'), ' ' + smallP.short + (smallP.logo ? '.' : '’s.'));
+      var wait = reduce ? 500 : 1300;
+      if (mode === 'daily') {
+        results.push(right); hud();
+        if (di < 9) setTimeout(function () { di++; cur = pairs[di][0]; next = pairs[di][1]; render(); }, wait + 300);
+        else { store('mf-daily-' + DAY, JSON.stringify(results)); setTimeout(dailyOver, 700); }
+        return;
+      }
       if (right) {
-        score++; $('#score').textContent = score;
-        if (score > best) { best = score; store('mf-hl-best', best); $('#best').textContent = best; }
+        score++;
+        if (score > best) { best = score; store(MODES[mode].best, best); }
+        hud();
         seen.push(cur); if (seen.length > 12) seen.shift();
-        setTimeout(function () { cur = next; next = pick(cur); render(); }, reduce ? 500 : 1300);
+        setTimeout(function () { cur = next; next = pick(cur, score, Math.random, seen); render(); }, wait);
       } else {
-        setTimeout(function () { over(bigP, smallP, big / small); }, 600);
+        setTimeout(function () { over(bigP, smallP); }, 600);
       }
     });
   }
   var VERDICTS = [[0, 'Back to the files'], [3, 'Getting warmer'], [6, 'You read the filings'], [10, 'Forbes should hire you'], [15, 'Insider trading? Kidding']];
-  function over(bigP, smallP, r) {
-    var v = VERDICTS.filter(function (x) { return score >= x[0]; }).pop()[1];
-    $('#over-score').textContent = score;
-    $('#over-verdict').textContent = v;
-    $('#over-fact').textContent = 'The one that got you: ' + bigP.name + ' (' + money(bigP.v) + ') vs. ' + smallP.name + ' (' + money(smallP.v) + ').';
-    $('#over-links').replaceChildren('Read the files: ', el('a', { href: bigP.href }, bigP.name), ' · ', el('a', { href: smallP.href }, smallP.name));
+  var DVERDICTS = [[0, 'Rough day on the market'], [4, 'Not bad'], [7, 'You read the filings'], [9, 'Forbes should hire you'], [10, 'Perfect day']];
+  function showOver() {
     $('#copied').textContent = '';
     $('#over').classList.add('show');
     $('#again').focus({ preventScroll: true });
     $('#over').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
   }
-  function start() {
-    score = 0; $('#score').textContent = 0; seen = [];
+  function over(bigP, smallP) {
+    $('#over-eyebrow').textContent = mode === 'companies' ? 'Run over · Companies' : 'Run over';
+    $('#over-score').textContent = score;
+    $('#over-verdict').textContent = VERDICTS.filter(function (x) { return score >= x[0]; }).pop()[1];
+    $('#over-fact').textContent = 'The one that got you: ' + bigP.name + ' (' + money(bigP.v) + ') vs. ' + smallP.name + ' (' + money(smallP.v) + ').';
+    $('#grid').textContent = '';
+    $('#over-links').replaceChildren('Read the files: ', el('a', { href: bigP.href }, bigP.name), ' · ', el('a', { href: smallP.href }, smallP.name));
+    $('#again').textContent = 'Play again'; $('#again').hidden = false;
+    showOver();
+  }
+  function grid() { return results.map(function (r) { return r ? '🟩' : '🟥'; }).join(''); }
+  function dailyOver(already) {
+    var n = results.filter(Boolean).length;
+    $('#over-eyebrow').textContent = 'Daily challenge #' + DAYNO + (already ? ' · already played today' : '');
+    $('#over-score').textContent = n + '/10';
+    $('#over-verdict').textContent = DVERDICTS.filter(function (x) { return n >= x[0]; }).pop()[1];
+    $('#grid').textContent = grid();
+    $('#over-fact').textContent = 'A new set of ten comes at midnight. Until then, try endless mode or companies.';
+    $('#over-links').textContent = '';
+    $('#again').textContent = 'Play endless mode';
+    showOver();
+  }
+  function shareText() {
+    var url = location.href.split('#')[0].split('?')[0];
+    if (mode === 'daily') return 'The Money Files daily #' + DAYNO + ': ' + results.filter(Boolean).length + '/10\n' + grid() + '\n' + url;
+    return 'I got a streak of ' + score + ' on Higher or Lower' + (mode === 'companies' ? ' (companies)' : '') + ': who’s richer? ' + url;
+  }
+  function start(m) {
+    mode = m || mode; P = MODES[mode].pool;
+    [].forEach.call(document.querySelectorAll('.modes button'), function (b) { b.setAttribute('aria-selected', String(b.dataset.mode === mode)); });
+    $('#mode-note').textContent = MODES[mode].note;
     $('#over').classList.remove('show');
-    cur = P[Math.floor(Math.random() * P.length)];
-    next = pick(cur);
+    $('#arena').hidden = false;
+    score = 0; seen = []; di = 0; results = [];
+    if (mode === 'daily') {
+      pairs = dailyPairs();
+      var done = store('mf-daily-' + DAY);
+      if (done) { try { results = JSON.parse(done); } catch (e) { results = []; } }
+      if (results.length >= 10) { $('#arena').hidden = true; $('#ratio').textContent = ''; di = 9; hud(); dailyOver(true); return; }
+      results = [];
+      cur = pairs[0][0]; next = pairs[0][1];
+    } else {
+      best = +(store(MODES[mode].best) || 0);
+      cur = P[Math.floor(Math.random() * P.length)];
+      next = pick(cur, 0, Math.random, seen);
+    }
     render();
   }
-  $('#again').addEventListener('click', function () { start(); $('#arena').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' }); });
+  [].forEach.call(document.querySelectorAll('.modes button'), function (b) {
+    b.addEventListener('click', function () { if (busy && b.dataset.mode === mode) return; start(b.dataset.mode); });
+  });
+  $('#again').addEventListener('click', function () { start(mode === 'daily' ? 'endless' : mode); $('#arena').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' }); });
   $('#share').addEventListener('click', function () {
-    var text = 'I got a streak of ' + score + ' on Higher or Lower: who’s richer? ' + location.href.split('#')[0];
+    var text = shareText();
     if (navigator.share) { navigator.share({ title: 'Higher or Lower: The Money Files', text: text }).catch(function () {}); return; }
     function done() { $('#copied').textContent = 'Copied. Paste it anywhere.'; }
     if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, function () { $('#copied').textContent = text; });
     else $('#copied').textContent = text;
   });
-  start();
+  start(/daily/.test(location.hash) ? 'daily' : /compan/.test(location.hash) ? 'companies' : 'endless');
 })();
 </script>
 </body>
