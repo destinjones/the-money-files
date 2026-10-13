@@ -45,6 +45,7 @@ Interactive, fully sourced "follow the money" maps from the Follow the Money vid
 
 - **The leaderboard.** The person at the center of each file, ranked by their Forbes or Bloomberg estimate, with bars drawn to scale. Pick anyone on the board to measure everyone else in their fortune, for example how many LeBron James fortunes fit in Elon Musk's.
 - **The files.** Every family as a card. Filter by world (tech, business, entertainment, sports, politics) or sort by fortune or file number.
+- **Higher or Lower** (`/game/`). Two faces, one hidden fortune: guess who’s richer. Uses every Forbes and Bloomberg figure in the files, gets harder as your streak grows, and saves your best score on your device.
 - **The case files.** The short videos that trace everyday brands back to who owns them, each with its sources.
 
 ## What's on each family page
@@ -74,6 +75,7 @@ Sections a family has no public data for are left out rather than guessed.
 |---|---|
 | `data/<family>-family.json` | Every person, company, number and source for one family. Edit these to update the facts. |
 | `src/hub.html` | The main page. |
+| `src/game.html` | The Higher or Lower game. |
 | `src/body.html`, `src/style.css`, `src/app.js` | The family page template, styles and script. |
 | `tools/build.py` | Builds `index.html`, each `<family>/index.html` and `SOURCES.md`. |
 | `tools/validate.py` | Checks a data file before it goes on the site: required fields, sources, label lengths, no street addresses. |

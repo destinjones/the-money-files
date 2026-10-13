@@ -218,6 +218,39 @@ def hub_page(cards, preview=False):
                'Who owns what, which stocks you can buy, the homes, and the receipts.', 'assets/og-hub.jpg', body, preview)
 
 
+def game_pool(cards):
+    """Everyone with a published Forbes or Bloomberg fortune: each file's center plus the rest of its money ladder."""
+    pool, names = [], set()
+    for c in cards:
+        d = family(c['slug'])
+        P = {p['name']: p for p in d['people']}
+        cen = center(d)
+        for it in (d.get('ladder') or {}).get('items', []):
+            base = re.sub(r'\s*\(.*?\)$', '', it['name']).replace(' & family', '')
+            p = P.get(base) or (cen if base.startswith(cen['name'].split()[0]) and base.endswith(cen['name'].split()[-1]) else None)
+            is_center = p is cen
+            v = c['worthV'] if is_center and c['worthV'] else it['v']
+            if not p or base in names or not v:
+                continue
+            names.add(base)
+            by = (p.get('worth') or {}).get('by', '')
+            pool.append(dict(name=it['name'].replace(' (Jun 2025)', ''), short=p.get('short') or base.split()[0], v=v,
+                             sub=('The ' + c['title'][4:]) if is_center else (p.get('rel', '') + ' · ' + c['title']),
+                             by=by or 'Forbes or Bloomberg estimate, per the file',
+                             href=f"../{c['slug']}/" + ('' if is_center else '#' + p['id']),
+                             photo=d['photos'].get(p.get('photo')), initials=initials(p['name'])))
+    return pool
+
+
+def game_page(cards, preview=False):
+    pool = game_pool(cards)
+    body = (read('src/game.html').replace('{{GAMEDATA}}', blob(dict(pool=pool, asOfLabel=date_range(cards))))
+            .replace('{{N}}', str(len(pool))).replace('{{COUNT}}', str(len(cards))))
+    return doc('Higher or Lower: Who’s Richer? · The Money Files',
+               f'Guess who’s richer. {len(pool)} real Forbes and Bloomberg fortunes, from Elon Musk to Travis Kelce. How long can your streak last?',
+               'assets/og-hub.jpg', body, preview)
+
+
 def sources_md(fams):
     names = {'family': 'The family', 'money': 'The money', 'record': 'On the record', 'homes': 'The homes'}
     out = ['# Sources', '', 'Every numbered source on the site. Each family page numbers its own sources; '
@@ -252,10 +285,12 @@ if __name__ == '__main__':
     cards = [card(*f) for f in fams]
     if preview:
         write('dist/preview-hub.html', hub_page(cards, True))
+        write('dist/preview-game.html', game_page(cards, True))
         for slug, *_ in fams:
             write(f'dist/preview-{slug}.html', family_page(slug, cards, True))
     else:
         write('index.html', hub_page(cards))
+        write('game/index.html', game_page(cards))
         for slug, *_ in fams:
             write(f'{slug}/index.html', family_page(slug, cards))
         write('SOURCES.md', sources_md(fams))
