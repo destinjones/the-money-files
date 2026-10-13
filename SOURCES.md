@@ -360,6 +360,32 @@ Every numbered source on the site. Each family page numbers its own sources; the
 - Nicole Shanahan: [Nicole Shanahan 2024 (3x4 cropped).jpg](https://commons.wikimedia.org/wiki/File:Nicole_Shanahan_2024_(3x4_cropped).jpg) by Gage Skidmore (2024), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
 - Susan Wojcicki: [Susan Wojcicki (29393944130).jpg](https://commons.wikimedia.org/wiki/File:Susan_Wojcicki_(29393944130).jpg) by TechCrunch (2016), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
 
+## The Page family (File #028, data as of Oct 12, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Larry_Page): Larry Page (accessed Oct 2026)
+2. [ecoAmerica](https://ecoamerica.org/board-member/carl-page/): Board member: Carl Page (accessed Oct 2026)
+
+### The money
+
+3. [Forbes](https://www.forbes.com/profile/larry-page/): Real-time profile: Larry Page ($288.8B, #3 in the world) (Oct 12, 2026)
+4. [Forbes](https://www.forbes.com/sites/tylerroush/2026/04/30/larry-pages-worth-over-300-billion-for-first-time-amid-alphabet-earnings-rally/): Larry Page’s Worth Over $300 Billion For First Time Amid Alphabet Earnings Rally (Apr 30, 2026)
+5. [Inside Philanthropy](https://insidephilanthropy.com/home/2024/1/22/by-the-numbers-google-founders-philanthropies-are-now-peers-to-legacy-giants): By the Numbers, Google Founders’ Philanthropies Are Now Peers to Legacy Giants (Jan 22, 2024)
+
+### On the record
+
+6. [SEC (Alphabet Inc.)](https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm): 2026 proxy statement (DEF 14A): security ownership of beneficial owners (Apr 24, 2026)
+7. [TechCrunch](https://techcrunch.com/2025/03/06/google-co-founder-larry-page-reportedly-has-a-new-ai-startup): Google co-founder Larry Page reportedly has a new AI startup (Mar 6, 2025)
+
+### The homes
+
+8. [Fox Business](https://www.foxbusiness.com/real-estate/larry-page-drops-173m-miami-mansions-amid-california-billionaire-exodus-trend-wealth-tax-looms): Larry Page drops $173M on Miami mansions amid California billionaire exodus trend as wealth tax looms (Jan 9, 2026)
+
+### Photo credits
+
+- Larry Page: [Larry Page in the European Parliament, 17.06.2009 (cropped 2).jpg](https://commons.wikimedia.org/wiki/File:Larry_Page_in_the_European_Parliament,_17.06.2009_(cropped_2).jpg) by Stansfield PL (2009), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+
 ## The Buffett family (File #013, data as of Oct 6, 2026)
 
 ### The family
@@ -515,6 +541,36 @@ Every numbered source on the site. Each family page numbers its own sources; the
 - Elisabeth Murdoch: [Nordiske Mediedager 2010 - Thursday - NMD 2010 (4583813556) (cropped).jpg](https://commons.wikimedia.org/wiki/File:Nordiske_Mediedager_2010_-_Thursday_-_NMD_2010_(4583813556)_(cropped).jpg) by Eirik Helland Urke / Nordiske Mediedager (2010), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
 - Lachlan Murdoch: [Lachlan Murdoch in May 2013 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Lachlan_Murdoch_in_May_2013_(cropped).jpg) by Eva Rinaldi (2013), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
 - James Murdoch: [James Murdoch 2008- NRKbeta (cropped).jpg](https://commons.wikimedia.org/wiki/File:James_Murdoch_2008-_NRKbeta_(cropped).jpg) by NRKbeta (2008), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+
+## The Ambani family (File #029, data as of Oct 12, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Mukesh_Ambani): Mukesh Ambani (accessed Oct 2026)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Nita_Ambani): Nita Ambani (accessed Oct 2026)
+3. [Forbes](https://www.forbes.com/sites/gloriaharaito/2023/08/28/asias-richest-man-mukesh-ambanis-three-children-appointed-to-reliance-board/): Asia’s Richest Man Mukesh Ambani’s Three Children Appointed To Reliance Board (Aug 28, 2023)
+
+### The money
+
+4. [Forbes](https://www.forbes.com/profile/mukesh-ambani/): Real-time profile: Mukesh Ambani ($80.2B, #25 in the world) (Oct 12, 2026)
+5. [Telangana Today (PTI)](https://telanganatoday.com/reliance-promoter-group-raises-stake-to-50-48-per-cent): Reliance promoter group raises stake to 50.48 per cent (Jul 17, 2026)
+
+### On the record
+
+6. [People Matters](https://www.peoplematters.in/amp/news/compensation-benefits/mukesh-ambani-takes-no-salary-for-sixth-year-running-earns-rs-4000-crore-in-reliance-dividends-49982): Mukesh Ambani takes no salary for sixth year running, earns Rs 4,000 crore in Reliance dividends (May 29, 2026)
+7. [YourStory](https://yourstory.com/2026/10/jio-ipo-nears-launch-drhp-filed-sebi-clears-path): Jio IPO nears launch: DRHP filed, SEBI clears path (Oct 1, 2026)
+8. [Bar & Bench](https://www.barandbench.com/news/sebi-bars-anil-ambani-from-securities-market-for-5-years-imposes-25-crore-fine): SEBI bars Anil Ambani from securities market for 5 years, imposes ₹25 crore fine (Aug 23, 2024)
+
+### The homes
+
+9. [Business Today (Bloomberg)](https://www.businesstoday.in/amp/latest/trends/story/mukesh-ambani-buys-dubais-most-expensive-villa-for-163-mn-report-350386-2022-10-20): Mukesh Ambani buys Dubai’s most expensive villa for $163 mn: Report (Oct 20, 2022)
+10. [Wikipedia](https://en.wikipedia.org/wiki/Antilia_(building)): Antilia (building) (accessed Oct 2026)
+
+### Photo credits
+
+- Mukesh Ambani: [Mukesh Ambani.jpg](https://commons.wikimedia.org/wiki/File:Mukesh_Ambani.jpg) by World Economic Forum (2007), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Nita Ambani: [The Prime Minister, Shri Narendra Modi rededicating Sir H.N. Reliance Foundation Hospital and Research Centre to the Nation, in Mumbai on October 25, 2014. The Governor of Maharashtra, Shri C. Vidyasagar Rao is also seen (cropped).jpg](https://commons.wikimedia.org/wiki/File:The_Prime_Minister,_Shri_Narendra_Modi_rededicating_Sir_H.N._Reliance_Foundation_Hospital_and_Research_Centre_to_the_Nation,_in_Mumbai_on_October_25,_2014._The_Governor_of_Maharashtra,_Shri_C._Vidyasagar_Rao_is_also_seen_(cropped).jpg) by Prime Minister’s Office (India) (2014), [GODL-India](https://data.gov.in/government-open-data-license-india)
+- Anil Ambani: [Anil Ambani, 2012 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Anil_Ambani,_2012_(cropped).jpg) by Sourav Mishra (2012), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
 
 ## The Kardashian-Jenner family (File #017, data as of Oct 6, 2026)
 
@@ -741,6 +797,33 @@ Every numbered source on the site. Each family page numbers its own sources; the
 
 - Jimmy “MrBeast” Donaldson: [MrBeast in 2026 (cropped 4).png](https://commons.wikimedia.org/wiki/File:MrBeast_in_2026_(cropped_4).png) by Tyren Redd (2026), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
+## The Gomez family (File #031, data as of Oct 12, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Selena_Gomez): Selena Gomez (accessed Oct 2026)
+2. [CBS News](https://www.cbsnews.com/amp/news/selena-gomez-marries-benny-blanco): Selena Gomez marries Benny Blanco (Sep 28, 2025)
+
+### The money
+
+3. [Forbes](https://www.forbes.com/profile/selena-gomez/): Profile: Selena Gomez ($700M) (Jun 3, 2025)
+4. [Forbes](https://www.forbes.com/sites/gigizamora/2025/05/13/why-selena-gomez-isnt-a-billionaire/): Here’s How Much Selena Gomez—Actress, Singer, Entrepreneur—Is Worth (May 13, 2025)
+5. [CNN (via Hawaii News Now)](https://www.hawaiinewsnow.com/2024/09/07/selena-gomez-reaches-billionaire-status-with-13-billion-net-worth): Selena Gomez reaches billionaire status with $1.3 billion net worth (Sep 6, 2024)
+
+### On the record
+
+6. [Yahoo News](https://ca.news.yahoo.com/rare-beauty-sale-could-selena-175251991.html): The potential $2 billion sale of Selena Gomez’s Rare Beauty could make her the next celebrity billionaire (Mar 21, 2024)
+7. [PR Newswire (Rare Beauty)](https://www.prnewswire.com/news-releases/rare-beauty-by-selena-gomez-to-launch-nationwide-in-ulta-beauty-302649327.html): Rare Beauty by Selena Gomez to Launch Nationwide in Ulta Beauty (Jan 5, 2026)
+
+### The homes
+
+8. [Quartz](https://qz.com/see-selena-gomez-and-benny-blanco-s-35-million-mansion-1851766159): See Selena Gomez and Benny Blanco’s $35 million mansion (Dec 2024)
+
+### Photo credits
+
+- Selena Gomez: [Selena Gomez at the 2024 Toronto International Film Festival 10 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Selena_Gomez_at_the_2024_Toronto_International_Film_Festival_10_(cropped).jpg) by Frank Sun (2024), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Benny Blanco: [Benny Blanco KCA 2025.png](https://commons.wikimedia.org/wiki/File:Benny_Blanco_KCA_2025.png) by NickRewind (2025), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+
 ## The James family (File #023, data as of Oct 6, 2026)
 
 ### The family
@@ -834,6 +917,53 @@ Every numbered source on the site. Each family page numbers its own sources; the
 - Cristiano Ronaldo: [Cristiano Ronaldo Croatia v Portugal 2 July 2026-075 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_(cropped).jpg) by Bryan Berlin (2026), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Georgina Rodríguez: [Georgina Rodriguez-1234.jpg](https://commons.wikimedia.org/wiki/File:Georgina_Rodriguez-1234.jpg) by Harald Krichel (2026), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
+## The Messi family (File #032, data as of Oct 12, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Lionel_Messi): Lionel Messi (accessed Oct 2026)
+2. [NBC Miami](https://www.nbcmiami.com/news/sports/from-hometown-sweethearts-to-soccer-power-couple-lionel-messi-and-antonela-roccuzzos-relationship-timeline/3831988/): From hometown sweethearts to soccer power couple: Lionel Messi and Antonela Roccuzzo’s relationship timeline (accessed Oct 2026)
+3. [AP (via ABC News)](https://abcnews.com/Sports/wireStory/jorge-messi-lionel-messis-father-longtime-agent-dies-135483570): Lionel Messi’s father Jorge, his longtime agent, dies at 68 (Aug 8, 2026)
+
+### The money
+
+4. [Forbes](https://www.forbes.com/profile/lionel-messi/): Real-time profile: Lionel Messi ($1.1B) (Oct 6, 2026)
+5. [Forbes](https://www.forbes.com/sites/hanktucker/2026/06/05/how-lionel-messi-became-a-billionaire/): How Lionel Messi Became A Billionaire (Jun 5, 2026)
+6. [Forbes](https://www.forbes.com/sites/conormurray/2026/08/31/lionel-messi-soccer-legend-and-billionaire-retires-from-argentina-national-team/): Lionel Messi—Soccer Legend And Billionaire—Retires From Argentina National Team (Aug 31, 2026)
+
+### On the record
+
+7. [NPR](https://www.npr.org/sections/thetwo-way/2016/07/06/484902571/soccer-star-lionel-messi-sentenced-to-21-month-jail-term-for-tax-fraud): Soccer Star Lionel Messi Sentenced To 21-Month Jail Term For Tax Fraud (Jul 6, 2016)
+
+### Photo credits
+
+- Lionel Messi: [Leo Messi Argentina v Egypt 7 July 2026-1.jpg](https://commons.wikimedia.org/wiki/File:Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg) by Bryan Berlin (2026), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+## The Woods family (File #033, data as of Oct 12, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Tiger_Woods): Tiger Woods (accessed Oct 2026)
+2. [Sports Illustrated](https://www.si.com/onsi/athlete-lifestyle/tiger-woods-and-vanessa-trump-s-relationship-timeline-all-the-key-moments): Tiger Woods and Vanessa Trump’s relationship timeline: all the key moments (Sep 3, 2026)
+
+### The money
+
+3. [Forbes](https://www.forbes.com/profile/tiger-woods/): Real-time profile: Tiger Woods ($1.5B) (Oct 2, 2026)
+4. [Forbes](https://www.forbes.com/sites/dereksaul/2024/01/08/tiger-woods-no-longer-a-nike-athlete-ends-deal-that-helped-mint-him-a-billionaire/): Tiger Woods No Longer A Nike Athlete—Ends Deal That Helped Mint Him A Billionaire (Jan 8, 2024)
+
+### On the record
+
+5. [AP (via KPRC)](https://www.click2houston.com/sports/2024/04/24/pga-tour-players-learn-how-much-loyalty-is-worth-in-new-equity-program/): PGA Tour players learn how much loyalty is worth in new equity program (Apr 24, 2024)
+6. [Forbes](https://www.forbes.com/sites/suzannerowankelleher/2026/03/27/tiger-woods-arrested-for-dui-after-florida-rollover-car-crash/): Tiger Woods Arrested For DUI After Florida Rollover Car Crash (Mar 27, 2026)
+7. [FOX 5 New York](https://www.fox5ny.com/news/tiger-woods-scheduled-plea-hearing-florida-dui-crash-case): Tiger Woods strikes plea deal in Florida DUI crash case; driver’s license suspended for 5 years (Sep 2, 2026)
+
+### Photo credits
+
+- Tiger Woods: [President Donald Trump hosts a reception honoring Black History Month (54341713089) (cropped).jpg](https://commons.wikimedia.org/wiki/File:President_Donald_Trump_hosts_a_reception_honoring_Black_History_Month_(54341713089)_(cropped).jpg) by The White House (2025), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Earl Woods: [Official U.S. Army portrait of Earl Woods.jpg](https://commons.wikimedia.org/wiki/File:Official_U.S._Army_portrait_of_Earl_Woods.jpg) by U.S. Army (), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Vanessa Trump: [Vanessa Trump (1).jpg](https://commons.wikimedia.org/wiki/File:Vanessa_Trump_(1).jpg) by U.S. Air Force Staff Sgt. Marianique Santos (DoD) (2017), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Elin Nordegren: [Elin Nordegren.jpg](https://commons.wikimedia.org/wiki/File:Elin_Nordegren.jpg) by U.S. Navy / Brien Aho (2003), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
+
 ## The Trump family (File #026, data as of Oct 6, 2026)
 
 ### The family
@@ -918,3 +1048,25 @@ Every numbered source on the site. Each family page numbers its own sources; the
 - Nancy Pelosi: [Official photo of Speaker Nancy Pelosi in 2019.jpg](https://commons.wikimedia.org/wiki/File:Official_photo_of_Speaker_Nancy_Pelosi_in_2019.jpg) by John Harrington (2019), [Public domain](https://creativecommons.org/publicdomain/mark/1.0/)
 - Paul Pelosi: [Paul Pelosi 2022.jpg](https://commons.wikimedia.org/wiki/File:Paul_Pelosi_2022.jpg) by Presidenza della Repubblica (2022), [Attribution](https://commons.wikimedia.org/wiki/Template:Attribution)
 - Christine Pelosi: [Christine Pelosi 2013 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Christine_Pelosi_2013_(cropped).jpg) by Financial Times (2013), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+
+## The Bloomberg family (File #030, data as of Oct 12, 2026)
+
+### The family
+
+1. [Wikipedia](https://en.wikipedia.org/wiki/Michael_Bloomberg): Michael Bloomberg (accessed Oct 2026)
+2. [ASU+GSV Summit](https://asugsvsummit.com/speakers/emma-bloomberg): Speaker bio: Emma Bloomberg (accessed Oct 2026)
+3. [South China Morning Post](https://scmp.com/magazines/style/celebrity/article/3201556/bloomberg-billionaire-heiress-who-mike-bloombergs-daughter-georgina-equestrian-champion-pals-ivanka): Bloomberg billionaire heiress: who is Mike Bloomberg’s daughter Georgina? (2022)
+
+### The money
+
+4. [Forbes](https://www.forbes.com/profile/michael-bloomberg/): Real-time profile: Michael Bloomberg ($94.9B, #20 in the world) (Oct 12, 2026)
+5. [The Chronicle of Philanthropy (via AP)](https://www.clickondetroit.com/business/2026/03/10/michael-bloomberg-biggest-donor-of-2025-tops-philanthropy-50-list-for-third-year-in-a-row/): Michael Bloomberg biggest donor of 2025, tops Philanthropy 50 list for third year in a row (Mar 10, 2026)
+
+### On the record
+
+6. [Willkie Farr & Gallagher](https://www.willkie.com/news/2008/07/willkie-advises-bloomberg-in-buyback-agreement-w__): Willkie advises Bloomberg in buyback agreement with Merrill Lynch (Jul 17, 2008)
+7. [Bloomberg News](https://www.bloomberg.com/news/articles/2020-03-20/bloomberg-gave-almost-1-billion-to-his-presidential-campaign): Bloomberg Gave Almost $1 Billion to His Presidential Campaign (Mar 20, 2020)
+
+### Photo credits
+
+- Michael Bloomberg: [MichaelBloomberg-byPhilipRomano.jpg](https://commons.wikimedia.org/wiki/File:MichaelBloomberg-byPhilipRomano.jpg) by PhilipRomanoPhoto (2026), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)

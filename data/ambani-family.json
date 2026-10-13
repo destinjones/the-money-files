@@ -1,0 +1,916 @@
+{
+ "meta": {
+  "asOf": "2026-10-12",
+  "asOfLabel": "Oct 12, 2026",
+  "file": "File #029",
+  "repo": "https://github.com/destinjones/the-money-files",
+  "center": "mukesh",
+  "slug": "ambani",
+  "og": "assets/og-hub.jpg",
+  "pronoun": "his"
+ },
+ "copy": {
+  "title": "The Ambani Money File",
+  "desc": "An interactive, fully sourced map of Mukesh Ambani’s family: who runs which part of Reliance, the brother who took the other half, the homes, and the money on the public record.",
+  "eyebrow": "<b>File #029</b> · The Ambani family · Data as of <span data-asof></span>",
+  "h1": "India’s <span class=\"gold\">richest</span> family sells fuel, phone plans and groceries. We followed the <span class=\"u-red\">money</span>.",
+  "lede": "Who’s who, which part of Reliance each of them runs, which companies you can buy stock in, the homes, and the money on the public record. Every number links to its source.",
+  "worthLabel": "Mukesh Ambani’s net worth",
+  "worthBig": "$80,200,000,000",
+  "familyLede": "Tap anyone to open their file. All three children are adults, sit on Reliance’s board and run a piece of the group.",
+  "investLede": "Reliance Industries and Jio Financial Services trade in Mumbai on the NSE and BSE. Jio Platforms has filed for its own listing.",
+  "moneyTitle": "Where the money is",
+  "moneyLede": "Most of it is the family’s half of Reliance Industries, held mostly through promoter-group companies. Only Mukesh has a published net worth.",
+  "recordLede": "What Reliance’s filings, India’s market regulator and property records show. Filings and reporting, not guesses.",
+  "trailLede": "From a textile company founded in 1966 to the richest family in India.",
+  "calcYearsK": "Years to earn what Mukesh has",
+  "footLabel": "File #029: the Ambani family",
+  "ledgerFoot": "A crore is 10 million, so ₹4,000 crore is ₹40 billion. We leave rupee figures in rupees rather than guess an exchange rate. “Our sum” means simple addition of the linked filings or reports.",
+  "homesTitle": "The homes and the estates",
+  "homesLede": "Home is Antilia, a 27-story tower in Mumbai. These are the reported prices of the family’s biggest buys abroad, area level only.",
+  "homesFlipLabel": "Paid for two buys abroad",
+  "homesChart": "Bought, in $ millions"
+ },
+ "tree": {
+  "groups": [
+   [
+    "center",
+    "The center"
+   ],
+   [
+    "spouse",
+    "Wife"
+   ],
+   [
+    "children",
+    "Children",
+    "All three are adults on Reliance’s board."
+   ],
+   [
+    "parents",
+    "Parents"
+   ],
+   [
+    "siblings",
+    "Brother"
+   ]
+  ],
+  "order": [
+   "mukesh",
+   "nita",
+   "akash",
+   "isha",
+   "anant",
+   "dhirubhai",
+   "kokilaben",
+   "anil"
+  ],
+  "coParents": [],
+  "couples": [
+   [
+    "dhirubhai",
+    "kokilaben",
+    ""
+   ],
+   [
+    "mukesh",
+    "nita",
+    "m. 1985"
+   ]
+  ],
+  "forks": [
+   {
+    "frm": [
+     "dhirubhai",
+     "kokilaben"
+    ],
+    "kids": [
+     "anil",
+     "mukesh"
+    ]
+   },
+   {
+    "frm": [
+     "mukesh",
+     "nita"
+    ],
+    "kids": [
+     "akash",
+     "isha",
+     "anant"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "wiki_mukesh",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Mukesh Ambani",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Mukesh_Ambani"
+  },
+  {
+   "id": "wiki_nita",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Nita Ambani",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Nita_Ambani"
+  },
+  {
+   "id": "forbes_kids",
+   "group": "family",
+   "pub": "Forbes",
+   "title": "Asia’s Richest Man Mukesh Ambani’s Three Children Appointed To Reliance Board",
+   "date": "Aug 28, 2023",
+   "url": "https://www.forbes.com/sites/gloriaharaito/2023/08/28/asias-richest-man-mukesh-ambanis-three-children-appointed-to-reliance-board/"
+  },
+  {
+   "id": "forbes_mukesh",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Real-time profile: Mukesh Ambani ($80.2B, #25 in the world)",
+   "date": "Oct 12, 2026",
+   "url": "https://www.forbes.com/profile/mukesh-ambani/"
+  },
+  {
+   "id": "tt_promoter",
+   "group": "money",
+   "pub": "Telangana Today (PTI)",
+   "title": "Reliance promoter group raises stake to 50.48 per cent",
+   "date": "Jul 17, 2026",
+   "url": "https://telanganatoday.com/reliance-promoter-group-raises-stake-to-50-48-per-cent"
+  },
+  {
+   "id": "pm_pay",
+   "group": "record",
+   "pub": "People Matters",
+   "title": "Mukesh Ambani takes no salary for sixth year running, earns Rs 4,000 crore in Reliance dividends",
+   "date": "May 29, 2026",
+   "url": "https://www.peoplematters.in/amp/news/compensation-benefits/mukesh-ambani-takes-no-salary-for-sixth-year-running-earns-rs-4000-crore-in-reliance-dividends-49982"
+  },
+  {
+   "id": "ys_jio",
+   "group": "record",
+   "pub": "YourStory",
+   "title": "Jio IPO nears launch: DRHP filed, SEBI clears path",
+   "date": "Oct 1, 2026",
+   "url": "https://yourstory.com/2026/10/jio-ipo-nears-launch-drhp-filed-sebi-clears-path"
+  },
+  {
+   "id": "bb_anil",
+   "group": "record",
+   "pub": "Bar & Bench",
+   "title": "SEBI bars Anil Ambani from securities market for 5 years, imposes ₹25 crore fine",
+   "date": "Aug 23, 2024",
+   "url": "https://www.barandbench.com/news/sebi-bars-anil-ambani-from-securities-market-for-5-years-imposes-25-crore-fine"
+  },
+  {
+   "id": "bt_dubai",
+   "group": "homes",
+   "pub": "Business Today (Bloomberg)",
+   "title": "Mukesh Ambani buys Dubai’s most expensive villa for $163 mn: Report",
+   "date": "Oct 20, 2022",
+   "url": "https://www.businesstoday.in/amp/latest/trends/story/mukesh-ambani-buys-dubais-most-expensive-villa-for-163-mn-report-350386-2022-10-20"
+  },
+  {
+   "id": "wiki_antilia",
+   "group": "homes",
+   "pub": "Wikipedia",
+   "title": "Antilia (building)",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Antilia_(building)"
+  }
+ ],
+ "people": [
+  {
+   "id": "dhirubhai",
+   "name": "Dhirubhai Ambani",
+   "short": "Dhirubhai",
+   "rel": "Father · died 2002",
+   "tag": "Founded Reliance",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": "Dhirubhai Ambani",
+   "summary": {
+    "t": "Founded Reliance in 1966 as a small textile maker. After he died in 2002, his sons Mukesh and Anil split the empire between them.",
+    "src": [
+     "forbes_mukesh",
+     "wiki_mukesh"
+    ]
+   },
+   "worth": {
+    "none": "Died in 2002."
+   }
+  },
+  {
+   "id": "kokilaben",
+   "name": "Kokilaben Ambani",
+   "short": "Kokilaben",
+   "rel": "Mother",
+   "tag": "Reliance shareholder",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Dhirubhai’s widow. She holds 3.14 crore Reliance shares (31.4 million), 0.24% of the company, about twice the stake each member of Mukesh’s household holds directly.",
+    "src": [
+     "tt_promoter",
+     "wiki_mukesh"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "anil",
+   "name": "Anil Ambani",
+   "short": "Anil",
+   "rel": "Younger brother",
+   "tag": "Ran half the empire",
+   "group": "siblings",
+   "layout": {
+    "row": 2
+   },
+   "photo": "anil",
+   "wiki": "Anil Ambani",
+   "summary": {
+    "t": "Took half of the family empire when the brothers divided it after their father’s death in 2002.",
+    "src": [
+     "forbes_mukesh",
+     "wiki_mukesh"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   },
+   "record": [
+    {
+     "h": "The SEBI ban",
+     "t": "In August 2024 India’s market regulator barred him from the securities market for five years and fined him ₹25 crore (₹250 million) in a case over funds diverted from Reliance Home Finance.",
+     "src": [
+      "bb_anil"
+     ]
+    },
+    {
+     "h": "Help from his brother",
+     "t": "In 2019 Mukesh paid a debt Anil’s company owed Ericsson after an Indian court found Anil in contempt over it.",
+     "src": [
+      "wiki_mukesh"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mukesh",
+   "name": "Mukesh Ambani",
+   "short": "Mukesh",
+   "rel": "The center of the map",
+   "tag": "$80.2B",
+   "tagKind": "money",
+   "born": "Born 1957 in Aden (now in Yemen)",
+   "bornSrc": [
+    "wiki_mukesh"
+   ],
+   "group": "center",
+   "layout": {
+    "row": 2,
+    "big": true
+   },
+   "photo": "mukesh",
+   "wiki": "Mukesh Ambani",
+   "summary": {
+    "t": "Chairs and runs Reliance Industries, which has about $125 billion in revenue from oil refining and petrochemicals, telecom, retail, media and finance. He left Stanford in 1980 to join his father’s company.",
+    "src": [
+     "forbes_mukesh",
+     "wiki_mukesh"
+    ]
+   },
+   "worth": {
+    "value": "$80.2 billion",
+    "by": "Forbes real-time estimate",
+    "date": "Oct 12, 2026",
+    "src": [
+     "forbes_mukesh"
+    ],
+    "also": {
+     "short": "Rank",
+     "value": "#25 in the world",
+     "by": "Forbes rank",
+     "src": [
+      "forbes_mukesh"
+     ]
+    }
+   },
+   "owns": [
+    {
+     "co": "reliance",
+     "t": "Chairman. The promoter group he leads owns 50.48% of the company.",
+     "src": [
+      "tt_promoter",
+      "forbes_mukesh"
+     ]
+    },
+    {
+     "co": "jio",
+     "t": "Built it inside Reliance; it has more than 500 million subscribers.",
+     "src": [
+      "forbes_mukesh"
+     ]
+    },
+    {
+     "co": "mumbaiindians",
+     "t": "Bought the cricket team for $111.9 million in 2008.",
+     "src": [
+      "wiki_mukesh"
+     ]
+    }
+   ],
+   "record": [
+    {
+     "h": "No salary, big dividends",
+     "t": "He took no salary from Reliance for the year ended March 31, 2026. Dividends on the promoter group’s shares came to about ₹4,000 crore (₹40 billion).",
+     "src": [
+      "pm_pay"
+     ]
+    },
+    {
+     "h": "Selling a third of Jio",
+     "t": "During the Covid-19 lockdown he raised more than $20 billion by selling about a third of Jio to investors including Facebook and Google.",
+     "src": [
+      "forbes_mukesh"
+     ]
+    },
+    {
+     "h": "The AI bet",
+     "t": "In 2026 he announced plans to invest $110 billion in AI infrastructure across India over seven years.",
+     "src": [
+      "forbes_mukesh"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "Reliance’s Jamnagar refinery, which he built, could make 660,000 barrels a day by 2010.",
+     "src": [
+      "wiki_mukesh"
+     ]
+    },
+    {
+     "t": "Reliance bought New York’s Mandarin Oriental hotel in 2022 for $98 million.",
+     "src": [
+      "forbes_mukesh"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nita",
+   "name": "Nita Ambani",
+   "short": "Nita",
+   "rel": "Wife · married 1985",
+   "tag": "Reliance Foundation",
+   "group": "spouse",
+   "layout": {
+    "row": 2
+   },
+   "photo": "nita",
+   "wiki": "Nita Ambani",
+   "summary": {
+    "t": "Founder and chair of Reliance Foundation, the group’s charity, and co-owner of the Mumbai Indians. In 2016 she became the first Indian woman elected to the International Olympic Committee.",
+    "src": [
+     "wiki_nita"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate of her own."
+   },
+   "owns": [
+    {
+     "co": "mumbaiindians",
+     "t": "Co-owner.",
+     "src": [
+      "wiki_nita"
+     ]
+    },
+    {
+     "co": "reliance",
+     "t": "Holds 0.12% directly. Sat on the board from 2014 to 2023 and still attends as a permanent invitee.",
+     "src": [
+      "tt_promoter",
+      "wiki_nita"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "She opened the Nita Mukesh Ambani Cultural Centre in Mumbai in March 2023.",
+     "src": [
+      "wiki_nita"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "akash",
+   "name": "Akash Ambani",
+   "short": "Akash",
+   "rel": "Son",
+   "tag": "Chairman of Jio",
+   "group": "children",
+   "layout": {
+    "row": 3
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Isha’s twin. He has chaired Jio Infocomm, Reliance’s telecom company, since June 2022, and joined Reliance’s board in 2023.",
+    "src": [
+     "forbes_kids"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   },
+   "owns": [
+    {
+     "co": "jio",
+     "t": "Chairman of Jio Infocomm since 2022.",
+     "src": [
+      "forbes_kids"
+     ]
+    },
+    {
+     "co": "reliance",
+     "t": "Board member; holds 0.12%. Paid ₹2.5 crore in commission for the latest year.",
+     "src": [
+      "forbes_kids",
+      "tt_promoter",
+      "pm_pay"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "isha",
+   "name": "Isha Ambani",
+   "short": "Isha",
+   "rel": "Daughter",
+   "tag": "Reliance Retail",
+   "group": "children",
+   "layout": {
+    "row": 3
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Akash’s twin. She oversees Reliance’s retail and financial services businesses and joined its board in 2023.",
+    "src": [
+     "forbes_kids",
+     "forbes_mukesh"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   },
+   "owns": [
+    {
+     "co": "retail",
+     "t": "Director of Reliance Retail Ventures.",
+     "src": [
+      "forbes_kids",
+      "forbes_mukesh"
+     ]
+    },
+    {
+     "co": "reliance",
+     "t": "Board member; holds 0.12%. Paid ₹2.5 crore in commission for the latest year.",
+     "src": [
+      "forbes_kids",
+      "tt_promoter",
+      "pm_pay"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "anant",
+   "name": "Anant Ambani",
+   "short": "Anant",
+   "rel": "Son",
+   "tag": "Reliance energy",
+   "group": "children",
+   "layout": {
+    "row": 3
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "The youngest. He heads Reliance’s energy and green energy businesses and is an executive director. He married Radhika Merchant in July 2024.",
+    "src": [
+     "forbes_kids",
+     "pm_pay",
+     "wiki_mukesh"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   },
+   "owns": [
+    {
+     "co": "reliance",
+     "t": "Executive director; holds 0.12%. Paid ₹12.17 crore for the latest year.",
+     "src": [
+      "pm_pay",
+      "tt_promoter"
+     ]
+    }
+   ]
+  }
+ ],
+ "companies": [
+  {
+   "id": "reliance",
+   "name": "Reliance Industries",
+   "status": "public",
+   "ticker": "RELIANCE",
+   "exchange": "NSE",
+   "quote": "https://www.nseindia.com/get-quotes/equity?symbol=RELIANCE",
+   "color": "#1E66F5",
+   "who": "Mukesh (chairman) · promoter group 50.48% · all three children on the board",
+   "t": "Founded by Dhirubhai in 1966. Today it refines oil and runs the Jio phone network and a retail chain, with about $125 billion in revenue.",
+   "src": [
+    "forbes_mukesh",
+    "tt_promoter"
+   ]
+  },
+  {
+   "id": "jio",
+   "name": "Jio Platforms",
+   "status": "private",
+   "color": "#0A2885",
+   "who": "Akash (chairman of Jio Infocomm) · owned by Reliance",
+   "t": "Reliance’s telecom and digital arm, with more than 500 million subscribers. It filed to go public in June 2026 and got the regulator’s go-ahead in August; the listing date hadn’t been set as of Oct 1.",
+   "src": [
+    "forbes_mukesh",
+    "ys_jio",
+    "forbes_kids"
+   ]
+  },
+  {
+   "id": "retail",
+   "name": "Reliance Retail",
+   "status": "private",
+   "color": "#E11D48",
+   "who": "Isha (director) · owned by Reliance",
+   "t": "The group’s retail arm, which Isha oversees.",
+   "src": [
+    "forbes_kids",
+    "forbes_mukesh"
+   ]
+  },
+  {
+   "id": "jiofin",
+   "name": "Jio Financial Services",
+   "status": "public",
+   "ticker": "JIOFIN",
+   "exchange": "NSE",
+   "quote": "https://www.nseindia.com/get-quotes/equity?symbol=JIOFIN",
+   "color": "#0EA5E9",
+   "who": "Spun off from Reliance; Isha oversees the group’s financial services",
+   "t": "Reliance listed its finance arm separately in 2023.",
+   "src": [
+    "forbes_mukesh"
+   ]
+  },
+  {
+   "id": "mumbaiindians",
+   "name": "Mumbai Indians",
+   "status": "private",
+   "color": "#004BA0",
+   "who": "Mukesh (bought it) · Nita (co-owner)",
+   "t": "An Indian Premier League cricket team, bought for $111.9 million in 2008.",
+   "src": [
+    "wiki_mukesh",
+    "wiki_nita"
+   ]
+  }
+ ],
+ "ladder": {
+  "items": [
+   {
+    "name": "Mukesh Ambani",
+    "short": "Mukesh",
+    "v": 80200000000,
+    "label": "$80.2B",
+    "src": [
+     "forbes_mukesh"
+    ]
+   }
+  ],
+  "rest": "Everyone else on the map"
+ },
+ "calc": {
+  "worth": 80200000000
+ },
+ "homes": {
+  "props": [
+   {
+    "name": "Beach villa",
+    "area": "Palm Jumeirah, Dubai",
+    "by": "2022",
+    "b": 163,
+    "note": "Dubai’s land department disclosed the price; Bloomberg reported Ambani was the buyer.",
+    "src": [
+     "bt_dubai"
+    ]
+   },
+   {
+    "name": "Stoke Park country club and estate",
+    "area": "United Kingdom",
+    "by": "2021",
+    "b": 79,
+    "note": "Bought by Reliance Industries, not by Ambani personally.",
+    "src": [
+     "bt_dubai"
+    ]
+   }
+  ],
+  "summary": {
+   "value": "≈$242M",
+   "note": "Paid for the two buys abroad below (our sum of reported prices).",
+   "src": [
+    "bt_dubai"
+   ]
+  },
+  "extra": [
+   {
+    "t": "The family lives in Antilia, a 27-story, 173-meter tower in Mumbai finished in 2010. Reported estimates of its cost run from $1 billion to about $2 billion.",
+    "src": [
+     "wiki_antilia",
+     "wiki_mukesh"
+    ]
+   }
+  ]
+ },
+ "ledger": [
+  {
+   "who": "Promoter group",
+   "what": "Share of Reliance Industries",
+   "amt": "50.48%",
+   "when": "Jun 2026",
+   "src": [
+    "tt_promoter"
+   ]
+  },
+  {
+   "who": "Promoter group",
+   "what": "Reliance shares bought on the market in one quarter (analyst estimate)",
+   "amt": "₹8,500–9,000 crore",
+   "when": "Apr–Jun 2026",
+   "src": [
+    "tt_promoter"
+   ]
+  },
+  {
+   "who": "Mukesh, Nita, Akash, Isha, Anant",
+   "what": "Reliance shares held directly, each",
+   "amt": "1.61 crore",
+   "when": "2026",
+   "src": [
+    "tt_promoter"
+   ]
+  },
+  {
+   "who": "Mukesh",
+   "what": "Salary from Reliance",
+   "amt": "₹0",
+   "when": "FY2026",
+   "src": [
+    "pm_pay"
+   ]
+  },
+  {
+   "who": "Promoter group",
+   "what": "Reliance dividends",
+   "amt": "≈₹4,000 crore",
+   "when": "FY2026",
+   "src": [
+    "pm_pay"
+   ]
+  },
+  {
+   "who": "Anant",
+   "what": "Pay as executive director",
+   "amt": "₹12.17 crore",
+   "when": "FY2026",
+   "src": [
+    "pm_pay"
+   ]
+  },
+  {
+   "who": "Reliance",
+   "what": "Raised by selling about a third of Jio during the lockdown",
+   "amt": "$20B+",
+   "when": "2020",
+   "src": [
+    "forbes_mukesh"
+   ]
+  },
+  {
+   "who": "Mukesh",
+   "what": "Palm Jumeirah villa, Dubai",
+   "amt": "$163M",
+   "when": "Oct 2022",
+   "src": [
+    "bt_dubai"
+   ]
+  },
+  {
+   "who": "Anil",
+   "what": "SEBI fine, with a five-year market ban",
+   "amt": "₹25 crore",
+   "when": "Aug 2024",
+   "src": [
+    "bb_anil"
+   ]
+  }
+ ],
+ "trail": [
+  {
+   "when": "1957",
+   "h": "Born in Aden",
+   "t": "",
+   "src": [
+    "wiki_mukesh"
+   ]
+  },
+  {
+   "when": "1966",
+   "h": "Dhirubhai founds Reliance as a textile maker",
+   "t": "",
+   "src": [
+    "forbes_mukesh"
+   ]
+  },
+  {
+   "when": "1980",
+   "h": "Leaves Stanford to join Reliance",
+   "t": "",
+   "src": [
+    "wiki_mukesh"
+   ]
+  },
+  {
+   "when": "1985",
+   "h": "Marries Nita",
+   "t": "",
+   "src": [
+    "wiki_nita"
+   ]
+  },
+  {
+   "when": "2002",
+   "h": "Dhirubhai dies; the brothers later split the empire",
+   "t": "",
+   "src": [
+    "forbes_mukesh",
+    "wiki_mukesh"
+   ]
+  },
+  {
+   "when": "2008",
+   "h": "Buys the Mumbai Indians",
+   "amt": "$111.9M",
+   "t": "",
+   "src": [
+    "wiki_mukesh"
+   ]
+  },
+  {
+   "when": "2010",
+   "h": "Antilia is finished",
+   "t": "",
+   "src": [
+    "wiki_antilia"
+   ]
+  },
+  {
+   "when": "2020",
+   "h": "Sells a third of Jio to Facebook, Google and others",
+   "amt": "$20B+",
+   "t": "",
+   "src": [
+    "forbes_mukesh"
+   ]
+  },
+  {
+   "when": "2022",
+   "h": "Akash takes over as Jio’s chairman; Dubai villa bought",
+   "amt": "$163M",
+   "t": "",
+   "src": [
+    "forbes_kids",
+    "bt_dubai"
+   ]
+  },
+  {
+   "when": "2023",
+   "h": "All three children join Reliance’s board; Jio Financial lists",
+   "t": "Nita steps off the board.",
+   "src": [
+    "forbes_kids",
+    "forbes_mukesh"
+   ]
+  },
+  {
+   "when": "Jul 2024",
+   "h": "Anant marries Radhika Merchant",
+   "t": "",
+   "src": [
+    "wiki_mukesh"
+   ]
+  },
+  {
+   "when": "2026",
+   "h": "Announces a $110 billion AI infrastructure plan",
+   "amt": "$110B",
+   "t": "",
+   "src": [
+    "forbes_mukesh"
+   ]
+  },
+  {
+   "when": "Jun 2026",
+   "h": "Jio Platforms files to go public",
+   "t": "The regulator clears it in August.",
+   "src": [
+    "ys_jio"
+   ]
+  },
+  {
+   "when": "Oct 2026",
+   "h": "Forbes puts his fortune at $80.2 billion",
+   "amt": "$80.2B",
+   "t": "",
+   "src": [
+    "forbes_mukesh"
+   ]
+  }
+ ],
+ "photos": {
+  "mukesh": {
+   "file": "Mukesh Ambani.jpg",
+   "author": "World Economic Forum",
+   "license": "CC BY-SA 2.0",
+   "w": 268,
+   "h": 355,
+   "fx": 0.46,
+   "fy": 0.37,
+   "zoom": 1.15,
+   "year": "2007"
+  },
+  "nita": {
+   "file": "The Prime Minister, Shri Narendra Modi rededicating Sir H.N. Reliance Foundation Hospital and Research Centre to the Nation, in Mumbai on October 25, 2014. The Governor of Maharashtra, Shri C. Vidyasagar Rao is also seen (cropped).jpg",
+   "author": "Prime Minister’s Office (India)",
+   "license": "GODL-India",
+   "w": 459,
+   "h": 516,
+   "fx": 0.5,
+   "fy": 0.37,
+   "zoom": 1.9,
+   "year": "2014"
+  },
+  "anil": {
+   "file": "Anil Ambani, 2012 (cropped).jpg",
+   "author": "Sourav Mishra",
+   "license": "CC BY-SA 3.0",
+   "w": 190,
+   "h": 269,
+   "fx": 0.49,
+   "fy": 0.42,
+   "zoom": 1.0,
+   "year": "2012"
+  }
+ },
+ "licenses": {
+  "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+  "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/",
+  "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+  "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "GODL-India": "https://data.gov.in/government-open-data-license-india"
+ },
+ "companiesExtra": []
+}

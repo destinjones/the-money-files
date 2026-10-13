@@ -1,0 +1,645 @@
+{
+ "meta": {
+  "asOf": "2026-10-12",
+  "asOfLabel": "Oct 12, 2026",
+  "file": "File #032",
+  "repo": "https://github.com/destinjones/the-money-files",
+  "center": "lionel",
+  "slug": "messi",
+  "og": "assets/og-hub.jpg",
+  "pronoun": "his"
+ },
+ "copy": {
+  "title": "The Messi Money File",
+  "desc": "An interactive, fully sourced map of Lionel Messi’s family: the father who ran his business, the Inter Miami deal, the tax case, and the money on the public record.",
+  "eyebrow": "<b>File #032</b> · The Messi family · Data as of <span data-asof></span>",
+  "h1": "Football’s other <span class=\"gold\">billionaire</span> has a family. We followed the <span class=\"u-red\">money</span>.",
+  "lede": "Who’s who, what he owns, what the clubs paid him, which companies you can buy stock in, and the money on the public record. Every number links to its source.",
+  "worthLabel": "Lionel Messi’s net worth",
+  "worthBig": "$1,100,000,000",
+  "familyLede": "Tap anyone to open their file. Lionel and Antonela’s three sons appear by first name only.",
+  "investLede": "His clubs and businesses are private. Adidas, which pays him under a lifetime deal, trades in Frankfurt, but the family has no stake in it.",
+  "moneyTitle": "Where the money is",
+  "moneyLede": "Mostly cash saved from two decades of contracts and endorsements, plus an option to own part of Inter Miami. Only Lionel has a published net worth.",
+  "recordLede": "What leaked contracts, the players’ union and a Spanish court record show. Filings and reporting, not guesses.",
+  "trailLede": "From Rosario to Barcelona at 13, and to a billion dollars at 38.",
+  "calcYearsK": "Years to earn what Lionel has",
+  "footLabel": "File #032: the Messi family"
+ },
+ "tree": {
+  "groups": [
+   [
+    "center",
+    "The center"
+   ],
+   [
+    "partners",
+    "Wife & sons",
+    "Kids by first name only."
+   ],
+   [
+    "parents",
+    "Parents"
+   ]
+  ],
+  "order": [
+   "lionel",
+   "antonela",
+   "jorge",
+   "celia"
+  ],
+  "coParents": [
+   "antonela"
+  ],
+  "couples": [
+   [
+    "jorge",
+    "celia",
+    ""
+   ]
+  ],
+  "forks": [
+   {
+    "frm": [
+     "jorge",
+     "celia"
+    ],
+    "kids": [
+     "lionel"
+    ]
+   },
+   {
+    "frm": "lionel",
+    "kids": [
+     "antonela"
+    ],
+    "toNodeTop": true
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "wiki_messi",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Lionel Messi",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Lionel_Messi"
+  },
+  {
+   "id": "nbc_antonela",
+   "group": "family",
+   "pub": "NBC Miami",
+   "title": "From hometown sweethearts to soccer power couple: Lionel Messi and Antonela Roccuzzo’s relationship timeline",
+   "date": "accessed Oct 2026",
+   "url": "https://www.nbcmiami.com/news/sports/from-hometown-sweethearts-to-soccer-power-couple-lionel-messi-and-antonela-roccuzzos-relationship-timeline/3831988/"
+  },
+  {
+   "id": "ap_jorge",
+   "group": "family",
+   "pub": "AP (via ABC News)",
+   "title": "Lionel Messi’s father Jorge, his longtime agent, dies at 68",
+   "date": "Aug 8, 2026",
+   "url": "https://abcnews.com/Sports/wireStory/jorge-messi-lionel-messis-father-longtime-agent-dies-135483570"
+  },
+  {
+   "id": "forbes_messi",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Real-time profile: Lionel Messi ($1.1B)",
+   "date": "Oct 6, 2026",
+   "url": "https://www.forbes.com/profile/lionel-messi/"
+  },
+  {
+   "id": "forbes_how",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "How Lionel Messi Became A Billionaire",
+   "date": "Jun 5, 2026",
+   "url": "https://www.forbes.com/sites/hanktucker/2026/06/05/how-lionel-messi-became-a-billionaire/"
+  },
+  {
+   "id": "forbes_retire",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Lionel Messi—Soccer Legend And Billionaire—Retires From Argentina National Team",
+   "date": "Aug 31, 2026",
+   "url": "https://www.forbes.com/sites/conormurray/2026/08/31/lionel-messi-soccer-legend-and-billionaire-retires-from-argentina-national-team/"
+  },
+  {
+   "id": "npr_tax",
+   "group": "record",
+   "pub": "NPR",
+   "title": "Soccer Star Lionel Messi Sentenced To 21-Month Jail Term For Tax Fraud",
+   "date": "Jul 6, 2016",
+   "url": "https://www.npr.org/sections/thetwo-way/2016/07/06/484902571/soccer-star-lionel-messi-sentenced-to-21-month-jail-term-for-tax-fraud"
+  }
+ ],
+ "people": [
+  {
+   "id": "jorge",
+   "name": "Jorge Messi",
+   "short": "Jorge",
+   "rel": "Father · 1958–2026",
+   "tag": "Agent",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Worked as a department head at a steel plant before becoming his son’s agent and business manager. He negotiated the Barcelona contracts and the moves to Paris Saint-Germain and Inter Miami, and handled the family’s real estate, hotel and restaurant investments. He died on Aug. 8, 2026, at 68.",
+    "src": [
+     "wiki_messi",
+     "ap_jorge",
+     "forbes_how"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   },
+   "record": [
+    {
+     "h": "The tax case",
+     "t": "In 2016 a Spanish court sentenced him and Lionel to 21 months each for tax fraud over endorsement income sheltered from Spanish taxes. The jail terms were expected to be suspended. He was fined €1.5 million.",
+     "src": [
+      "npr_tax"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "celia",
+   "name": "Celia Cuccittini",
+   "short": "Celia",
+   "rel": "Mother",
+   "tag": "Mother",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Worked in a magnet manufacturing workshop in Rosario while raising four children: Rodrigo, Matías, Lionel and María Sol.",
+    "src": [
+     "wiki_messi"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "lionel",
+   "name": "Lionel Messi",
+   "short": "Lionel",
+   "rel": "The center of the map",
+   "tag": "$1.1B",
+   "tagKind": "money",
+   "born": "Born 1987 in Rosario, Argentina",
+   "bornSrc": [
+    "wiki_messi"
+   ],
+   "group": "center",
+   "layout": {
+    "row": 2,
+    "big": true
+   },
+   "photo": "lionel",
+   "wiki": "Lionel Messi",
+   "summary": {
+    "t": "Played 17 years for FC Barcelona and two for Paris Saint-Germain before joining Inter Miami in 2023. He led Argentina to the 2022 World Cup and retired from the national team in August 2026 with a record 124 goals.",
+    "src": [
+     "forbes_messi",
+     "forbes_retire"
+    ]
+   },
+   "worth": {
+    "value": "$1.1 billion",
+    "by": "Forbes real-time estimate",
+    "date": "Oct 6, 2026",
+    "src": [
+     "forbes_messi"
+    ],
+    "also": {
+     "short": "Career pay",
+     "value": "≈$1.8B before taxes",
+     "by": "Forbes estimate",
+     "src": [
+      "forbes_how"
+     ]
+    }
+   },
+   "owns": [
+    {
+     "co": "intermiami",
+     "t": "Plays for the club under a contract through 2028, with an option to take an equity stake when he retires.",
+     "src": [
+      "forbes_how",
+      "forbes_retire"
+     ]
+    },
+    {
+     "co": "mim",
+     "t": "Holds a stake through Edificio Rostower Socimi, a listed real estate company he launched in 2024.",
+     "src": [
+      "forbes_how"
+     ]
+    },
+    {
+     "co": "lsm",
+     "t": "Cofounded it with Luis Suárez in 2025.",
+     "src": [
+      "forbes_how"
+     ]
+    },
+    {
+     "co": "cornella",
+     "t": "Bought it in April 2026 for an undisclosed price.",
+     "src": [
+      "forbes_how"
+     ]
+    }
+   ],
+   "record": [
+    {
+     "h": "How he got to $1 billion",
+     "t": "Forbes estimates about $1.2 billion from playing contracts and more than $600 million from endorsements, memorabilia and other business, before taxes and agents’ fees. It first counted him a billionaire in June 2026.",
+     "src": [
+      "forbes_how",
+      "forbes_retire"
+     ]
+    },
+    {
+     "h": "The Barcelona contract",
+     "t": "A leaked four-year deal from 2017 showed about $177 million in pay for the 2017-18 season alone.",
+     "src": [
+      "forbes_how"
+     ]
+    },
+    {
+     "h": "The Inter Miami pay",
+     "t": "His guaranteed MLS pay for 2026 is $28.3 million, per the players’ union. Club owner Jorge Mas told Bloomberg Messi is paid $70 million to $80 million a year in all.",
+     "src": [
+      "forbes_how",
+      "forbes_retire"
+     ]
+    },
+    {
+     "h": "The tax case",
+     "t": "In 2016 a Spanish court found him and his father guilty of tax fraud over endorsement income held through shell companies in tax havens. They avoided jail; Lionel was fined about €2 million.",
+     "src": [
+      "npr_tax",
+      "forbes_how"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "He left Nike for Adidas in 2006 and signed a lifetime deal with Adidas in 2017. Its value wasn’t disclosed.",
+     "src": [
+      "forbes_how",
+      "forbes_messi"
+     ]
+    },
+    {
+     "t": "Inter Miami was worth about $600 million before he arrived. Forbes now values it at $1.35 billion, the highest in MLS.",
+     "src": [
+      "forbes_how"
+     ]
+    },
+    {
+     "t": "Forbes ranked him No. 3 among the world’s highest-paid athletes in 2026, with $140 million.",
+     "src": [
+      "forbes_retire"
+     ]
+    }
+   ],
+   "kidsNote": {
+    "t": "Lionel and Antonela have three sons: Thiago, Mateo and Ciro. We list first names only.",
+    "src": [
+     "nbc_antonela"
+    ]
+   }
+  },
+  {
+   "id": "antonela",
+   "name": "Antonela Roccuzzo",
+   "short": "Antonela",
+   "rel": "Wife · married 2017",
+   "tag": "Digital creator",
+   "group": "partners",
+   "layout": {
+    "row": 3,
+    "partner": true
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "They met as children in Rosario through her cousin, a youth teammate of Lionel’s, and married there in June 2017. She has more than 40 million Instagram followers.",
+    "src": [
+     "nbc_antonela"
+    ]
+   },
+   "worth": {
+    "none": "No Forbes or Bloomberg estimate."
+   },
+   "kids": [
+    {
+     "name": "Thiago"
+    },
+    {
+     "name": "Mateo"
+    },
+    {
+     "name": "Ciro"
+    }
+   ],
+   "kidsSrc": [
+    "nbc_antonela"
+   ]
+  }
+ ],
+ "companies": [
+  {
+   "id": "intermiami",
+   "name": "Inter Miami CF",
+   "status": "private",
+   "color": "#F7B5CD",
+   "who": "Lionel (player, option to buy equity when he retires)",
+   "t": "The MLS club he joined in 2023. Its value has more than doubled since, to $1.35 billion by Forbes’s count.",
+   "src": [
+    "forbes_how"
+   ]
+  },
+  {
+   "id": "adidas",
+   "name": "Adidas",
+   "status": "nostake",
+   "ticker": "ADS",
+   "exchange": "Xetra",
+   "quote": "https://www.marketwatch.com/investing/stock/ads?countrycode=xe",
+   "color": "#9CA3AF",
+   "who": "Pays Lionel under a lifetime deal. No family stake.",
+   "t": "His sponsor since 2006, on a lifetime deal since 2017. Terms weren’t disclosed.",
+   "src": [
+    "forbes_how"
+   ]
+  },
+  {
+   "id": "mim",
+   "name": "MiM Hotels",
+   "status": "private",
+   "color": "#14B8A6",
+   "who": "Lionel (stake, through a listed real estate company)",
+   "t": "A six-hotel boutique chain in Spain and Andorra, held through Edificio Rostower Socimi, which had a $282 million market value.",
+   "src": [
+    "forbes_how"
+   ]
+  },
+  {
+   "id": "lsm",
+   "name": "Deportivo LSM",
+   "status": "private",
+   "color": "#60A5FA",
+   "who": "Lionel and Luis Suárez (founders)",
+   "t": "A Uruguayan soccer club he started with his former teammate in 2025.",
+   "src": [
+    "forbes_how"
+   ]
+  },
+  {
+   "id": "cornella",
+   "name": "UE Cornellà",
+   "status": "private",
+   "color": "#F87171",
+   "who": "Lionel (owner)",
+   "t": "A fifth-tier Spanish club he bought in April 2026.",
+   "src": [
+    "forbes_how"
+   ]
+  }
+ ],
+ "ladder": {
+  "items": [
+   {
+    "name": "Lionel Messi",
+    "short": "Lionel",
+    "v": 1100000000,
+    "label": "$1.1B",
+    "src": [
+     "forbes_messi"
+    ]
+   }
+  ],
+  "rest": "Everyone else on the map"
+ },
+ "calc": {
+  "worth": 1100000000
+ },
+ "ledger": [
+  {
+   "who": "Lionel",
+   "what": "Career pay from playing contracts, before taxes (Forbes)",
+   "amt": "≈$1.2B",
+   "when": "2004–2026",
+   "src": [
+    "forbes_how"
+   ]
+  },
+  {
+   "who": "Lionel",
+   "what": "Endorsements, memorabilia and other business (Forbes)",
+   "amt": "$600M+",
+   "when": "Career",
+   "src": [
+    "forbes_how"
+   ]
+  },
+  {
+   "who": "Lionel",
+   "what": "Barcelona pay in one season, from a leaked contract",
+   "amt": "≈$177M",
+   "when": "2017-18",
+   "src": [
+    "forbes_how"
+   ]
+  },
+  {
+   "who": "Lionel",
+   "what": "Guaranteed MLS pay (players’ union)",
+   "amt": "$28.3M",
+   "when": "2026",
+   "src": [
+    "forbes_how"
+   ]
+  },
+  {
+   "who": "Lionel",
+   "what": "Total yearly pay, per Inter Miami’s owner",
+   "amt": "$70–80M",
+   "when": "2026",
+   "src": [
+    "forbes_how"
+   ]
+  },
+  {
+   "who": "Lionel",
+   "what": "Earnings over 12 months (No. 3 athlete)",
+   "amt": "$140M",
+   "when": "2026",
+   "src": [
+    "forbes_retire"
+   ]
+  },
+  {
+   "who": "Lionel",
+   "what": "Fine in the Spanish tax case",
+   "amt": "≈€2M",
+   "when": "2016",
+   "src": [
+    "npr_tax"
+   ]
+  },
+  {
+   "who": "Jorge",
+   "what": "Fine in the same case",
+   "amt": "€1.5M",
+   "when": "2016",
+   "src": [
+    "npr_tax"
+   ]
+  }
+ ],
+ "trail": [
+  {
+   "when": "1987",
+   "h": "Born in Rosario, Argentina",
+   "t": "",
+   "src": [
+    "wiki_messi"
+   ]
+  },
+  {
+   "when": "2001",
+   "h": "Moves to Barcelona at 13",
+   "t": "His father goes with him.",
+   "src": [
+    "wiki_messi",
+    "ap_jorge"
+   ]
+  },
+  {
+   "when": "2004",
+   "h": "First-team debut for Barcelona",
+   "t": "",
+   "src": [
+    "forbes_messi",
+    "forbes_retire"
+   ]
+  },
+  {
+   "when": "2006",
+   "h": "Leaves Nike for Adidas",
+   "t": "",
+   "src": [
+    "forbes_how"
+   ]
+  },
+  {
+   "when": "2016",
+   "h": "Convicted of tax fraud in Spain with his father",
+   "t": "Jail terms suspended; fines paid.",
+   "src": [
+    "npr_tax",
+    "forbes_how"
+   ]
+  },
+  {
+   "when": "2017",
+   "h": "Lifetime Adidas deal; marries Antonela",
+   "t": "",
+   "src": [
+    "forbes_how",
+    "nbc_antonela"
+   ]
+  },
+  {
+   "when": "2017-18",
+   "h": "Paid about $177 million in one season",
+   "amt": "≈$177M",
+   "t": "",
+   "src": [
+    "forbes_how"
+   ]
+  },
+  {
+   "when": "2021",
+   "h": "Leaves Barcelona for Paris Saint-Germain; wins the Copa América",
+   "t": "",
+   "src": [
+    "forbes_messi",
+    "forbes_retire"
+   ]
+  },
+  {
+   "when": "2022",
+   "h": "Wins the World Cup",
+   "t": "",
+   "src": [
+    "forbes_retire"
+   ]
+  },
+  {
+   "when": "Jul 2023",
+   "h": "Joins Inter Miami",
+   "t": "",
+   "src": [
+    "wiki_messi"
+   ]
+  },
+  {
+   "when": "Jun 2026",
+   "h": "Forbes counts him a billionaire",
+   "amt": "$1.1B",
+   "t": "",
+   "src": [
+    "forbes_how"
+   ]
+  },
+  {
+   "when": "Aug 2026",
+   "h": "His father dies; he retires from Argentina’s team",
+   "t": "",
+   "src": [
+    "ap_jorge",
+    "forbes_retire"
+   ]
+  }
+ ],
+ "photos": {
+  "lionel": {
+   "file": "Leo Messi Argentina v Egypt 7 July 2026-1.jpg",
+   "author": "Bryan Berlin",
+   "license": "CC BY-SA 4.0",
+   "w": 3333,
+   "h": 5000,
+   "fx": 0.5,
+   "fy": 0.2,
+   "zoom": 2.0,
+   "year": "2026"
+  }
+ },
+ "licenses": {
+  "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+  "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/",
+  "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+  "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+ },
+ "companiesExtra": []
+}

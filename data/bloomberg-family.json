@@ -1,0 +1,662 @@
+{
+ "meta": {
+  "asOf": "2026-10-12",
+  "asOfLabel": "Oct 12, 2026",
+  "file": "File #030",
+  "repo": "https://github.com/destinjones/the-money-files",
+  "center": "michael",
+  "slug": "bloomberg",
+  "og": "assets/og-hub.jpg",
+  "pronoun": "his"
+ },
+ "copy": {
+  "title": "The Bloomberg Money File",
+  "desc": "An interactive, fully sourced map of Michael Bloomberg’s family: the company he owns 88% of, the campaigns he paid for, the billions he gives away, and the money on the public record.",
+  "eyebrow": "<b>File #030</b> · The Bloomberg family · Data as of <span data-asof></span>",
+  "h1": "The mayor who sold <span class=\"gold\">data terminals</span> is giving billions away. We followed the <span class=\"u-red\">money</span>.",
+  "lede": "Who’s who, what he owns, what he spent on politics, what he gives away, and the money on the public record. Every number links to its source.",
+  "worthLabel": "Michael Bloomberg’s net worth",
+  "worthBig": "$94,900,000,000",
+  "familyLede": "Tap anyone to open their file. Michael’s two daughters are adults; both work on the family’s giving.",
+  "investLede": "You can’t buy shares in Bloomberg LP: it is private, and Michael owns about 88% of it. Everything else here is a charity or a nonprofit.",
+  "moneyTitle": "Where the money is",
+  "moneyLede": "Almost all of it is his stake in Bloomberg LP, which Forbes says brings in about $15 billion a year in revenue. Only Michael has a published net worth.",
+  "recordLede": "What federal election filings, deal announcements and giving records show. Filings and reporting, not guesses.",
+  "trailLede": "From a $9,000-a-year Wall Street job to one of the biggest donors in America.",
+  "calcYearsK": "Years to earn what Michael has",
+  "footLabel": "File #030: the Bloomberg family"
+ },
+ "tree": {
+  "groups": [
+   [
+    "center",
+    "The center"
+   ],
+   [
+    "partner",
+    "Partner"
+   ],
+   [
+    "children",
+    "Daughters",
+    "Both adults."
+   ],
+   [
+    "parents",
+    "Parents"
+   ],
+   [
+    "siblings",
+    "Sister"
+   ]
+  ],
+  "order": [
+   "michael",
+   "diana",
+   "emma",
+   "georgina",
+   "william",
+   "charlotte",
+   "marjorie"
+  ],
+  "coParents": [],
+  "couples": [
+   [
+    "william",
+    "charlotte",
+    ""
+   ],
+   [
+    "michael",
+    "diana",
+    "since 2000"
+   ]
+  ],
+  "forks": [
+   {
+    "frm": [
+     "william",
+     "charlotte"
+    ],
+    "kids": [
+     "marjorie",
+     "michael"
+    ]
+   },
+   {
+    "frm": "michael",
+    "kids": [
+     "emma",
+     "georgina"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "wiki_mike",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Michael Bloomberg",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Michael_Bloomberg"
+  },
+  {
+   "id": "asugsv_emma",
+   "group": "family",
+   "pub": "ASU+GSV Summit",
+   "title": "Speaker bio: Emma Bloomberg",
+   "date": "accessed Oct 2026",
+   "url": "https://asugsvsummit.com/speakers/emma-bloomberg"
+  },
+  {
+   "id": "scmp_georgina",
+   "group": "family",
+   "pub": "South China Morning Post",
+   "title": "Bloomberg billionaire heiress: who is Mike Bloomberg’s daughter Georgina?",
+   "date": "2022",
+   "url": "https://scmp.com/magazines/style/celebrity/article/3201556/bloomberg-billionaire-heiress-who-mike-bloombergs-daughter-georgina-equestrian-champion-pals-ivanka"
+  },
+  {
+   "id": "forbes_mike",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Real-time profile: Michael Bloomberg ($94.9B, #20 in the world)",
+   "date": "Oct 12, 2026",
+   "url": "https://www.forbes.com/profile/michael-bloomberg/"
+  },
+  {
+   "id": "ap_giving",
+   "group": "money",
+   "pub": "The Chronicle of Philanthropy (via AP)",
+   "title": "Michael Bloomberg biggest donor of 2025, tops Philanthropy 50 list for third year in a row",
+   "date": "Mar 10, 2026",
+   "url": "https://www.clickondetroit.com/business/2026/03/10/michael-bloomberg-biggest-donor-of-2025-tops-philanthropy-50-list-for-third-year-in-a-row/"
+  },
+  {
+   "id": "willkie",
+   "group": "record",
+   "pub": "Willkie Farr & Gallagher",
+   "title": "Willkie advises Bloomberg in buyback agreement with Merrill Lynch",
+   "date": "Jul 17, 2008",
+   "url": "https://www.willkie.com/news/2008/07/willkie-advises-bloomberg-in-buyback-agreement-w__"
+  },
+  {
+   "id": "bbg_fec",
+   "group": "record",
+   "pub": "Bloomberg News",
+   "title": "Bloomberg Gave Almost $1 Billion to His Presidential Campaign",
+   "date": "Mar 20, 2020",
+   "url": "https://www.bloomberg.com/news/articles/2020-03-20/bloomberg-gave-almost-1-billion-to-his-presidential-campaign"
+  }
+ ],
+ "people": [
+  {
+   "id": "william",
+   "name": "William Henry Bloomberg",
+   "short": "William",
+   "rel": "Father · died 1963",
+   "tag": "Bookkeeper",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "A bookkeeper for a dairy company. He died suddenly while Michael was in college; a Harvard professorship Michael later endowed is named for him.",
+    "src": [
+     "wiki_mike"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "charlotte",
+   "name": "Charlotte Bloomberg",
+   "short": "Charlotte",
+   "rel": "Mother",
+   "tag": "Mother",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Born Charlotte Rubens. She raised Michael and his sister, Marjorie.",
+    "src": [
+     "wiki_mike"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "marjorie",
+   "name": "Marjorie Tiven",
+   "short": "Marjorie",
+   "rel": "Sister",
+   "tag": "NYC commissioner",
+   "group": "siblings",
+   "layout": {
+    "row": 2
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Since February 2002 she has been New York City’s commissioner for the United Nations, consular corps and protocol, starting with her brother’s first term as mayor.",
+    "src": [
+     "wiki_mike"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "michael",
+   "name": "Michael Bloomberg",
+   "short": "Michael",
+   "rel": "The center of the map",
+   "tag": "$94.9B",
+   "tagKind": "money",
+   "born": "Born 1942 in Boston",
+   "bornSrc": [
+    "wiki_mike"
+   ],
+   "group": "center",
+   "layout": {
+    "row": 2,
+    "big": true
+   },
+   "photo": "michael",
+   "wiki": "Michael Bloomberg",
+   "summary": {
+    "t": "Founded the financial data and news company Bloomberg LP in 1981 after being fired from Salomon Brothers. He was mayor of New York City from 2002 to 2013 and ran for president in 2020.",
+    "src": [
+     "forbes_mike",
+     "wiki_mike"
+    ]
+   },
+   "worth": {
+    "value": "$94.9 billion",
+    "by": "Forbes real-time estimate",
+    "date": "Oct 12, 2026",
+    "src": [
+     "forbes_mike"
+    ],
+    "also": {
+     "short": "Rank",
+     "value": "#20 in the world",
+     "by": "Forbes rank",
+     "src": [
+      "forbes_mike"
+     ]
+    }
+   },
+   "owns": [
+    {
+     "co": "bloomberglp",
+     "t": "Founder; owns about 88%. He has pledged the stake to Bloomberg Philanthropies on his death, or sooner.",
+     "src": [
+      "forbes_mike"
+     ]
+    },
+    {
+     "co": "philanthropies",
+     "t": "Founder; it runs his giving.",
+     "src": [
+      "wiki_mike",
+      "forbes_mike"
+     ]
+    }
+   ],
+   "record": [
+    {
+     "h": "The $10 million start",
+     "t": "Salomon Brothers hired him in 1966 for $9,000 a year. When new owners fired him in 1981, they paid him $10 million for his equity. He started his own company that year.",
+     "src": [
+      "wiki_mike"
+     ]
+    },
+    {
+     "h": "Buying back Merrill Lynch",
+     "t": "In July 2008 his company agreed to buy back the 20% of Bloomberg LP owned by Merrill Lynch for $4.425 billion.",
+     "src": [
+      "willkie"
+     ]
+    },
+    {
+     "h": "Paying for his own campaigns",
+     "t": "He spent about $73 million of his own money to win the 2001 mayoral race. His 2020 presidential run cost him $935 million through February 2020, his campaign’s federal filing showed.",
+     "src": [
+      "wiki_mike",
+      "bbg_fec"
+     ]
+    },
+    {
+     "h": "Giving it away",
+     "t": "He gave $4.3 billion in 2025, more than any other American donor for the third year running, and more than $25.4 billion over his lifetime.",
+     "src": [
+      "ap_giving",
+      "forbes_mike"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "His first gift to Johns Hopkins, his alma mater, was $5 in 1965. He has since given it more than $4.55 billion, including $1.8 billion in 2018 for need-blind admission and $1 billion in 2024 to make medical school free for students from families earning under $300,000.",
+     "src": [
+      "wiki_mike"
+     ]
+    },
+    {
+     "t": "He signed the Giving Pledge in 2010.",
+     "src": [
+      "wiki_mike"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "diana",
+   "name": "Diana Taylor",
+   "short": "Diana",
+   "rel": "Partner since 2000",
+   "tag": "Ex-banking regulator",
+   "group": "partner",
+   "layout": {
+    "row": 2
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "A former New York State superintendent of banks. She and Michael have been partners since 2000.",
+    "src": [
+     "wiki_mike"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate of her own."
+   }
+  },
+  {
+   "id": "emma",
+   "name": "Emma Bloomberg",
+   "short": "Emma",
+   "rel": "Daughter · mother: Susan Brown",
+   "tag": "Murmuration CEO",
+   "group": "children",
+   "layout": {
+    "row": 3
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Founder and CEO of Murmuration, a nonprofit that supports civic engagement. She sits on the board of Bloomberg Philanthropies and worked in her father’s mayoral office.",
+    "src": [
+     "asugsv_emma"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   },
+   "owns": [
+    {
+     "co": "murmuration",
+     "t": "Founder and CEO.",
+     "src": [
+      "asugsv_emma"
+     ]
+    },
+    {
+     "co": "philanthropies",
+     "t": "Board member.",
+     "src": [
+      "asugsv_emma"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "She and Georgina run the Emma and Georgina Bloomberg Foundation, which funds education and animal rights groups.",
+     "src": [
+      "asugsv_emma"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "georgina",
+   "name": "Georgina Bloomberg",
+   "short": "Georgina",
+   "rel": "Daughter · mother: Susan Brown",
+   "tag": "Equestrian",
+   "group": "children",
+   "layout": {
+    "row": 3
+   },
+   "photo": null,
+   "wiki": "Georgina Bloomberg",
+   "summary": {
+    "t": "A show jumper who has won several competitions. She co-runs a family foundation with her sister.",
+    "src": [
+     "scmp_georgina",
+     "asugsv_emma"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  }
+ ],
+ "companies": [
+  {
+   "id": "bloomberglp",
+   "name": "Bloomberg LP",
+   "status": "private",
+   "color": "#F59E0B",
+   "who": "Michael (founder, about 88%)",
+   "t": "Sells the Bloomberg Terminal and runs Bloomberg News, with about $15 billion in yearly revenue, per Forbes. Vlad Kliatchko is CEO; Michael has pledged his stake to Bloomberg Philanthropies.",
+   "src": [
+    "forbes_mike"
+   ]
+  },
+  {
+   "id": "philanthropies",
+   "name": "Bloomberg Philanthropies",
+   "status": "private",
+   "color": "#22C55E",
+   "who": "Michael (founder) · Emma (board)",
+   "t": "His charitable organization, not a business. It funds public health, the arts, government innovation, the environment and education.",
+   "src": [
+    "wiki_mike",
+    "asugsv_emma"
+   ]
+  },
+  {
+   "id": "murmuration",
+   "name": "Murmuration",
+   "status": "private",
+   "color": "#A78BFA",
+   "who": "Emma (founder and CEO)",
+   "t": "A nonprofit that supports community-driven civic engagement.",
+   "src": [
+    "asugsv_emma"
+   ]
+  }
+ ],
+ "ladder": {
+  "items": [
+   {
+    "name": "Michael Bloomberg",
+    "short": "Michael",
+    "v": 94900000000,
+    "label": "$94.9B",
+    "src": [
+     "forbes_mike"
+    ]
+   }
+  ],
+  "rest": "Everyone else on the map"
+ },
+ "calc": {
+  "worth": 94900000000
+ },
+ "ledger": [
+  {
+   "who": "Michael",
+   "what": "Paid for his equity when Salomon Brothers fired him",
+   "amt": "$10M",
+   "when": "1981",
+   "src": [
+    "wiki_mike"
+   ]
+  },
+  {
+   "who": "Michael",
+   "what": "Own money spent on his first mayoral race",
+   "amt": "≈$73M",
+   "when": "2001",
+   "src": [
+    "wiki_mike"
+   ]
+  },
+  {
+   "who": "Bloomberg LP",
+   "what": "Bought back Merrill Lynch’s 20% stake",
+   "amt": "$4.425B",
+   "when": "Jul 2008",
+   "src": [
+    "willkie"
+   ]
+  },
+  {
+   "who": "Michael",
+   "what": "Gift to Johns Hopkins for need-blind admission",
+   "amt": "$1.8B",
+   "when": "2018",
+   "src": [
+    "wiki_mike"
+   ]
+  },
+  {
+   "who": "Michael",
+   "what": "Given to his presidential campaign through February",
+   "amt": "$935M",
+   "when": "2020",
+   "src": [
+    "bbg_fec"
+   ]
+  },
+  {
+   "who": "Michael",
+   "what": "Gift for free Johns Hopkins medical school (family income under $300K)",
+   "amt": "$1B",
+   "when": "2024",
+   "src": [
+    "wiki_mike"
+   ]
+  },
+  {
+   "who": "Michael",
+   "what": "Given away in one year, the most of any U.S. donor",
+   "amt": "$4.3B",
+   "when": "2025",
+   "src": [
+    "ap_giving"
+   ]
+  },
+  {
+   "who": "Michael",
+   "what": "Lifetime giving",
+   "amt": "$25.4B+",
+   "when": "Sep 2026",
+   "src": [
+    "forbes_mike"
+   ]
+  }
+ ],
+ "trail": [
+  {
+   "when": "1942",
+   "h": "Born in Boston",
+   "t": "",
+   "src": [
+    "wiki_mike"
+   ]
+  },
+  {
+   "when": "1966",
+   "h": "Joins Salomon Brothers at $9,000 a year",
+   "t": "",
+   "src": [
+    "wiki_mike"
+   ]
+  },
+  {
+   "when": "1981",
+   "h": "Fired with a $10 million payout; founds his company",
+   "amt": "$10M",
+   "t": "It is renamed Bloomberg LP in 1986.",
+   "src": [
+    "wiki_mike"
+   ]
+  },
+  {
+   "when": "2000",
+   "h": "Begins his partnership with Diana Taylor",
+   "t": "",
+   "src": [
+    "wiki_mike"
+   ]
+  },
+  {
+   "when": "2002",
+   "h": "Becomes mayor of New York City",
+   "t": "He serves three terms, through 2013.",
+   "src": [
+    "wiki_mike"
+   ]
+  },
+  {
+   "when": "2008",
+   "h": "Buys out Merrill Lynch’s 20% stake",
+   "amt": "$4.425B",
+   "t": "",
+   "src": [
+    "willkie"
+   ]
+  },
+  {
+   "when": "2010",
+   "h": "Signs the Giving Pledge",
+   "t": "",
+   "src": [
+    "wiki_mike"
+   ]
+  },
+  {
+   "when": "2020",
+   "h": "Spends $935 million on a run for president",
+   "amt": "$935M",
+   "t": "Through February 2020.",
+   "src": [
+    "bbg_fec"
+   ]
+  },
+  {
+   "when": "2023",
+   "h": "Names a new CEO and board chair for Bloomberg LP",
+   "t": "",
+   "src": [
+    "forbes_mike"
+   ]
+  },
+  {
+   "when": "2025",
+   "h": "Gives away $4.3 billion",
+   "amt": "$4.3B",
+   "t": "",
+   "src": [
+    "ap_giving"
+   ]
+  },
+  {
+   "when": "Oct 2026",
+   "h": "Forbes puts his fortune at $94.9 billion",
+   "amt": "$94.9B",
+   "t": "",
+   "src": [
+    "forbes_mike"
+   ]
+  }
+ ],
+ "photos": {
+  "michael": {
+   "file": "MichaelBloomberg-byPhilipRomano.jpg",
+   "author": "PhilipRomanoPhoto",
+   "license": "CC BY-SA 4.0",
+   "w": 4024,
+   "h": 6048,
+   "fx": 0.48,
+   "fy": 0.35,
+   "zoom": 1.2,
+   "year": "2026"
+  }
+ },
+ "licenses": {
+  "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+  "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/",
+  "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+  "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+ },
+ "companiesExtra": []
+}

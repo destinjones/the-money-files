@@ -8,7 +8,7 @@ Interactive, fully sourced "follow the money" maps from the Follow the Money vid
 
 ## The files
 
-22 families so far:
+28 families so far:
 
 | File | Family | World | What's in it |
 |---|---|---|---|
@@ -34,6 +34,12 @@ Interactive, fully sourced "follow the money" maps from the Follow the Money vid
 | #025 | [The Ronaldo family](https://destinjones.github.io/the-money-files/ronaldo/) | Sports | Al-Nassr, Nike, CR7 hotels and football’s first billionaire. |
 | #026 | [The Trump family](https://destinjones.github.io/the-money-files/trump/) | Politics | Trump Media, World Liberty, the $TRUMP coin, Mar-a-Lago and who runs what. |
 | #027 | [The Pelosi family](https://destinjones.github.io/the-money-files/pelosi/) | Politics | Her House disclosures, Paul Pelosi’s reported trades, and two Baltimore mayors. |
+| #028 | [The Page family](https://destinjones.github.io/the-money-files/page/) | Tech | Google’s biggest vote, a family foundation and a $173 million move to Miami. |
+| #029 | [The Ambani family](https://destinjones.github.io/the-money-files/ambani/) | Business | Reliance, Jio’s coming IPO, three heirs on the board and the brother who split off. |
+| #030 | [The Bloomberg family](https://destinjones.github.io/the-money-files/bloomberg/) | Politics | Bloomberg LP, a $935 million campaign and $4.3 billion given away in a year. |
+| #031 | [The Gomez family](https://destinjones.github.io/the-money-files/gomez/) | Entertainment | Rare Beauty, a startup with her mother, and two estimates that disagree. |
+| #032 | [The Messi family](https://destinjones.github.io/the-money-files/messi/) | Sports | Inter Miami, Adidas for life, a Spanish tax case and the father who ran it all. |
+| #033 | [The Woods family](https://destinjones.github.io/the-money-files/woods/) | Sports | Nike’s $500 million, TGL, Sun Day Red and a 2026 court case. |
 
 ## The main page
 
@@ -57,7 +63,7 @@ Sections a family has no public data for are left out rather than guessed.
 ## Rules this project follows
 
 - Every fact links to its source. All sources are listed in [SOURCES.md](SOURCES.md).
-- Data is as of **Oct 6, 2026**. Net worth figures are estimates and change every trading day.
+- Data is as of **Oct 6–12, 2026**. Net worth figures are estimates and change every trading day.
 - No street addresses. Children appear by first name only, never in photos, and not at all when their names aren't public. Private relatives are left out.
 - Photos are of adults who are public figures, from Wikimedia Commons under the licenses credited on each page.
 - No gossip or unproven allegations. Nothing here is investment advice.

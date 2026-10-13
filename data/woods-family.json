@@ -1,0 +1,678 @@
+{
+ "meta": {
+  "asOf": "2026-10-12",
+  "asOfLabel": "Oct 12, 2026",
+  "file": "File #033",
+  "repo": "https://github.com/destinjones/the-money-files",
+  "center": "tiger",
+  "slug": "woods",
+  "og": "assets/og-hub.jpg",
+  "pronoun": "his"
+ },
+ "copy": {
+  "title": "The Woods Money File",
+  "desc": "An interactive, fully sourced map of Tiger Woods’s family: the Nike years, the businesses after them, the 2026 court case, and the money on the public record.",
+  "eyebrow": "<b>File #033</b> · The Woods family · Data as of <span data-asof></span>",
+  "h1": "He won <span class=\"gold\">$121 million</span> in prize money and made a billion anyway. We followed the <span class=\"u-red\">money</span>.",
+  "lede": "Who’s who, what he owns, what the sponsors paid, what’s on the court record, and the money on the public record. Every number links to its source.",
+  "worthLabel": "Tiger Woods’s net worth",
+  "worthBig": "$1,500,000,000",
+  "familyLede": "Tap anyone to open their file. Tiger and Elin’s two children appear by first name only.",
+  "investLede": "His businesses are private. Nike, his sponsor for 27 years, trades on the NYSE, but that deal ended in 2024.",
+  "moneyTitle": "Where the money is",
+  "moneyLede": "Two decades of sponsor checks and prize money, now spread across golf businesses and real estate. Only Tiger has a published net worth.",
+  "recordLede": "What tour records, sponsor deals and a Florida court show. Filings and reporting, not guesses.",
+  "trailLede": "From a golf-mad Army dad in California to a billion dollars.",
+  "calcYearsK": "Years to earn what Tiger has",
+  "footLabel": "File #033: the Woods family"
+ },
+ "tree": {
+  "groups": [
+   [
+    "center",
+    "The center"
+   ],
+   [
+    "partner",
+    "Partner"
+   ],
+   [
+    "partners",
+    "Ex-wife & children",
+    "Kids by first name only."
+   ],
+   [
+    "parents",
+    "Parents"
+   ]
+  ],
+  "order": [
+   "tiger",
+   "vanessa",
+   "elin",
+   "earl",
+   "kultida"
+  ],
+  "coParents": [
+   "elin"
+  ],
+  "couples": [
+   [
+    "earl",
+    "kultida",
+    ""
+   ],
+   [
+    "tiger",
+    "vanessa",
+    ""
+   ]
+  ],
+  "forks": [
+   {
+    "frm": [
+     "earl",
+     "kultida"
+    ],
+    "kids": [
+     "tiger"
+    ]
+   },
+   {
+    "frm": "tiger",
+    "kids": [
+     "elin"
+    ],
+    "toNodeTop": true
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "wiki_tiger",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Tiger Woods",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Tiger_Woods"
+  },
+  {
+   "id": "si_vanessa",
+   "group": "family",
+   "pub": "Sports Illustrated",
+   "title": "Tiger Woods and Vanessa Trump’s relationship timeline: all the key moments",
+   "date": "Sep 3, 2026",
+   "url": "https://www.si.com/onsi/athlete-lifestyle/tiger-woods-and-vanessa-trump-s-relationship-timeline-all-the-key-moments"
+  },
+  {
+   "id": "forbes_tiger",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Real-time profile: Tiger Woods ($1.5B)",
+   "date": "Oct 2, 2026",
+   "url": "https://www.forbes.com/profile/tiger-woods/"
+  },
+  {
+   "id": "forbes_nike",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Tiger Woods No Longer A Nike Athlete—Ends Deal That Helped Mint Him A Billionaire",
+   "date": "Jan 8, 2024",
+   "url": "https://www.forbes.com/sites/dereksaul/2024/01/08/tiger-woods-no-longer-a-nike-athlete-ends-deal-that-helped-mint-him-a-billionaire/"
+  },
+  {
+   "id": "ap_equity",
+   "group": "record",
+   "pub": "AP (via KPRC)",
+   "title": "PGA Tour players learn how much loyalty is worth in new equity program",
+   "date": "Apr 24, 2024",
+   "url": "https://www.click2houston.com/sports/2024/04/24/pga-tour-players-learn-how-much-loyalty-is-worth-in-new-equity-program/"
+  },
+  {
+   "id": "forbes_crash",
+   "group": "record",
+   "pub": "Forbes",
+   "title": "Tiger Woods Arrested For DUI After Florida Rollover Car Crash",
+   "date": "Mar 27, 2026",
+   "url": "https://www.forbes.com/sites/suzannerowankelleher/2026/03/27/tiger-woods-arrested-for-dui-after-florida-rollover-car-crash/"
+  },
+  {
+   "id": "fox_plea",
+   "group": "record",
+   "pub": "FOX 5 New York",
+   "title": "Tiger Woods strikes plea deal in Florida DUI crash case; driver’s license suspended for 5 years",
+   "date": "Sep 2, 2026",
+   "url": "https://www.fox5ny.com/news/tiger-woods-scheduled-plea-hearing-florida-dui-crash-case"
+  }
+ ],
+ "people": [
+  {
+   "id": "earl",
+   "name": "Earl Woods",
+   "short": "Earl",
+   "rel": "Father · died 2006",
+   "tag": "Army officer",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": "earl",
+   "wiki": "Earl Woods",
+   "summary": {
+    "t": "A retired U.S. Army officer and Vietnam War veteran. In 1996 the two started what is now the TGR Foundation to bring golf to inner-city children. He died on May 3, 2006.",
+    "src": [
+     "wiki_tiger"
+    ]
+   },
+   "worth": {
+    "none": "Died in 2006."
+   }
+  },
+  {
+   "id": "kultida",
+   "name": "Kultida Woods",
+   "short": "Kultida",
+   "rel": "Mother · died 2025",
+   "tag": "Mother",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Known as Tida. She died on Feb. 4, 2025.",
+    "src": [
+     "wiki_tiger"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "tiger",
+   "name": "Tiger Woods",
+   "short": "Tiger",
+   "rel": "The center of the map",
+   "tag": "$1.5B",
+   "tagKind": "money",
+   "born": "Born 1975 in Cypress, California",
+   "bornSrc": [
+    "wiki_tiger"
+   ],
+   "group": "center",
+   "layout": {
+    "row": 2,
+    "big": true
+   },
+   "photo": "tiger",
+   "wiki": "Tiger Woods",
+   "summary": {
+    "t": "Won 15 majors and a record-tying 82 PGA Tour events. Forbes counted him a billionaire in 2022, the second active athlete to get there after LeBron James.",
+    "src": [
+     "wiki_tiger",
+     "forbes_tiger"
+    ]
+   },
+   "worth": {
+    "value": "$1.5 billion",
+    "by": "Forbes real-time estimate",
+    "date": "Oct 2, 2026",
+    "src": [
+     "forbes_tiger"
+    ],
+    "also": {
+     "short": "Career pay",
+     "value": "≈$2B before taxes",
+     "by": "Forbes estimate",
+     "src": [
+      "forbes_tiger"
+     ]
+    }
+   },
+   "owns": [
+    {
+     "co": "tmrw",
+     "t": "Cofounded it with Rory McIlroy in 2022; it launched the TGL league in 2025.",
+     "src": [
+      "forbes_tiger"
+     ]
+    },
+    {
+     "co": "popstroke",
+     "t": "Investor in the upscale mini-golf chain.",
+     "src": [
+      "forbes_tiger"
+     ]
+    },
+    {
+     "co": "tgrdesign",
+     "t": "Founded his golf course design firm in 2006.",
+     "src": [
+      "wiki_tiger",
+      "forbes_tiger"
+     ]
+    },
+    {
+     "co": "sundayred",
+     "t": "His apparel line, launched with TaylorMade in 2024.",
+     "src": [
+      "wiki_tiger"
+     ]
+    }
+   ],
+   "record": [
+    {
+     "h": "Where the billion came from",
+     "t": "Forbes estimates he has earned nearly $2 billion before taxes, including a PGA Tour-record $121 million in prize money. Most of the rest came from sponsors; Nike alone paid him more than $500 million over 27 years.",
+     "src": [
+      "forbes_tiger",
+      "forbes_nike"
+     ]
+    },
+    {
+     "h": "The LIV offer",
+     "t": "He turned down a reported offer from the Saudi-backed LIV Golf league. Its then-CEO, Greg Norman, said it was in the “high nine digits.”",
+     "src": [
+      "forbes_tiger"
+     ]
+    },
+    {
+     "h": "PGA Tour equity",
+     "t": "In 2024 the PGA Tour started handing players equity to reward loyalty. The Telegraph reported Woods would get $100 million; the AP could not confirm the figure.",
+     "src": [
+      "ap_equity"
+     ]
+    },
+    {
+     "h": "The 2026 crash",
+     "t": "On March 27, 2026, he rolled his car near his Jupiter Island home after clipping another vehicle; no one was hurt. He was arrested on suspicion of DUI. In September he pleaded no contest to reckless driving and refusing a test, was fined $1,500 plus costs, and lost his license for five years.",
+     "src": [
+      "forbes_crash",
+      "fox_plea"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "He bought a $39 million estate on Jupiter Island, Florida, in 2006 and built a home there.",
+     "src": [
+      "wiki_tiger"
+     ]
+    },
+    {
+     "t": "He is a partner in Nexxus, a luxury real estate venture, with Justin Timberlake and Joe Lewis.",
+     "src": [
+      "forbes_tiger"
+     ]
+    }
+   ],
+   "kidsNote": {
+    "t": "Tiger and Elin have two children, Sam and Charlie. We list first names only.",
+    "src": [
+     "wiki_tiger"
+    ]
+   }
+  },
+  {
+   "id": "vanessa",
+   "name": "Vanessa Trump",
+   "short": "Vanessa",
+   "rel": "Partner since 2024",
+   "tag": "Partner",
+   "group": "partner",
+   "layout": {
+    "row": 2
+   },
+   "photo": "vanessa",
+   "wiki": "Vanessa Trump",
+   "summary": {
+    "t": "They had reportedly been dating since late 2024, and Tiger confirmed the relationship in March 2025. She was married to Donald Trump Jr., with whom she has five children.",
+    "src": [
+     "si_vanessa"
+    ]
+   },
+   "worth": {
+    "none": "No Forbes or Bloomberg estimate."
+   }
+  },
+  {
+   "id": "elin",
+   "name": "Elin Nordegren",
+   "short": "Elin",
+   "rel": "Ex-wife · 2004–2010",
+   "tag": "Mother of his kids",
+   "group": "partners",
+   "layout": {
+    "row": 3,
+    "partner": true
+   },
+   "photo": "elin",
+   "wiki": "Elin Nordegren",
+   "summary": {
+    "t": "They married on Oct. 5, 2004, and divorced in 2010.",
+    "src": [
+     "wiki_tiger"
+    ]
+   },
+   "worth": {
+    "none": "No Forbes or Bloomberg estimate."
+   },
+   "kids": [
+    {
+     "name": "Sam"
+    },
+    {
+     "name": "Charlie"
+    }
+   ],
+   "kidsSrc": [
+    "wiki_tiger"
+   ]
+  }
+ ],
+ "companies": [
+  {
+   "id": "tmrw",
+   "name": "TMRW Sports (TGL)",
+   "status": "private",
+   "color": "#38BDF8",
+   "who": "Tiger and Rory McIlroy (founders)",
+   "t": "A tech-focused sports company that launched TGL, an indoor team golf league, in 2025.",
+   "src": [
+    "forbes_tiger"
+   ]
+  },
+  {
+   "id": "sundayred",
+   "name": "Sun Day Red",
+   "status": "private",
+   "color": "#DC2626",
+   "who": "Tiger (his brand, made with TaylorMade)",
+   "t": "The apparel line he launched in February 2024, a month after leaving Nike, a nod to his signature red shirt.",
+   "src": [
+    "wiki_tiger"
+   ]
+  },
+  {
+   "id": "popstroke",
+   "name": "PopStroke",
+   "status": "private",
+   "color": "#84CC16",
+   "who": "Tiger (investor)",
+   "t": "A chain of upscale mini-golf venues.",
+   "src": [
+    "forbes_tiger"
+   ]
+  },
+  {
+   "id": "tgrdesign",
+   "name": "TGR Design",
+   "status": "private",
+   "color": "#A3A3A3",
+   "who": "Tiger (founder)",
+   "t": "His golf course design company, formed in 2006. Some early projects in Dubai, North Carolina and Mexico were delayed or shelved.",
+   "src": [
+    "wiki_tiger",
+    "forbes_tiger"
+   ]
+  },
+  {
+   "id": "nike",
+   "name": "Nike",
+   "status": "gone",
+   "gone": "Deal ended 2024",
+   "color": "#F97316",
+   "who": "Sponsored Tiger from 1996 to 2024. No family stake.",
+   "t": "Paid him more than $500 million over 27 years, Forbes estimates, including a five-year, $105 million extension in 2000.",
+   "src": [
+    "forbes_nike",
+    "wiki_tiger"
+   ]
+  }
+ ],
+ "ladder": {
+  "items": [
+   {
+    "name": "Tiger Woods",
+    "short": "Tiger",
+    "v": 1500000000,
+    "label": "$1.5B",
+    "src": [
+     "forbes_tiger"
+    ]
+   }
+  ],
+  "rest": "Everyone else on the map"
+ },
+ "calc": {
+  "worth": 1500000000
+ },
+ "ledger": [
+  {
+   "who": "Tiger",
+   "what": "Career earnings before taxes (Forbes)",
+   "amt": "≈$2B",
+   "when": "1996–2026",
+   "src": [
+    "forbes_tiger"
+   ]
+  },
+  {
+   "who": "Tiger",
+   "what": "PGA Tour prize money, a record",
+   "amt": "$121M",
+   "when": "Career",
+   "src": [
+    "forbes_tiger"
+   ]
+  },
+  {
+   "who": "Nike",
+   "what": "Paid to Tiger over the partnership (Forbes estimate)",
+   "amt": "$500M+",
+   "when": "1996–2024",
+   "src": [
+    "forbes_nike"
+   ]
+  },
+  {
+   "who": "Nike",
+   "what": "Five-year contract extension",
+   "amt": "$105M",
+   "when": "2000",
+   "src": [
+    "wiki_tiger"
+   ]
+  },
+  {
+   "who": "Tiger",
+   "what": "Jupiter Island estate",
+   "amt": "$39M",
+   "when": "2006",
+   "src": [
+    "wiki_tiger"
+   ]
+  },
+  {
+   "who": "PGA Tour",
+   "what": "Equity for Tiger, as reported by The Telegraph (unconfirmed)",
+   "amt": "$100M",
+   "when": "2024",
+   "src": [
+    "ap_equity"
+   ]
+  },
+  {
+   "who": "Tiger",
+   "what": "Fine after his no-contest plea, plus court costs",
+   "amt": "$1,500",
+   "when": "Sep 2026",
+   "src": [
+    "fox_plea"
+   ]
+  }
+ ],
+ "trail": [
+  {
+   "when": "1975",
+   "h": "Born in Cypress, California",
+   "t": "",
+   "src": [
+    "wiki_tiger"
+   ]
+  },
+  {
+   "when": "1996",
+   "h": "Turns pro and signs with Nike",
+   "t": "He and his father start the foundation now called TGR.",
+   "src": [
+    "forbes_nike",
+    "wiki_tiger"
+   ]
+  },
+  {
+   "when": "2000",
+   "h": "Nike extends his deal",
+   "amt": "$105M",
+   "t": "Five years.",
+   "src": [
+    "wiki_tiger"
+   ]
+  },
+  {
+   "when": "2004",
+   "h": "Marries Elin Nordegren",
+   "t": "They divorce in 2010.",
+   "src": [
+    "wiki_tiger"
+   ]
+  },
+  {
+   "when": "2006",
+   "h": "His father dies; he buys land on Jupiter Island",
+   "amt": "$39M",
+   "t": "",
+   "src": [
+    "wiki_tiger"
+   ]
+  },
+  {
+   "when": "2021",
+   "h": "Badly hurt in a single-car crash",
+   "t": "",
+   "src": [
+    "wiki_tiger"
+   ]
+  },
+  {
+   "when": "2022",
+   "h": "Forbes counts him a billionaire; he cofounds TMRW Sports",
+   "t": "",
+   "src": [
+    "forbes_tiger"
+   ]
+  },
+  {
+   "when": "2024",
+   "h": "Ends the Nike deal and launches Sun Day Red",
+   "t": "",
+   "src": [
+    "forbes_nike",
+    "wiki_tiger"
+   ]
+  },
+  {
+   "when": "2025",
+   "h": "His mother dies; TGL starts play",
+   "t": "In March he confirms his relationship with Vanessa Trump.",
+   "src": [
+    "wiki_tiger",
+    "forbes_tiger",
+    "si_vanessa"
+   ]
+  },
+  {
+   "when": "Mar 2026",
+   "h": "Arrested after a rollover crash",
+   "t": "",
+   "src": [
+    "forbes_crash"
+   ]
+  },
+  {
+   "when": "Sep 2026",
+   "h": "Pleads no contest to lesser charges; loses his license for five years",
+   "t": "",
+   "src": [
+    "fox_plea"
+   ]
+  },
+  {
+   "when": "Oct 2026",
+   "h": "Forbes puts his fortune at $1.5 billion",
+   "amt": "$1.5B",
+   "t": "",
+   "src": [
+    "forbes_tiger"
+   ]
+  }
+ ],
+ "photos": {
+  "tiger": {
+   "file": "President Donald Trump hosts a reception honoring Black History Month (54341713089) (cropped).jpg",
+   "author": "The White House",
+   "license": "Public domain",
+   "w": 806,
+   "h": 1126,
+   "fx": 0.55,
+   "fy": 0.21,
+   "zoom": 1.4,
+   "year": "2025"
+  },
+  "earl": {
+   "file": "Official U.S. Army portrait of Earl Woods.jpg",
+   "author": "U.S. Army",
+   "license": "Public domain",
+   "w": 700,
+   "h": 810,
+   "fx": 0.43,
+   "fy": 0.09,
+   "zoom": 3.0,
+   "year": ""
+  },
+  "vanessa": {
+   "file": "Vanessa Trump (1).jpg",
+   "author": "U.S. Air Force Staff Sgt. Marianique Santos (DoD)",
+   "license": "Public domain",
+   "w": 686,
+   "h": 949,
+   "fx": 0.5,
+   "fy": 0.29,
+   "zoom": 1.3,
+   "year": "2017"
+  },
+  "elin": {
+   "file": "Elin Nordegren.jpg",
+   "author": "U.S. Navy / Brien Aho",
+   "license": "Public domain",
+   "w": 395,
+   "h": 578,
+   "fx": 0.51,
+   "fy": 0.27,
+   "zoom": 1.4,
+   "year": "2003"
+  }
+ },
+ "licenses": {
+  "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+  "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/",
+  "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+  "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+ },
+ "companiesExtra": []
+}

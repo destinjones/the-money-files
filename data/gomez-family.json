@@ -1,0 +1,631 @@
+{
+ "meta": {
+  "asOf": "2026-10-12",
+  "asOfLabel": "Oct 12, 2026",
+  "file": "File #031",
+  "repo": "https://github.com/destinjones/the-money-files",
+  "center": "selena",
+  "slug": "gomez",
+  "og": "assets/og-hub.jpg",
+  "pronoun": "her"
+ },
+ "copy": {
+  "title": "The Gomez Money File",
+  "desc": "An interactive, fully sourced map of Selena Gomez’s family: Rare Beauty, the startup she cofounded with her mother, the homes, and the money on the public record.",
+  "eyebrow": "<b>File #031</b> · The Gomez family · Data as of <span data-asof></span>",
+  "h1": "A Disney kid built a <span class=\"gold\">$1.3 billion</span> makeup brand. We followed the <span class=\"u-red\">money</span>.",
+  "lede": "Who’s who, what she owns, what the estimates disagree on, the homes, and the money on the public record. Every number links to its source.",
+  "worthLabel": "Selena Gomez’s net worth",
+  "worthBig": "$700,000,000",
+  "familyLede": "Tap anyone to open their file: what they own, what’s on the record, and where every fact comes from.",
+  "investLede": "Her companies are private, so you can’t buy shares. Rare Beauty is sold at Sephora and, since February 2026, at Ulta.",
+  "moneyTitle": "Where the money is",
+  "moneyLede": "Mostly her stake in Rare Beauty. Forbes and Bloomberg disagree on what it is worth, which is why one calls her a billionaire and the other doesn’t.",
+  "recordLede": "What filings, funding rounds and property records show. Filings and reporting, not guesses.",
+  "trailLede": "From Grand Prairie, Texas, to a makeup company valued at more than $1 billion.",
+  "calcYearsK": "Years to earn what Selena has",
+  "footLabel": "File #031: the Gomez family",
+  "homesTitle": "The homes",
+  "homesLede": "Reported prices for her two best-known homes, neighborhood level only.",
+  "homesFlipLabel": "Paid for two homes",
+  "homesChart": "Bought, in $ millions"
+ },
+ "tree": {
+  "groups": [
+   [
+    "center",
+    "The center"
+   ],
+   [
+    "spouse",
+    "Husband"
+   ],
+   [
+    "parents",
+    "Mother & stepfather"
+   ]
+  ],
+  "order": [
+   "selena",
+   "benny",
+   "mandy",
+   "brian"
+  ],
+  "coParents": [],
+  "couples": [
+   [
+    "mandy",
+    "brian",
+    ""
+   ],
+   [
+    "selena",
+    "benny",
+    "m. 2025"
+   ]
+  ],
+  "forks": [
+   {
+    "frm": "mandy",
+    "kids": [
+     "selena"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "wiki_selena",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Selena Gomez",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Selena_Gomez"
+  },
+  {
+   "id": "cbs_wedding",
+   "group": "family",
+   "pub": "CBS News",
+   "title": "Selena Gomez marries Benny Blanco",
+   "date": "Sep 28, 2025",
+   "url": "https://www.cbsnews.com/amp/news/selena-gomez-marries-benny-blanco"
+  },
+  {
+   "id": "forbes_selena",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Profile: Selena Gomez ($700M)",
+   "date": "Jun 3, 2025",
+   "url": "https://www.forbes.com/profile/selena-gomez/"
+  },
+  {
+   "id": "forbes_why",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Here’s How Much Selena Gomez—Actress, Singer, Entrepreneur—Is Worth",
+   "date": "May 13, 2025",
+   "url": "https://www.forbes.com/sites/gigizamora/2025/05/13/why-selena-gomez-isnt-a-billionaire/"
+  },
+  {
+   "id": "cnn_bbg",
+   "group": "money",
+   "pub": "CNN (via Hawaii News Now)",
+   "title": "Selena Gomez reaches billionaire status with $1.3 billion net worth",
+   "date": "Sep 6, 2024",
+   "url": "https://www.hawaiinewsnow.com/2024/09/07/selena-gomez-reaches-billionaire-status-with-13-billion-net-worth"
+  },
+  {
+   "id": "yahoo_sale",
+   "group": "record",
+   "pub": "Yahoo News",
+   "title": "The potential $2 billion sale of Selena Gomez’s Rare Beauty could make her the next celebrity billionaire",
+   "date": "Mar 21, 2024",
+   "url": "https://ca.news.yahoo.com/rare-beauty-sale-could-selena-175251991.html"
+  },
+  {
+   "id": "prn_ulta",
+   "group": "record",
+   "pub": "PR Newswire (Rare Beauty)",
+   "title": "Rare Beauty by Selena Gomez to Launch Nationwide in Ulta Beauty",
+   "date": "Jan 5, 2026",
+   "url": "https://www.prnewswire.com/news-releases/rare-beauty-by-selena-gomez-to-launch-nationwide-in-ulta-beauty-302649327.html"
+  },
+  {
+   "id": "qz_house",
+   "group": "homes",
+   "pub": "Quartz",
+   "title": "See Selena Gomez and Benny Blanco’s $35 million mansion",
+   "date": "Dec 2024",
+   "url": "https://qz.com/see-selena-gomez-and-benny-blanco-s-35-million-mansion-1851766159"
+  }
+ ],
+ "people": [
+  {
+   "id": "mandy",
+   "name": "Mandy Teefey",
+   "short": "Mandy",
+   "rel": "Mother",
+   "tag": "Wondermind cofounder",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "A former stage actress who moved with Selena to Los Angeles in 2007. She cofounded the mental health startup Wondermind with her daughter in 2021.",
+    "src": [
+     "wiki_selena",
+     "forbes_why"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   },
+   "owns": [
+    {
+     "co": "wondermind",
+     "t": "Cofounder. She reportedly borrowed against her home to keep it going in 2025.",
+     "src": [
+      "forbes_why"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "brian",
+   "name": "Brian Teefey",
+   "short": "Brian",
+   "rel": "Stepfather",
+   "tag": "Former manager",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Mandy’s husband. He managed Selena’s career until 2014.",
+    "src": [
+     "wiki_selena"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "selena",
+   "name": "Selena Gomez",
+   "short": "Selena",
+   "rel": "The center of the map",
+   "tag": "$700M",
+   "tagKind": "money",
+   "born": "Born 1992 in Grand Prairie, Texas",
+   "bornSrc": [
+    "wiki_selena"
+   ],
+   "group": "center",
+   "layout": {
+    "row": 2,
+    "big": true
+   },
+   "photo": "selena",
+   "wiki": "Selena Gomez",
+   "summary": {
+    "t": "A former Disney Channel star turned singer, actress and producer. Most of her fortune is her stake in Rare Beauty, the makeup company she launched in 2020.",
+    "src": [
+     "forbes_selena",
+     "wiki_selena"
+    ]
+   },
+   "worth": {
+    "value": "$700 million",
+    "by": "Forbes estimate",
+    "date": "Jun 3, 2025",
+    "src": [
+     "forbes_selena"
+    ],
+    "also": {
+     "short": "Bloomberg",
+     "value": "$1.3B (Sep 2024)",
+     "by": "Bloomberg",
+     "src": [
+      "cnn_bbg"
+     ]
+    }
+   },
+   "owns": [
+    {
+     "co": "rarebeauty",
+     "t": "Founder; owns at least 51%, Forbes estimates.",
+     "src": [
+      "forbes_why"
+     ]
+    },
+    {
+     "co": "wondermind",
+     "t": "Cofounder, with her mother.",
+     "src": [
+      "forbes_why"
+     ]
+    },
+    {
+     "co": "julymoon",
+     "t": "Started it at 16.",
+     "src": [
+      "wiki_selena"
+     ]
+    }
+   ],
+   "record": [
+    {
+     "h": "Two estimates, one company",
+     "t": "Bloomberg called her a billionaire in September 2024. Forbes puts her at about $700 million: it values Rare Beauty at $1.3 billion and her stake at at least 51%, plus about $90 million in pre-tax earnings from TV, music, tours and endorsements.",
+     "src": [
+      "cnn_bbg",
+      "forbes_why"
+     ]
+    },
+    {
+     "h": "The sale talk",
+     "t": "In March 2024 Bloomberg reported she had hired advisers to field investor interest in Rare Beauty. Business of Fashion said a deal could value it at $2 billion. No sale was announced.",
+     "src": [
+      "yahoo_sale"
+     ]
+    },
+    {
+     "h": "Wondermind’s cash crunch",
+     "t": "The startup raised $5 million at a $100 million valuation in 2022. In May 2025 it missed payroll and laid off nine employees, leaving four. She and her mother had put in $8 million of their own money by mid-2023.",
+     "src": [
+      "forbes_why"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "Rare Beauty had $367 million in revenue in 2023, according to a California state filing.",
+     "src": [
+      "forbes_why"
+     ]
+    },
+    {
+     "t": "She reportedly made $30 million from a 2017 Puma deal and about $24 million from Only Murders in the Building.",
+     "src": [
+      "forbes_why"
+     ]
+    },
+    {
+     "t": "One percent of Rare Beauty’s sales go to the Rare Impact Fund, which aims to raise $100 million for mental health over ten years.",
+     "src": [
+      "prn_ulta",
+      "wiki_selena"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "benny",
+   "name": "Benny Blanco",
+   "short": "Benny",
+   "rel": "Husband · married 2025",
+   "tag": "Music producer",
+   "group": "spouse",
+   "layout": {
+    "row": 2
+   },
+   "photo": "benny",
+   "wiki": "Benny Blanco",
+   "summary": {
+    "t": "A music producer and songwriter. They announced their engagement in December 2024 and married on Sept. 27, 2025, in the Santa Barbara area.",
+    "src": [
+     "cbs_wedding",
+     "qz_house"
+    ]
+   },
+   "worth": {
+    "none": "No Forbes or Bloomberg estimate."
+   },
+   "record": [
+    {
+     "h": "The house",
+     "t": "The same week they got engaged, they closed on a $35 million Beverly Hills house from film director Todd Phillips.",
+     "src": [
+      "qz_house"
+     ]
+    }
+   ]
+  }
+ ],
+ "companies": [
+  {
+   "id": "rarebeauty",
+   "name": "Rare Beauty",
+   "status": "private",
+   "color": "#E8A0A6",
+   "who": "Selena (founder, at least 51%)",
+   "t": "Her makeup brand, launched in 2020 and best known for liquid blush. Forbes values it at $1.3 billion.",
+   "src": [
+    "forbes_selena",
+    "forbes_why",
+    "prn_ulta"
+   ]
+  },
+  {
+   "id": "wondermind",
+   "name": "Wondermind",
+   "status": "private",
+   "color": "#7DD3FC",
+   "who": "Selena and Mandy (cofounders)",
+   "t": "A mental wellness media startup founded in 2021. It laid off most of its staff in May 2025.",
+   "src": [
+    "forbes_why",
+    "forbes_selena"
+   ]
+  },
+  {
+   "id": "julymoon",
+   "name": "July Moon Productions",
+   "status": "private",
+   "color": "#C4B5FD",
+   "who": "Selena (founder)",
+   "t": "Her production company, started when she was 16.",
+   "src": [
+    "wiki_selena"
+   ]
+  }
+ ],
+ "ladder": {
+  "items": [
+   {
+    "name": "Selena Gomez",
+    "short": "Selena",
+    "v": 700000000,
+    "label": "$700M",
+    "src": [
+     "forbes_selena"
+    ]
+   }
+  ],
+  "rest": "Everyone else on the map"
+ },
+ "calc": {
+  "worth": 700000000
+ },
+ "homes": {
+  "props": [
+   {
+    "name": "House where she filmed Selena + Chef",
+    "area": "Encino, Los Angeles",
+    "by": "2020",
+    "b": 4.9,
+    "note": "Bought for nearly $5 million.",
+    "src": [
+     "forbes_why"
+    ]
+   },
+   {
+    "name": "1928 estate on two lots",
+    "area": "Beverly Hills",
+    "by": "2024",
+    "b": 35,
+    "note": "Bought with Benny Blanco from director Todd Phillips, who paid $17.25 million in 2012.",
+    "src": [
+     "qz_house"
+    ]
+   }
+  ],
+  "summary": {
+   "value": "≈$40M",
+   "note": "Paid for the two homes below (our sum of reported prices).",
+   "src": [
+    "forbes_why",
+    "qz_house"
+   ]
+  },
+  "extra": []
+ },
+ "ledger": [
+  {
+   "who": "Rare Beauty",
+   "what": "Revenue, per a California state filing",
+   "amt": "$367M",
+   "when": "2023",
+   "src": [
+    "forbes_why"
+   ]
+  },
+  {
+   "who": "Rare Beauty",
+   "what": "Forbes valuation",
+   "amt": "$1.3B",
+   "when": "2025",
+   "src": [
+    "forbes_why"
+   ]
+  },
+  {
+   "who": "Selena",
+   "what": "Pre-tax earnings outside Rare Beauty (Forbes estimate)",
+   "amt": "≈$90M",
+   "when": "Career",
+   "src": [
+    "forbes_why"
+   ]
+  },
+  {
+   "who": "Selena",
+   "what": "Puma collaboration",
+   "amt": "$30M",
+   "when": "2017",
+   "src": [
+    "forbes_why"
+   ]
+  },
+  {
+   "who": "Wondermind",
+   "what": "Series A round, at a $100 million valuation",
+   "amt": "$5M",
+   "when": "2022",
+   "src": [
+    "forbes_why"
+   ]
+  },
+  {
+   "who": "Selena & Mandy",
+   "what": "Own money put into Wondermind",
+   "amt": "$8M",
+   "when": "By mid-2023",
+   "src": [
+    "forbes_why"
+   ]
+  },
+  {
+   "who": "Selena & Benny",
+   "what": "Beverly Hills house",
+   "amt": "$35M",
+   "when": "Dec 2024",
+   "src": [
+    "qz_house"
+   ]
+  }
+ ],
+ "trail": [
+  {
+   "when": "1992",
+   "h": "Born in Grand Prairie, Texas",
+   "t": "",
+   "src": [
+    "wiki_selena"
+   ]
+  },
+  {
+   "when": "2007",
+   "h": "Cast in Disney’s Wizards of Waverly Place",
+   "t": "The show runs through 2012.",
+   "src": [
+    "wiki_selena"
+   ]
+  },
+  {
+   "when": "2017",
+   "h": "Signs with Puma",
+   "amt": "$30M",
+   "t": "",
+   "src": [
+    "forbes_why"
+   ]
+  },
+  {
+   "when": "2020",
+   "h": "Launches Rare Beauty",
+   "t": "",
+   "src": [
+    "wiki_selena"
+   ]
+  },
+  {
+   "when": "2021",
+   "h": "Only Murders in the Building premieres; she cofounds Wondermind",
+   "t": "",
+   "src": [
+    "wiki_selena",
+    "forbes_why"
+   ]
+  },
+  {
+   "when": "2023",
+   "h": "Rare Beauty’s revenue reaches $367 million",
+   "amt": "$367M",
+   "t": "",
+   "src": [
+    "forbes_why"
+   ]
+  },
+  {
+   "when": "Mar 2024",
+   "h": "Bloomberg reports she is fielding investor interest",
+   "t": "",
+   "src": [
+    "yahoo_sale"
+   ]
+  },
+  {
+   "when": "Sep 2024",
+   "h": "Bloomberg calls her a billionaire",
+   "amt": "$1.3B",
+   "t": "",
+   "src": [
+    "cnn_bbg"
+   ]
+  },
+  {
+   "when": "Dec 2024",
+   "h": "Engaged to Benny Blanco; they buy a Beverly Hills house",
+   "amt": "$35M",
+   "t": "",
+   "src": [
+    "qz_house"
+   ]
+  },
+  {
+   "when": "Jun 2025",
+   "h": "Forbes puts her at $700 million",
+   "amt": "$700M",
+   "t": "",
+   "src": [
+    "forbes_selena"
+   ]
+  },
+  {
+   "when": "Sep 2025",
+   "h": "Marries Benny Blanco",
+   "t": "",
+   "src": [
+    "cbs_wedding"
+   ]
+  },
+  {
+   "when": "Feb 2026",
+   "h": "Rare Beauty goes into every Ulta store",
+   "t": "",
+   "src": [
+    "prn_ulta"
+   ]
+  }
+ ],
+ "photos": {
+  "selena": {
+   "file": "Selena Gomez at the 2024 Toronto International Film Festival 10 (cropped).jpg",
+   "author": "Frank Sun",
+   "license": "CC BY-SA 4.0",
+   "w": 1551,
+   "h": 2090,
+   "fx": 0.49,
+   "fy": 0.31,
+   "zoom": 1.7,
+   "year": "2024"
+  },
+  "benny": {
+   "file": "Benny Blanco KCA 2025.png",
+   "author": "NickRewind",
+   "license": "CC BY 3.0",
+   "w": 795,
+   "h": 1080,
+   "fx": 0.51,
+   "fy": 0.31,
+   "zoom": 1.8,
+   "year": "2025"
+  }
+ },
+ "licenses": {
+  "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+  "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/",
+  "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+  "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+ },
+ "companiesExtra": []
+}

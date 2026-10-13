@@ -1,0 +1,678 @@
+{
+ "meta": {
+  "asOf": "2026-10-12",
+  "asOfLabel": "Oct 12, 2026",
+  "file": "File #028",
+  "repo": "https://github.com/destinjones/the-money-files",
+  "center": "larry",
+  "slug": "page",
+  "og": "assets/og-hub.jpg",
+  "pronoun": "his"
+ },
+ "copy": {
+  "title": "The Page Money File",
+  "desc": "An interactive, fully sourced map of Larry Page’s family: the Alphabet votes, the family foundation, the move to Miami, and the money on the public record.",
+  "eyebrow": "<b>File #028</b> · The Page family · Data as of <span data-asof></span>",
+  "h1": "Google’s quieter cofounder holds the <span class=\"gold\">biggest vote</span>. We followed the <span class=\"u-red\">money</span>.",
+  "lede": "Who’s who, what he owns, which companies you can buy stock in, the homes, and the money on the public record. Every number links to its source.",
+  "worthLabel": "Larry Page’s net worth",
+  "worthBig": "$288,800,000,000",
+  "familyLede": "Tap anyone to open their file. Larry and Lucinda have two children whose names aren’t public, so we only count them.",
+  "investLede": "Alphabet trades on the Nasdaq as GOOGL and GOOG. His newer ventures are private, and his flying-car startup is gone.",
+  "moneyTitle": "Where the money is",
+  "moneyLede": "Nearly all of it is Alphabet stock, and his Class B shares give him 27.4% of the company’s votes. Only Larry has a published net worth here.",
+  "recordLede": "What Alphabet’s proxy statement, foundation filings and property records show. Filings and reporting, not guesses.",
+  "trailLede": "From a computer science household in Michigan to the third-largest fortune on Earth.",
+  "calcYearsK": "Years to earn what Larry has",
+  "footLabel": "File #028: the Page family",
+  "ledgerFoot": "Class B shares carry 10 votes each, which is why his share of the votes is bigger than his share of the company. “Our sum” means simple addition of the linked filings or reports.",
+  "homesTitle": "The homes",
+  "homesLede": "The two Miami homes he bought as he moved his base to Florida. Neighborhood level only.",
+  "homesFlipLabel": "Paid for two Miami homes",
+  "homesChart": "Bought, in $ millions"
+ },
+ "tree": {
+  "groups": [
+   [
+    "center",
+    "The center"
+   ],
+   [
+    "spouse",
+    "Wife",
+    "Two children, names private."
+   ],
+   [
+    "parents",
+    "Parents"
+   ],
+   [
+    "siblings",
+    "Brother"
+   ]
+  ],
+  "order": [
+   "larry",
+   "lucinda",
+   "carlsr",
+   "gloria",
+   "carljr"
+  ],
+  "coParents": [],
+  "couples": [
+   [
+    "carlsr",
+    "gloria",
+    "div."
+   ],
+   [
+    "larry",
+    "lucinda",
+    "m. 2007"
+   ]
+  ],
+  "forks": [
+   {
+    "frm": [
+     "carlsr",
+     "gloria"
+    ],
+    "kids": [
+     "carljr",
+     "larry"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "wiki_larry",
+   "group": "family",
+   "pub": "Wikipedia",
+   "title": "Larry Page",
+   "date": "accessed Oct 2026",
+   "url": "https://en.wikipedia.org/wiki/Larry_Page"
+  },
+  {
+   "id": "eco_carl",
+   "group": "family",
+   "pub": "ecoAmerica",
+   "title": "Board member: Carl Page",
+   "date": "accessed Oct 2026",
+   "url": "https://ecoamerica.org/board-member/carl-page/"
+  },
+  {
+   "id": "forbes_larry",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Real-time profile: Larry Page ($288.8B, #3 in the world)",
+   "date": "Oct 12, 2026",
+   "url": "https://www.forbes.com/profile/larry-page/"
+  },
+  {
+   "id": "forbes_300b",
+   "group": "money",
+   "pub": "Forbes",
+   "title": "Larry Page’s Worth Over $300 Billion For First Time Amid Alphabet Earnings Rally",
+   "date": "Apr 30, 2026",
+   "url": "https://www.forbes.com/sites/tylerroush/2026/04/30/larry-pages-worth-over-300-billion-for-first-time-amid-alphabet-earnings-rally/"
+  },
+  {
+   "id": "ip_found",
+   "group": "money",
+   "pub": "Inside Philanthropy",
+   "title": "By the Numbers, Google Founders’ Philanthropies Are Now Peers to Legacy Giants",
+   "date": "Jan 22, 2024",
+   "url": "https://insidephilanthropy.com/home/2024/1/22/by-the-numbers-google-founders-philanthropies-are-now-peers-to-legacy-giants"
+  },
+  {
+   "id": "proxy",
+   "group": "record",
+   "pub": "SEC (Alphabet Inc.)",
+   "title": "2026 proxy statement (DEF 14A): security ownership of beneficial owners",
+   "date": "Apr 24, 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm"
+  },
+  {
+   "id": "tc_dyn",
+   "group": "record",
+   "pub": "TechCrunch",
+   "title": "Google co-founder Larry Page reportedly has a new AI startup",
+   "date": "Mar 6, 2025",
+   "url": "https://techcrunch.com/2025/03/06/google-co-founder-larry-page-reportedly-has-a-new-ai-startup"
+  },
+  {
+   "id": "fox_miami",
+   "group": "homes",
+   "pub": "Fox Business",
+   "title": "Larry Page drops $173M on Miami mansions amid California billionaire exodus trend as wealth tax looms",
+   "date": "Jan 9, 2026",
+   "url": "https://www.foxbusiness.com/real-estate/larry-page-drops-173m-miami-mansions-amid-california-billionaire-exodus-trend-wealth-tax-looms"
+  }
+ ],
+ "people": [
+  {
+   "id": "carlsr",
+   "name": "Carl Victor Page Sr.",
+   "short": "Carl",
+   "rel": "Father",
+   "tag": "Computer scientist",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Earned a PhD in computer science at the University of Michigan and taught the subject at Michigan State University. He and Gloria divorced when Larry was eight.",
+    "src": [
+     "wiki_larry"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "gloria",
+   "name": "Gloria Page",
+   "short": "Gloria",
+   "rel": "Mother",
+   "tag": "Programming teacher",
+   "group": "parents",
+   "layout": {
+    "row": 1
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Taught computer programming at Lyman Briggs College, part of Michigan State University. The family foundation, the Carl Victor Page Memorial Foundation, is named for Larry’s father.",
+    "src": [
+     "wiki_larry"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   }
+  },
+  {
+   "id": "carljr",
+   "name": "Carl Victor Page Jr.",
+   "short": "Carl",
+   "rel": "Brother",
+   "tag": "eGroups cofounder",
+   "group": "siblings",
+   "layout": {
+    "row": 2
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "Larry’s older brother, who taught him to take things apart. He cofounded eGroups, which Yahoo bought and turned into Yahoo Groups, and earlier worked at Microsoft and Mentor Graphics.",
+    "src": [
+     "wiki_larry",
+     "eco_carl"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate."
+   },
+   "owns": [
+    {
+     "co": "egroups",
+     "t": "Cofounder.",
+     "src": [
+      "eco_carl"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "larry",
+   "name": "Larry Page",
+   "short": "Larry",
+   "rel": "The center of the map",
+   "tag": "$288.8B",
+   "tagKind": "money",
+   "born": "Born 1973 in Lansing, Michigan",
+   "bornSrc": [
+    "wiki_larry"
+   ],
+   "group": "center",
+   "layout": {
+    "row": 2,
+    "big": true
+   },
+   "photo": "larry",
+   "wiki": "Larry Page",
+   "summary": {
+    "t": "Cofounded Google with Sergey Brin in 1998 while both were Stanford graduate students. He ran Google twice and then Alphabet, its parent, before stepping back in 2019. He is still on the board and holds the largest share of the votes.",
+    "src": [
+     "wiki_larry",
+     "proxy"
+    ]
+   },
+   "worth": {
+    "value": "$288.8 billion",
+    "by": "Forbes real-time estimate",
+    "date": "Oct 12, 2026",
+    "src": [
+     "forbes_larry"
+    ],
+    "also": {
+     "short": "Rank",
+     "value": "#3 in the world",
+     "by": "Forbes rank",
+     "src": [
+      "forbes_larry"
+     ]
+    }
+   },
+   "owns": [
+    {
+     "co": "alphabet",
+     "t": "Cofounder and board member. Owns 389.1 million Class B shares, 46.5% of that class, which gives him 27.4% of the total vote.",
+     "src": [
+      "proxy"
+     ]
+    },
+    {
+     "co": "dynatomics",
+     "t": "Founded it; it applies AI to designing products for factories.",
+     "src": [
+      "tc_dyn",
+      "wiki_larry"
+     ]
+    },
+    {
+     "co": "kittyhawk",
+     "t": "Backed the flying-car startup until it shut down in 2022.",
+     "src": [
+      "wiki_larry"
+     ]
+    }
+   ],
+   "record": [
+    {
+     "h": "The votes",
+     "t": "As of April 6, 2026, he held 389,051,160 Class B shares. Each carries 10 votes, which is how 46.5% of that class adds up to 27.4% of Alphabet’s total vote, the largest of any holder.",
+     "src": [
+      "proxy"
+     ]
+    },
+    {
+     "h": "The family foundation",
+     "t": "In 2022 the Carl Victor Page Memorial Foundation gave out $276 million. Nearly all of it went to a donor-advised fund at the National Philanthropic Trust; the only other grant was $1,000.",
+     "src": [
+      "ip_found"
+     ]
+    },
+    {
+     "h": "The move to Florida",
+     "t": "In December 2025 and January 2026 he bought two Miami homes for $173.4 million combined. Filings show his family office, Koop, and his flu research fund no longer operate in California, where a proposed one-time wealth tax on billionaires was tied to residency on Jan. 1, 2026.",
+     "src": [
+      "fox_miami"
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "t": "He and Brin invented PageRank, the ranking method behind Google’s first search engine.",
+     "src": [
+      "forbes_larry"
+     ]
+    },
+    {
+     "t": "His fortune passed $300 billion for the first time on April 30, 2026, after Alphabet’s earnings.",
+     "src": [
+      "forbes_300b"
+     ]
+    },
+    {
+     "t": "He has bought private islands in the Caribbean and Fiji, including Hans Lollik, Cayo Norte and Tavarua.",
+     "src": [
+      "wiki_larry"
+     ]
+    }
+   ],
+   "kidsNote": {
+    "t": "Larry and Lucinda have two children. Their names aren’t public, so we don’t list them.",
+    "src": [
+     "wiki_larry"
+    ]
+   }
+  },
+  {
+   "id": "lucinda",
+   "name": "Lucinda Southworth",
+   "short": "Lucinda",
+   "rel": "Wife · married 2007",
+   "tag": "Research scientist",
+   "group": "spouse",
+   "layout": {
+    "row": 2
+   },
+   "photo": null,
+   "wiki": null,
+   "summary": {
+    "t": "A research scientist. She and Larry married in 2007 on Necker Island, Richard Branson’s island in the British Virgin Islands.",
+    "src": [
+     "wiki_larry"
+    ]
+   },
+   "worth": {
+    "none": "No published estimate of her own."
+   }
+  }
+ ],
+ "companies": [
+  {
+   "id": "alphabet",
+   "name": "Alphabet (Google)",
+   "status": "public",
+   "ticker": "GOOGL",
+   "exchange": "Nasdaq",
+   "quote": "https://www.nasdaq.com/market-activity/stocks/googl",
+   "color": "#4285F4",
+   "who": "Larry (cofounder, board member, 27.4% of the vote)",
+   "t": "Google’s parent company. Larry and Sergey Brin together hold more than half of the votes through Class B shares.",
+   "src": [
+    "proxy",
+    "wiki_larry"
+   ]
+  },
+  {
+   "id": "dynatomics",
+   "name": "Dynatomics",
+   "status": "private",
+   "color": "#22D3EE",
+   "who": "Larry (founder)",
+   "t": "A Palo Alto startup using AI to design products for factories to build. It is run by Chris Anderson, the former technology chief of Kittyhawk.",
+   "src": [
+    "tc_dyn",
+    "wiki_larry"
+   ]
+  },
+  {
+   "id": "kittyhawk",
+   "name": "Kittyhawk",
+   "status": "gone",
+   "gone": "Shut down 2022",
+   "color": "#A78BFA",
+   "who": "Larry (backer)",
+   "t": "His electric flying-car startup. It stopped operating in 2022, and its work went into Wisk Aero, a joint venture with Boeing.",
+   "src": [
+    "wiki_larry",
+    "tc_dyn"
+   ]
+  }
+ ],
+ "companiesExtra": [
+  {
+   "id": "egroups",
+   "name": "eGroups",
+   "status": "absorbed",
+   "into": "Yahoo",
+   "who": "Carl Jr. (cofounder)"
+  }
+ ],
+ "ladder": {
+  "items": [
+   {
+    "name": "Larry Page",
+    "short": "Larry",
+    "v": 288800000000,
+    "label": "$288.8B",
+    "src": [
+     "forbes_larry"
+    ]
+   }
+  ],
+  "rest": "Everyone else on the map"
+ },
+ "calc": {
+  "worth": 288800000000
+ },
+ "homes": {
+  "props": [
+   {
+    "name": "Bayfront compound, Camp Biscayne",
+    "area": "Coconut Grove, Miami",
+    "by": "2025",
+    "b": 101.5,
+    "note": "4.5 acres with two main houses, bought in December 2025.",
+    "src": [
+     "fox_miami"
+    ]
+   },
+   {
+    "name": "House less than a mile away",
+    "area": "Coconut Grove, Miami",
+    "by": "2026",
+    "b": 71.9,
+    "note": "Bought off-market on Jan. 5, 2026.",
+    "src": [
+     "fox_miami"
+    ]
+   }
+  ],
+  "summary": {
+   "value": "≈$173M",
+   "note": "Paid for the two Miami homes, December 2025 to January 2026.",
+   "src": [
+    "fox_miami"
+   ]
+  },
+  "extra": [
+   {
+    "t": "He bought a house in Palo Alto in 2005 and later bought neighboring lots to build an eco-friendly home.",
+    "src": [
+     "wiki_larry"
+    ]
+   },
+   {
+    "t": "He has also bought private islands, including Hans Lollik (2014), Cayo Norte (2018) and Tavarua in Fiji (2020). Prices weren’t disclosed.",
+    "src": [
+     "wiki_larry"
+    ]
+   }
+  ]
+ },
+ "ledger": [
+  {
+   "who": "Larry",
+   "what": "Alphabet Class B shares (46.5% of the class)",
+   "amt": "389.1M",
+   "when": "Apr 2026",
+   "src": [
+    "proxy"
+   ]
+  },
+  {
+   "who": "Larry",
+   "what": "Share of Alphabet’s total voting power",
+   "amt": "27.4%",
+   "when": "Apr 2026",
+   "src": [
+    "proxy"
+   ]
+  },
+  {
+   "who": "Page foundation",
+   "what": "Grants, nearly all to one donor-advised fund",
+   "amt": "$276M",
+   "when": "2022",
+   "src": [
+    "ip_found"
+   ]
+  },
+  {
+   "who": "Page foundation",
+   "what": "Given to fight the Ebola epidemic in West Africa",
+   "amt": "$15M",
+   "when": "Nov 2014",
+   "src": [
+    "wiki_larry"
+   ]
+  },
+  {
+   "who": "Larry",
+   "what": "Bayfront compound in Coconut Grove, Miami",
+   "amt": "$101.5M",
+   "when": "Dec 2025",
+   "src": [
+    "fox_miami"
+   ]
+  },
+  {
+   "who": "Larry",
+   "what": "Second Coconut Grove home",
+   "amt": "$71.9M",
+   "when": "Jan 2026",
+   "src": [
+    "fox_miami"
+   ]
+  },
+  {
+   "who": "Larry",
+   "what": "Net worth passes $300 billion for the first time",
+   "amt": "$300.9B",
+   "when": "Apr 2026",
+   "src": [
+    "forbes_300b"
+   ]
+  }
+ ],
+ "trail": [
+  {
+   "when": "1973",
+   "h": "Born in Lansing, Michigan",
+   "t": "Both parents teach computing at Michigan State.",
+   "src": [
+    "wiki_larry"
+   ]
+  },
+  {
+   "when": "1998",
+   "h": "Cofounds Google with Sergey Brin",
+   "t": "",
+   "src": [
+    "wiki_larry"
+   ]
+  },
+  {
+   "when": "2001",
+   "h": "Hands the CEO job to Eric Schmidt",
+   "t": "He runs products instead.",
+   "src": [
+    "wiki_larry"
+   ]
+  },
+  {
+   "when": "2007",
+   "h": "Marries Lucinda Southworth",
+   "t": "",
+   "src": [
+    "wiki_larry"
+   ]
+  },
+  {
+   "when": "2011",
+   "h": "Becomes Google’s CEO again",
+   "t": "",
+   "src": [
+    "wiki_larry"
+   ]
+  },
+  {
+   "when": "2014",
+   "h": "Family foundation gives $15 million to fight Ebola",
+   "amt": "$15M",
+   "t": "",
+   "src": [
+    "wiki_larry"
+   ]
+  },
+  {
+   "when": "2015",
+   "h": "Becomes CEO of Alphabet, Google’s new parent",
+   "t": "",
+   "src": [
+    "wiki_larry"
+   ]
+  },
+  {
+   "when": "2019",
+   "h": "Steps down as Alphabet CEO",
+   "t": "He stays on the board as a controlling shareholder.",
+   "src": [
+    "wiki_larry"
+   ]
+  },
+  {
+   "when": "2022",
+   "h": "Kittyhawk shuts down",
+   "t": "",
+   "src": [
+    "wiki_larry"
+   ]
+  },
+  {
+   "when": "Mar 2025",
+   "h": "His AI manufacturing startup, Dynatomics, comes to light",
+   "t": "",
+   "src": [
+    "tc_dyn"
+   ]
+  },
+  {
+   "when": "Jan 2026",
+   "h": "Buys two Miami homes as he moves to Florida",
+   "amt": "$173.4M",
+   "t": "",
+   "src": [
+    "fox_miami"
+   ]
+  },
+  {
+   "when": "Apr 2026",
+   "h": "Passes $300 billion",
+   "amt": "$300.9B",
+   "t": "",
+   "src": [
+    "forbes_300b"
+   ]
+  },
+  {
+   "when": "Oct 2026",
+   "h": "Third-richest person on Earth",
+   "amt": "$288.8B",
+   "t": "",
+   "src": [
+    "forbes_larry"
+   ]
+  }
+ ],
+ "photos": {
+  "larry": {
+   "file": "Larry Page in the European Parliament, 17.06.2009 (cropped 2).jpg",
+   "author": "Stansfield PL",
+   "license": "CC BY-SA 3.0",
+   "w": 930,
+   "h": 1239,
+   "fx": 0.48,
+   "fy": 0.31,
+   "zoom": 1.5,
+   "year": "2009"
+  }
+ },
+ "licenses": {
+  "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+  "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/",
+  "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+  "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "Public domain": "https://creativecommons.org/publicdomain/mark/1.0/"
+ }
+}
